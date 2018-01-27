@@ -106,8 +106,8 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="Event.html" title="Occurs based on the dependencies."></a>
-                        <a href="Event.html" title="Occurs based on the dependencies.">Event</a>
+                        <a class="trait" href="Event.html" title="Events only propagate a value when they are changing, when the system is at rest, events have no values."></a>
+                        <a href="Event.html" title="Events only propagate a value when they are changing, when the system is at rest, events have no values.">Event</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="object" href="Events$.html" title="Functions to construct events, you probably want to use the operators on Event for a nicer API."></a>
@@ -284,12 +284,26 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="rescala.reactives.Event#&amp;&amp;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="&amp;&amp;(pred:T=&gt;Boolean)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[T,S]"></a><a id="&amp;&amp;((T)⇒Boolean)(core.CreationTicket[S]):Event[T,S]"></a>
+      <a id="&amp;&amp;(pred:T=&gt;Boolean):rescala.Event[T]"></a><a id="&amp;&amp;((T)⇒Boolean):rescala.Event[T]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#&amp;&amp;(pred:T=&gt;Boolean)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[T,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#&amp;&amp;(pred:T=&gt;Boolean):rescala.Event[T]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $amp$amp" class="name">&amp;&amp;</span><span class="params">(<span name="pred">pred: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -297,12 +311,12 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       <span class="symbol">
         <span title="gt4s: $amp$amp" class="name">&amp;&amp;</span><span class="params">(<span name="pred">pred: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
       </span>
-      
-      <p class="shortcomment cmt">EV filtered with a predicate</p><div class="fullcomment"><div class="comment cmt"><p>EV filtered with a predicate</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      </h4></div>
+          </div><dt>See also</dt><dd><span class="cmt"><p>filter</p></span></dd></dl></div>
     </li><li name="rescala.reactives.Event#+=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="accessor">
-      <a id="+=(handler:T=&gt;Unit)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Observe[S]"></a><a id="+=((T)⇒Unit)(core.CreationTicket[S]):Observe[S]"></a>
+      <a id="+=(handler:T=&gt;Unit):rescala.reactives.Observe[S]"></a><a id="+=((T)⇒Unit):Observe[S]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#+=(handler:T=&gt;Unit)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Observe[S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#+=(handler:T=&gt;Unit):rescala.reactives.Observe[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -311,10 +325,24 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $plus$eq" class="name">+=</span><span class="params">(<span name="handler">handler: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Observe.html" class="extype" name="rescala.reactives.Observe">Observe</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+        <span title="gt4s: $plus$eq" class="name">+=</span><span class="params">(<span name="handler">handler: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>)</span><span class="result">: <a href="Observe.html" class="extype" name="rescala.reactives.Observe">Observe</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Adds an observer.</p><div class="fullcomment"><div class="comment cmt"><p>Adds an observer.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><dt>See also</dt><dd><span class="cmt"><p>observe</p></span></dd></dl></div>
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $plus$eq" class="name">+=</span><span class="params">(<span name="handler">handler: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Observe.html" class="extype" name="rescala.reactives.Observe">Observe</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+      </span>
+      </h4></div>
+          </div><dt>See also</dt><dd><span class="cmt"><p>observe</p></span></dd></dl></div>
     </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
       <span class="permalink">
@@ -332,9 +360,9 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="rescala.reactives.Event#\" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="\[U](except:rescala.reactives.Event[U,S])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[T,S]"></a><a id="\[U](Event[U,S])(core.CreationTicket[S]):Event[T,S]"></a>
+      <a id="\[U](except:rescala.Event[U]):rescala.Event[T]"></a><a id="\[U](rescala.Event[U]):rescala.Event[T]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#\[U](except:rescala.reactives.Event[U,S])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[T,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#\[U](except:rescala.Event[U]):rescala.Event[T]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -343,10 +371,24 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bslash" class="name">\</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="except">except: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.\.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+        <span title="gt4s: $bslash" class="name">\</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="except">except: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Event.\.U">U</span>]</span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">EV is triggered except if the other one is triggered</p><div class="fullcomment"><div class="comment cmt"><p>EV is triggered except if the other one is triggered</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bslash" class="name">\</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="except">except: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.\.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+      </span>
+      </h4></div>
+          </div></dl></div>
     </li><li name="rescala.reactives.Source#admit" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="admit(value:T)(implicitticket:rescala.core.AdmissionTicket[S]):Unit"></a><a id="admit(T)(core.AdmissionTicket[S]):Unit"></a>
       <span class="permalink">
@@ -380,9 +422,9 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a></dd></dl></div>
     </li><li name="rescala.reactives.Event#and" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="and[U,R](other:rescala.reactives.Event[U,S])(merger:(T,U)=&gt;R)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[R,S]"></a><a id="and[U,R](Event[U,S])((T,U)⇒R)(core.CreationTicket[S]):Event[R,S]"></a>
+      <a id="and[U,R](other:rescala.Event[U]):rescala.Event[R]"></a><a id="and[U,R](rescala.Event[U]):rescala.Event[R]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#and[U,R](other:rescala.reactives.Event[U,S])(merger:(T,U)=&gt;R)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[R,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#and[U,R](other:rescala.Event[U]):rescala.Event[R]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -391,10 +433,24 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">and</span><span class="tparams">[<span name="U">U</span>, <span name="R">R</span>]</span><span class="params">(<span name="other">other: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.and.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="params">(<span name="merger">merger: (<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Event.and.U">U</span>) ⇒ <span class="extype" name="rescala.reactives.Event.and.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.and.R">R</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+        <span class="name">and</span><span class="tparams">[<span name="U">U</span>, <span name="R">R</span>]</span><span class="params">(<span name="other">other: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Event.and.U">U</span>]</span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Event.and.R">R</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Events conjunction</p><div class="fullcomment"><div class="comment cmt"><p>Events conjunction</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">and</span><span class="tparams">[<span name="U">U</span>, <span name="R">R</span>]</span><span class="params">(<span name="other">other: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.and.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="params">(<span name="merger">merger: (<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Event.and.U">U</span>) ⇒ <span class="extype" name="rescala.reactives.Event.and.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.and.R">R</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+      </span>
+      </h4></div>
+          </div></dl></div>
     </li><li name="rescala.macros.MacroAccessors#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="accessor">
       <a id="apply():T"></a><a id="apply():Option[T]"></a>
       <span class="permalink">
@@ -459,9 +515,9 @@ Is an alias for <a href="../macros/MacroAccessors.html#value:T" class="extmbr" n
               
         </dd></dl></div>
     </li><li name="rescala.reactives.Event#collect" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="collect[U](pf:PartialFunction[T,U])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[U,S]"></a><a id="collect[U](PartialFunction[T,U])(core.CreationTicket[S]):Event[U,S]"></a>
+      <a id="collect[U](pf:PartialFunction[T,U]):rescala.Event[U]"></a><a id="collect[U](PartialFunction[T,U]):rescala.Event[U]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#collect[U](pf:PartialFunction[T,U])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[U,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#collect[U](pf:PartialFunction[T,U]):rescala.Event[U]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -470,10 +526,24 @@ Is an alias for <a href="../macros/MacroAccessors.html#value:T" class="extmbr" n
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">collect</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="pf">pf: <a href="http://www.scala-lang.org/api/2.12.4/scala/PartialFunction.html#scala.PartialFunction" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Event.collect.U">U</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.collect.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+        <span class="name">collect</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="pf">pf: <a href="http://www.scala-lang.org/api/2.12.4/scala/PartialFunction.html#scala.PartialFunction" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Event.collect.U">U</span>]</span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Event.collect.U">U</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Collects the results from a partial function</p><div class="fullcomment"><div class="comment cmt"><p>Collects the results from a partial function</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">collect</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="pf">pf: <a href="http://www.scala-lang.org/api/2.12.4/scala/PartialFunction.html#scala.PartialFunction" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Event.collect.U">U</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.collect.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+      </span>
+      </h4></div>
+          </div></dl></div>
     </li><li name="rescala.reactives.Event#count" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
       <a id="count():rescala.Signal[Int]"></a>
       <span class="permalink">
@@ -523,9 +593,9 @@ fired yet. The argument of the event is simply discarded.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.reactives.Evt">Evt</a> → <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a></dd></dl></div>
     </li><li name="rescala.reactives.Event#dropParam" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="dropParam(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[Unit,S]"></a><a id="dropParam(core.CreationTicket[S]):Event[Unit,S]"></a>
+      <a id="dropParam(implicitticket:rescala.core.CreationTicket[S]):rescala.Event[Unit]"></a><a id="dropParam(core.CreationTicket[S]):rescala.Event[Unit]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#dropParam(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[Unit,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#dropParam(implicitticket:rescala.core.CreationTicket[S]):rescala.Event[Unit]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -534,10 +604,24 @@ fired yet. The argument of the event is simply discarded.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dropParam</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+        <span class="name">dropParam</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>]</span>
       </span>
       
-      <p class="shortcomment cmt">Drop the event parameter; equivalent to map((_: Any) =&gt; ())</p><div class="fullcomment"><div class="comment cmt"><p>Drop the event parameter; equivalent to map((_: Any) =&gt; ())</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">dropParam</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+      </span>
+      </h4></div>
+          </div></dl></div>
     </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -571,9 +655,9 @@ fired yet. The argument of the event is simply discarded.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="rescala.reactives.Event#filter" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="filter(pred:T=&gt;Boolean)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[T,S]"></a><a id="filter((T)⇒Boolean)(core.CreationTicket[S]):Event[T,S]"></a>
+      <a id="filter(pred:T=&gt;Boolean):rescala.Event[T]"></a><a id="filter((T)⇒Boolean):rescala.Event[T]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#filter(pred:T=&gt;Boolean)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[T,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#filter(pred:T=&gt;Boolean):rescala.Event[T]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -582,10 +666,24 @@ fired yet. The argument of the event is simply discarded.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">filter</span><span class="params">(<span name="pred">pred: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+        <span class="name">filter</span><span class="params">(<span name="pred">pred: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">EV filtered with a predicate</p><div class="fullcomment"><div class="comment cmt"><p>EV filtered with a predicate</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">filter</span><span class="params">(<span name="pred">pred: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+      </span>
+      </h4></div>
+          </div></dl></div>
     </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="finalize():Unit"></a>
       <span class="permalink">
@@ -742,9 +840,9 @@ fired yet. The argument of the event is simply discarded.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="rescala.reactives.Event#iterate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
-      <a id="iterate[A](init:A)(f:A=&gt;A)(implicitevidence$3:rescala.core.ReSerializable[A],implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[A,S]"></a><a id="iterate[A](A)((A)⇒A)(ReSerializable[A],core.CreationTicket[S]):Signal[A,S]"></a>
+      <a id="iterate[A](init:A)(f:A=&gt;A):rescala.Signal[A]"></a><a id="iterate[A](A)((A)⇒A):rescala.Signal[A]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#iterate[A](init:A)(f:A=&gt;A)(implicitevidence$3:rescala.core.ReSerializable[A],implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[A,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#iterate[A](init:A)(f:A=&gt;A):rescala.Signal[A]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -753,12 +851,24 @@ fired yet. The argument of the event is simply discarded.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">iterate</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="init">init: <span class="extype" name="rescala.reactives.Event.iterate.A">A</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="rescala.reactives.Event.iterate.A">A</span>) ⇒ <span class="extype" name="rescala.reactives.Event.iterate.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="../core/ReSerializable.html" class="extype" name="rescala.core.ReSerializable">ReSerializable</a>[<span class="extype" name="rescala.reactives.Event.iterate.A">A</span>]</span>, <span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Event.iterate.A">A</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+        <span class="name">iterate</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="init">init: <span class="extype" name="rescala.reactives.Event.iterate.A">A</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="rescala.reactives.Event.iterate.A">A</span>) ⇒ <span class="extype" name="rescala.reactives.Event.iterate.A">A</span></span>)</span><span class="result">: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.iterate.A">A</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Applies a function on the current value of the signal every time the event occurs,
-starting with the init value before the first event occurrence</p><div class="fullcomment"><div class="comment cmt"><p>Applies a function on the current value of the signal every time the event occurs,
-starting with the init value before the first event occurrence</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">iterate</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="init">init: <span class="extype" name="rescala.reactives.Event.iterate.A">A</span></span>)</span><span class="params">(<span name="f">f: (<span class="extype" name="rescala.reactives.Event.iterate.A">A</span>) ⇒ <span class="extype" name="rescala.reactives.Event.iterate.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="../core/ReSerializable.html" class="extype" name="rescala.core.ReSerializable">ReSerializable</a>[<span class="extype" name="rescala.reactives.Event.iterate.A">A</span>]</span>, <span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Event.iterate.A">A</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+      </span>
+      </h4></div>
+          </div></dl></div>
     </li><li name="rescala.reactives.Event#last" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
       <a id="last[A&gt;:T](n:Int):rescala.Signal[scala.collection.immutable.LinearSeq[A]]"></a><a id="last[A&gt;:T](Int):rescala.Signal[LinearSeq[A]]"></a>
       <span class="permalink">
@@ -910,9 +1020,9 @@ starting with the init value before the first event occurrence</p></div><dl clas
       </h4></div>
           </div></dl></div>
     </li><li name="rescala.reactives.Event#map" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="map[A](expression:T=&gt;A)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[A,S]"></a><a id="map[A]((T)⇒A)(core.CreationTicket[S]):Event[A,S]"></a>
+      <a id="map[A](expression:T=&gt;A):rescala.Event[A]"></a><a id="map[A]((T)⇒A):rescala.Event[A]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#map[A](expression:T=&gt;A)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[A,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#map[A](expression:T=&gt;A):rescala.Event[A]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -921,10 +1031,24 @@ starting with the init value before the first event occurrence</p></div><dl clas
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">map</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="expression">expression: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <span class="extype" name="rescala.reactives.Event.map.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.map.A">A</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+        <span class="name">map</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="expression">expression: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <span class="extype" name="rescala.reactives.Event.map.A">A</span></span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Event.map.A">A</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Transform the event parameter</p><div class="fullcomment"><div class="comment cmt"><p>Transform the event parameter</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final macro </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">map</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="expression">expression: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <span class="extype" name="rescala.reactives.Event.map.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.map.A">A</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+      </span>
+      </h4></div>
+          </div></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -980,12 +1104,26 @@ starting with the init value before the first event occurrence</p></div><dl clas
               
         </dd></dl></div>
     </li><li name="rescala.reactives.Event#observe" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="accessor">
-      <a id="observe(onSuccess:T=&gt;Unit,onFailure:Throwable=&gt;Unit)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Observe[S]"></a><a id="observe((T)⇒Unit,(Throwable)⇒Unit)(core.CreationTicket[S]):Observe[S]"></a>
+      <a id="observe(handler:T=&gt;Unit):rescala.reactives.Observe[S]"></a><a id="observe((T)⇒Unit):Observe[S]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#observe(onSuccess:T=&gt;Unit,onFailure:Throwable=&gt;Unit)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Observe[S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#observe(handler:T=&gt;Unit):rescala.reactives.Observe[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">observe</span><span class="params">(<span name="handler">handler: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>)</span><span class="result">: <a href="Observe.html" class="extype" name="rescala.reactives.Observe">Observe</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>the resulting <a href="Observe.html" class="extype" name="rescala.reactives.Observe">Observe</a> can be used to remove the observer.</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -993,15 +1131,29 @@ starting with the init value before the first event occurrence</p></div><dl clas
       <span class="symbol">
         <span class="name">observe</span><span class="params">(<span name="onSuccess">onSuccess: (<span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>, <span name="onFailure">onFailure: (<span class="extype" name="scala.Throwable">Throwable</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a> = <span class="symbol">null</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Observe.html" class="extype" name="rescala.reactives.Observe">Observe</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
       </span>
-      
-      <p class="shortcomment cmt">add an observer</p><div class="fullcomment"><div class="comment cmt"><p>add an observer</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      </h4></div>
+          </div></dl></div>
     </li><li name="rescala.reactives.Event#recover" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="recover[R&gt;:T](onFailure:PartialFunction[Throwable,Option[R]])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[R,S]"></a><a id="recover[R&gt;:T](PartialFunction[Throwable,Option[R]])(core.CreationTicket[S]):Event[R,S]"></a>
+      <a id="recover[R&gt;:T](onFailure:PartialFunction[Throwable,Option[R]]):rescala.Event[R]"></a><a id="recover[R&gt;:T](PartialFunction[Throwable,Option[R]]):rescala.Event[R]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#recover[R&gt;:T](onFailure:PartialFunction[Throwable,Option[R]])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[R,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#recover[R&gt;:T](onFailure:PartialFunction[Throwable,Option[R]]):rescala.Event[R]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">recover</span><span class="tparams">[<span name="R">R &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>]</span><span class="params">(<span name="onFailure">onFailure: <a href="http://www.scala-lang.org/api/2.12.4/scala/PartialFunction.html#scala.PartialFunction" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="scala.Throwable">Throwable</span>, <a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Event.recover.R">R</span>]]</span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Event.recover.R">R</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -1009,17 +1161,29 @@ starting with the init value before the first event occurrence</p></div><dl clas
       <span class="symbol">
         <span class="name">recover</span><span class="tparams">[<span name="R">R &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>]</span><span class="params">(<span name="onFailure">onFailure: <a href="http://www.scala-lang.org/api/2.12.4/scala/PartialFunction.html#scala.PartialFunction" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="scala.Throwable">Throwable</span>, <a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Event.recover.R">R</span>]]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.recover.R">R</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
       </span>
-      
-      <p class="shortcomment cmt">Uses a partial function <code>onFailure</code> to recover an error carried by the event into a value when returning Some(value),
-or filters the error when returning None</p><div class="fullcomment"><div class="comment cmt"><p>Uses a partial function <code>onFailure</code> to recover an error carried by the event into a value when returning Some(value),
-or filters the error when returning None</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      </h4></div>
+          </div></dl></div>
     </li><li name="rescala.reactives.Event#reduce" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
-      <a id="reduce[A](reducer:(=&gt;A,=&gt;T)=&gt;A)(implicitevidence$2:rescala.core.ReSerializable[A],implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[A,S]"></a><a id="reduce[A]((⇒A,⇒T)⇒A)(ReSerializable[A],core.CreationTicket[S]):Signal[A,S]"></a>
+      <a id="reduce[A](reducer:(=&gt;A,=&gt;T)=&gt;A):rescala.Signal[A]"></a><a id="reduce[A]((⇒A,⇒T)⇒A):rescala.Signal[A]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#reduce[A](reducer:(=&gt;A,=&gt;T)=&gt;A)(implicitevidence$2:rescala.core.ReSerializable[A],implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[A,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#reduce[A](reducer:(=&gt;A,=&gt;T)=&gt;A):rescala.Signal[A]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reduce</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="reducer">reducer: (⇒ <span class="extype" name="rescala.reactives.Event.reduce.A">A</span>, ⇒ <span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <span class="extype" name="rescala.reactives.Event.reduce.A">A</span></span>)</span><span class="result">: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.reduce.A">A</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -1027,12 +1191,12 @@ or filters the error when returning None</p></div><dl class="attributes block"> 
       <span class="symbol">
         <span class="name">reduce</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="reducer">reducer: (⇒ <span class="extype" name="rescala.reactives.Event.reduce.A">A</span>, ⇒ <span class="extype" name="rescala.reactives.Evt.T">T</span>) ⇒ <span class="extype" name="rescala.reactives.Event.reduce.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="../core/ReSerializable.html" class="extype" name="rescala.core.ReSerializable">ReSerializable</a>[<span class="extype" name="rescala.reactives.Event.reduce.A">A</span>]</span>, <span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Event.reduce.A">A</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
       </span>
-      
-      <p class="shortcomment cmt">reduces events with a given reduce function to create a Signal</p><div class="fullcomment"><div class="comment cmt"><p>reduces events with a given reduce function to create a Signal</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      </h4></div>
+          </div></dl></div>
     </li><li name="rescala.reactives.Event#reset" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
-      <a id="reset[T1&gt;:T,A,R](init:T1)(factory:T1=&gt;&lt;error&gt;):rescala.Signal[A]"></a><a id="reset[T1&gt;:T,A,R](T1)((T1)⇒&lt;error&gt;):rescala.Signal[A]"></a>
+      <a id="reset[T1&gt;:T,A,R](init:T1)(factory:T1=&gt;rescala.Signal[A]):rescala.Signal[A]"></a><a id="reset[T1&gt;:T,A,R](T1)((T1)⇒rescala.Signal[A]):rescala.Signal[A]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#reset[T1&gt;:T,A,R](init:T1)(factory:T1=&gt;&lt;error&gt;):rescala.Signal[A]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#reset[T1&gt;:T,A,R](init:T1)(factory:T1=&gt;rescala.Signal[A]):rescala.Signal[A]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1041,7 +1205,7 @@ or filters the error when returning None</p></div><dl class="attributes block"> 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">reset</span><span class="tparams">[<span name="T1">T1 &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>, <span name="A">A</span>, <span name="R">R</span>]</span><span class="params">(<span name="init">init: <span class="extype" name="rescala.reactives.Event.reset.T1">T1</span></span>)</span><span class="params">(<span name="factory">factory: (<span class="extype" name="rescala.reactives.Event.reset.T1">T1</span>) ⇒ &lt;error&gt;</span>)</span><span class="result">: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.reset.A">A</span>]</span>
+        <span class="name">reset</span><span class="tparams">[<span name="T1">T1 &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>, <span name="A">A</span>, <span name="R">R</span>]</span><span class="params">(<span name="init">init: <span class="extype" name="rescala.reactives.Event.reset.T1">T1</span></span>)</span><span class="params">(<span name="factory">factory: (<span class="extype" name="rescala.reactives.Event.reset.T1">T1</span>) ⇒ <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.reset.A">A</span>]</span>)</span><span class="result">: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.reset.A">A</span>]</span>
       </span>
       
       <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
@@ -1106,9 +1270,9 @@ or filters the error when returning None</p></div><dl class="attributes block"> 
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="rescala">rescala</a>] </dd><dt>Definition Classes</dt><dd><a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a> → <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a></dd></dl></div>
     </li><li name="rescala.reactives.Event#switchOnce" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
-      <a id="switchOnce[A,B&gt;:T](original:&lt;error&gt;,newSignal:&lt;error&gt;):rescala.Signal[A]"></a><a id="switchOnce[A,B&gt;:T](&lt;error&gt;,&lt;error&gt;):rescala.Signal[A]"></a>
+      <a id="switchOnce[A,B&gt;:T](original:rescala.Signal[A],newSignal:rescala.Signal[A]):rescala.Signal[A]"></a><a id="switchOnce[A,B&gt;:T](rescala.Signal[A],rescala.Signal[A]):rescala.Signal[A]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#switchOnce[A,B&gt;:T](original:&lt;error&gt;,newSignal:&lt;error&gt;):rescala.Signal[A]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#switchOnce[A,B&gt;:T](original:rescala.Signal[A],newSignal:rescala.Signal[A]):rescala.Signal[A]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1117,7 +1281,7 @@ or filters the error when returning None</p></div><dl class="attributes block"> 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">switchOnce</span><span class="tparams">[<span name="A">A</span>, <span name="B">B &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>]</span><span class="params">(<span name="original">original: &lt;error&gt;</span>, <span name="newSignal">newSignal: &lt;error&gt;</span>)</span><span class="result">: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.switchOnce.A">A</span>]</span>
+        <span class="name">switchOnce</span><span class="tparams">[<span name="A">A</span>, <span name="B">B &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>]</span><span class="params">(<span name="original">original: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.switchOnce.A">A</span>]</span>, <span name="newSignal">newSignal: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.switchOnce.A">A</span>]</span>)</span><span class="result">: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.switchOnce.A">A</span>]</span>
       </span>
       
       <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
@@ -1136,9 +1300,9 @@ or filters the error when returning None</p></div><dl class="attributes block"> 
       </h4></div>
           </div></dl></div>
     </li><li name="rescala.reactives.Event#switchTo" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
-      <a id="switchTo[A&gt;:T](original:&lt;error&gt;):rescala.Signal[A]"></a><a id="switchTo[A&gt;:T](&lt;error&gt;):rescala.Signal[A]"></a>
+      <a id="switchTo[A&gt;:T](original:rescala.Signal[A]):rescala.Signal[A]"></a><a id="switchTo[A&gt;:T](rescala.Signal[A]):rescala.Signal[A]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#switchTo[A&gt;:T](original:&lt;error&gt;):rescala.Signal[A]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#switchTo[A&gt;:T](original:rescala.Signal[A]):rescala.Signal[A]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1147,7 +1311,7 @@ or filters the error when returning None</p></div><dl class="attributes block"> 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">switchTo</span><span class="tparams">[<span name="A">A &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>]</span><span class="params">(<span name="original">original: &lt;error&gt;</span>)</span><span class="result">: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.switchTo.A">A</span>]</span>
+        <span class="name">switchTo</span><span class="tparams">[<span name="A">A &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>]</span><span class="params">(<span name="original">original: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.switchTo.A">A</span>]</span>)</span><span class="result">: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.switchTo.A">A</span>]</span>
       </span>
       
       <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
@@ -1198,9 +1362,9 @@ or filters the error when returning None</p></div><dl class="attributes block"> 
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/RENamed.html" class="extype" name="rescala.core.RENamed">RENamed</a> → AnyRef → Any</dd></dl></div>
     </li><li name="rescala.reactives.Event#toggle" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
-      <a id="toggle[A](a:&lt;error&gt;,b:&lt;error&gt;):rescala.Signal[A]"></a><a id="toggle[A](&lt;error&gt;,&lt;error&gt;):rescala.Signal[A]"></a>
+      <a id="toggle[A](a:rescala.Signal[A],b:rescala.Signal[A]):rescala.Signal[A]"></a><a id="toggle[A](rescala.Signal[A],rescala.Signal[A]):rescala.Signal[A]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#toggle[A](a:&lt;error&gt;,b:&lt;error&gt;):rescala.Signal[A]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#toggle[A](a:rescala.Signal[A],b:rescala.Signal[A]):rescala.Signal[A]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1209,7 +1373,7 @@ or filters the error when returning None</p></div><dl class="attributes block"> 
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">toggle</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="a">a: &lt;error&gt;</span>, <span name="b">b: &lt;error&gt;</span>)</span><span class="result">: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.toggle.A">A</span>]</span>
+        <span class="name">toggle</span><span class="tparams">[<span name="A">A</span>]</span><span class="params">(<span name="a">a: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.toggle.A">A</span>]</span>, <span name="b">b: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.toggle.A">A</span>]</span>)</span><span class="result">: <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a>[<span class="extype" name="rescala.reactives.Event.toggle.A">A</span>]</span>
       </span>
       
       <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
@@ -1319,12 +1483,26 @@ Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr"
               
         </dd></dl></div>
     </li><li name="rescala.reactives.Event#zip" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="zip[U](other:rescala.reactives.Event[U,S])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[(T,U),S]"></a><a id="zip[U](Event[U,S])(core.CreationTicket[S]):Event[(T,U),S]"></a>
+      <a id="zip[U](other:rescala.Event[U]):rescala.Event[(T,U)]"></a><a id="zip[U](rescala.Event[U]):rescala.Event[(T,U)]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#zip[U](other:rescala.reactives.Event[U,S])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[(T,U),S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#zip[U](other:rescala.Event[U]):rescala.Event[(T,U)]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">zip</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="other">other: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Event.zip.U">U</span>]</span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[(<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Event.zip.U">U</span>)]</span>
+      </span>
+      
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -1332,15 +1510,29 @@ Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr"
       <span class="symbol">
         <span class="name">zip</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="other">other: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.zip.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[(<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Event.zip.U">U</span>), <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
       </span>
-      
-      <p class="shortcomment cmt">Event conjunction with a merge method creating a tuple of both event parameters</p><div class="fullcomment"><div class="comment cmt"><p>Event conjunction with a merge method creating a tuple of both event parameters</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      </h4></div>
+          </div><dt>See also</dt><dd><span class="cmt"><p>and</p></span></dd></dl></div>
     </li><li name="rescala.reactives.Event#zipOuter" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="zipOuter[U](other:rescala.reactives.Event[U,S])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[(Option[T],Option[U]),S]"></a><a id="zipOuter[U](Event[U,S])(core.CreationTicket[S]):Event[(Option[T],Option[U]),S]"></a>
+      <a id="zipOuter[U](other:rescala.reactives.Event[U,S]):rescala.Event[(Option[T],Option[U])]"></a><a id="zipOuter[U](Event[U,S]):rescala.Event[(Option[T],Option[U])]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#zipOuter[U](other:rescala.reactives.Event[U,S])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[(Option[T],Option[U]),S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#zipOuter[U](other:rescala.reactives.Event[U,S]):rescala.Event[(Option[T],Option[U])]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">zipOuter</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="other">other: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.zipOuter.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[(<a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>], <a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Event.zipOuter.U">U</span>])]</span>
+      </span>
+      
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
       <span class="modifier_kind">
         <span class="modifier">final </span>
         <span class="kind">def</span>
@@ -1348,12 +1540,12 @@ Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr"
       <span class="symbol">
         <span class="name">zipOuter</span><span class="tparams">[<span name="U">U</span>]</span><span class="params">(<span name="other">other: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.zipOuter.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[(<a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>], <a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Event.zipOuter.U">U</span>]), <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
       </span>
-      
-      <p class="shortcomment cmt">Event disjunction with a merge method creating a tuple of both optional event parameters wrapped</p><div class="fullcomment"><div class="comment cmt"><p>Event disjunction with a merge method creating a tuple of both optional event parameters wrapped</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      </h4></div>
+          </div></dl></div>
     </li><li name="rescala.reactives.Event#||" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="||[U&gt;:T](other:rescala.reactives.Event[U,S])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[U,S]"></a><a id="||[U&gt;:T](Event[U,S])(core.CreationTicket[S]):Event[U,S]"></a>
+      <a id="||[U&gt;:T](other:rescala.Event[U]):rescala.Event[U]"></a><a id="||[U&gt;:T](rescala.Event[U]):rescala.Event[U]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Evt.html#||[U&gt;:T](other:rescala.reactives.Event[U,S])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[U,S]" title="Permalink">
+      <a href="../../rescala/reactives/Evt.html#||[U&gt;:T](other:rescala.Event[U]):rescala.Event[U]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -1362,10 +1554,24 @@ Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr"
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bar$bar" class="name">||</span><span class="tparams">[<span name="U">U &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>]</span><span class="params">(<span name="other">other: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.||.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.||.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+        <span title="gt4s: $bar$bar" class="name">||</span><span class="tparams">[<span name="U">U &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>]</span><span class="params">(<span name="other">other: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Event.||.U">U</span>]</span>)</span><span class="result">: <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a>[<span class="extype" name="rescala.reactives.Event.||.U">U</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Events disjunction.</p><div class="fullcomment"><div class="comment cmt"><p>Events disjunction.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd></dl></div>
+      <p class="shortcomment cmt">[use case] </p><div class="fullcomment">[use case] <div class="comment cmt"></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a></dd><div class="full-signature-block toggleContainer">
+            <span class="toggle">
+              <i class="material-icons"></i>
+              Full Signature
+            </span>
+            <div class="hiddenContent full-signature-usecase"><h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bar$bar" class="name">||</span><span class="tparams">[<span name="U">U &gt;: <span class="extype" name="rescala.reactives.Evt.T">T</span></span>]</span><span class="params">(<span name="other">other: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.||.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Event.||.U">U</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+      </span>
+      </h4></div>
+          </div></dl></div>
     </li>
               </ol>
             </div>

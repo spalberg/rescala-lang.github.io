@@ -186,8 +186,8 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="Event.html" title="Occurs based on the dependencies."></a>
-                        <a href="Event.html" title="Occurs based on the dependencies.">Event</a>
+                        <a class="trait" href="Event.html" title="Events only propagate a value when they are changing, when the system is at rest, events have no values."></a>
+                        <a href="Event.html" title="Events only propagate a value when they are changing, when the system is at rest, events have no values.">Event</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="object" href="Events$.html" title="Functions to construct events, you probably want to use the operators on Event for a nicer API."></a>
@@ -347,10 +347,16 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Occurs based on the dependencies." href="Event.html"><span class="name">Event</span></a><span class="tparams">[<span name="T">+T</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Event.T">T</span>], <span class="extype" name="rescala.reactives.Event.S">S</span>] with <a href="../macros/MacroAccessors.html" class="extype" name="rescala.macros.MacroAccessors">MacroAccessors</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Event.T">T</span>], <a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Event.T">T</span>], <span class="extype" name="rescala.reactives.Event.S">S</span>] with <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a>[<span class="extype" name="rescala.reactives.Event.S">S</span>]</span>
+        <a title="Events only propagate a value when they are changing, when the system is at rest, events have no values." href="Event.html"><span class="name">Event</span></a><span class="tparams">[<span name="T">+T</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Event.T">T</span>], <span class="extype" name="rescala.reactives.Event.S">S</span>] with <a href="../macros/MacroAccessors.html" class="extype" name="rescala.macros.MacroAccessors">MacroAccessors</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Event.T">T</span>], <a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Event.T">T</span>], <span class="extype" name="rescala.reactives.Event.S">S</span>] with <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a>[<span class="extype" name="rescala.reactives.Event.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Occurs based on the dependencies.</p><div class="fullcomment"><div class="comment cmt"><p>Occurs based on the dependencies.
+      <p class="shortcomment cmt">Events only propagate a value when they are changing,
+when the system is at rest, events have no values.</p><div class="fullcomment"><div class="comment cmt"><p>Events only propagate a value when they are changing,
+when the system is at rest, events have no values.</p><p>Note: We hide implicit parameters of the API in the documentation.
+They are used to ensure correct creation, and you normally do not have to worry about them,
+except if you accidentially call the implicit parameterlist, in which cas you may get cryptic errors.
+This is a scala limitation.
+We also hide the internal state parameter of passed and returned events.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>Value type of the event occurrences.</p></dd><dt class="tparam">S</dt><dd class="cmt"><p>Internal <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">rescala.core.Struct</a>ure of state.</p></dd></dl></div>
     </li><li name="rescala.reactives.Evt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="Evt[T,S&lt;:rescala.core.Struct]extendsSource[T,S]withEvent[T,S]"></a><a id="Evt[T,S&lt;:Struct]:Evt[T,S]"></a>
