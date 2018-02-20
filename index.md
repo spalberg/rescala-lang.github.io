@@ -3,7 +3,7 @@ title: Home
 nav: 1
 ---
 
-# <span class="rescala-logo-re">re:</span><span class="rescala-logo-scala">scala</span>
+# <span class="rescala-logo-re">RE</span><span class="rescala-logo-scala">scala</span>
 {: class="rescala-logo"}
 
 REScala delivers functional reactive programming on the JVM and the web.
