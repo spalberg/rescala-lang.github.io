@@ -6,7 +6,7 @@ nav: 1
 # <span class="rescala-logo-re">re:</span><span class="rescala-logo-scala">scala</span>
 {: class="rescala-logo"}
 
-Rescala delivers functional reactive programming on the JVM and the web.
+REScala delivers functional reactive programming on the JVM and the web.
 Providing asynchronous collections of events with a rich API of stream transformations,
 with managed consistent up-to-date state, and minimal syntactic overhead.
 All integrated seamlessly into modern, object-oriented and functional, concurrent, distributed programs.
@@ -36,7 +36,7 @@ In particular, functional reactive programming and dataflow programming – whic
 but hardly escape the functional setting. On the other hand, event-based languages directly support events but do not achieve the declarative style of more functional approaches.
 
 
-Rescala is a reactive language which integrates concepts from event-based and functional-reactive programming into the object-oriented world.
+REScala is a reactive language which integrates concepts from event-based and functional-reactive programming into the object-oriented world.
 Rescala supports the development of reactive applications by fostering a functional and declarative style which complements the advantages of object-oriented design.
 
 <!-- --- -->
