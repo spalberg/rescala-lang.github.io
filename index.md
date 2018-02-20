@@ -6,7 +6,7 @@ nav: 1
 # <span class="rescala-logo-re">RE</span><span class="rescala-logo-scala">Scala</span>
 {: class="rescala-logo"}
 
-REScala delivers functional reactive programming on the JVM and the web.
+REScala delivers functional reactive programming on the JVM and the Web.
 Providing asynchronous collections of events with a rich API of stream transformations,
 with managed consistent up-to-date state, and minimal syntactic overhead.
 All integrated seamlessly into modern, object-oriented and functional, concurrent, distributed programs.
