@@ -14,7 +14,7 @@ scalaVersion := "2.12.4"
 
 resolvers += Resolver.bintrayRepo("stg-tud", "maven")
 
-libraryDependencies += "de.tuda.stg" %% "rescala" % "0.21.0"
+libraryDependencies += "de.tuda.stg" %% "rescala" % "0.22.0"
 ```
 
 Install [sbt](http://www.scala-sbt.org/) and run `sbt console` inside the folder,
@@ -22,8 +22,8 @@ this should allow you to follow along the following examples.
 
 # API Documentation
 
-* [Signal documentation](../scaladoc/#rescala.reactives.Signal)
-* [Event documentation](../scaladoc/#rescala.reactives.Event)
+* [Signal documentation](../scaladoc/rescala/reactives/Signal.html)
+* [Event documentation](../scaladoc/rescala/reactives/Event.html)
 
 
 # Introduction
@@ -42,7 +42,7 @@ use only *Rescala* events to design application that do not need
 time-changing values.
 
 **Scope** The manual serves as an introduction of the concepts in *Rescala*.
-The full API is covered in the [scaladoc](../scaladoc/) especially for [Signals](../scaladoc/#rescala.reactives.Signal) and [Events](../scaladoc/#rescala.reactives.Signal).
+The full API is covered in the [scaladoc](../scaladoc/) especially for Signals and Events (see above for direct links).
 More details can be found in [[7, 3]](#ref).
 
 The manual introduces the concepts related to functional reactive
@@ -308,7 +308,7 @@ val e: Event[Int] = space.changed
 // e: rescala.Event[Int] = (changed space:17)
 
 val handler:  (Int => Unit) =  ((x: Int) => println(x))
-// handler: Int => Unit = $$Lambda$16327/1938350102@6aa76e6c
+// handler: Int => Unit = $$Lambda$11036/825977599@5f1e9c97
 
 e observe handler
 // res11: rescala.reactives.Observe[rescala.parrp.ParRP] = res11:18
@@ -362,25 +362,25 @@ valid events definitions:
 
 ```scala
 val e1 = Evt[Unit]()
-// e1: rescala.Evt[Unit] = rescala.RescalaInterface#Evt:69
+// e1: rescala.Evt[Unit] = rescala.RescalaInterface#Evt:68
 
 val e2 = Evt[Int]()
-// e2: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e2: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val e3 = Evt[String]()
-// e3: rescala.Evt[String] = rescala.RescalaInterface#Evt:69
+// e3: rescala.Evt[String] = rescala.RescalaInterface#Evt:68
 
 val e4 = Evt[Boolean]()
-// e4: rescala.Evt[Boolean] = rescala.RescalaInterface#Evt:69
+// e4: rescala.Evt[Boolean] = rescala.RescalaInterface#Evt:68
 
 val e5: Evt[Int] = Evt[Int]()
-// e5: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e5: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 class Foo
 // defined class Foo
 
 val e6 = Evt[Foo]()
-// e6: rescala.Evt[Foo] = rescala.RescalaInterface#Evt:69
+// e6: rescala.Evt[Foo] = rescala.RescalaInterface#Evt:68
 ```
 
 It is possible to attach more than one value to the same event. This
@@ -389,19 +389,19 @@ type. For example:
 
 ```scala
 val e1 = Evt[(Int,Int)]()
-// e1: rescala.Evt[(Int, Int)] = rescala.RescalaInterface#Evt:69
+// e1: rescala.Evt[(Int, Int)] = rescala.RescalaInterface#Evt:68
 
 val e2 = Evt[(String,String)]()
-// e2: rescala.Evt[(String, String)] = rescala.RescalaInterface#Evt:69
+// e2: rescala.Evt[(String, String)] = rescala.RescalaInterface#Evt:68
 
 val e3 = Evt[(String,Int)]()
-// e3: rescala.Evt[(String, Int)] = rescala.RescalaInterface#Evt:69
+// e3: rescala.Evt[(String, Int)] = rescala.RescalaInterface#Evt:68
 
 val e4 = Evt[(Boolean,String,Int)]()
-// e4: rescala.Evt[(Boolean, String, Int)] = rescala.RescalaInterface#Evt:69
+// e4: rescala.Evt[(Boolean, String, Int)] = rescala.RescalaInterface#Evt:68
 
 val e5: Evt[(Int,Int)] = Evt[(Int,Int)]()
-// e5: rescala.Evt[(Int, Int)] = rescala.RescalaInterface#Evt:69
+// e5: rescala.Evt[(Int, Int)] = rescala.RescalaInterface#Evt:68
 ```
 
 Note that an imperative event is also an event. Therefore the
@@ -409,7 +409,7 @@ following declaration is also valid:
 
 ```scala
 val e1: Event[Int] = Evt[Int]()
-// e1: rescala.Event[Int] = rescala.RescalaInterface#Evt:69
+// e1: rescala.Event[Int] = rescala.RescalaInterface#Evt:68
 ```
 
 ## Registering Handlers
@@ -424,7 +424,7 @@ var state = 0
 // state: Int = 0
 
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 e += { println(_) }
 // res12: rescala.reactives.Observe[rescala.parrp.ParRP] = res12:17
@@ -449,7 +449,7 @@ perform side effects. For example is the event is of type
 
 ```scala
 val e = Evt[(Int,String)]()
-// e: rescala.Evt[(Int, String)] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[(Int, String)] = rescala.RescalaInterface#Evt:68
 
 e += (x => {
   println(x._1)
@@ -468,7 +468,7 @@ in the handler.
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 e += { x => println() }
 // res18: rescala.reactives.Observe[rescala.parrp.ParRP] = res18:17
@@ -489,7 +489,7 @@ def m1(x: Int) = {
 // m1: (x: Int)Unit
 
 val e = Evt[Int]
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 e += m1 _
 // res20: rescala.reactives.Observe[rescala.parrp.ParRP] = res20:18
@@ -507,13 +507,13 @@ example:
 
 ```scala
 val e1 = Evt[Int]()
-// e1: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e1: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val e2 = Evt[Boolean]()
-// e2: rescala.Evt[Boolean] = rescala.RescalaInterface#Evt:69
+// e2: rescala.Evt[Boolean] = rescala.RescalaInterface#Evt:68
 
 val e3 = Evt[(Int,String)]()
-// e3: rescala.Evt[(Int, String)] = rescala.RescalaInterface#Evt:69
+// e3: rescala.Evt[(Int, String)] = rescala.RescalaInterface#Evt:68
 
 e1.fire(10)
 
@@ -528,7 +528,7 @@ handler.
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 e += { x => println(x) }
 // res25: rescala.reactives.Observe[rescala.parrp.ParRP] = res25:18
@@ -546,7 +546,7 @@ order for handler execution.
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 e += { x => println(x) }
 // res28: rescala.reactives.Observe[rescala.parrp.ParRP] = res28:18
@@ -555,12 +555,12 @@ e += { x => println(f"n: $x")}
 // res29: rescala.reactives.Observe[rescala.parrp.ParRP] = res29:18
 
 e.fire(10)
-// 10
 // n: 10
+// 10
 
 e.fire(10)
-// 10
 // n: 10
+// 10
 ```
 
 ## Unregistering Handlers
@@ -571,7 +571,7 @@ event is fired.
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val handler1 = e += println
 // handler1: rescala.reactives.Observe[rescala.parrp.ParRP] = handler1:16
@@ -580,8 +580,8 @@ val handler2 = e += { x => println(s"n: $x") }
 // handler2: rescala.reactives.Observe[rescala.parrp.ParRP] = handler2:17
 
 e.fire(10)
-// 10
 // n: 10
+// 10
 
 handler2.remove()
 
@@ -611,16 +611,16 @@ declarative events.
 
 ```scala
 val e1 = Evt[Int]()
-// e1: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e1: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val e2 = Evt[Int]()
-// e2: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e2: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val e3 = e1 || e2
-// e3: rescala.reactives.Event[Int,rescala.parrp.ParRP] = (or rescala.RescalaInterface#Evt:69 rescala.RescalaInterface#Evt:69)
+// e3: rescala.reactives.Event[Int,rescala.parrp.ParRP] = (or rescala.RescalaInterface#Evt:68 rescala.RescalaInterface#Evt:68)
 
 val e4 = e1 && ((x: Int)=> x>10)
-// e4: rescala.reactives.Event[Int,rescala.parrp.ParRP] = (filter rescala.RescalaInterface#Evt:69)
+// e4: rescala.reactives.Event[Int,rescala.parrp.ParRP] = (filter rescala.RescalaInterface#Evt:68)
 
 val e5 = e1 map ((x: Int)=> x.toString)
 // e5: rescala.reactives.Event[String,rescala.parrp.ParRP] = e5:17
@@ -639,13 +639,13 @@ must have the same parameter type (`Int` in the next example).
 
 ```scala
 val e1 = Evt[Int]()
-// e1: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e1: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val e2 = Evt[Int]()
-// e2: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e2: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val e1_OR_e2 = e1 || e2
-// e1_OR_e2: rescala.reactives.Event[Int,rescala.parrp.ParRP] = (or rescala.RescalaInterface#Evt:69 rescala.RescalaInterface#Evt:69)
+// e1_OR_e2: rescala.reactives.Event[Int,rescala.parrp.ParRP] = (or rescala.RescalaInterface#Evt:68 rescala.RescalaInterface#Evt:68)
 
 e1_OR_e2 += ((x: Int) => println(x))
 // res37: rescala.reactives.Observe[rescala.parrp.ParRP] = res37:18
@@ -657,20 +657,20 @@ e2.fire(2)
 // 2
 ```
 
-## Predicate Events
+## Filtering (Predicate) Events
 
-The event `e && p` is fired if `e` occurs and the predicate `p` is
+The event `e filter p` (or the alternative syntax `e && p`) is fired if `e` occurs and the predicate `p` is
 satisfied. The predicate is a function that accepts the event
 parameter as a formal parameter and returns `Boolean`. In other
-words the `&&` operator filters the events according to their
+words the filter operator filters the events according to their
 parameter and a predicate.
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
-val e_AND: Event[Int] = e && ((x: Int) => x>10)
-// e_AND: rescala.Event[Int] = (filter rescala.RescalaInterface#Evt:69)
+val e_AND: Event[Int] = e filter ((x: Int) => x>10)
+// e_AND: rescala.Event[Int] = (filter rescala.RescalaInterface#Evt:68)
 
 e_AND += ((x: Int) => println(x))
 // res40: rescala.reactives.Observe[rescala.parrp.ParRP] = res40:18
@@ -690,7 +690,7 @@ value of the resulting event.
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val e_MAP: Event[String] = e map ((x: Int) => x.toString)
 // e_MAP: rescala.Event[String] = e_MAP:17
@@ -714,7 +714,7 @@ operator transforms an `Event[Int]` into an `Event[Unit]`.
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val e_drop: Event[Unit] = e.dropParam
 // e_drop: rescala.Event[Unit] = e_drop:16
@@ -737,16 +737,16 @@ different types with the `||` operator.
 ```scala
 scala> /* WRONG - DON'T DO THIS */
      | val e1 = Evt[Int]()
-e1: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+e1: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 scala> val e2 = Evt[Unit]()
-e2: rescala.Evt[Unit] = rescala.RescalaInterface#Evt:69
+e2: rescala.Evt[Unit] = rescala.RescalaInterface#Evt:68
 
 scala> val e1_OR_e2 = e1 || e2  // Compiler error
 <console>:17: warning: a type was inferred to be `AnyVal`; this may indicate a programming error.
        val e1_OR_e2 = e1 || e2  // Compiler error
                          ^
-e1_OR_e2: rescala.reactives.Event[AnyVal,rescala.parrp.ParRP] = (or rescala.RescalaInterface#Evt:69 rescala.RescalaInterface#Evt:69)
+e1_OR_e2: rescala.reactives.Event[AnyVal,rescala.parrp.ParRP] = (or rescala.RescalaInterface#Evt:68 rescala.RescalaInterface#Evt:68)
 ```
 
 The following example is correct. The `dropParam` operator allows
@@ -754,13 +754,13 @@ one to make the events compatible with each other.
 
 ```scala
 val e1 = Evt[Int]()
-// e1: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e1: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val e2 = Evt[Unit]()
-// e2: rescala.Evt[Unit] = rescala.RescalaInterface#Evt:69
+// e2: rescala.Evt[Unit] = rescala.RescalaInterface#Evt:68
 
 val e1_OR_e2: Event[Unit] = e1.dropParam || e2
-// e1_OR_e2: rescala.Event[Unit] = (or e1_OR_e2:17 rescala.RescalaInterface#Evt:69)
+// e1_OR_e2: rescala.Event[Unit] = (or e1_OR_e2:17 rescala.RescalaInterface#Evt:68)
 ```
 {:/comment}
 
@@ -803,7 +803,7 @@ Example:
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val s: Signal[Int] = e.latest(10)
 // s: rescala.Signal[Int] = s:16
@@ -871,10 +871,10 @@ Example:
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val f = (x:Int,y:Int)=>(x+y)
-// f: (Int, Int) => Int = $$Lambda$16465/1421044470@61128770
+// f: (Int, Int) => Int = $$Lambda$11174/1186922056@23be7da5
 
 val s: Signal[Int] = e.fold(10)(f)
 // s: rescala.Signal[Int] = s:17
@@ -884,6 +884,54 @@ e.fire(1)
 e.fire(2)
 
 assert(s.now == 13)
+```
+
+## Fold matchers
+
+The `fold` `Match` construct allows to match on one of multiple events.
+For every firing event, the corresponding handler function is executed,
+to compute the new state.
+If multiple events fire at the same time,
+the handlers are executed in order.
+The acc parameter reflects the current state.
+
+
+```scala
+val word = Evt[String]
+// word: rescala.Evt[String] = rescala.RescalaInterface#Evt:68
+
+val count = Evt[Int]
+// count: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
+
+val reset = Evt[Unit]
+// reset: rescala.Evt[Unit] = rescala.RescalaInterface#Evt:68
+
+val result = Events.foldAll(""){ acc => Events.Match(
+  reset >> (_ => ""),
+  word >> identity,
+  count >> (acc * _),
+)}
+// result: rescala.reactives.Signal[String,rescala.parrp.ParRP] = result:18
+
+result.observe(r => println(r))
+// 
+// res65: rescala.reactives.Observe[rescala.parrp.ParRP] = res65:18
+
+count.fire(10)
+
+reset.fire()
+
+word.fire("hello")
+// hello
+
+count.fire(2)
+// hellohello
+
+word.fire("world")
+// world
+
+update(count -> 2, word -> "do them all!", reset -> (()))
+// do them all!do them all!
 ```
 
 ## Iterate
@@ -902,10 +950,10 @@ var test: Int = 0
 // test: Int = 0
 
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val f = (x:Int)=>{test=x; x+1}
-// f: Int => Int = $$Lambda$16468/1217894656@494159fe
+// f: Int => Int = $$Lambda$11208/388264446@3f6c873b
 
 val s: Signal[Int] = e.iterate(10)(f)
 // s: rescala.Signal[Int] = s:17
@@ -942,7 +990,7 @@ Example:
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val s: Signal[Option[Int]] = e.latestOption()
 // s: rescala.Signal[Option[Int]] = s:16
@@ -975,14 +1023,14 @@ programmer. Example:
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val s: Signal[scala.collection.LinearSeq[Int]] = e.last(5)
 // s: rescala.Signal[scala.collection.LinearSeq[Int]] = s:16
 
 s observe println
 // Queue()
-// res81: rescala.reactives.Observe[rescala.parrp.ParRP] = res81:17
+// res88: rescala.reactives.Observe[rescala.parrp.ParRP] = res88:17
 
 e.fire(1)
 // Queue(1)
@@ -1017,7 +1065,7 @@ when the event has never been fired yet, the signal holds the value
 
 ```scala
 val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
+// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:68
 
 val s: Signal[Int] = e.count
 // s: rescala.Signal[Int] = s:16
@@ -1045,10 +1093,10 @@ val s = Var(5)
 // s: rescala.Var[Int] = s:15
 
 val e = s.change
-// e: rescala.reactives.Event[rescala.reactives.Signals.Diff[Int],rescala.parrp.ParRP] = e:16
+// e: rescala.reactives.Event[rescala.reactives.Signals.Diff[Int],rescala.parrp.ParRP] = rescala.reactives.Events.change $anonfun:46
 
 e += println
-// res90: rescala.reactives.Observe[rescala.parrp.ParRP] = res90:17
+// res97: rescala.reactives.Observe[rescala.parrp.ParRP] = res97:17
 
 s.set(10)
 // Diff(Value(5), Value(10))
@@ -1079,7 +1127,7 @@ val e: Event[Unit] = s.changedTo(3)
 // e: rescala.Event[Unit] = e:16
 
 e += ((x:Unit)=>{test+=1})
-// res93: rescala.reactives.Observe[rescala.parrp.ParRP] = res93:18
+// res100: rescala.reactives.Observe[rescala.parrp.ParRP] = res100:18
 
 assert(test == 0)
 
@@ -1090,57 +1138,6 @@ assert(test == 1)
 v set(3)
 
 assert(test == 1)
-```
-
-## Reset
-
-When the ```reset``` function is called for the first time, the
-```init``` value is used by the factory to determine the signal
-returned by the ```reset``` function. When the event occurs the
- factory is applied to the event value to determine the new signal.
-
-`reset[T,A](e: Event[T], init: T)(factory: (T)=>Signal[A]): Signal[A]`
-
-Example:
-
-```scala
-val e = Evt[Int]()
-// e: rescala.Evt[Int] = rescala.RescalaInterface#Evt:69
-
-val v1 =  Var(0)
-// v1: rescala.Var[Int] = v1:15
-
-val v2 =  Var(10)
-// v2: rescala.Var[Int] = v2:15
-
-val s1 = Signal{ v1() + 1 }
-// s1: rescala.Signal[Int] = s1:16
-
-val s2 = Signal{ v2() + 1 }
-// s2: rescala.Signal[Int] = s2:16
-
-def factory(x: Int) = x%2 match {
-  case 0 => s1
-  case 1 => s2
-}
-// factory: (x: Int)rescala.Signal[Int]
-
-val s3 = e.reset(100)(factory)
-// s3: rescala.reactives.Signal[Int,rescala.parrp.ParRP] = s3:17
-
-assert(s3.now == 1)
-
-v1.set(1)
-
-assert(s3.now == 2)
-
-e.fire(101)
-
-assert(s3.now == 11)
-
-v2.set(11)
-
-assert(s3.now == 12)
 ```
 
 ## Switch/toggle
@@ -1344,7 +1341,7 @@ class Foo(init: Int){            /* WRONG - DON'T DO IT */
 // defined class Foo
 
 val foo = new Foo(1)
-// foo: Foo = Foo@2c35de6
+// foo: Foo = Foo@10c993f0
 
 val varFoo = Var(foo)
 // varFoo: rescala.Var[Foo] = varFoo:16
@@ -1379,7 +1376,7 @@ class Foo(val x: Int){}
 // defined class Foo
 
 val foo = new Foo(1)
-// foo: Foo = Foo@10d91c48
+// foo: Foo = Foo@62c11f6f
 
 val varFoo = Var(foo)
 // varFoo: rescala.Var[Foo] = varFoo:16
@@ -1404,7 +1401,7 @@ class Foo(init: Int){   /* WRONG - DON'T DO IT */
 // defined class Foo
 
 val foo = new Foo(1)
-// foo: Foo = Foo@300b95db
+// foo: Foo = Foo@4acbd5ab
 
 val varFoo = Var(foo)
 // varFoo: rescala.Var[Foo] = varFoo:16
@@ -1460,10 +1457,10 @@ has a constant value 2 and is not updated when the var changes.
 val a = Var(1)
 // a: rescala.Var[Int] = a:15
 
-val b = increment(a.now)
+val b = increment(a.now) // b is not reactive
 // b: Int = 2
 
-val s = Signal{ b + 1 }
+val s = Signal{ b + 1 } // s is a constant signal with value 2
 // s: rescala.Signal[Int] = s:16
 ```
 
