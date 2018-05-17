@@ -1,11 +1,9 @@
-# REScala
-REScala - reactive programming in OO applications
+# Contributing
+
+This branch/folder contains the sources of the REScala website: www.rescala-lang.com
 
 
-TODOs for the website (in order or priority)
+It is a github pages site and converting from the source to HTML is managed on the server side, see https://pages.github.com/ for all details.
 
-- add a Publications entry in the top menu
-
-- make the landing page catchy (for example http://reactivex.io )
-
-- Add live coding
+In short, Github pages are generated with https://jekyllrb.com/ where we use markdown for generating the content,
+to edit any of the basic pages just modify any of the markdown files and push your changes.
