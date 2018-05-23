@@ -5,7 +5,7 @@ nav: 5
 
 # Acknowledgements
 
-Rescala is a research project held at TU Darmstadt in the
+REScala is a research project held at TU Darmstadt in the
 [Software Technology Group](http://www.stg.tu-darmstadt.de/)
 in the context of the [PACE](http://www.pace-erc.eu/)
 and [NICER](http://nicer.network/) projects.
