@@ -13,6 +13,17 @@ This page collects experimental projects and research prototypes based on or ins
 
 Distributed REScala is the first language to bring Reactive Programming to the distributed setting. Its propagation algorithm SID-UP ensures glitch freedom in (distributed) value updates.
 
+# [Concurrent Reactive Programming](../concurrent/)
+
+We propose a model for thread-safe reactive programming (RP) that ensures abort-free strict serializability
+under concurrency without sacrificing neither expressiveness nor consistency. We also propose an architecture
+for integrating a corresponding scheduler into the RP language runtime, such that thread-safety is provided
+"out-of-the-box" to the applications.
+
+We show the feasibility of our proposal by providing and evaluating a ready-to-use implementation
+integrated into REScala. 
+
+
 # [Debugging Reactive Programming](https://guidosalva.github.io/reactive-inspector/)
 
 ![RSS Reader](images/highlight-dependencies-children.png){: width="480"}
