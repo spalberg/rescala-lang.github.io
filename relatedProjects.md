@@ -11,16 +11,41 @@ This page collects experimental projects and research prototypes based on or ins
 
 # [Distributed REScala](../distributed/)
 
+Distributed REScala is the first language to bring Reactive Programming to the distributed setting. Its propagation algorithm SID-UP ensures glitch freedom in (distributed) value updates.
+
 # [Debugging Reactive Programming](https://guidosalva.github.io/reactive-inspector/)
 
 ![RSS Reader](images/highlight-dependencies-children.png){: width="480"}
-The reactive style requires a paradigm shift in the concepts needed for debugging. Traditional debugging has been conceived for imperative languages while reactive programming is declarative. Reactive Inspector is a debugger for reactive programs integrated with the Eclipse Scala IDE that allowas to debug sofware in the reactive style.
+The reactive style requires a paradigm shift in the concepts needed for debugging. Traditional debugging has been conceived for imperative languages while reactive programming is declarative. Reactive Inspector is a debugger for reactive programs integrated with the Eclipse Scala IDE that allows to debug software in the reactive style.
 
 [Reactive Inspector](https://guidosalva.github.io/reactive-inspector/)
  provides a nuber of features which support developer in the process of debugging reactive programs, including visualizing reactive trees, back-in-time debugging, interactive queries of the graph, node breackpoiting and profiling.
 
 # [Case studies](./studies/)
 
+A portfolio of case studies that compare various design solutions including REScala, event-only implementations, signal-only implementations and callback-based versions.
+
+
 # [The RESwing GUI Library](../reswing/)
 
+A GUI library based on the Swing Java library which provides bindings for REScala i.e., the widgets expose reactive abstractions (signals and events) to the rest of the application.
+
+
 # [Reactive Datastructures](../datastructures/)
+
+A library of data structures base on REScala which enforce data dependencies among containers in the style of view maintenance in databases.   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
