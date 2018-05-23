@@ -6,7 +6,7 @@ nav: 6
 # Publications
 
 
-* J.Dreschler, R.Mogk, G.Salvaneschi, M.Mezini.
+* Joscha Dreschler, Ragnar Mogk, Guido Salvaneschi, Mira Mezini,
 [Technical Report: Thread-safe Reactive Programming](./papers/techreport-concurrent-rp.pdf).
 * G. Salvaneschi, S. Proksch, S. Amann, S. Nadi, M. Mezini, [_On the Positive Effect of Reactive Programming on Software Comprehension: An Empirical Study_](http://ieeexplore.ieee.org/document/7827078/), IEEE Transactions on Software Engineering, 2017
 * Guido salvaneschi, [_What do we Really Know about Data Flow Languages_](https://dl.acm.org/citation.cfm?id=3001884), PLATEAU 2016
