@@ -7,7 +7,7 @@ nav: 6
 
 * G. Salvaneschi, S. Proksch, S. Amann, S. Nadi, M. Mezini, [_On the Positive Effect of Reactive Programming on Software Comprehension: An Empirical Study_](http://ieeexplore.ieee.org/document/7827078/), IEEE Transactions on Software Engineering, 2017
 * Guido salvaneschi, [_What do we Really Know about Data Flow Languages_](https://dl.acm.org/citation.cfm?id=3001884), PLATEAU 2016
-* Guido Salvaneschi, Mira Mezini, [_Debugging Reactive Programming with Reactive Inspector_](https://dl.acm.org/citation.cfm?id=2893174), ICSE 2016
+* Guido Salvaneschi, Mira Mezini, [_Debugging Reactive Programming with Reactive Inspector_](https://dl.acm.org/citation.cfm?id=2893174), Poster, ICSE 2016
 * Guido Salvaneschi, Mira Mezini, [_Debugging for Reactive Programming_](https://dl.acm.org/citation.cfm?id=2884815), ICSE 2016
 * Oliver Bracevac, Sebastian Erdweg, Guido Salvaneschi, and Mira Mezini, [_CPL: A Core Language for Cloud Computing_](https://dl.acm.org/ft_gateway.cfm?id=2889452&ftid=1700146&dwn=1&CFID=4795785&CFTOKEN=eb0c0db87e73e7dc-A7B5A032-0B68-D48C-0891DDB0F19390E6), MODULARITY 2016
 * [_Reactive Programming: a Walkthrough_](http://ieeexplore.ieee.org/document/7203125/) G. Salvaneschi, A. Margara, G. Tamburrelli. ICSE Technical Briefing. In Proceedings of the 37th International Conference on Software Engineering (ICSE '15). Florence, Italy. May 16 - 24, 2015.
