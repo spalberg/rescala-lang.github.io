@@ -7,7 +7,7 @@ nav: 4
 # Related Projects
 
 
-**This page collects experimental projects and research prototypes based on or inspired by REScala. For the related publications, please see the [publications](../publications/) page.**
+**This page collects experimental projects and research prototypes based on or inspired by REScala. For the related publications, please see the [publications](publications) page.**
 
 
 
