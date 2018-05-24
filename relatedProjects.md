@@ -12,19 +12,19 @@ nav: 4
 
 
 
-## [Distributed REScala](distributed/)
+## [Distributed REScala](distributed)
 
-[Distributed REScala](distributed/) is the first language to bring Reactive Programming to the distributed setting. Its propagation algorithm SID-UP ensures glitch freedom in (distributed) value updates.
+[Distributed REScala](distributed) is the first language to bring Reactive Programming to the distributed setting. Its propagation algorithm SID-UP ensures glitch freedom in (distributed) value updates.
 
-[**More...**](distributed/)
-
-
+[**More...**](distributed)
 
 
 
-## [Concurrent Reactive Programming](concurrent/)
 
-We propose a model for [thread-safe reactive programming](concurrent/) that ensures abort-free strict serializability
+
+## [Concurrent Reactive Programming](concurrent)
+
+We propose a model for [thread-safe reactive programming](concurrent) that ensures abort-free strict serializability
 under concurrency without sacrificing neither expressiveness nor consistency. We also propose an architecture
 for integrating a corresponding scheduler into the RP language runtime, such that thread-safety is provided
 "out-of-the-box" to the applications.
@@ -32,7 +32,7 @@ for integrating a corresponding scheduler into the RP language runtime, such tha
 We show the feasibility of our proposal by providing and evaluating a ready-to-use implementation
 integrated into REScala.
 
-[**More...**](concurrent/)
+[**More...**](concurrent)
 
 
 
@@ -61,7 +61,7 @@ A portfolio of case studies that compare various design solutions including RESc
 
 
 
-## [The RESwing GUI Library](reswing/)
+## [The RESwing GUI Library](reswing)
 
 A GUI library based on the Swing Java library which provides bindings for REScala i.e., the widgets expose reactive abstractions (signals and events) to the rest of the application.
 
