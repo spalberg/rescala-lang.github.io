@@ -15,11 +15,24 @@ happens automatically when new content is pushed to this branch (may take a
 couple of minutes to update).
 
 A file called `contact.md` generates a `contact.html` and a file called
-`manual/index.md` generates `manual.html`.
+`manual/index.md` generates `manual/index.html`. The `html` is optional when
+accessing the pages, and `index.html` will be displayed when the folder is requested,
+i.e., `manual/` will display the contents of `manual/index.html`.
 
 Only files that contain a header separated with `---` are processed, the rest
 is published as is.
 
+### Gotaches with hyperlinks in local vs. deployed documents
+
+Note that the site deployed on GH Pages will add an additional `REScala` as
+part of the URL, e.g., `manual/` becomes `REScala/manual`. As such it is
+necesseray to only use relative links when linking to other pages, to make
+both local and deployed pages work.
+
+Also note that there is a difference between a folder `manual/` and a file
+`manual`, if the file version is requested by the web browser, the server will
+serve the folder version (or more specifically `manual/index.html`), but if
+the folder is requested any potential existing file is ignored.
 
 ## Navigation at the top
 
