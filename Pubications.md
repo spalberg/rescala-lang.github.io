@@ -3,7 +3,7 @@ title: Publications
 nav: 6
 ---
 
-# Publications
+# Research Papers
 
 
 ##### [Technical Report: Thread-safe Reactive Programming](./papers/techreport-concurrent-rp.pdf)
