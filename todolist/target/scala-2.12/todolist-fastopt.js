@@ -1093,6 +1093,13 @@ function $isArrayOf_F0(obj, depth) {
 function $asArrayOf_F0(obj, depth) {
   return (($isArrayOf_F0(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Function0;", depth))
 }
+function $f_F1__compose__F1__F1($thiz, g) {
+  return new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, g$1) {
+    return (function(x$2) {
+      return $this.apply__O__O(g$1.apply__O__O(x$2))
+    })
+  })($thiz, g))
+}
 function $is_F1(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.F1)))
 }
@@ -1105,22 +1112,43 @@ function $isArrayOf_F1(obj, depth) {
 function $asArrayOf_F1(obj, depth) {
   return (($isArrayOf_F1(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Function1;", depth))
 }
-function $f_Lcats_SemigroupalArityFunctions__map3__O__O__O__F3__Lcats_Semigroupal__Lcats_Functor__O($thiz, f0, f1, f2, f, semigroupal, functor) {
-  return functor.map__O__F1__O(semigroupal.product__O__O__O(f0, semigroupal.product__O__O__O(f1, f2)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, f$1) {
-    return (function(x0$4$2) {
-      var x0$4 = $as_T2(x0$4$2);
-      if ((x0$4 !== null)) {
-        var a0 = x0$4.$$und1__O();
-        var p2 = $as_T2(x0$4.$$und2__O());
-        if ((p2 !== null)) {
-          var a1 = p2.$$und1__O();
-          var a2 = p2.$$und2__O();
-          return f$1.apply__O__O__O__O(a0, a1, a2)
-        }
-      };
-      throw new $c_s_MatchError().init___O(x0$4)
+function $f_Lcats_SemigroupalArityFunctions__imap2__O__O__F2__F1__Lcats_Semigroupal__Lcats_Invariant__O($thiz, f0, f1, f, g, semigroupal, invariant) {
+  return invariant.imap__O__F1__F1__O(semigroupal.product__O__O__O(f0, f1), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, f$1) {
+    return (function(x0$2$2) {
+      var x0$2 = $as_T2(x0$2$2);
+      if ((x0$2 !== null)) {
+        var a0 = x0$2.$$und1__O();
+        var a1 = x0$2.$$und2__O();
+        return f$1.apply__O__O__O(a0, a1)
+      } else {
+        throw new $c_s_MatchError().init___O(x0$2)
+      }
     })
-  })($thiz, f)))
+  })($thiz, f)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2, g$1) {
+    return (function(z$2) {
+      var x1 = $as_T2(g$1.apply__O__O(z$2));
+      if ((x1 === null)) {
+        throw new $c_s_MatchError().init___O(x1)
+      };
+      var a0$1 = x1.$$und1__O();
+      var a1$1 = x1.$$und2__O();
+      return new $c_T2().init___O__O(a0$1, a1$1)
+    })
+  })($thiz, g)))
+}
+function $f_Lcats_SemigroupalArityFunctions__tuple2__O__O__Lcats_Semigroupal__Lcats_Invariant__O($thiz, f0, f1, semigroupal, invariant) {
+  var f = new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function($this) {
+    return (function(x$3$2, x$4$2) {
+      return new $c_T2().init___O__O(x$3$2, x$4$2)
+    })
+  })($thiz));
+  var g = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2) {
+    return (function(x$2) {
+      var x = $as_T2(x$2);
+      return x
+    })
+  })($thiz));
+  return $f_Lcats_SemigroupalArityFunctions__imap2__O__O__F2__F1__Lcats_Semigroupal__Lcats_Invariant__O($thiz, f0, f1, f, g, semigroupal, invariant)
 }
 function $is_Lio_circe_CursorOp$Selection(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lio_circe_CursorOp$Selection)))
@@ -1146,6 +1174,16 @@ function $isArrayOf_Lrescala_core_InitialChange(obj, depth) {
 function $asArrayOf_Lrescala_core_InitialChange(obj, depth) {
   return (($isArrayOf_Lrescala_core_InitialChange(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrescala.core.InitialChange;", depth))
 }
+function $f_Lrescala_core_Initializer__createSource__Lrescala_core_Initializer$InitValues__Lrescala_core_CreationTicket__F1__Lrescala_core_ReSource($thiz, intv, creationTicket, instantiateReactive) {
+  var state = $thiz.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_core_CreationTicket__Lrescala_restoration_ReStoringState(intv, creationTicket);
+  return $as_Lrescala_core_ReSource(instantiateReactive.apply__O__O(state))
+}
+function $f_Lrescala_core_Initializer__create__sci_Set__Lrescala_core_Initializer$InitValues__Z__Lrescala_core_CreationTicket__F1__Lrescala_core_Reactive($thiz, incoming, initv, inite, creationTicket, instantiateReactive) {
+  var state = $thiz.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_core_CreationTicket__Lrescala_restoration_ReStoringState(initv, creationTicket);
+  var reactive = $as_Lrescala_core_Reactive(instantiateReactive.apply__O__O(state));
+  $f_Lrescala_levelbased_LevelBasedPropagation__ignite__Lrescala_core_Reactive__sci_Set__Z__V($thiz, reactive, incoming, inite);
+  return reactive
+}
 function $is_Lrescala_core_Initializer(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lrescala_core_Initializer)))
 }
@@ -1157,6 +1195,9 @@ function $isArrayOf_Lrescala_core_Initializer(obj, depth) {
 }
 function $asArrayOf_Lrescala_core_Initializer(obj, depth) {
   return (($isArrayOf_Lrescala_core_Initializer(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrescala.core.Initializer;", depth))
+}
+function $f_Lrescala_core_LowPriorityCreationImplicits__fromNameImplicit__T__Lrescala_core_CreationTicket__Lrescala_core_CreationTicket($thiz, line, outer) {
+  return new $c_Lrescala_core_CreationTicket().init___s_util_Either__Lrescala_core_REName(outer.self$1, new $c_Lrescala_core_REName().init___T(line))
 }
 function $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket($thiz, factory, line) {
   return new $c_Lrescala_core_CreationTicket().init___s_util_Either__Lrescala_core_REName(($m_s_package$(), new $c_s_util_Right().init___O(factory)), line)
@@ -1228,6 +1269,9 @@ function $isArrayOf_Lrescala_core_ReSource(obj, depth) {
 function $asArrayOf_Lrescala_core_ReSource(obj, depth) {
   return (($isArrayOf_Lrescala_core_ReSource(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrescala.core.ReSource;", depth))
 }
+function $f_Lrescala_core_Scheduler__toString__T($thiz) {
+  return "Scheduler(LocalStorage)"
+}
 function $is_Lrescala_core_Scheduler(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lrescala_core_Scheduler)))
 }
@@ -1264,17 +1308,17 @@ function $isArrayOf_Lrescala_twoversion_Committable(obj, depth) {
 function $asArrayOf_Lrescala_twoversion_Committable(obj, depth) {
   return (($isArrayOf_Lrescala_twoversion_Committable(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrescala.twoversion.Committable;", depth))
 }
-function $is_Lrescala_twoversion_GraphStructType(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lrescala_twoversion_GraphStructType)))
+function $is_Lrescala_twoversion_GraphState(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lrescala_twoversion_GraphState)))
 }
-function $as_Lrescala_twoversion_GraphStructType(obj) {
-  return (($is_Lrescala_twoversion_GraphStructType(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "rescala.twoversion.GraphStructType"))
+function $as_Lrescala_twoversion_GraphState(obj) {
+  return (($is_Lrescala_twoversion_GraphState(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "rescala.twoversion.GraphState"))
 }
-function $isArrayOf_Lrescala_twoversion_GraphStructType(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lrescala_twoversion_GraphStructType)))
+function $isArrayOf_Lrescala_twoversion_GraphState(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lrescala_twoversion_GraphState)))
 }
-function $asArrayOf_Lrescala_twoversion_GraphStructType(obj, depth) {
-  return (($isArrayOf_Lrescala_twoversion_GraphStructType(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrescala.twoversion.GraphStructType;", depth))
+function $asArrayOf_Lrescala_twoversion_GraphState(obj, depth) {
+  return (($isArrayOf_Lrescala_twoversion_GraphState(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrescala.twoversion.GraphState;", depth))
 }
 function $is_Lscalatags_generic_Modifier(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lscalatags_generic_Modifier)))
@@ -2145,6 +2189,18 @@ function $isArrayOf_Lio_circe_Decoder(obj, depth) {
 }
 function $asArrayOf_Lio_circe_Decoder(obj, depth) {
   return (($isArrayOf_Lio_circe_Decoder(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lio.circe.Decoder;", depth))
+}
+function $is_Lio_circe_Encoder(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lio_circe_Encoder)))
+}
+function $as_Lio_circe_Encoder(obj) {
+  return (($is_Lio_circe_Encoder(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "io.circe.Encoder"))
+}
+function $isArrayOf_Lio_circe_Encoder(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lio_circe_Encoder)))
+}
+function $asArrayOf_Lio_circe_Encoder(obj, depth) {
+  return (($isArrayOf_Lio_circe_Encoder(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lio.circe.Encoder;", depth))
 }
 /** @constructor */
 function $c_Lio_circe_Printer$SizePredictor() {
@@ -4195,34 +4251,34 @@ function $h_Lrescala_core_WrapUpTicket() {
   /*<skip>*/
 }
 $h_Lrescala_core_WrapUpTicket.prototype = $c_Lrescala_core_WrapUpTicket.prototype;
-function $f_Lrescala_interface_RescalaInterface__$$init$__V($thiz) {
-  $thiz.Events$1 = $m_Lrescala_reactives_Events$();
-  $thiz.Signals$1 = $m_Lrescala_reactives_Signals$()
+function $f_Lrescala_interface_RescalaInterfaceRequireSerializer__$$init$__V($thiz) {
+  $thiz.rescala$interface$RescalaInterfaceRequireSerializer$$undsetter$und$Events$und$eq__Lrescala_reactives_Events$__V($m_Lrescala_reactives_Events$());
+  $thiz.rescala$interface$RescalaInterfaceRequireSerializer$$undsetter$und$Signals$und$eq__Lrescala_reactives_Signals$__V($m_Lrescala_reactives_Signals$())
 }
 /** @constructor */
-function $c_Lrescala_interface_RescalaInterface$Var$() {
+function $c_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$() {
   $c_O.call(this)
 }
-$c_Lrescala_interface_RescalaInterface$Var$.prototype = new $h_O();
-$c_Lrescala_interface_RescalaInterface$Var$.prototype.constructor = $c_Lrescala_interface_RescalaInterface$Var$;
+$c_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$.prototype = new $h_O();
+$c_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$.prototype.constructor = $c_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$;
 /** @constructor */
-function $h_Lrescala_interface_RescalaInterface$Var$() {
+function $h_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$() {
   /*<skip>*/
 }
-$h_Lrescala_interface_RescalaInterface$Var$.prototype = $c_Lrescala_interface_RescalaInterface$Var$.prototype;
-$c_Lrescala_interface_RescalaInterface$Var$.prototype.init___Lrescala_interface_RescalaInterface = (function($$outer) {
+$h_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$.prototype = $c_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$.prototype;
+$c_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$.prototype.init___Lrescala_interface_RescalaInterfaceRequireSerializer = (function($$outer) {
   return this
 });
-$c_Lrescala_interface_RescalaInterface$Var$.prototype.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var = (function(v, evidence$1, ct) {
+$c_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$.prototype.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var = (function(v, evidence$1, ct) {
   return $m_Lrescala_reactives_Var$().apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(v, evidence$1, ct)
 });
-var $d_Lrescala_interface_RescalaInterface$Var$ = new $TypeData().initClass({
-  Lrescala_interface_RescalaInterface$Var$: 0
-}, false, "rescala.interface.RescalaInterface$Var$", {
-  Lrescala_interface_RescalaInterface$Var$: 1,
+var $d_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$ = new $TypeData().initClass({
+  Lrescala_interface_RescalaInterfaceRequireSerializer$Var$: 0
+}, false, "rescala.interface.RescalaInterfaceRequireSerializer$Var$", {
+  Lrescala_interface_RescalaInterfaceRequireSerializer$Var$: 1,
   O: 1
 });
-$c_Lrescala_interface_RescalaInterface$Var$.prototype.$classData = $d_Lrescala_interface_RescalaInterface$Var$;
+$c_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$.prototype.$classData = $d_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$;
 /** @constructor */
 function $c_Lrescala_levelbased_LevelQueue() {
   $c_O.call(this);
@@ -4238,7 +4294,7 @@ function $h_Lrescala_levelbased_LevelQueue() {
 $h_Lrescala_levelbased_LevelQueue.prototype = $c_Lrescala_levelbased_LevelQueue.prototype;
 $c_Lrescala_levelbased_LevelQueue.prototype.enqueue__I__Z__Lrescala_core_Reactive__V = (function(minLevel, needsEvaluate, dep) {
   var this$2 = this.elements$1;
-  var this$1 = $as_Lrescala_levelbased_LevelStructType(dep.initialState$2);
+  var this$1 = $as_Lrescala_levelbased_LevelState(dep.initialState$2);
   var e = new $c_Lrescala_levelbased_LevelQueue$QueueElement().init___I__Lrescala_core_Reactive__I__Z(this$1.$$undlevel$3, dep, minLevel, needsEvaluate);
   this$2.add__O__Z(e)
 });
@@ -4284,13 +4340,13 @@ $c_Lrescala_levelbased_LevelQueue.prototype.handleElement__p1__Lrescala_levelbas
   var headMinLevel = queueElement.minLevel$1;
   var reevaluate = queueElement.needsEvaluate$1;
   if ((headLevel < headMinLevel)) {
-    $as_Lrescala_levelbased_LevelStructType(head.initialState$2).updateLevel__I__I(headMinLevel);
+    $as_Lrescala_levelbased_LevelState(head.initialState$2).updateLevel__I__I(headMinLevel);
     this.enqueue__I__Z__Lrescala_core_Reactive__V(headMinLevel, reevaluate, head);
-    var this$1 = $as_Lrescala_twoversion_GraphStructType(head.initialState$2);
+    var this$1 = $as_Lrescala_twoversion_GraphState(head.initialState$2);
     this$1.$$undoutgoing$2.keys__sc_Iterable().foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, headMinLevel$2) {
       return (function(r$2) {
         var r = $as_Lrescala_core_Reactive(r$2);
-        var this$2 = $as_Lrescala_levelbased_LevelStructType(r.initialState$2);
+        var this$2 = $as_Lrescala_levelbased_LevelState(r.initialState$2);
         if ((this$2.$$undlevel$3 <= headMinLevel$2)) {
           $this.enqueue__I__Z__Lrescala_core_Reactive__V(((1 + headMinLevel$2) | 0), false, r)
         }
@@ -4308,17 +4364,17 @@ var $d_Lrescala_levelbased_LevelQueue = new $TypeData().initClass({
   O: 1
 });
 $c_Lrescala_levelbased_LevelQueue.prototype.$classData = $d_Lrescala_levelbased_LevelQueue;
-function $is_Lrescala_levelbased_LevelStructType(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lrescala_levelbased_LevelStructType)))
+function $is_Lrescala_levelbased_LevelState(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lrescala_levelbased_LevelState)))
 }
-function $as_Lrescala_levelbased_LevelStructType(obj) {
-  return (($is_Lrescala_levelbased_LevelStructType(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "rescala.levelbased.LevelStructType"))
+function $as_Lrescala_levelbased_LevelState(obj) {
+  return (($is_Lrescala_levelbased_LevelState(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "rescala.levelbased.LevelState"))
 }
-function $isArrayOf_Lrescala_levelbased_LevelStructType(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lrescala_levelbased_LevelStructType)))
+function $isArrayOf_Lrescala_levelbased_LevelState(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lrescala_levelbased_LevelState)))
 }
-function $asArrayOf_Lrescala_levelbased_LevelStructType(obj, depth) {
-  return (($isArrayOf_Lrescala_levelbased_LevelStructType(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrescala.levelbased.LevelStructType;", depth))
+function $asArrayOf_Lrescala_levelbased_LevelState(obj, depth) {
+  return (($isArrayOf_Lrescala_levelbased_LevelState(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrescala.levelbased.LevelState;", depth))
 }
 /** @constructor */
 function $c_Lrescala_reactives_Events$() {
@@ -4335,79 +4391,11 @@ $c_Lrescala_reactives_Events$.prototype.init___ = (function() {
   return this
 });
 $c_Lrescala_reactives_Events$.prototype.staticNamed__T__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Event = (function(name, dependencies, calculate, ticket) {
-  var f = (function($this, name$1, dependencies$1, calculate$1) {
-    return (function(initTurn$2) {
-      var initTurn = $as_Lrescala_core_Initializer(initTurn$2);
-      var incoming = dependencies$1.toSet__sci_Set();
-      var initv = new $c_Lrescala_core_Initializer$InitValues().init___O__Lrescala_core_Initializer$Unchange($m_Lrescala_core_Pulse$NoChange$(), new $c_Lrescala_core_Initializer$EUnchange().init___());
-      var state = initTurn.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_restoration_ReStoringStructType(initv);
-      var reactive = new $c_Lrescala_reactives_Events$$anon$1().init___T__F1__O(name$1, calculate$1, state);
-      $f_Lrescala_levelbased_LevelBasedPropagation__ignite__Lrescala_core_Reactive__sci_Set__Z__V(initTurn, reactive, incoming, false);
-      return reactive
+  return $as_Lrescala_reactives_Event(ticket.create__sci_Set__Lrescala_core_Initializer$InitValues__Z__F1__Lrescala_core_Reactive(dependencies.toSet__sci_Set(), new $c_Lrescala_core_Initializer$InitValues().init___O__Lrescala_core_Initializer$Unchange($m_Lrescala_core_Pulse$NoChange$(), new $c_Lrescala_core_Initializer$EUnchange().init___()), false, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, name$1, calculate$1) {
+    return (function(state$2) {
+      return new $c_Lrescala_reactives_Events$$anon$1().init___T__F1__O(name$1, calculate$1, state$2)
     })
-  })(this, name, dependencies, calculate);
-  var x1 = ticket.self$1;
-  if ($is_s_util_Left(x1)) {
-    var x2 = $as_s_util_Left(x1);
-    var integrated = $as_Lrescala_core_Initializer(x2.value$2);
-    var jsx$1 = f(integrated)
-  } else {
-    if ((!$is_s_util_Right(x1))) {
-      throw new $c_s_MatchError().init___O(x1)
-    };
-    var x3 = $as_s_util_Right(x1);
-    var engine = $as_Lrescala_core_Scheduler(x3.value$2);
-    var x1$1 = $as_s_Option(engine.$$undcurrentTurn$1.v$1);
-    if ($is_s_Some(x1$1)) {
-      var x2$1 = $as_s_Some(x1$1);
-      var turn = $as_Lrescala_core_Initializer(x2$1.value$2);
-      var jsx$1 = f(turn)
-    } else {
-      var x = $m_s_None$();
-      if ((!(x === x1$1))) {
-        throw new $c_s_MatchError().init___O(x1$1)
-      };
-      var initialWrites = $m_sci_Set$EmptySet$();
-      $as_s_Option(engine.$$undcurrentTurn$1.v$1);
-      var turn$1 = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(engine);
-      try {
-        var this$3 = engine.$$undcurrentTurn$1;
-        var newval = new $c_s_Some().init___O(turn$1);
-        var oldval = this$3.v$1;
-        this$3.v$1 = newval;
-        try {
-          var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn$1, initialWrites);
-          var arg1 = admissionTicket.creation$1;
-          var admissionResult = f(arg1);
-          var initialChanges = admissionTicket.$$undinitialChanges$2;
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn$1, initialChanges);
-          turn$1.levelQueue$1.evaluateQueue__V();
-          if ((admissionTicket.wrapUp$2 !== null)) {
-            admissionTicket.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn$1))
-          };
-          var result = admissionResult
-        } finally {
-          this$3.v$1 = oldval
-        };
-        $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn$1);
-        var result$2 = result
-      } catch (e) {
-        var result$2;
-        var e$2 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
-        if ((e$2 !== null)) {
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn$1);
-          throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2)
-        } else {
-          throw e
-        }
-      } finally {
-        /*<skip>*/
-      };
-      $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn$1);
-      var jsx$1 = result$2
-    }
-  };
-  return $as_Lrescala_reactives_Event(jsx$1)
+  })(this, name, calculate))))
 });
 $c_Lrescala_reactives_Events$.prototype.noteFromPulse__Lrescala_core_ReevTicket__Lrescala_core_Pulse__Lrescala_core_Result = (function(t, value) {
   return ($f_Lrescala_core_Pulse__isChange__Z(value) ? t.withValue__O__Lrescala_core_ReevTicket(value) : t)
@@ -4433,7 +4421,7 @@ $c_Lrescala_reactives_Events$.prototype.change__Lrescala_reactives_Signal__Lresc
       };
       var incoming = $as_sci_Set(jsx$1);
       var initv = $m_Lrescala_core_Initializer$().Change__Lrescala_core_Initializer$InitValues();
-      var state = initTurn.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_restoration_ReStoringStructType(initv);
+      var state = initTurn.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_core_CreationTicket__Lrescala_restoration_ReStoringState(initv, ticket$1);
       var reactive = new $c_Lrescala_reactives_Events$$anon$3().init___Lrescala_reactives_Signal__Lrescala_core_CreationTicket__O(signal$1, ticket$1, state);
       $f_Lrescala_levelbased_LevelBasedPropagation__ignite__Lrescala_core_Reactive__sci_Set__Z__V(initTurn, reactive, incoming, true);
       var jsx$5 = $m_Lrescala_reactives_Events$();
@@ -4448,7 +4436,7 @@ $c_Lrescala_reactives_Events$.prototype.change__Lrescala_reactives_Signal__Lresc
       var jsx$2 = $m_Lrescala_core_CreationTicket$();
       var this$6 = $m_Lrescala_core_REName$();
       var file = new $c_Lsourcecode_Enclosing().init___T("rescala.reactives.Events.change $anonfun");
-      var line = new $c_Lsourcecode_Line().init___I(52);
+      var line = new $c_Lsourcecode_Line().init___I(54);
       return jsx$5.$static__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Event(jsx$4, jsx$3, jsx$2.fromCreation__Lrescala_core_Initializer__Lrescala_core_REName__Lrescala_core_CreationTicket(initTurn, $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$6, file, line)))
     })
   })(this, signal, ticket);
@@ -4564,94 +4552,26 @@ $c_Lrescala_reactives_Observe$.prototype.strong__Lrescala_core_Interp__Z__F1__F1
   return obs
 });
 $c_Lrescala_reactives_Observe$.prototype.weak__Lrescala_core_Interp__Z__F1__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Observe = (function(dependency, fireImmediately, fun, fail, ct) {
-  var f = (function($this, dependency$1, fireImmediately$1, fun$1, fail$1, ct$1) {
-    return (function(initTurn$2) {
-      var initTurn = $as_Lrescala_core_Initializer(initTurn$2);
-      var array = [dependency$1];
-      if (($uI(array.length) === 0)) {
-        var jsx$1 = $m_sci_Set$EmptySet$()
-      } else {
-        var b = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
-        var i = 0;
-        var len = $uI(array.length);
-        while ((i < len)) {
-          var index = i;
-          var arg1 = array[index];
-          b.$$plus$eq__O__scm_SetBuilder(arg1);
-          i = ((1 + i) | 0)
-        };
-        var jsx$1 = b.elems$1
-      };
-      var incoming = $as_sci_Set(jsx$1);
-      var initv = new $c_Lrescala_core_Initializer$InitValues().init___O__Lrescala_core_Initializer$Unchange($m_Lrescala_core_Pulse$NoChange$(), new $c_Lrescala_core_Initializer$EUnchange().init___());
-      var state = initTurn.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_restoration_ReStoringStructType(initv);
-      var reactive = new $c_Lrescala_reactives_Observe$$anon$1().init___Lrescala_core_Interp__F1__F1__Lrescala_core_CreationTicket__O(dependency$1, fun$1, fail$1, ct$1, state);
-      $f_Lrescala_levelbased_LevelBasedPropagation__ignite__Lrescala_core_Reactive__sci_Set__Z__V(initTurn, reactive, incoming, fireImmediately$1);
-      return reactive
-    })
-  })(this, dependency, fireImmediately, fun, fail, ct);
-  var x1 = ct.self$1;
-  if ($is_s_util_Left(x1)) {
-    var x2 = $as_s_util_Left(x1);
-    var integrated = $as_Lrescala_core_Initializer(x2.value$2);
-    var jsx$2 = f(integrated)
+  var array = [dependency];
+  if (($uI(array.length) === 0)) {
+    var jsx$1 = $m_sci_Set$EmptySet$()
   } else {
-    if ((!$is_s_util_Right(x1))) {
-      throw new $c_s_MatchError().init___O(x1)
+    var b = new $c_scm_SetBuilder().init___sc_Set($m_sci_Set$EmptySet$());
+    var i = 0;
+    var len = $uI(array.length);
+    while ((i < len)) {
+      var index = i;
+      var arg1 = array[index];
+      b.$$plus$eq__O__scm_SetBuilder(arg1);
+      i = ((1 + i) | 0)
     };
-    var x3 = $as_s_util_Right(x1);
-    var engine = $as_Lrescala_core_Scheduler(x3.value$2);
-    var x1$1 = $as_s_Option(engine.$$undcurrentTurn$1.v$1);
-    if ($is_s_Some(x1$1)) {
-      var x2$1 = $as_s_Some(x1$1);
-      var turn = $as_Lrescala_core_Initializer(x2$1.value$2);
-      var jsx$2 = f(turn)
-    } else {
-      var x = $m_s_None$();
-      if ((!(x === x1$1))) {
-        throw new $c_s_MatchError().init___O(x1$1)
-      };
-      var initialWrites = $m_sci_Set$EmptySet$();
-      $as_s_Option(engine.$$undcurrentTurn$1.v$1);
-      var turn$1 = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(engine);
-      try {
-        var this$6 = engine.$$undcurrentTurn$1;
-        var newval = new $c_s_Some().init___O(turn$1);
-        var oldval = this$6.v$1;
-        this$6.v$1 = newval;
-        try {
-          var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn$1, initialWrites);
-          var arg1$1 = admissionTicket.creation$1;
-          var admissionResult = f(arg1$1);
-          var initialChanges = admissionTicket.$$undinitialChanges$2;
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn$1, initialChanges);
-          turn$1.levelQueue$1.evaluateQueue__V();
-          if ((admissionTicket.wrapUp$2 !== null)) {
-            admissionTicket.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn$1))
-          };
-          var result = admissionResult
-        } finally {
-          this$6.v$1 = oldval
-        };
-        $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn$1);
-        var result$2 = result
-      } catch (e) {
-        var result$2;
-        var e$2 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
-        if ((e$2 !== null)) {
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn$1);
-          throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2)
-        } else {
-          throw e
-        }
-      } finally {
-        /*<skip>*/
-      };
-      $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn$1);
-      var jsx$2 = result$2
-    }
+    var jsx$1 = b.elems$1
   };
-  return $as_Lrescala_reactives_Observe(jsx$2)
+  return $as_Lrescala_reactives_Observe(ct.create__sci_Set__Lrescala_core_Initializer$InitValues__Z__F1__Lrescala_core_Reactive($as_sci_Set(jsx$1), new $c_Lrescala_core_Initializer$InitValues().init___O__Lrescala_core_Initializer$Unchange($m_Lrescala_core_Pulse$NoChange$(), new $c_Lrescala_core_Initializer$EUnchange().init___()), fireImmediately, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, dependency$1, fun$1, fail$1, ct$1) {
+    return (function(state$2) {
+      return new $c_Lrescala_reactives_Observe$$anon$1().init___Lrescala_core_Interp__F1__F1__Lrescala_core_CreationTicket__O(dependency$1, fun$1, fail$1, ct$1, state$2)
+    })
+  })(this, dependency, fun, fail, ct))))
 });
 var $d_Lrescala_reactives_Observe$ = new $TypeData().initClass({
   Lrescala_reactives_Observe$: 0
@@ -4682,79 +4602,12 @@ $c_Lrescala_reactives_Signals$.prototype.init___ = (function() {
   return this
 });
 $c_Lrescala_reactives_Signals$.prototype.dynamic__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal = (function(dependencies, expr, ct) {
-  var f = (function($this, dependencies$1, expr$1, ct$1) {
-    return (function(initialTurn$2) {
-      var initialTurn = $as_Lrescala_core_Initializer(initialTurn$2);
-      var staticDeps = dependencies$1.toSet__sci_Set();
-      var initv = new $c_Lrescala_core_Initializer$InitValues().init___O__Lrescala_core_Initializer$Unchange($m_Lrescala_core_Pulse$().empty$1, new $c_Lrescala_core_Initializer$SUnchange().init___());
-      var state = initialTurn.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_restoration_ReStoringStructType(initv);
-      var reactive = new $c_Lrescala_reactives_Signals$$anon$2().init___F1__Lrescala_core_CreationTicket__sci_Set__O(expr$1, ct$1, staticDeps, state);
-      $f_Lrescala_levelbased_LevelBasedPropagation__ignite__Lrescala_core_Reactive__sci_Set__Z__V(initialTurn, reactive, staticDeps, true);
-      return reactive
+  var staticDeps = dependencies.toSet__sci_Set();
+  return $as_Lrescala_reactives_Signal(ct.create__sci_Set__Lrescala_core_Initializer$InitValues__Z__F1__Lrescala_core_Reactive(staticDeps, new $c_Lrescala_core_Initializer$InitValues().init___O__Lrescala_core_Initializer$Unchange($m_Lrescala_core_Pulse$().empty$1, new $c_Lrescala_core_Initializer$SUnchange().init___()), true, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, expr$1, ct$1, staticDeps$1) {
+    return (function(state$2) {
+      return new $c_Lrescala_reactives_Signals$$anon$2().init___F1__Lrescala_core_CreationTicket__sci_Set__O(expr$1, ct$1, staticDeps$1, state$2)
     })
-  })(this, dependencies, expr, ct);
-  var x1 = ct.self$1;
-  if ($is_s_util_Left(x1)) {
-    var x2 = $as_s_util_Left(x1);
-    var integrated = $as_Lrescala_core_Initializer(x2.value$2);
-    var jsx$1 = f(integrated)
-  } else {
-    if ((!$is_s_util_Right(x1))) {
-      throw new $c_s_MatchError().init___O(x1)
-    };
-    var x3 = $as_s_util_Right(x1);
-    var engine = $as_Lrescala_core_Scheduler(x3.value$2);
-    var x1$1 = $as_s_Option(engine.$$undcurrentTurn$1.v$1);
-    if ($is_s_Some(x1$1)) {
-      var x2$1 = $as_s_Some(x1$1);
-      var turn = $as_Lrescala_core_Initializer(x2$1.value$2);
-      var jsx$1 = f(turn)
-    } else {
-      var x = $m_s_None$();
-      if ((!(x === x1$1))) {
-        throw new $c_s_MatchError().init___O(x1$1)
-      };
-      var initialWrites = $m_sci_Set$EmptySet$();
-      $as_s_Option(engine.$$undcurrentTurn$1.v$1);
-      var turn$1 = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(engine);
-      try {
-        var this$3 = engine.$$undcurrentTurn$1;
-        var newval = new $c_s_Some().init___O(turn$1);
-        var oldval = this$3.v$1;
-        this$3.v$1 = newval;
-        try {
-          var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn$1, initialWrites);
-          var arg1 = admissionTicket.creation$1;
-          var admissionResult = f(arg1);
-          var initialChanges = admissionTicket.$$undinitialChanges$2;
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn$1, initialChanges);
-          turn$1.levelQueue$1.evaluateQueue__V();
-          if ((admissionTicket.wrapUp$2 !== null)) {
-            admissionTicket.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn$1))
-          };
-          var result = admissionResult
-        } finally {
-          this$3.v$1 = oldval
-        };
-        $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn$1);
-        var result$2 = result
-      } catch (e) {
-        var result$2;
-        var e$2 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
-        if ((e$2 !== null)) {
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn$1);
-          throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2)
-        } else {
-          throw e
-        }
-      } finally {
-        /*<skip>*/
-      };
-      $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn$1);
-      var jsx$1 = result$2
-    }
-  };
-  return $as_Lrescala_reactives_Signal(jsx$1)
+  })(this, expr, ct, staticDeps))))
 });
 $c_Lrescala_reactives_Signals$.prototype.rescala$reactives$Signals$$ignore2$1__F1__F2 = (function(f) {
   return new $c_sjsr_AnonFunction2().init___sjs_js_Function2((function($this, f$1) {
@@ -4764,79 +4617,11 @@ $c_Lrescala_reactives_Signals$.prototype.rescala$reactives$Signals$$ignore2$1__F
   })(this, f))
 });
 $c_Lrescala_reactives_Signals$.prototype.$static__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal = (function(dependencies, expr, ct) {
-  var f = (function($this, dependencies$1, expr$1, ct$1) {
-    return (function(initialTurn$2) {
-      var initialTurn = $as_Lrescala_core_Initializer(initialTurn$2);
-      var incoming = dependencies$1.toSet__sci_Set();
-      var initv = new $c_Lrescala_core_Initializer$InitValues().init___O__Lrescala_core_Initializer$Unchange($m_Lrescala_core_Pulse$().empty$1, new $c_Lrescala_core_Initializer$SUnchange().init___());
-      var state = initialTurn.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_restoration_ReStoringStructType(initv);
-      var reactive = new $c_Lrescala_reactives_Signals$$anon$1().init___F1__Lrescala_core_CreationTicket__O(expr$1, ct$1, state);
-      $f_Lrescala_levelbased_LevelBasedPropagation__ignite__Lrescala_core_Reactive__sci_Set__Z__V(initialTurn, reactive, incoming, true);
-      return reactive
+  return $as_Lrescala_reactives_Signal(ct.create__sci_Set__Lrescala_core_Initializer$InitValues__Z__F1__Lrescala_core_Reactive(dependencies.toSet__sci_Set(), new $c_Lrescala_core_Initializer$InitValues().init___O__Lrescala_core_Initializer$Unchange($m_Lrescala_core_Pulse$().empty$1, new $c_Lrescala_core_Initializer$SUnchange().init___()), true, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, expr$1, ct$1) {
+    return (function(state$2) {
+      return new $c_Lrescala_reactives_Signals$$anon$1().init___F1__Lrescala_core_CreationTicket__O(expr$1, ct$1, state$2)
     })
-  })(this, dependencies, expr, ct);
-  var x1 = ct.self$1;
-  if ($is_s_util_Left(x1)) {
-    var x2 = $as_s_util_Left(x1);
-    var integrated = $as_Lrescala_core_Initializer(x2.value$2);
-    var jsx$1 = f(integrated)
-  } else {
-    if ((!$is_s_util_Right(x1))) {
-      throw new $c_s_MatchError().init___O(x1)
-    };
-    var x3 = $as_s_util_Right(x1);
-    var engine = $as_Lrescala_core_Scheduler(x3.value$2);
-    var x1$1 = $as_s_Option(engine.$$undcurrentTurn$1.v$1);
-    if ($is_s_Some(x1$1)) {
-      var x2$1 = $as_s_Some(x1$1);
-      var turn = $as_Lrescala_core_Initializer(x2$1.value$2);
-      var jsx$1 = f(turn)
-    } else {
-      var x = $m_s_None$();
-      if ((!(x === x1$1))) {
-        throw new $c_s_MatchError().init___O(x1$1)
-      };
-      var initialWrites = $m_sci_Set$EmptySet$();
-      $as_s_Option(engine.$$undcurrentTurn$1.v$1);
-      var turn$1 = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(engine);
-      try {
-        var this$3 = engine.$$undcurrentTurn$1;
-        var newval = new $c_s_Some().init___O(turn$1);
-        var oldval = this$3.v$1;
-        this$3.v$1 = newval;
-        try {
-          var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn$1, initialWrites);
-          var arg1 = admissionTicket.creation$1;
-          var admissionResult = f(arg1);
-          var initialChanges = admissionTicket.$$undinitialChanges$2;
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn$1, initialChanges);
-          turn$1.levelQueue$1.evaluateQueue__V();
-          if ((admissionTicket.wrapUp$2 !== null)) {
-            admissionTicket.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn$1))
-          };
-          var result = admissionResult
-        } finally {
-          this$3.v$1 = oldval
-        };
-        $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn$1);
-        var result$2 = result
-      } catch (e) {
-        var result$2;
-        var e$2 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
-        if ((e$2 !== null)) {
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn$1);
-          throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2)
-        } else {
-          throw e
-        }
-      } finally {
-        /*<skip>*/
-      };
-      $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn$1);
-      var jsx$1 = result$2
-    }
-  };
-  return $as_Lrescala_reactives_Signal(jsx$1)
+  })(this, expr, ct))))
 });
 var $d_Lrescala_reactives_Signals$ = new $TypeData().initClass({
   Lrescala_reactives_Signals$: 0
@@ -4952,76 +4737,11 @@ $c_Lrescala_reactives_Var$.prototype.init___ = (function() {
   return this
 });
 $c_Lrescala_reactives_Var$.prototype.fromChange__p1__Lrescala_core_Pulse__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var = (function(change, evidence$3, ticket) {
-  var f = (function($this, change$1, evidence$3$1, ticket$1) {
-    return (function(t$2) {
-      var t = $as_Lrescala_core_Initializer(t$2);
-      var intv = new $c_Lrescala_core_Initializer$InitializedSignal().init___O__Lrescala_core_ReSerializable(change$1, $m_Lrescala_core_ReSerializable$().pulseSerializable__Lrescala_core_ReSerializable__Lrescala_core_ReSerializable(evidence$3$1));
-      var state = t.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_restoration_ReStoringStructType(intv);
-      return new $c_Lrescala_reactives_Var().init___O__Lrescala_core_REName(state, ticket$1.rename$1)
+  return $as_Lrescala_reactives_Var(ticket.createSource__Lrescala_core_Initializer$InitValues__F1__Lrescala_core_ReSource(new $c_Lrescala_core_Initializer$InitializedSignal().init___O__Lrescala_core_ReSerializable(change, $m_Lrescala_core_ReSerializable$().pulseSerializable__Lrescala_core_ReSerializable__Lrescala_core_ReSerializable(evidence$3)), new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, ticket$1) {
+    return (function(x$4$2) {
+      return new $c_Lrescala_reactives_Var().init___O__Lrescala_core_REName(x$4$2, ticket$1.rename$1)
     })
-  })(this, change, evidence$3, ticket);
-  var x1 = ticket.self$1;
-  if ($is_s_util_Left(x1)) {
-    var x2 = $as_s_util_Left(x1);
-    var integrated = $as_Lrescala_core_Initializer(x2.value$2);
-    var jsx$1 = f(integrated)
-  } else {
-    if ((!$is_s_util_Right(x1))) {
-      throw new $c_s_MatchError().init___O(x1)
-    };
-    var x3 = $as_s_util_Right(x1);
-    var engine = $as_Lrescala_core_Scheduler(x3.value$2);
-    var x1$1 = $as_s_Option(engine.$$undcurrentTurn$1.v$1);
-    if ($is_s_Some(x1$1)) {
-      var x2$1 = $as_s_Some(x1$1);
-      var turn = $as_Lrescala_core_Initializer(x2$1.value$2);
-      var jsx$1 = f(turn)
-    } else {
-      var x = $m_s_None$();
-      if ((!(x === x1$1))) {
-        throw new $c_s_MatchError().init___O(x1$1)
-      };
-      var initialWrites = $m_sci_Set$EmptySet$();
-      $as_s_Option(engine.$$undcurrentTurn$1.v$1);
-      var turn$1 = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(engine);
-      try {
-        var this$2 = engine.$$undcurrentTurn$1;
-        var newval = new $c_s_Some().init___O(turn$1);
-        var oldval = this$2.v$1;
-        this$2.v$1 = newval;
-        try {
-          var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn$1, initialWrites);
-          var arg1 = admissionTicket.creation$1;
-          var admissionResult = f(arg1);
-          var initialChanges = admissionTicket.$$undinitialChanges$2;
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn$1, initialChanges);
-          turn$1.levelQueue$1.evaluateQueue__V();
-          if ((admissionTicket.wrapUp$2 !== null)) {
-            admissionTicket.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn$1))
-          };
-          var result = admissionResult
-        } finally {
-          this$2.v$1 = oldval
-        };
-        $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn$1);
-        var result$2 = result
-      } catch (e) {
-        var result$2;
-        var e$2 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
-        if ((e$2 !== null)) {
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn$1);
-          throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2)
-        } else {
-          throw e
-        }
-      } finally {
-        /*<skip>*/
-      };
-      $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn$1);
-      var jsx$1 = result$2
-    }
-  };
-  return $as_Lrescala_reactives_Var(jsx$1)
+  })(this, ticket))))
 });
 $c_Lrescala_reactives_Var$.prototype.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var = (function(initval, evidence$1, ticket) {
   return this.fromChange__p1__Lrescala_core_Pulse__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(new $c_Lrescala_core_Pulse$Value().init___O(initval), evidence$1, ticket)
@@ -5054,6 +4774,19 @@ $h_Lrescala_restoration_ReCirce$.prototype = $c_Lrescala_restoration_ReCirce$.pr
 $c_Lrescala_restoration_ReCirce$.prototype.init___ = (function() {
   return this
 });
+$c_Lrescala_restoration_ReCirce$.prototype.varDecoder__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lio_circe_Decoder = (function(reSerializable, ct) {
+  var this$3 = $m_Lio_circe_Decoder$().decodeString$1;
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, reSerializable$1, ct$1) {
+    return (function(n$2) {
+      var n = $as_T(n$2);
+      var this$2 = $m_Lrescala_reactives_Var$();
+      var this$1 = $m_Lrescala_core_CreationTicket$();
+      var ticket = $f_Lrescala_core_LowPriorityCreationImplicits__fromNameImplicit__T__Lrescala_core_CreationTicket__Lrescala_core_CreationTicket(this$1, n, ct$1);
+      return this$2.fromChange__p1__Lrescala_core_Pulse__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var($m_Lrescala_core_Pulse$().empty$1, reSerializable$1, ticket)
+    })
+  })(this, reSerializable, ct));
+  return new $c_Lio_circe_Decoder$$anon$21().init___Lio_circe_Decoder__F1(this$3, f)
+});
 $c_Lrescala_restoration_ReCirce$.prototype.eitherToTry__s_util_Either__s_util_Try = (function(e) {
   if ($is_s_util_Right(e)) {
     var x2 = $as_s_util_Right(e);
@@ -5066,6 +4799,16 @@ $c_Lrescala_restoration_ReCirce$.prototype.eitherToTry__s_util_Either__s_util_Tr
   } else {
     throw new $c_s_MatchError().init___O(e)
   }
+});
+$c_Lrescala_restoration_ReCirce$.prototype.varEncoder__Lio_circe_Encoder = (function() {
+  var this$1 = $m_Lio_circe_Encoder$().encodeString$1;
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(t$2) {
+      var t = $as_Lrescala_reactives_Var(t$2);
+      return $as_Lrescala_restoration_ReStoringState(t.initialState$3).name$4.name$1
+    })
+  })(this));
+  return new $c_Lio_circe_Encoder$$anon$16().init___Lio_circe_Encoder__F1(this$1, f)
 });
 var $d_Lrescala_restoration_ReCirce$ = new $TypeData().initClass({
   Lrescala_restoration_ReCirce$: 0
@@ -5108,9 +4851,9 @@ $h_Lrescalatags_package$SignalToScalatags.prototype = $c_Lrescalatags_package$Si
 $c_Lrescalatags_package$SignalToScalatags.prototype.asFragInner__p1__Lrescala_core_Scheduler__Lrescala_core_Initializer__Lrescalatags_package$SignalToScalatags$REFrag = (function(engine, creation) {
   var this$2 = this.signal$1;
   var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
-    return (function(x$1$2) {
-      var x$1 = $as_Lscalatags_generic_Frag(x$1$2);
-      return x$1.render__O()
+    return (function(x$2$2) {
+      var x$2 = $as_Lscalatags_generic_Frag(x$2$2);
+      return x$2.render__O()
     })
   })(this));
   var jsx$1 = $m_Lrescala_core_CreationTicket$();
@@ -5186,9 +4929,9 @@ $c_Lrescalatags_package$SignalToScalatags.prototype.init___Lrescala_reactives_Si
 });
 $c_Lrescalatags_package$SignalToScalatags.prototype.asFrag__Lrescala_core_CreationTicket__Lrescala_core_Scheduler__Lscalatags_generic_Frag = (function(ct, engine) {
   var f = (function($this, engine$1) {
-    return (function(creation$2) {
-      var creation = $as_Lrescala_core_Initializer(creation$2);
-      return $this.asFragInner__p1__Lrescala_core_Scheduler__Lrescala_core_Initializer__Lrescalatags_package$SignalToScalatags$REFrag(engine$1, creation)
+    return (function(x$1$2) {
+      var x$1 = $as_Lrescala_core_Initializer(x$1$2);
+      return $this.asFragInner__p1__Lrescala_core_Scheduler__Lrescala_core_Initializer__Lrescalatags_package$SignalToScalatags$REFrag(engine$1, x$1)
     })
   })(this, engine);
   var x1 = ct.self$1;
@@ -5514,552 +5257,6 @@ function $h_Lsourcecode_SourceValue() {
 }
 $h_Lsourcecode_SourceValue.prototype = $c_Lsourcecode_SourceValue.prototype;
 /** @constructor */
-function $c_Ltodo_SimpleTodo$() {
-  $c_O.call(this);
-  this.storingEngine$1 = null;
-  this.taskDecoder$1 = null;
-  this.taskEncoder$1 = null
-}
-$c_Ltodo_SimpleTodo$.prototype = new $h_O();
-$c_Ltodo_SimpleTodo$.prototype.constructor = $c_Ltodo_SimpleTodo$;
-/** @constructor */
-function $h_Ltodo_SimpleTodo$() {
-  /*<skip>*/
-}
-$h_Ltodo_SimpleTodo$.prototype = $c_Ltodo_SimpleTodo$.prototype;
-$c_Ltodo_SimpleTodo$.prototype.init___ = (function() {
-  $n_Ltodo_SimpleTodo$ = this;
-  this.storingEngine$1 = new $c_Lrescala_restoration_LocalStorageStore().init___T("");
-  var this$4 = $m_Lio_circe_Decoder$();
-  var f = new $c_sjsr_AnonFunction3().init___sjs_js_Function3((function($this) {
-    return (function(dec$2, don$2, names$2) {
-      var dec = $as_T(dec$2);
-      var don = $uZ(don$2);
-      var names = $as_sci_List(names$2);
-      var this$1 = $m_Ltodo_SimpleTodo$().storingEngine$1;
-      var this$2 = this$1.nextNames$1;
-      $f_scg_Growable__$$plus$plus$eq__sc_TraversableOnce__scg_Growable(this$2, names);
-      return new $c_Ltodo_SimpleTodo$Task().init___T__Z(dec, don)
-    })
-  })(this));
-  var decodeA0 = $m_Lio_circe_Decoder$().decodeString$1;
-  var decodeA1 = $m_Lio_circe_Decoder$().decodeBoolean$1;
-  $m_Lio_circe_Decoder$();
-  var decodeA = $m_Lio_circe_Decoder$().decodeString$1;
-  var decodeA2 = new $c_Lio_circe_Decoder$$anon$16().init___Lio_circe_Decoder(decodeA);
-  this.taskDecoder$1 = new $c_Lio_circe_ProductDecoders$$anon$3().init___Lio_circe_ProductDecoders__T__T__T__F3__Lio_circe_Decoder__Lio_circe_Decoder__Lio_circe_Decoder(this$4, "decs", "done", "names", f, decodeA0, decodeA1, decodeA2);
-  var this$14 = $m_Lio_circe_Encoder$();
-  var f$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
-    return (function(t$2) {
-      var t = $as_Ltodo_SimpleTodo$Task(t$2);
-      var this$5 = t.desc$1;
-      var scheduler = $m_Ltodo_SimpleTodo$().storingEngine$1;
-      var jsx$3 = $f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(this$5, scheduler);
-      var this$6 = t.done$1;
-      var scheduler$1 = $m_Ltodo_SimpleTodo$().storingEngine$1;
-      var jsx$2 = $f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(this$6, scheduler$1);
-      $m_sci_List$();
-      $m_Ltodo_SimpleTodo$();
-      var r = t.desc$1;
-      var jsx$1 = $as_Lrescala_restoration_ReStoringStructType(r.initialState$3).name$4;
-      $m_Ltodo_SimpleTodo$();
-      var r$1 = t.done$1;
-      var array = [jsx$1, $as_Lrescala_restoration_ReStoringStructType(r$1.initialState$3).name$4];
-      var xs = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array);
-      var this$12 = $m_sci_List$();
-      var cbf = this$12.ReusableCBFInstance$2;
-      return new $c_T3().init___O__O__O(jsx$3, jsx$2, $as_sci_List($f_sc_TraversableLike__to__scg_CanBuildFrom__O(xs, cbf)))
-    })
-  })(this));
-  var encodeA0 = $m_Lio_circe_Encoder$().encodeString$1;
-  var encodeA1 = $m_Lio_circe_Encoder$().encodeBoolean$1;
-  $m_Lio_circe_Encoder$();
-  var encodeA = $m_Lio_circe_Encoder$().encodeString$1;
-  var encodeA2 = new $c_Lio_circe_Encoder$$anon$3().init___Lio_circe_Encoder(encodeA);
-  this.taskEncoder$1 = new $c_Lio_circe_ProductEncoders$$anon$3().init___Lio_circe_ProductEncoders__T__T__T__F1__Lio_circe_Encoder__Lio_circe_Encoder__Lio_circe_Encoder(this$14, "decs", "done", "names", f$1, encodeA0, encodeA1, encodeA2);
-  return this
-});
-$c_Ltodo_SimpleTodo$.prototype.todoinput$lzycompute$1__p1__Lrescala_core_DynamicTicket__Ltodo_SimpleTodo$Task__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement = (function(ticket$macro$6$1, t$1, todoinput$lzy$1) {
-  if ((todoinput$lzy$1 === null)) {
-    throw new $c_jl_NullPointerException().init___()
-  };
-  if (todoinput$lzy$1.$$undinitialized$1) {
-    return todoinput$lzy$1.$$undvalue$1
-  } else {
-    var this$1 = $m_Lscalatags_JsDom$all$();
-    var jsx$4 = this$1.input__Lscalatags_JsDom$TypedTag();
-    var jsx$3 = $m_Lscalatags_JsDom$all$().value__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(ticket$macro$6$1.depend__Lrescala_core_Interp__O(t$1.desc$1), $m_Lscalatags_JsDom$all$().stringAttr$1);
-    var jsx$2 = $m_Lscalatags_JsDom$all$().onchange__Lscalatags_generic_Attr();
-    var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, ticket$macro$6$1$1, t$1$1, todoinput$lzy$1$1) {
-      return (function(e$2) {
-        t$1$1.desc$1.set__O__Lrescala_core_Scheduler__V($as_T($this.todoinput$1__p1__Lrescala_core_DynamicTicket__Ltodo_SimpleTodo$Task__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement(ticket$macro$6$1$1, t$1$1, todoinput$lzy$1$1).value), $m_Ltodo_SimpleTodo$().storingEngine$1)
-      })
-    })(this, ticket$macro$6$1, t$1, todoinput$lzy$1));
-    var this$3 = $m_Lscalatags_JsDom$all$();
-    var ev = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2) {
-      return (function(f$2) {
-        var f = $as_F1(f$2);
-        return (function(f$1) {
-          return (function(arg1) {
-            return f$1.apply__O__O(arg1)
-          })
-        })(f)
-      })
-    })(this));
-    var array = [jsx$3, jsx$2.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$1, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$3, ev))];
-    return todoinput$lzy$1.initialize__O__O(jsx$4.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array)).render__Lorg_scalajs_dom_raw_Element())
-  }
-});
-$c_Ltodo_SimpleTodo$.prototype.main__V = (function() {
-  $m_sci_List$();
-  var array = [new $c_Ltodo_SimpleTodo$Task().init___T__Z("get milk", false), new $c_Ltodo_SimpleTodo$Task().init___T__Z("get sugar", false), new $c_Ltodo_SimpleTodo$Task().init___T__Z("get coffee", false), new $c_Ltodo_SimpleTodo$Task().init___T__Z("walk the dog", false)];
-  var xs = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array);
-  var this$4 = $m_sci_List$();
-  var cbf = this$4.ReusableCBFInstance$2;
-  var innerTasks = $as_sci_List($f_sc_TraversableLike__to__scg_CanBuildFrom__O(xs, cbf));
-  var this$7 = this.storingEngine$1;
-  var array$1 = ["simpletodo-tasklist"];
-  var this$8 = this$7.nextNames$1;
-  var i = 0;
-  var len = $uI(array$1.length);
-  while ((i < len)) {
-    var index = i;
-    var arg1 = array$1[index];
-    this$8.$$plus$eq__O__scm_MutableList(arg1);
-    i = ((1 + i) | 0)
-  };
-  var jsx$2 = this.storingEngine$1.Var__Lrescala_interface_RescalaInterface$Var$();
-  $m_Lio_circe_Encoder$();
-  var encodeA = this.taskEncoder$1;
-  var evidence$1 = new $c_Lio_circe_Encoder$$anon$3().init___Lio_circe_Encoder(encodeA);
-  $m_Lio_circe_Decoder$();
-  var decodeA = this.taskDecoder$1;
-  var evidence$2 = new $c_Lio_circe_Decoder$$anon$16().init___Lio_circe_Decoder(decodeA);
-  var jsx$1 = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1, evidence$2);
-  var this$13 = $m_Lrescala_core_CreationTicket$();
-  var factory = this.storingEngine$1;
-  var this$12 = $m_Lrescala_core_REName$();
-  var file = new $c_Lsourcecode_Enclosing().init___T("todo.SimpleTodo.main tasks");
-  var line = new $c_Lsourcecode_Line().init___I(46);
-  var line$1 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$12, file, line);
-  var tasks = jsx$2.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(innerTasks, jsx$1, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$13, factory, line$1));
-  var this$14 = $m_Lscalatags_JsDom$all$();
-  var jsx$3 = this$14.input__Lscalatags_JsDom$TypedTag();
-  var array$2 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("descrip", $m_Lscalatags_JsDom$all$().stringAttr$1), $m_Lscalatags_JsDom$all$().id__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("newtodo", $m_Lscalatags_JsDom$all$().stringAttr$1), $m_Lscalatags_JsDom$all$().placeholder__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("new todo", $m_Lscalatags_JsDom$all$().stringAttr$1)];
-  var newTodoInput = jsx$3.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2)).render__Lorg_scalajs_dom_raw_Element();
-  var jsx$57 = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().body;
-  var this$17 = $m_Lscalatags_JsDom$all$();
-  var jsx$56 = this$17.div__Lscalatags_JsDom$TypedTag();
-  var this$18 = $m_Lscalatags_JsDom$all$();
-  var jsx$55 = this$18.h1__Lscalatags_JsDom$TypedTag();
-  var array$3 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("DO TODOS!"))];
-  var jsx$54 = jsx$55.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3));
-  var this$22 = $m_Lscalatags_JsDom$all$();
-  var jsx$53 = this$22.form__Lscalatags_JsDom$TypedTag();
-  var jsx$52 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("task", $m_Lscalatags_JsDom$all$().stringAttr$1);
-  var jsx$51 = $m_Lscalatags_JsDom$all$().onsubmit__Lscalatags_generic_Attr();
-  var jsx$50 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, tasks$1, newTodoInput$1) {
-    return (function(e$2) {
-      e$2.preventDefault();
-      var fac = $m_Ltodo_SimpleTodo$().storingEngine$1;
-      var array$4 = [tasks$1];
-      var initialWrites = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4);
-      var this$25 = $m_sci_Set$();
-      var cbf$1 = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$25);
-      var initialWrites$1 = $as_sci_Set($f_sc_TraversableLike__to__scg_CanBuildFrom__O(initialWrites, cbf$1));
-      $as_s_Option(fac.$$undcurrentTurn$1.v$1);
-      var turn = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(fac);
-      try {
-        var this$26 = fac.$$undcurrentTurn$1;
-        var newval = new $c_s_Some().init___O(turn);
-        var oldval = this$26.v$1;
-        this$26.v$1 = newval;
-        try {
-          var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn, initialWrites$1);
-          var arg1$1 = admissionTicket.now__Lrescala_reactives_Signal__O(tasks$1);
-          var x$1 = $as_sci_List(arg1$1);
-          var x$2 = new $c_Ltodo_SimpleTodo$Task().init___T__Z($as_T(newTodoInput$1.value), false);
-          tasks$1.admit__O__Lrescala_core_AdmissionTicket__V(new $c_sci_$colon$colon().init___O__sci_List(x$2, x$1), admissionTicket);
-          var admissionResult = (void 0);
-          var initialChanges = admissionTicket.$$undinitialChanges$2;
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn, initialChanges);
-          turn.levelQueue$1.evaluateQueue__V();
-          if ((admissionTicket.wrapUp$2 !== null)) {
-            admissionTicket.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn))
-          };
-          var result = admissionResult
-        } finally {
-          this$26.v$1 = oldval
-        };
-        $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn)
-      } catch (e) {
-        var e$2$1 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
-        if ((e$2$1 !== null)) {
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn);
-          throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2$1)
-        } else {
-          throw e
-        }
-      } finally {
-        /*<skip>*/
-      };
-      $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn);
-      newTodoInput$1.value = ""
-    })
-  })(this, tasks, newTodoInput));
-  var this$27 = $m_Lscalatags_JsDom$all$();
-  var ev = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
-    return (function(f$2) {
-      var f = $as_F1(f$2);
-      return (function(f$1) {
-        return (function(arg1$2) {
-          return f$1.apply__O__O(arg1$2)
-        })
-      })(f)
-    })
-  })(this));
-  var jsx$49 = jsx$51.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$50, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$27, ev));
-  var this$28 = $m_Lscalatags_JsDom$all$();
-  var jsx$48 = this$28.span__Lscalatags_JsDom$TypedTag();
-  var array$5 = [$m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("span-input", $m_Lscalatags_JsDom$all$().stringAttr$1)];
-  var jsx$47 = jsx$48.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5));
-  var this$31 = $m_Lscalatags_JsDom$all$();
-  var array$6 = [jsx$52, jsx$49, jsx$47, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$31, newTodoInput)];
-  var jsx$46 = jsx$53.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$6));
-  var jsx$39 = $m_Lrescala_reactives_Signals$();
-  var array$7 = [tasks];
-  var jsx$38 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$7);
-  var jsx$37 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$1, tasks$2) {
-    return (function(ticket$macro$1$2) {
-      var ticket$macro$1 = $as_Lrescala_core_StaticTicket(ticket$macro$1$2);
-      return (($as_sc_SeqLike(ticket$macro$1.dependStatic__Lrescala_core_Interp__O(tasks$2)).size__I() === 0) ? "info" : "hidden")
-    })
-  })(this, tasks));
-  var this$37 = $m_Lrescala_core_CreationTicket$();
-  var factory$1 = this.storingEngine$1;
-  var this$36 = $m_Lrescala_core_REName$();
-  var file$1 = new $c_Lsourcecode_Enclosing().init___T("todo.SimpleTodo.main");
-  var line$2 = new $c_Lsourcecode_Line().init___I(66);
-  var line$3 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$36, file$1, line$2);
-  var reactive$macro$3 = jsx$39.$static__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$38, jsx$37, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$37, factory$1, line$3));
-  var jsx$44 = $m_Lrescala_reactives_Signals$();
-  var jsx$43 = $m_sci_Nil$();
-  var jsx$40 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$4$1, reactive$macro$3$1) {
-    return (function(ticket$macro$2$2) {
-      $as_Lrescala_core_StaticTicket(ticket$macro$2$2);
-      var this$38 = $m_Lscalatags_JsDom$all$();
-      var jsx$42 = this$38.div__Lscalatags_JsDom$TypedTag();
-      var jsx$41 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr();
-      var evidence$1$1 = $m_Lscalatags_JsDom$all$().stringAttr$1;
-      var engine = $m_Ltodo_SimpleTodo$().storingEngine$1;
-      var array$8 = [jsx$41.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(reactive$macro$3$1, new $c_Lrescalatags_package$$anon$1().init___Lscalatags_generic_AttrValue__Lrescala_core_Scheduler(evidence$1$1, engine)), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("All clear"))];
-      return jsx$42.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$8))
-    })
-  })(this, reactive$macro$3));
-  var this$44 = $m_Lrescala_core_CreationTicket$();
-  var factory$2 = this.storingEngine$1;
-  var this$43 = $m_Lrescala_core_REName$();
-  var file$2 = new $c_Lsourcecode_Enclosing().init___T("todo.SimpleTodo.main");
-  var line$4 = new $c_Lsourcecode_Line().init___I(64);
-  var line$5 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$43, file$2, line$4);
-  var signal = jsx$44.$static__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$43, jsx$40, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$44, factory$2, line$5));
-  var jsx$45 = new $c_Lrescalatags_package$SignalToScalatags().init___Lrescala_reactives_Signal(signal);
-  var this$47 = $m_Lrescala_core_CreationTicket$();
-  var factory$3 = this.storingEngine$1;
-  var this$46 = $m_Lrescala_core_REName$();
-  var file$3 = new $c_Lsourcecode_Enclosing().init___T("todo.SimpleTodo.main");
-  var line$6 = new $c_Lsourcecode_Line().init___I(69);
-  var line$7 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$46, file$3, line$6);
-  var jsx$36 = jsx$45.asFrag__Lrescala_core_CreationTicket__Lrescala_core_Scheduler__Lscalatags_generic_Frag($f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$47, factory$3, line$7), this.storingEngine$1);
-  var jsx$34 = $m_Lrescala_reactives_Signals$();
-  var array$9 = [tasks];
-  var jsx$33 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$9);
-  var jsx$16 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$5$1, tasks$3) {
-    return (function(ticket$macro$6$2) {
-      var ticket$macro$6 = $as_Lrescala_core_DynamicTicket(ticket$macro$6$2);
-      var this$50 = $m_Lscalatags_JsDom$all$();
-      var jsx$32 = this$50.ul__Lscalatags_JsDom$TypedTag();
-      var this$67 = $m_Lscalatags_JsDom$all$();
-      var this$66 = $as_sci_List(ticket$macro$6.dependStatic__Lrescala_core_Interp__O(tasks$3));
-      var f$5 = (function($this$1, ticket$macro$6$1) {
-        return (function(t$2) {
-          var t = $as_Ltodo_SimpleTodo$Task(t$2);
-          var this$51 = $m_Lscalatags_JsDom$all$();
-          var jsx$30 = this$51.li__Lscalatags_JsDom$TypedTag();
-          var jsx$29 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr();
-          var jsx$28 = $m_Lrescala_reactives_Signals$();
-          var array$10 = [t.done$1];
-          var jsx$27 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$10);
-          var jsx$26 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this$2, t$1) {
-            return (function(ticket$macro$5$2) {
-              var ticket$macro$5 = $as_Lrescala_core_StaticTicket(ticket$macro$5$2);
-              return ($uZ(ticket$macro$5.dependStatic__Lrescala_core_Interp__O(t$1.done$1)) ? "task done" : "task")
-            })
-          })($this$1, t));
-          $m_s_package$();
-          var value = ticket$macro$6$1.creation$1;
-          var jsx$25 = new $c_s_util_Left().init___O(value);
-          var this$55 = $m_Lrescala_core_REName$();
-          var file$4 = new $c_Lsourcecode_Enclosing().init___T("todo.SimpleTodo.main $anonfun $anonfun");
-          var line$8 = new $c_Lsourcecode_Line().init___I(71);
-          var jsx$24 = jsx$28.$static__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$27, jsx$26, new $c_Lrescala_core_CreationTicket().init___s_util_Either__Lrescala_core_REName(jsx$25, $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$55, file$4, line$8)));
-          var evidence$1$2 = $m_Lscalatags_JsDom$all$().stringAttr$1;
-          var engine$1 = $m_Ltodo_SimpleTodo$().storingEngine$1;
-          var jsx$23 = jsx$29.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$24, new $c_Lrescalatags_package$$anon$1().init___Lscalatags_generic_AttrValue__Lrescala_core_Scheduler(evidence$1$2, engine$1));
-          var this$57 = $m_Lscalatags_JsDom$all$();
-          var jsx$22 = this$57.input__Lscalatags_JsDom$TypedTag();
-          var jsx$21 = $m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("checkbox", $m_Lscalatags_JsDom$all$().stringAttr$1);
-          var jsx$20 = ($uZ(ticket$macro$6$1.depend__Lrescala_core_Interp__O(t.done$1)) ? $m_Lscalatags_JsDom$all$().checked__Lscalatags_generic_AttrPair().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("checked", $m_Lscalatags_JsDom$all$().stringAttr$1) : ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("")));
-          var jsx$19 = $m_Lscalatags_JsDom$all$().onchange__Lscalatags_generic_Attr();
-          var jsx$18 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$2, t$3) {
-            return (function(e$2$2) {
-              t$3.done$1.set__O__Lrescala_core_Scheduler__V($uZ(e$2$2.target.checked), $m_Ltodo_SimpleTodo$().storingEngine$1)
-            })
-          })($this$1, t));
-          var this$59 = $m_Lscalatags_JsDom$all$();
-          var ev$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$2) {
-            return (function(f$2$1) {
-              var f$3 = $as_F1(f$2$1);
-              return (function(f$4) {
-                return (function(arg1$3) {
-                  return f$4.apply__O__O(arg1$3)
-                })
-              })(f$3)
-            })
-          })($this$1));
-          var array$11 = [jsx$21, jsx$20, jsx$19.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$18, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$59, ev$1))];
-          var jsx$17 = jsx$22.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$11));
-          var todoinput$lzy = new $c_sr_LazyRef().init___();
-          var this$62 = $m_Lscalatags_JsDom$all$();
-          var e$1 = $this$1.todoinput$1__p1__Lrescala_core_DynamicTicket__Ltodo_SimpleTodo$Task__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement(ticket$macro$6$1, t, todoinput$lzy);
-          var array$12 = [jsx$23, jsx$17, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$62, e$1)];
-          return jsx$30.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$12))
-        })
-      })(this$5$1, ticket$macro$6);
-      var this$65 = $m_sci_List$();
-      var bf = this$65.ReusableCBFInstance$2;
-      if ((bf === $m_sci_List$().ReusableCBFInstance$2)) {
-        if ((this$66 === $m_sci_Nil$())) {
-          var jsx$31 = $m_sci_Nil$()
-        } else {
-          var arg1$4 = this$66.head__O();
-          var h = new $c_sci_$colon$colon().init___O__sci_List(f$5(arg1$4), $m_sci_Nil$());
-          var t$4 = h;
-          var rest = $as_sci_List(this$66.tail__O());
-          while ((rest !== $m_sci_Nil$())) {
-            var arg1$5 = rest.head__O();
-            var nx = new $c_sci_$colon$colon().init___O__sci_List(f$5(arg1$5), $m_sci_Nil$());
-            t$4.tl$5 = nx;
-            t$4 = nx;
-            rest = $as_sci_List(rest.tail__O())
-          };
-          var jsx$31 = h
-        }
-      } else {
-        var b = $f_sc_TraversableLike__builder$1__psc_TraversableLike__scg_CanBuildFrom__scm_Builder(this$66, bf);
-        var these = this$66;
-        while ((!these.isEmpty__Z())) {
-          var arg1$6 = these.head__O();
-          b.$$plus$eq__O__scm_Builder(f$5(arg1$6));
-          these = $as_sci_List(these.tail__O())
-        };
-        var jsx$31 = b.result__O()
-      };
-      var xs$1 = $as_sc_Seq(jsx$31);
-      var ev$2 = $m_s_Predef$().singleton$und$less$colon$less$2;
-      var array$13 = [new $c_Lscalatags_JsDom$Cap$SeqFrag().init___Lscalatags_JsDom$Cap__sc_Seq__F1(this$67, xs$1, ev$2)];
-      return jsx$32.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$13))
-    })
-  })(this, tasks));
-  var this$71 = $m_Lrescala_core_CreationTicket$();
-  var factory$4 = this.storingEngine$1;
-  var this$70 = $m_Lrescala_core_REName$();
-  var file$5 = new $c_Lsourcecode_Enclosing().init___T("todo.SimpleTodo.main");
-  var line$9 = new $c_Lsourcecode_Line().init___I(71);
-  var line$10 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$70, file$5, line$9);
-  var signal$1 = jsx$34.dynamic__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$33, jsx$16, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$71, factory$4, line$10));
-  var jsx$35 = new $c_Lrescalatags_package$SignalToScalatags().init___Lrescala_reactives_Signal(signal$1);
-  var this$74 = $m_Lrescala_core_CreationTicket$();
-  var factory$5 = this.storingEngine$1;
-  var this$73 = $m_Lrescala_core_REName$();
-  var file$6 = new $c_Lsourcecode_Enclosing().init___T("todo.SimpleTodo.main");
-  var line$11 = new $c_Lsourcecode_Line().init___I(102);
-  var line$12 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$73, file$6, line$11);
-  var jsx$15 = jsx$35.asFrag__Lrescala_core_CreationTicket__Lrescala_core_Scheduler__Lscalatags_generic_Frag($f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$74, factory$5, line$12), this.storingEngine$1);
-  var this$75 = $m_Lscalatags_JsDom$all$();
-  var jsx$14 = this$75.input__Lscalatags_JsDom$TypedTag();
-  var jsx$13 = $m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("button", $m_Lscalatags_JsDom$all$().stringAttr$1);
-  var jsx$12 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr();
-  var jsx$11 = $m_Lrescala_reactives_Signals$();
-  var array$14 = [tasks];
-  var jsx$10 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$14);
-  var jsx$9 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$6$1, tasks$4) {
-    return (function(ticket$macro$7$2) {
-      var ticket$macro$7 = $as_Lrescala_core_StaticTicket(ticket$macro$7$2);
-      return (($as_sc_SeqLike(ticket$macro$7.dependStatic__Lrescala_core_Interp__O(tasks$4)).size__I() === 0) ? "hidden" : "")
-    })
-  })(this, tasks));
-  var this$79 = $m_Lrescala_core_CreationTicket$();
-  var factory$6 = this.storingEngine$1;
-  var this$78 = $m_Lrescala_core_REName$();
-  var file$7 = new $c_Lsourcecode_Enclosing().init___T("todo.SimpleTodo.main");
-  var line$13 = new $c_Lsourcecode_Line().init___I(106);
-  var line$14 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$78, file$7, line$13);
-  var jsx$8 = jsx$11.$static__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$10, jsx$9, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$79, factory$6, line$14));
-  var evidence$1$3 = $m_Lscalatags_JsDom$all$().stringAttr$1;
-  var engine$2 = this.storingEngine$1;
-  var jsx$7 = jsx$12.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$8, new $c_Lrescalatags_package$$anon$1().init___Lscalatags_generic_AttrValue__Lrescala_core_Scheduler(evidence$1$3, engine$2));
-  var jsx$6 = $m_Lscalatags_JsDom$all$().value__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("remove all done todos", $m_Lscalatags_JsDom$all$().stringAttr$1);
-  var jsx$5 = $m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr();
-  var jsx$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$7$1, tasks$5) {
-    return (function(e$3$2) {
-      var fac$1 = $m_Ltodo_SimpleTodo$().storingEngine$1;
-      var array$15 = [tasks$5];
-      var initialWrites$2 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$15);
-      var this$83 = $m_sci_Set$();
-      var cbf$2 = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$83);
-      var initialWrites$3 = $as_sci_Set($f_sc_TraversableLike__to__scg_CanBuildFrom__O(initialWrites$2, cbf$2));
-      $as_s_Option(fac$1.$$undcurrentTurn$1.v$1);
-      var turn$1 = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(fac$1);
-      try {
-        var this$84 = fac$1.$$undcurrentTurn$1;
-        var newval$1 = new $c_s_Some().init___O(turn$1);
-        var oldval$1 = this$84.v$1;
-        this$84.v$1 = newval$1;
-        try {
-          var admissionTicket$1 = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn$1, initialWrites$3);
-          var arg1$7 = admissionTicket$1.now__Lrescala_reactives_Signal__O(tasks$5);
-          var x$3 = $as_sci_List(arg1$7);
-          $m_sci_List$();
-          var b$1 = new $c_scm_ListBuffer().init___();
-          var these$1 = x$3;
-          while ((!these$1.isEmpty__Z())) {
-            var arg1$8 = these$1.head__O();
-            var t$5 = $as_Ltodo_SimpleTodo$Task(arg1$8);
-            var this$86 = t$5.done$1;
-            var scheduler = $m_Ltodo_SimpleTodo$().storingEngine$1;
-            if (((!$uZ($f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(this$86, scheduler))) !== false)) {
-              b$1.$$plus$eq__O__scm_ListBuffer(arg1$8)
-            };
-            these$1 = $as_sci_List(these$1.tail__O())
-          };
-          tasks$5.admit__O__Lrescala_core_AdmissionTicket__V(b$1.toList__sci_List(), admissionTicket$1);
-          var admissionResult$1 = (void 0);
-          var initialChanges$1 = admissionTicket$1.$$undinitialChanges$2;
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn$1, initialChanges$1);
-          turn$1.levelQueue$1.evaluateQueue__V();
-          if ((admissionTicket$1.wrapUp$2 !== null)) {
-            admissionTicket$1.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn$1))
-          };
-          var result$1 = admissionResult$1
-        } finally {
-          this$84.v$1 = oldval$1
-        };
-        $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn$1)
-      } catch (e$3) {
-        var e$2$3 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e$3);
-        if ((e$2$3 !== null)) {
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn$1);
-          throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2$3)
-        } else {
-          throw e$3
-        }
-      } finally {
-        /*<skip>*/
-      };
-      $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn$1)
-    })
-  })(this, tasks));
-  var this$87 = $m_Lscalatags_JsDom$all$();
-  var ev$3 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$8$1) {
-    return (function(f$3$2) {
-      var f$3$1 = $as_F1(f$3$2);
-      return (function(f$6) {
-        return (function(arg1$9) {
-          return f$6.apply__O__O(arg1$9)
-        })
-      })(f$3$1)
-    })
-  })(this));
-  var array$16 = [jsx$13, jsx$7, jsx$6, jsx$5.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$4, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$87, ev$3))];
-  var array$17 = [jsx$54, jsx$46, jsx$36, jsx$15, jsx$14.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$16))];
-  jsx$57.appendChild(jsx$56.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$17)).render__Lorg_scalajs_dom_raw_Element())
-});
-$c_Ltodo_SimpleTodo$.prototype.todoinput$1__p1__Lrescala_core_DynamicTicket__Ltodo_SimpleTodo$Task__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement = (function(ticket$macro$6$1, t$1, todoinput$lzy$1) {
-  return (todoinput$lzy$1.$$undinitialized$1 ? todoinput$lzy$1.$$undvalue$1 : this.todoinput$lzycompute$1__p1__Lrescala_core_DynamicTicket__Ltodo_SimpleTodo$Task__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement(ticket$macro$6$1, t$1, todoinput$lzy$1))
-});
-var $d_Ltodo_SimpleTodo$ = new $TypeData().initClass({
-  Ltodo_SimpleTodo$: 0
-}, false, "todo.SimpleTodo$", {
-  Ltodo_SimpleTodo$: 1,
-  O: 1
-});
-$c_Ltodo_SimpleTodo$.prototype.$classData = $d_Ltodo_SimpleTodo$;
-var $n_Ltodo_SimpleTodo$ = (void 0);
-function $m_Ltodo_SimpleTodo$() {
-  if ((!$n_Ltodo_SimpleTodo$)) {
-    $n_Ltodo_SimpleTodo$ = new $c_Ltodo_SimpleTodo$().init___()
-  };
-  return $n_Ltodo_SimpleTodo$
-}
-/** @constructor */
-function $c_Ltodo_SimpleTodo$Task() {
-  $c_O.call(this);
-  this.desc$1 = null;
-  this.done$1 = null
-}
-$c_Ltodo_SimpleTodo$Task.prototype = new $h_O();
-$c_Ltodo_SimpleTodo$Task.prototype.constructor = $c_Ltodo_SimpleTodo$Task;
-/** @constructor */
-function $h_Ltodo_SimpleTodo$Task() {
-  /*<skip>*/
-}
-$h_Ltodo_SimpleTodo$Task.prototype = $c_Ltodo_SimpleTodo$Task.prototype;
-$c_Ltodo_SimpleTodo$Task.prototype.init___T__Z = (function(desc_, done_) {
-  var jsx$2 = $m_Ltodo_SimpleTodo$().storingEngine$1.Var__Lrescala_interface_RescalaInterface$Var$();
-  var evidence$1 = $m_Lio_circe_Encoder$().encodeString$1;
-  var evidence$2 = $m_Lio_circe_Decoder$().decodeString$1;
-  var jsx$1 = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1, evidence$2);
-  var this$3 = $m_Lrescala_core_CreationTicket$();
-  var factory = $m_Ltodo_SimpleTodo$().storingEngine$1;
-  var this$2 = $m_Lrescala_core_REName$();
-  var file = new $c_Lsourcecode_Enclosing().init___T("todo.SimpleTodo.Task#desc");
-  var line = new $c_Lsourcecode_Line().init___I(31);
-  var line$1 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$2, file, line);
-  this.desc$1 = jsx$2.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(desc_, jsx$1, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$3, factory, line$1));
-  var jsx$4 = $m_Ltodo_SimpleTodo$().storingEngine$1.Var__Lrescala_interface_RescalaInterface$Var$();
-  var evidence$1$1 = $m_Lio_circe_Encoder$().encodeBoolean$1;
-  var evidence$2$1 = $m_Lio_circe_Decoder$().decodeBoolean$1;
-  var jsx$3 = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1$1, evidence$2$1);
-  var this$6 = $m_Lrescala_core_CreationTicket$();
-  var factory$1 = $m_Ltodo_SimpleTodo$().storingEngine$1;
-  var this$5 = $m_Lrescala_core_REName$();
-  var file$1 = new $c_Lsourcecode_Enclosing().init___T("todo.SimpleTodo.Task#done");
-  var line$2 = new $c_Lsourcecode_Line().init___I(32);
-  var line$3 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$5, file$1, line$2);
-  this.done$1 = jsx$4.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(done_, jsx$3, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$6, factory$1, line$3));
-  return this
-});
-function $is_Ltodo_SimpleTodo$Task(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Ltodo_SimpleTodo$Task)))
-}
-function $as_Ltodo_SimpleTodo$Task(obj) {
-  return (($is_Ltodo_SimpleTodo$Task(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "todo.SimpleTodo$Task"))
-}
-function $isArrayOf_Ltodo_SimpleTodo$Task(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ltodo_SimpleTodo$Task)))
-}
-function $asArrayOf_Ltodo_SimpleTodo$Task(obj, depth) {
-  return (($isArrayOf_Ltodo_SimpleTodo$Task(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ltodo.SimpleTodo$Task;", depth))
-}
-var $d_Ltodo_SimpleTodo$Task = new $TypeData().initClass({
-  Ltodo_SimpleTodo$Task: 0
-}, false, "todo.SimpleTodo$Task", {
-  Ltodo_SimpleTodo$Task: 1,
-  O: 1
-});
-$c_Ltodo_SimpleTodo$Task.prototype.$classData = $d_Ltodo_SimpleTodo$Task;
-/** @constructor */
 function $c_Ltodo_TodoMVC$() {
   $c_O.call(this);
   this.storingEngine$1 = null;
@@ -6078,79 +5275,66 @@ $c_Ltodo_TodoMVC$.prototype.newTodo$1__p1__Lrescala_reactives_Var__sr_LazyRef__L
 });
 $c_Ltodo_TodoMVC$.prototype.init___ = (function() {
   $n_Ltodo_TodoMVC$ = this;
-  this.storingEngine$1 = new $c_Lrescala_restoration_LocalStorageStore().init___T("");
-  var this$4 = $m_Lio_circe_Decoder$();
-  var f = new $c_sjsr_AnonFunction3().init___sjs_js_Function3((function($this) {
-    return (function(decs$2, done$2, names$2) {
-      var decs = $as_T(decs$2);
-      var done = $uZ(done$2);
-      var names = $as_sci_List(names$2);
-      var this$1 = $m_Ltodo_TodoMVC$().storingEngine$1;
-      var this$2 = this$1.nextNames$1;
-      $f_scg_Growable__$$plus$plus$eq__sc_TraversableOnce__scg_Growable(this$2, names);
-      return new $c_Ltodo_TodoMVC$Task().init___T__Z(decs, done)
+  this.storingEngine$1 = new $c_Lrescala_restoration_LocalStorageStore().init___();
+  var this$7 = $m_Lio_circe_Decoder$();
+  var jsx$2 = $m_Lrescala_restoration_ReCirce$();
+  var evidence$1 = $m_Lio_circe_Encoder$().encodeString$1;
+  var evidence$2 = $m_Lio_circe_Decoder$().decodeString$1;
+  var jsx$1 = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1, evidence$2);
+  var this$3 = $m_Lrescala_core_CreationTicket$();
+  var factory = this.storingEngine$1;
+  var this$2 = $m_Lrescala_core_REName$();
+  var file = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.taskDecoder");
+  var line = new $c_Lsourcecode_Line().init___I(22);
+  var line$1 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$2, file, line);
+  var decodeA0 = jsx$2.varDecoder__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lio_circe_Decoder(jsx$1, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$3, factory, line$1));
+  var jsx$4 = $m_Lrescala_restoration_ReCirce$();
+  var evidence$1$1 = $m_Lio_circe_Encoder$().encodeBoolean$1;
+  var evidence$2$1 = $m_Lio_circe_Decoder$().decodeBoolean$1;
+  var jsx$3 = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1$1, evidence$2$1);
+  var this$6 = $m_Lrescala_core_CreationTicket$();
+  var factory$1 = this.storingEngine$1;
+  var this$5 = $m_Lrescala_core_REName$();
+  var file$1 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.taskDecoder");
+  var line$2 = new $c_Lsourcecode_Line().init___I(22);
+  var line$3 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$5, file$1, line$2);
+  var decodeA1 = jsx$4.varDecoder__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lio_circe_Decoder(jsx$3, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$6, factory$1, line$3));
+  var this$8 = new $c_Lio_circe_TupleDecoders$$anon$2().init___Lio_circe_TupleDecoders__Lio_circe_Decoder__Lio_circe_Decoder(this$7, decodeA0, decodeA1);
+  var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
+    return (function(x0$1$2) {
+      var x0$1 = $as_T2(x0$1$2);
+      if ((x0$1 !== null)) {
+        var desc = $as_Lrescala_reactives_Var(x0$1.$$und1__O());
+        var done = $as_Lrescala_reactives_Var(x0$1.$$und2__O());
+        return new $c_Ltodo_TodoMVC$Task().init___Lrescala_reactives_Var__Lrescala_reactives_Var(desc, done)
+      } else {
+        throw new $c_s_MatchError().init___O(x0$1)
+      }
     })
   })(this));
-  var decodeA0 = $m_Lio_circe_Decoder$().decodeString$1;
-  var decodeA1 = $m_Lio_circe_Decoder$().decodeBoolean$1;
-  $m_Lio_circe_Decoder$();
-  var decodeA = $m_Lio_circe_Decoder$().decodeString$1;
-  var decodeA2 = new $c_Lio_circe_Decoder$$anon$16().init___Lio_circe_Decoder(decodeA);
-  this.taskDecoder$1 = new $c_Lio_circe_ProductDecoders$$anon$3().init___Lio_circe_ProductDecoders__T__T__T__F3__Lio_circe_Decoder__Lio_circe_Decoder__Lio_circe_Decoder(this$4, "decs", "done", "names", f, decodeA0, decodeA1, decodeA2);
-  var this$14 = $m_Lio_circe_Encoder$();
+  this.taskDecoder$1 = new $c_Lio_circe_Decoder$$anon$21().init___Lio_circe_Decoder__F1(this$8, f);
+  var this$9 = $m_Lio_circe_Encoder$();
+  var encodeA0 = $m_Lrescala_restoration_ReCirce$().varEncoder__Lio_circe_Encoder();
+  var encodeA1 = $m_Lrescala_restoration_ReCirce$().varEncoder__Lio_circe_Encoder();
+  var this$10 = new $c_Lio_circe_TupleEncoders$$anon$2().init___Lio_circe_TupleEncoders__Lio_circe_Encoder__Lio_circe_Encoder(this$9, encodeA0, encodeA1);
   var f$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
     return (function(t$2) {
       var t = $as_Ltodo_TodoMVC$Task(t$2);
-      var this$5 = t.desc$1;
-      var scheduler = $m_Ltodo_TodoMVC$().storingEngine$1;
-      var jsx$3 = $f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(this$5, scheduler);
-      var this$6 = t.done$1;
-      var scheduler$1 = $m_Ltodo_TodoMVC$().storingEngine$1;
-      var jsx$2 = $f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(this$6, scheduler$1);
-      $m_sci_List$();
-      $m_Ltodo_TodoMVC$();
-      var r = t.desc$1;
-      var jsx$1 = $as_Lrescala_restoration_ReStoringStructType(r.initialState$3).name$4;
-      $m_Ltodo_TodoMVC$();
-      var r$1 = t.done$1;
-      var array = [jsx$1, $as_Lrescala_restoration_ReStoringStructType(r$1.initialState$3).name$4];
-      var xs = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array);
-      var this$12 = $m_sci_List$();
-      var cbf = this$12.ReusableCBFInstance$2;
-      return new $c_T3().init___O__O__O(jsx$3, jsx$2, $as_sci_List($f_sc_TraversableLike__to__scg_CanBuildFrom__O(xs, cbf)))
+      return new $c_T2().init___O__O(t.desc$1, t.done$1)
     })
   })(this));
-  var encodeA0 = $m_Lio_circe_Encoder$().encodeString$1;
-  var encodeA1 = $m_Lio_circe_Encoder$().encodeBoolean$1;
-  $m_Lio_circe_Encoder$();
-  var encodeA = $m_Lio_circe_Encoder$().encodeString$1;
-  var encodeA2 = new $c_Lio_circe_Encoder$$anon$3().init___Lio_circe_Encoder(encodeA);
-  this.taskEncoder$1 = new $c_Lio_circe_ProductEncoders$$anon$3().init___Lio_circe_ProductEncoders__T__T__T__F1__Lio_circe_Encoder__Lio_circe_Encoder__Lio_circe_Encoder(this$14, "decs", "done", "names", f$1, encodeA0, encodeA1, encodeA2);
+  this.taskEncoder$1 = new $c_Lio_circe_Encoder$$anon$16().init___Lio_circe_Encoder__F1(this$10, f$1);
   return this
 });
 $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
   var newTodo$lzy = new $c_sr_LazyRef().init___();
-  var this$2 = $m_s_Console$();
-  var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-  this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("starting\n");
   $m_sci_List$();
-  var array = [new $c_Ltodo_TodoMVC$Task().init___T__Z("walk the dog", false), new $c_Ltodo_TodoMVC$Task().init___T__Z("get milk", false), new $c_Ltodo_TodoMVC$Task().init___T__Z("get coffee", false)];
+  var array = [$m_Ltodo_TodoMVC$Task$().apply__T__Z__Ltodo_TodoMVC$Task("walk the dog", false), $m_Ltodo_TodoMVC$Task$().apply__T__Z__Ltodo_TodoMVC$Task("get milk", false), $m_Ltodo_TodoMVC$Task$().apply__T__Z__Ltodo_TodoMVC$Task("get coffee", false)];
   var xs = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array);
-  var this$7 = $m_sci_List$();
-  var cbf = this$7.ReusableCBFInstance$2;
+  var this$4 = $m_sci_List$();
+  var cbf = this$4.ReusableCBFInstance$2;
   var innerTasks = $as_sci_List($f_sc_TraversableLike__to__scg_CanBuildFrom__O(xs, cbf));
-  var this$10 = this.storingEngine$1;
-  var array$1 = ["todomvc-rescala-tasklist"];
-  var this$11 = this$10.nextNames$1;
-  var i = 0;
-  var len = $uI(array$1.length);
-  while ((i < len)) {
-    var index = i;
-    var arg1 = array$1[index];
-    this$11.$$plus$eq__O__scm_MutableList(arg1);
-    i = ((1 + i) | 0)
-  };
-  var jsx$2 = this.storingEngine$1.Var__Lrescala_interface_RescalaInterface$Var$();
+  var jsx$2 = this.storingEngine$1.Var__Lrescala_interface_RescalaInterfaceRequireSerializer$Var$();
   $m_Lio_circe_Encoder$();
   var encodeA = this.taskEncoder$1;
   var evidence$1 = new $c_Lio_circe_Encoder$$anon$3().init___Lio_circe_Encoder(encodeA);
@@ -6158,52 +5342,54 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
   var decodeA = this.taskDecoder$1;
   var evidence$2 = new $c_Lio_circe_Decoder$$anon$16().init___Lio_circe_Decoder(decodeA);
   var jsx$1 = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1, evidence$2);
-  var this$16 = $m_Lrescala_core_CreationTicket$();
+  var this$10 = $m_Lrescala_core_CreationTicket$();
+  var this$9 = $m_Lrescala_core_CreationTicket$();
   var factory = this.storingEngine$1;
-  var this$15 = $m_Lrescala_core_REName$();
+  var this$8 = $m_Lrescala_core_REName$();
   var file = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.main tasks");
-  var line = new $c_Lsourcecode_Line().init___I(48);
-  var line$1 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$15, file, line);
-  var tasks = jsx$2.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(innerTasks, jsx$1, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$16, factory, line$1));
-  var this$17 = $m_Lscalatags_JsDom$all$();
-  var jsx$91 = this$17.div__Lscalatags_JsDom$TypedTag();
+  var line = new $c_Lsourcecode_Line().init___I(47);
+  var line$1 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$8, file, line);
+  var outer = $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$9, factory, line$1);
+  var tasks = jsx$2.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(innerTasks, jsx$1, $f_Lrescala_core_LowPriorityCreationImplicits__fromNameImplicit__T__Lrescala_core_CreationTicket__Lrescala_core_CreationTicket(this$10, "tasklist", outer));
+  var this$11 = $m_Lscalatags_JsDom$all$();
+  var jsx$91 = this$11.div__Lscalatags_JsDom$TypedTag();
   var jsx$90 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("todoapp", $m_Lscalatags_JsDom$all$().stringAttr$1);
-  var this$18 = $m_Lscalatags_JsDom$all$();
-  var jsx$89 = this$18.header__Lscalatags_JsDom$TypedTag();
+  var this$12 = $m_Lscalatags_JsDom$all$();
+  var jsx$89 = this$12.header__Lscalatags_JsDom$TypedTag();
   var jsx$88 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("header", $m_Lscalatags_JsDom$all$().stringAttr$1);
-  var this$19 = $m_Lscalatags_JsDom$all$();
-  var jsx$87 = this$19.h1__Lscalatags_JsDom$TypedTag();
-  var array$2 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("todos"))];
-  var jsx$86 = jsx$87.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2));
-  var this$23 = $m_Lscalatags_JsDom$all$();
+  var this$13 = $m_Lscalatags_JsDom$all$();
+  var jsx$87 = this$13.h1__Lscalatags_JsDom$TypedTag();
+  var array$1 = [($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("todos"))];
+  var jsx$86 = jsx$87.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1));
+  var this$17 = $m_Lscalatags_JsDom$all$();
   var e = this.newTodo$1__p1__Lrescala_reactives_Var__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement(tasks, newTodo$lzy);
-  var array$3 = [jsx$88, jsx$86, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$23, e)];
-  var jsx$85 = jsx$89.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3));
-  var this$26 = $m_Lscalatags_JsDom$tags2$();
-  var jsx$84 = this$26.section__Lscalatags_JsDom$TypedTag();
+  var array$2 = [jsx$88, jsx$86, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$17, e)];
+  var jsx$85 = jsx$89.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$2));
+  var this$20 = $m_Lscalatags_JsDom$tags2$();
+  var jsx$84 = this$20.section__Lscalatags_JsDom$TypedTag();
   var jsx$83 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("main", $m_Lscalatags_JsDom$all$().stringAttr$1);
   var jsx$82 = $m_Lscalatags_JsDom$all$().style__Lscalatags_generic_Attr();
   var jsx$81 = $m_Lrescala_reactives_Signals$();
-  var array$4 = [tasks];
-  var jsx$80 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4);
+  var array$3 = [tasks];
+  var jsx$80 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$3);
   var jsx$79 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, tasks$1) {
     return (function(ticket$macro$1$2) {
       var ticket$macro$1 = $as_Lrescala_core_StaticTicket(ticket$macro$1$2);
       return ($as_sc_SeqLike(ticket$macro$1.dependStatic__Lrescala_core_Interp__O(tasks$1)).isEmpty__Z() ? "display:hidden" : "")
     })
   })(this, tasks));
-  var this$30 = $m_Lrescala_core_CreationTicket$();
+  var this$24 = $m_Lrescala_core_CreationTicket$();
   var factory$1 = this.storingEngine$1;
-  var this$29 = $m_Lrescala_core_REName$();
+  var this$23 = $m_Lrescala_core_REName$();
   var file$1 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.main content");
   var line$2 = new $c_Lsourcecode_Line().init___I(73);
-  var line$3 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$29, file$1, line$2);
-  var jsx$78 = jsx$81.$static__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$80, jsx$79, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$30, factory$1, line$3));
+  var line$3 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$23, file$1, line$2);
+  var jsx$78 = jsx$81.$static__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$80, jsx$79, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$24, factory$1, line$3));
   var evidence$1$1 = $m_Lscalatags_JsDom$all$().stringAttr$1;
   var engine = this.storingEngine$1;
   var jsx$77 = jsx$82.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$78, new $c_Lrescalatags_package$$anon$1().init___Lscalatags_generic_AttrValue__Lrescala_core_Scheduler(evidence$1$1, engine));
-  var this$32 = $m_Lscalatags_JsDom$all$();
-  var jsx$76 = this$32.input__Lscalatags_JsDom$TypedTag();
+  var this$26 = $m_Lscalatags_JsDom$all$();
+  var jsx$76 = this$26.input__Lscalatags_JsDom$TypedTag();
   var jsx$75 = $m_Lscalatags_JsDom$all$().id__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("toggle-all", $m_Lscalatags_JsDom$all$().stringAttr$1);
   var jsx$74 = $m_Lscalatags_JsDom$all$().name__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("toggle-all", $m_Lscalatags_JsDom$all$().stringAttr$1);
   var jsx$73 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("toggle-all", $m_Lscalatags_JsDom$all$().stringAttr$1);
@@ -6212,44 +5398,44 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
   var jsx$70 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1, tasks$2) {
     return (function(e$2) {
       var scheduler = $m_Ltodo_TodoMVC$().storingEngine$1;
-      var this$33 = $as_sci_List($f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(tasks$2, scheduler));
-      var these = this$33;
+      var this$27 = $as_sci_List($f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(tasks$2, scheduler));
+      var these = this$27;
       while ((!these.isEmpty__Z())) {
-        var arg1$1 = these.head__O();
-        var it = $as_Ltodo_TodoMVC$Task(arg1$1);
+        var arg1 = these.head__O();
+        var it = $as_Ltodo_TodoMVC$Task(arg1);
         it.done$1.set__O__Lrescala_core_Scheduler__V($uZ(e$2.target.checked), $m_Ltodo_TodoMVC$().storingEngine$1);
         these = $as_sci_List(these.tail__O())
       }
     })
   })(this, tasks));
-  var this$34 = $m_Lscalatags_JsDom$all$();
+  var this$28 = $m_Lscalatags_JsDom$all$();
   var ev = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$1) {
     return (function(f$2) {
       var f = $as_F1(f$2);
       return (function(f$1) {
-        return (function(arg1$2) {
-          return f$1.apply__O__O(arg1$2)
+        return (function(arg1$1) {
+          return f$1.apply__O__O(arg1$1)
         })
       })(f)
     })
   })(this));
-  var array$5 = [jsx$75, jsx$74, jsx$73, jsx$72, jsx$71.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$70, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$34, ev))];
-  var jsx$69 = jsx$76.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5));
-  var this$37 = $m_Lscalatags_JsDom$all$();
-  var jsx$68 = this$37.label__Lscalatags_JsDom$TypedTag();
-  var array$6 = [$m_Lscalatags_JsDom$all$().$for__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("toggle-all", $m_Lscalatags_JsDom$all$().stringAttr$1), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("Mark all as complete"))];
-  var jsx$67 = jsx$68.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$6));
+  var array$4 = [jsx$75, jsx$74, jsx$73, jsx$72, jsx$71.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$70, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$28, ev))];
+  var jsx$69 = jsx$76.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$4));
+  var this$31 = $m_Lscalatags_JsDom$all$();
+  var jsx$68 = this$31.label__Lscalatags_JsDom$TypedTag();
+  var array$5 = [$m_Lscalatags_JsDom$all$().$for__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("toggle-all", $m_Lscalatags_JsDom$all$().stringAttr$1), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("Mark all as complete"))];
+  var jsx$67 = jsx$68.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$5));
   var jsx$65 = $m_Lrescala_reactives_Signals$();
-  var array$7 = [tasks];
-  var jsx$64 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$7);
+  var array$6 = [tasks];
+  var jsx$64 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$6);
   var jsx$31 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$4$1, tasks$3) {
     return (function(ticket$macro$2$2) {
       var ticket$macro$2 = $as_Lrescala_core_DynamicTicket(ticket$macro$2$2);
-      var this$43 = $m_Lscalatags_JsDom$all$();
-      var jsx$63 = this$43.ul__Lscalatags_JsDom$TypedTag();
+      var this$37 = $m_Lscalatags_JsDom$all$();
+      var jsx$63 = this$37.ul__Lscalatags_JsDom$TypedTag();
       var jsx$62 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("todo-list", $m_Lscalatags_JsDom$all$().stringAttr$1);
-      var this$85 = $m_Lscalatags_JsDom$all$();
-      var this$84 = $as_sci_List(ticket$macro$2.dependStatic__Lrescala_core_Interp__O(tasks$3));
+      var this$79 = $m_Lscalatags_JsDom$all$();
+      var this$78 = $as_sci_List(ticket$macro$2.dependStatic__Lrescala_core_Interp__O(tasks$3));
       var f$9 = (function($this$1, tasks$1$1, ticket$macro$2$1) {
         return (function(t$2) {
           var t = $as_Ltodo_TodoMVC$Task(t$2);
@@ -6261,33 +5447,33 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
               jsx$32.set__O__Lrescala_core_Scheduler__V($as_T(thiz.trim()), $m_Ltodo_TodoMVC$().storingEngine$1);
               t$1.editing$1.set__O__Lrescala_core_Scheduler__V(false, $m_Ltodo_TodoMVC$().storingEngine$1);
               var fac = $m_Ltodo_TodoMVC$().storingEngine$1;
-              var array$8 = [tasks$1$2];
-              var initialWrites = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$8);
-              var this$47 = $m_sci_Set$();
-              var cbf$1 = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$47);
+              var array$7 = [tasks$1$2];
+              var initialWrites = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$7);
+              var this$41 = $m_sci_Set$();
+              var cbf$1 = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$41);
               var initialWrites$1 = $as_sci_Set($f_sc_TraversableLike__to__scg_CanBuildFrom__O(initialWrites, cbf$1));
               $as_s_Option(fac.$$undcurrentTurn$1.v$1);
               var turn = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(fac);
               try {
-                var this$48 = fac.$$undcurrentTurn$1;
+                var this$42 = fac.$$undcurrentTurn$1;
                 var newval = new $c_s_Some().init___O(turn);
-                var oldval = this$48.v$1;
-                this$48.v$1 = newval;
+                var oldval = this$42.v$1;
+                this$42.v$1 = newval;
                 try {
                   var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn, initialWrites$1);
-                  var arg1$3 = admissionTicket.now__Lrescala_reactives_Signal__O(tasks$1$2);
-                  var x$3 = $as_sci_List(arg1$3);
+                  var arg1$2 = admissionTicket.now__Lrescala_reactives_Signal__O(tasks$1$2);
+                  var x$3 = $as_sci_List(arg1$2);
                   $m_sci_List$();
                   var b = new $c_scm_ListBuffer().init___();
                   var these$1 = x$3;
                   while ((!these$1.isEmpty__Z())) {
-                    var arg1$4 = these$1.head__O();
-                    var t$3 = $as_Ltodo_TodoMVC$Task(arg1$4);
-                    var this$50 = t$3.desc$1;
+                    var arg1$3 = these$1.head__O();
+                    var t$3 = $as_Ltodo_TodoMVC$Task(arg1$3);
+                    var this$44 = t$3.desc$1;
                     var scheduler$1 = $m_Ltodo_TodoMVC$().storingEngine$1;
-                    var x = $f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(this$50, scheduler$1);
+                    var x = $f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(this$44, scheduler$1);
                     if (((!((x !== null) && $objectEquals(x, ""))) !== false)) {
-                      b.$$plus$eq__O__scm_ListBuffer(arg1$4)
+                      b.$$plus$eq__O__scm_ListBuffer(arg1$3)
                     };
                     these$1 = $as_sci_List(these$1.tail__O())
                   };
@@ -6301,7 +5487,7 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
                   };
                   var result = admissionResult
                 } finally {
-                  this$48.v$1 = oldval
+                  this$42.v$1 = oldval
                 };
                 $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn)
               } catch (e$1) {
@@ -6318,72 +5504,72 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
               $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn)
             })
           })($this$1, tasks$1$1, t));
-          var this$51 = $m_Lscalatags_JsDom$all$();
-          var jsx$39 = this$51.input__Lscalatags_JsDom$TypedTag();
+          var this$45 = $m_Lscalatags_JsDom$all$();
+          var jsx$39 = this$45.input__Lscalatags_JsDom$TypedTag();
           var jsx$38 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("edit", $m_Lscalatags_JsDom$all$().stringAttr$1);
           var jsx$37 = $m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("text", $m_Lscalatags_JsDom$all$().stringAttr$1);
           var jsx$36 = $m_Lscalatags_JsDom$all$().value__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(ticket$macro$2$1.depend__Lrescala_core_Interp__O(t.desc$1), $m_Lscalatags_JsDom$all$().stringAttr$1);
           var jsx$35 = $m_Lscalatags_JsDom$all$().onchange__Lscalatags_generic_Attr();
-          var this$52 = $m_Lscalatags_JsDom$all$();
+          var this$46 = $m_Lscalatags_JsDom$all$();
           var ev$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$2) {
             return (function(f$2$1) {
               var f$3 = $as_F1(f$2$1);
               return (function(f$4) {
-                return (function(arg1$5) {
-                  return f$4.apply__O__O(arg1$5)
+                return (function(arg1$4) {
+                  return f$4.apply__O__O(arg1$4)
                 })
               })(f$3)
             })
           })($this$1));
-          var jsx$34 = jsx$35.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(change, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$52, ev$1));
+          var jsx$34 = jsx$35.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(change, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$46, ev$1));
           var jsx$33 = $m_Lscalatags_JsDom$all$().onblur__Lscalatags_generic_Attr();
-          var this$53 = $m_Lscalatags_JsDom$all$();
+          var this$47 = $m_Lscalatags_JsDom$all$();
           var ev$2 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$2) {
             return (function(f$3$2) {
               var f$3$1 = $as_F1(f$3$2);
               return (function(f$5) {
-                return (function(arg1$6) {
-                  return f$5.apply__O__O(arg1$6)
+                return (function(arg1$5) {
+                  return f$5.apply__O__O(arg1$5)
                 })
               })(f$3$1)
             })
           })($this$1));
-          var array$9 = [jsx$38, jsx$37, jsx$36, jsx$34, jsx$33.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(change, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$53, ev$2))];
-          var myinput$1 = jsx$39.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$9)).render__Lorg_scalajs_dom_raw_Element();
-          var this$56 = $m_Lscalatags_JsDom$all$();
-          var jsx$60 = this$56.li__Lscalatags_JsDom$TypedTag();
+          var array$8 = [jsx$38, jsx$37, jsx$36, jsx$34, jsx$33.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(change, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$47, ev$2))];
+          var myinput$1 = jsx$39.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$8)).render__Lorg_scalajs_dom_raw_Element();
+          var this$50 = $m_Lscalatags_JsDom$all$();
+          var jsx$60 = this$50.li__Lscalatags_JsDom$TypedTag();
           var jsx$59 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair((($uZ(ticket$macro$2$1.depend__Lrescala_core_Interp__O(t.done$1)) ? "completed " : "") + ($uZ(ticket$macro$2$1.depend__Lrescala_core_Interp__O(t.editing$1)) ? "editing " : "")), $m_Lscalatags_JsDom$all$().stringAttr$1);
-          var this$57 = $m_Lscalatags_JsDom$all$();
-          var jsx$58 = this$57.div__Lscalatags_JsDom$TypedTag();
+          var this$51 = $m_Lscalatags_JsDom$all$();
+          var jsx$58 = this$51.div__Lscalatags_JsDom$TypedTag();
           var jsx$57 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("view", $m_Lscalatags_JsDom$all$().stringAttr$1);
           var jsx$56 = $m_Lscalatags_JsDom$all$().ondblclick__Lscalatags_generic_Attr();
           var jsx$55 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$4$2, tasks$1$3, t$4) {
             return (function(e$3$2) {
               var scheduler$2 = $m_Ltodo_TodoMVC$().storingEngine$1;
-              var this$58 = $as_sci_List($f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(tasks$1$3, scheduler$2));
-              var these$2 = this$58;
+              var this$52 = $as_sci_List($f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(tasks$1$3, scheduler$2));
+              var these$2 = this$52;
               while ((!these$2.isEmpty__Z())) {
-                var arg1$7 = these$2.head__O();
-                var tt = $as_Ltodo_TodoMVC$Task(arg1$7);
+                var arg1$6 = these$2.head__O();
+                var tt = $as_Ltodo_TodoMVC$Task(arg1$6);
                 tt.editing$1.set__O__Lrescala_core_Scheduler__V((t$4 === tt), $m_Ltodo_TodoMVC$().storingEngine$1);
                 these$2 = $as_sci_List(these$2.tail__O())
               }
             })
           })($this$1, tasks$1$1, t));
-          var this$59 = $m_Lscalatags_JsDom$all$();
+          var this$53 = $m_Lscalatags_JsDom$all$();
           var ev$3 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$5$1) {
             return (function(f$4$2) {
               var f$4$1 = $as_F1(f$4$2);
               return (function(f$6) {
-                return (function(arg1$8) {
-                  return f$6.apply__O__O(arg1$8)
+                return (function(arg1$7) {
+                  return f$6.apply__O__O(arg1$7)
                 })
               })(f$4$1)
             })
           })($this$1));
-          var jsx$54 = jsx$56.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$55, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$59, ev$3));
-          var this$60 = $m_Lscalatags_JsDom$all$();
-          var jsx$53 = this$60.input__Lscalatags_JsDom$TypedTag();
+          var jsx$54 = jsx$56.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$55, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$53, ev$3));
+          var this$54 = $m_Lscalatags_JsDom$all$();
+          var jsx$53 = this$54.input__Lscalatags_JsDom$TypedTag();
           var jsx$52 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("toggle", $m_Lscalatags_JsDom$all$().stringAttr$1);
           var jsx$51 = $m_Lscalatags_JsDom$all$().type__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("checkbox", $m_Lscalatags_JsDom$all$().stringAttr$1);
           var jsx$50 = ($uZ(ticket$macro$2$1.depend__Lrescala_core_Interp__O(t.done$1)) ? $m_Lscalatags_JsDom$all$().checked__Lscalatags_generic_AttrPair() : ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("")));
@@ -6393,56 +5579,56 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
               t$5.done$1.set__O__Lrescala_core_Scheduler__V($uZ(e$4$2.target.checked), $m_Ltodo_TodoMVC$().storingEngine$1)
             })
           })($this$1, t));
-          var this$62 = $m_Lscalatags_JsDom$all$();
+          var this$56 = $m_Lscalatags_JsDom$all$();
           var ev$4 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$7$1) {
             return (function(f$5$2) {
               var f$5$1 = $as_F1(f$5$2);
               return (function(f$7) {
-                return (function(arg1$9) {
-                  return f$7.apply__O__O(arg1$9)
+                return (function(arg1$8) {
+                  return f$7.apply__O__O(arg1$8)
                 })
               })(f$5$1)
             })
           })($this$1));
-          var array$10 = [jsx$52, jsx$51, jsx$50, jsx$49.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$48, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$62, ev$4))];
-          var jsx$47 = jsx$53.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$10));
-          var this$65 = $m_Lscalatags_JsDom$all$();
-          var jsx$46 = this$65.label__Lscalatags_JsDom$TypedTag();
+          var array$9 = [jsx$52, jsx$51, jsx$50, jsx$49.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$48, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$56, ev$4))];
+          var jsx$47 = jsx$53.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$9));
+          var this$59 = $m_Lscalatags_JsDom$all$();
+          var jsx$46 = this$59.label__Lscalatags_JsDom$TypedTag();
           $m_Lscalatags_JsDom$all$();
           var v = $as_T(ticket$macro$2$1.depend__Lrescala_core_Interp__O(t.desc$1));
-          var array$11 = [new $c_Lscalatags_JsDom$StringFrag().init___T(v)];
-          var jsx$45 = jsx$46.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$11));
-          var this$69 = $m_Lscalatags_JsDom$all$();
-          var jsx$44 = this$69.button__Lscalatags_JsDom$TypedTag();
+          var array$10 = [new $c_Lscalatags_JsDom$StringFrag().init___T(v)];
+          var jsx$45 = jsx$46.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$10));
+          var this$63 = $m_Lscalatags_JsDom$all$();
+          var jsx$44 = this$63.button__Lscalatags_JsDom$TypedTag();
           var jsx$43 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("destroy", $m_Lscalatags_JsDom$all$().stringAttr$1);
           var jsx$42 = $m_Lscalatags_JsDom$all$().onclick__Lscalatags_generic_Attr();
           var jsx$41 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$8$1, tasks$1$4, t$6) {
             return (function(e$5$2) {
               var fac$1 = $m_Ltodo_TodoMVC$().storingEngine$1;
-              var array$12 = [tasks$1$4];
-              var initialWrites$2 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$12);
-              var this$72 = $m_sci_Set$();
-              var cbf$2 = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$72);
+              var array$11 = [tasks$1$4];
+              var initialWrites$2 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$11);
+              var this$66 = $m_sci_Set$();
+              var cbf$2 = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$66);
               var initialWrites$3 = $as_sci_Set($f_sc_TraversableLike__to__scg_CanBuildFrom__O(initialWrites$2, cbf$2));
               $as_s_Option(fac$1.$$undcurrentTurn$1.v$1);
               var turn$1 = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(fac$1);
               try {
-                var this$73 = fac$1.$$undcurrentTurn$1;
+                var this$67 = fac$1.$$undcurrentTurn$1;
                 var newval$1 = new $c_s_Some().init___O(turn$1);
-                var oldval$1 = this$73.v$1;
-                this$73.v$1 = newval$1;
+                var oldval$1 = this$67.v$1;
+                this$67.v$1 = newval$1;
                 try {
                   var admissionTicket$1 = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn$1, initialWrites$3);
-                  var arg1$10 = admissionTicket$1.now__Lrescala_reactives_Signal__O(tasks$1$4);
-                  var x$4 = $as_sci_List(arg1$10);
+                  var arg1$9 = admissionTicket$1.now__Lrescala_reactives_Signal__O(tasks$1$4);
+                  var x$4 = $as_sci_List(arg1$9);
                   $m_sci_List$();
                   var b$1 = new $c_scm_ListBuffer().init___();
                   var these$3 = x$4;
                   while ((!these$3.isEmpty__Z())) {
-                    var arg1$11 = these$3.head__O();
-                    var it$1 = $as_Ltodo_TodoMVC$Task(arg1$11);
+                    var arg1$10 = these$3.head__O();
+                    var it$1 = $as_Ltodo_TodoMVC$Task(arg1$10);
                     if (((it$1 !== t$6) !== false)) {
-                      b$1.$$plus$eq__O__scm_ListBuffer(arg1$11)
+                      b$1.$$plus$eq__O__scm_ListBuffer(arg1$10)
                     };
                     these$3 = $as_sci_List(these$3.tail__O())
                   };
@@ -6456,7 +5642,7 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
                   };
                   var result$1 = admissionResult$1
                 } finally {
-                  this$73.v$1 = oldval$1
+                  this$67.v$1 = oldval$1
                 };
                 $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn$1)
               } catch (e$3) {
@@ -6473,38 +5659,38 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
               $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn$1)
             })
           })($this$1, tasks$1$1, t));
-          var this$75 = $m_Lscalatags_JsDom$all$();
+          var this$69 = $m_Lscalatags_JsDom$all$();
           var ev$5 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$9$1) {
             return (function(f$6$2) {
               var f$6$1 = $as_F1(f$6$2);
               return (function(f$8) {
-                return (function(arg1$12) {
-                  return f$8.apply__O__O(arg1$12)
+                return (function(arg1$11) {
+                  return f$8.apply__O__O(arg1$11)
                 })
               })(f$6$1)
             })
           })($this$1));
-          var array$13 = [jsx$43, jsx$42.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$41, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$75, ev$5))];
-          var array$14 = [jsx$57, jsx$54, jsx$47, jsx$45, jsx$44.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$13))];
-          var jsx$40 = jsx$58.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$14));
-          var this$80 = $m_Lscalatags_JsDom$all$();
-          var array$15 = [jsx$59, jsx$40, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$80, myinput$1)];
-          return jsx$60.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$15))
+          var array$12 = [jsx$43, jsx$42.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$41, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$69, ev$5))];
+          var array$13 = [jsx$57, jsx$54, jsx$47, jsx$45, jsx$44.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$12))];
+          var jsx$40 = jsx$58.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$13));
+          var this$74 = $m_Lscalatags_JsDom$all$();
+          var array$14 = [jsx$59, jsx$40, new $c_Lscalatags_LowPriorityImplicits$bindNode().init___Lscalatags_LowPriorityImplicits__Lorg_scalajs_dom_raw_Node(this$74, myinput$1)];
+          return jsx$60.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$14))
         })
       })(this$4$1, tasks$3, ticket$macro$2);
-      var this$83 = $m_sci_List$();
-      var bf = this$83.ReusableCBFInstance$2;
+      var this$77 = $m_sci_List$();
+      var bf = this$77.ReusableCBFInstance$2;
       if ((bf === $m_sci_List$().ReusableCBFInstance$2)) {
-        if ((this$84 === $m_sci_Nil$())) {
+        if ((this$78 === $m_sci_Nil$())) {
           var jsx$61 = $m_sci_Nil$()
         } else {
-          var arg1$13 = this$84.head__O();
-          var h = new $c_sci_$colon$colon().init___O__sci_List(f$9(arg1$13), $m_sci_Nil$());
+          var arg1$12 = this$78.head__O();
+          var h = new $c_sci_$colon$colon().init___O__sci_List(f$9(arg1$12), $m_sci_Nil$());
           var t$7 = h;
-          var rest = $as_sci_List(this$84.tail__O());
+          var rest = $as_sci_List(this$78.tail__O());
           while ((rest !== $m_sci_Nil$())) {
-            var arg1$14 = rest.head__O();
-            var nx = new $c_sci_$colon$colon().init___O__sci_List(f$9(arg1$14), $m_sci_Nil$());
+            var arg1$13 = rest.head__O();
+            var nx = new $c_sci_$colon$colon().init___O__sci_List(f$9(arg1$13), $m_sci_Nil$());
             t$7.tl$5 = nx;
             t$7 = nx;
             rest = $as_sci_List(rest.tail__O())
@@ -6512,63 +5698,63 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
           var jsx$61 = h
         }
       } else {
-        var b$2 = $f_sc_TraversableLike__builder$1__psc_TraversableLike__scg_CanBuildFrom__scm_Builder(this$84, bf);
-        var these$4 = this$84;
+        var b$2 = $f_sc_TraversableLike__builder$1__psc_TraversableLike__scg_CanBuildFrom__scm_Builder(this$78, bf);
+        var these$4 = this$78;
         while ((!these$4.isEmpty__Z())) {
-          var arg1$15 = these$4.head__O();
-          b$2.$$plus$eq__O__scm_Builder(f$9(arg1$15));
+          var arg1$14 = these$4.head__O();
+          b$2.$$plus$eq__O__scm_Builder(f$9(arg1$14));
           these$4 = $as_sci_List(these$4.tail__O())
         };
         var jsx$61 = b$2.result__O()
       };
       var xs$1 = $as_sc_Seq(jsx$61);
       var ev$6 = $m_s_Predef$().singleton$und$less$colon$less$2;
-      var array$16 = [jsx$62, new $c_Lscalatags_JsDom$Cap$SeqFrag().init___Lscalatags_JsDom$Cap__sc_Seq__F1(this$85, xs$1, ev$6)];
-      return jsx$63.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$16))
+      var array$15 = [jsx$62, new $c_Lscalatags_JsDom$Cap$SeqFrag().init___Lscalatags_JsDom$Cap__sc_Seq__F1(this$79, xs$1, ev$6)];
+      return jsx$63.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$15))
     })
   })(this, tasks));
-  var this$89 = $m_Lrescala_core_CreationTicket$();
+  var this$83 = $m_Lrescala_core_CreationTicket$();
   var factory$2 = this.storingEngine$1;
-  var this$88 = $m_Lrescala_core_REName$();
+  var this$82 = $m_Lrescala_core_REName$();
   var file$2 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.main content");
   var line$4 = new $c_Lsourcecode_Line().init___I(79);
-  var line$5 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$88, file$2, line$4);
-  var signal = jsx$65.dynamic__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$64, jsx$31, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$89, factory$2, line$5));
+  var line$5 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$82, file$2, line$4);
+  var signal = jsx$65.dynamic__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$64, jsx$31, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$83, factory$2, line$5));
   var jsx$66 = new $c_Lrescalatags_package$SignalToScalatags().init___Lrescala_reactives_Signal(signal);
-  var this$92 = $m_Lrescala_core_CreationTicket$();
+  var this$86 = $m_Lrescala_core_CreationTicket$();
   var factory$3 = this.storingEngine$1;
-  var this$91 = $m_Lrescala_core_REName$();
+  var this$85 = $m_Lrescala_core_REName$();
   var file$3 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.main content");
-  var line$6 = new $c_Lsourcecode_Line().init___I(123);
-  var line$7 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$91, file$3, line$6);
-  var array$17 = [jsx$83, jsx$77, jsx$69, jsx$67, jsx$66.asFrag__Lrescala_core_CreationTicket__Lrescala_core_Scheduler__Lscalatags_generic_Frag($f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$92, factory$3, line$7), this.storingEngine$1)];
-  var jsx$30 = jsx$84.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$17));
-  var this$95 = $m_Lscalatags_JsDom$all$();
-  var jsx$29 = this$95.div__Lscalatags_JsDom$TypedTag();
+  var line$6 = new $c_Lsourcecode_Line().init___I(119);
+  var line$7 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$85, file$3, line$6);
+  var array$16 = [jsx$83, jsx$77, jsx$69, jsx$67, jsx$66.asFrag__Lrescala_core_CreationTicket__Lrescala_core_Scheduler__Lscalatags_generic_Frag($f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$86, factory$3, line$7), this.storingEngine$1)];
+  var jsx$30 = jsx$84.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$16));
+  var this$89 = $m_Lscalatags_JsDom$all$();
+  var jsx$29 = this$89.div__Lscalatags_JsDom$TypedTag();
   var jsx$28 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("footer", $m_Lscalatags_JsDom$all$().stringAttr$1);
   var jsx$27 = $m_Lscalatags_JsDom$all$().style__Lscalatags_generic_Attr();
   var jsx$26 = $m_Lrescala_reactives_Signals$();
-  var array$18 = [tasks];
-  var jsx$25 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$18);
+  var array$17 = [tasks];
+  var jsx$25 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$17);
   var jsx$24 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$5$2, tasks$4) {
     return (function(ticket$macro$3$2) {
       var ticket$macro$3 = $as_Lrescala_core_StaticTicket(ticket$macro$3$2);
       return ($as_sc_SeqLike(ticket$macro$3.dependStatic__Lrescala_core_Interp__O(tasks$4)).isEmpty__Z() ? "display:none" : "")
     })
   })(this, tasks));
-  var this$99 = $m_Lrescala_core_CreationTicket$();
+  var this$93 = $m_Lrescala_core_CreationTicket$();
   var factory$4 = this.storingEngine$1;
-  var this$98 = $m_Lrescala_core_REName$();
+  var this$92 = $m_Lrescala_core_REName$();
   var file$4 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.main content");
-  var line$8 = new $c_Lsourcecode_Line().init___I(128);
-  var line$9 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$98, file$4, line$8);
-  var jsx$23 = jsx$26.$static__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$25, jsx$24, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$99, factory$4, line$9));
+  var line$8 = new $c_Lsourcecode_Line().init___I(124);
+  var line$9 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$92, file$4, line$8);
+  var jsx$23 = jsx$26.$static__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$25, jsx$24, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$93, factory$4, line$9));
   var evidence$1$2 = $m_Lscalatags_JsDom$all$().stringAttr$1;
   var engine$1 = this.storingEngine$1;
   var jsx$22 = jsx$27.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$23, new $c_Lrescalatags_package$$anon$1().init___Lscalatags_generic_AttrValue__Lrescala_core_Scheduler(evidence$1$2, engine$1));
   var jsx$20 = $m_Lrescala_reactives_Signals$();
-  var array$19 = [tasks];
-  var jsx$19 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$19);
+  var array$18 = [tasks];
+  var jsx$19 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$18);
   var jsx$13 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$6$2, tasks$5) {
     return (function(ticket$macro$4$2) {
       var ticket$macro$4 = $as_Lrescala_core_DynamicTicket(ticket$macro$4$2);
@@ -6578,43 +5764,43 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
           return (!$uZ(ticket$macro$4$1.depend__Lrescala_core_Interp__O(x$5.done$1)))
         })
       })(this$6$2, ticket$macro$4))));
-      var this$103 = $m_Lscalatags_JsDom$all$();
-      var jsx$18 = this$103.span__Lscalatags_JsDom$TypedTag();
+      var this$97 = $m_Lscalatags_JsDom$all$();
+      var jsx$18 = this$97.span__Lscalatags_JsDom$TypedTag();
       var jsx$17 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("todo-count", $m_Lscalatags_JsDom$all$().stringAttr$1);
-      var this$104 = $m_Lscalatags_JsDom$all$();
-      var jsx$16 = this$104.strong__Lscalatags_JsDom$TypedTag();
+      var this$98 = $m_Lscalatags_JsDom$all$();
+      var jsx$16 = this$98.strong__Lscalatags_JsDom$TypedTag();
       $m_Lscalatags_JsDom$all$();
       var v$1 = ("" + $f_sc_LinearSeqOptimized__length__I(leftTasks));
-      var array$20 = [new $c_Lscalatags_JsDom$StringFrag().init___T(v$1)];
-      var jsx$15 = jsx$16.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$20));
-      var this$108 = $m_Lscalatags_JsDom$all$();
-      var jsx$14 = this$108.span__Lscalatags_JsDom$TypedTag();
-      var array$21 = [(($f_sc_LinearSeqOptimized__length__I(leftTasks) === 1) ? ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T(" item left")) : ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T(" items left")))];
-      var array$22 = [jsx$17, jsx$15, jsx$14.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$21))];
-      return jsx$18.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$22))
+      var array$19 = [new $c_Lscalatags_JsDom$StringFrag().init___T(v$1)];
+      var jsx$15 = jsx$16.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$19));
+      var this$102 = $m_Lscalatags_JsDom$all$();
+      var jsx$14 = this$102.span__Lscalatags_JsDom$TypedTag();
+      var array$20 = [(($f_sc_LinearSeqOptimized__length__I(leftTasks) === 1) ? ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T(" item left")) : ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T(" items left")))];
+      var array$21 = [jsx$17, jsx$15, jsx$14.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$20))];
+      return jsx$18.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$21))
     })
   })(this, tasks));
-  var this$116 = $m_Lrescala_core_CreationTicket$();
+  var this$110 = $m_Lrescala_core_CreationTicket$();
   var factory$5 = this.storingEngine$1;
-  var this$115 = $m_Lrescala_core_REName$();
+  var this$109 = $m_Lrescala_core_REName$();
   var file$5 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.main content");
-  var line$10 = new $c_Lsourcecode_Line().init___I(130);
-  var line$11 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$115, file$5, line$10);
-  var signal$1 = jsx$20.dynamic__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$19, jsx$13, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$116, factory$5, line$11));
+  var line$10 = new $c_Lsourcecode_Line().init___I(126);
+  var line$11 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$109, file$5, line$10);
+  var signal$1 = jsx$20.dynamic__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$19, jsx$13, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$110, factory$5, line$11));
   var jsx$21 = new $c_Lrescalatags_package$SignalToScalatags().init___Lrescala_reactives_Signal(signal$1);
-  var this$119 = $m_Lrescala_core_CreationTicket$();
+  var this$113 = $m_Lrescala_core_CreationTicket$();
   var factory$6 = this.storingEngine$1;
-  var this$118 = $m_Lrescala_core_REName$();
+  var this$112 = $m_Lrescala_core_REName$();
   var file$6 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.main content");
-  var line$12 = new $c_Lsourcecode_Line().init___I(138);
-  var line$13 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$118, file$6, line$12);
-  var jsx$12 = jsx$21.asFrag__Lrescala_core_CreationTicket__Lrescala_core_Scheduler__Lscalatags_generic_Frag($f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$119, factory$6, line$13), this.storingEngine$1);
-  var this$120 = $m_Lscalatags_JsDom$all$();
-  var jsx$11 = this$120.button__Lscalatags_JsDom$TypedTag();
+  var line$12 = new $c_Lsourcecode_Line().init___I(134);
+  var line$13 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$112, file$6, line$12);
+  var jsx$12 = jsx$21.asFrag__Lrescala_core_CreationTicket__Lrescala_core_Scheduler__Lscalatags_generic_Frag($f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$113, factory$6, line$13), this.storingEngine$1);
+  var this$114 = $m_Lscalatags_JsDom$all$();
+  var jsx$11 = this$114.button__Lscalatags_JsDom$TypedTag();
   var jsx$10 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr();
   var jsx$9 = $m_Lrescala_reactives_Signals$();
-  var array$23 = [tasks];
-  var jsx$8 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$23);
+  var array$22 = [tasks];
+  var jsx$8 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$22);
   var jsx$7 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$7$2, tasks$6) {
     return (function(ticket$macro$5$2) {
       var ticket$macro$5 = $as_Lrescala_core_DynamicTicket(ticket$macro$5$2);
@@ -6626,13 +5812,13 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
       })(this$7$2, ticket$macro$5)))).size__I() === 0) ? " hidden" : ""))
     })
   })(this, tasks));
-  var this$124 = $m_Lrescala_core_CreationTicket$();
+  var this$118 = $m_Lrescala_core_CreationTicket$();
   var factory$7 = this.storingEngine$1;
-  var this$123 = $m_Lrescala_core_REName$();
+  var this$117 = $m_Lrescala_core_REName$();
   var file$7 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.main content");
-  var line$14 = new $c_Lsourcecode_Line().init___I(141);
-  var line$15 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$123, file$7, line$14);
-  var jsx$6 = jsx$9.dynamic__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$8, jsx$7, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$124, factory$7, line$15));
+  var line$14 = new $c_Lsourcecode_Line().init___I(137);
+  var line$15 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$117, file$7, line$14);
+  var jsx$6 = jsx$9.dynamic__sc_Seq__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Signal(jsx$8, jsx$7, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$118, factory$7, line$15));
   var evidence$1$3 = $m_Lscalatags_JsDom$all$().stringAttr$1;
   var engine$2 = this.storingEngine$1;
   var jsx$5 = jsx$10.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$6, new $c_Lrescalatags_package$$anon$1().init___Lscalatags_generic_AttrValue__Lrescala_core_Scheduler(evidence$1$3, engine$2));
@@ -6640,32 +5826,32 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
   var jsx$3 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$8$2, tasks$7) {
     return (function(e$3$2$1) {
       var fac$2 = $m_Ltodo_TodoMVC$().storingEngine$1;
-      var array$24 = [tasks$7];
-      var initialWrites$4 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$24);
-      var this$128 = $m_sci_Set$();
-      var cbf$3 = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$128);
+      var array$23 = [tasks$7];
+      var initialWrites$4 = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$23);
+      var this$122 = $m_sci_Set$();
+      var cbf$3 = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$122);
       var initialWrites$5 = $as_sci_Set($f_sc_TraversableLike__to__scg_CanBuildFrom__O(initialWrites$4, cbf$3));
       $as_s_Option(fac$2.$$undcurrentTurn$1.v$1);
       var turn$2 = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(fac$2);
       try {
-        var this$129 = fac$2.$$undcurrentTurn$1;
+        var this$123 = fac$2.$$undcurrentTurn$1;
         var newval$2 = new $c_s_Some().init___O(turn$2);
-        var oldval$2 = this$129.v$1;
-        this$129.v$1 = newval$2;
+        var oldval$2 = this$123.v$1;
+        this$123.v$1 = newval$2;
         try {
           var admissionTicket$2 = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn$2, initialWrites$5);
-          var arg1$16 = admissionTicket$2.now__Lrescala_reactives_Signal__O(tasks$7);
-          var x$6 = $as_sci_List(arg1$16);
+          var arg1$15 = admissionTicket$2.now__Lrescala_reactives_Signal__O(tasks$7);
+          var x$6 = $as_sci_List(arg1$15);
           $m_sci_List$();
           var b$3 = new $c_scm_ListBuffer().init___();
           var these$5 = x$6;
           while ((!these$5.isEmpty__Z())) {
-            var arg1$17 = these$5.head__O();
-            var t$9 = $as_Ltodo_TodoMVC$Task(arg1$17);
-            var this$131 = t$9.done$1;
+            var arg1$16 = these$5.head__O();
+            var t$9 = $as_Ltodo_TodoMVC$Task(arg1$16);
+            var this$125 = t$9.done$1;
             var scheduler$3 = $m_Ltodo_TodoMVC$().storingEngine$1;
-            if (((!$uZ($f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(this$131, scheduler$3))) !== false)) {
-              b$3.$$plus$eq__O__scm_ListBuffer(arg1$17)
+            if (((!$uZ($f_Lrescala_reactives_Signal__readValueOnce__Lrescala_core_Scheduler__O(this$125, scheduler$3))) !== false)) {
+              b$3.$$plus$eq__O__scm_ListBuffer(arg1$16)
             };
             these$5 = $as_sci_List(these$5.tail__O())
           };
@@ -6679,7 +5865,7 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
           };
           var result$3 = admissionResult$2
         } finally {
-          this$129.v$1 = oldval$2
+          this$123.v$1 = oldval$2
         };
         $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn$2)
       } catch (e$4) {
@@ -6696,21 +5882,21 @@ $c_Ltodo_TodoMVC$.prototype.main__V = (function() {
       $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn$2)
     })
   })(this, tasks));
-  var this$132 = $m_Lscalatags_JsDom$all$();
+  var this$126 = $m_Lscalatags_JsDom$all$();
   var ev$7 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$9$2) {
     return (function(f$3$2$1) {
       var f$3$3 = $as_F1(f$3$2$1);
       return (function(f$10) {
-        return (function(arg1$18) {
-          return f$10.apply__O__O(arg1$18)
+        return (function(arg1$17) {
+          return f$10.apply__O__O(arg1$17)
         })
       })(f$3$3)
     })
   })(this));
-  var array$25 = [jsx$5, jsx$4.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$3, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$132, ev$7)), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("remove all done todos"))];
-  var array$26 = [jsx$28, jsx$22, jsx$12, jsx$11.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$25))];
-  var array$27 = [jsx$90, jsx$85, jsx$30, jsx$29.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$26))];
-  var content = jsx$91.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$27));
+  var array$24 = [jsx$5, jsx$4.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$3, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$126, ev$7)), ($m_Lscalatags_JsDom$all$(), new $c_Lscalatags_JsDom$StringFrag().init___T("remove all done todos"))];
+  var array$25 = [jsx$28, jsx$22, jsx$12, jsx$11.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$24))];
+  var array$26 = [jsx$90, jsx$85, jsx$30, jsx$29.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$25))];
+  var content = jsx$91.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$26));
   $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().body.replaceChild(content.render__Lorg_scalajs_dom_raw_Element(), $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().body.firstElementChild)
 });
 $c_Ltodo_TodoMVC$.prototype.newTodo$lzycompute$1__p1__Lrescala_reactives_Var__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement = (function(tasks$1, newTodo$lzy$1) {
@@ -6721,62 +5907,67 @@ $c_Ltodo_TodoMVC$.prototype.newTodo$lzycompute$1__p1__Lrescala_reactives_Var__sr
     return newTodo$lzy$1.$$undvalue$1
   } else {
     var this$1 = $m_Lscalatags_JsDom$all$();
-    var jsx$7 = this$1.input__Lscalatags_JsDom$TypedTag();
-    var jsx$6 = $m_Lscalatags_JsDom$all$().id__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("newtodo", $m_Lscalatags_JsDom$all$().stringAttr$1);
-    var jsx$5 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("new-todo", $m_Lscalatags_JsDom$all$().stringAttr$1);
-    var jsx$4 = $m_Lscalatags_JsDom$all$().placeholder__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("What needs to be done?", $m_Lscalatags_JsDom$all$().stringAttr$1);
-    var jsx$3 = $m_Lscalatags_JsDom$all$().autofocus__Lscalatags_generic_AttrPair().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("autofocus", $m_Lscalatags_JsDom$all$().stringAttr$1);
-    var jsx$2 = $m_Lscalatags_JsDom$all$().onchange__Lscalatags_generic_Attr();
+    var jsx$8 = this$1.input__Lscalatags_JsDom$TypedTag();
+    var jsx$7 = $m_Lscalatags_JsDom$all$().id__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("newtodo", $m_Lscalatags_JsDom$all$().stringAttr$1);
+    var jsx$6 = $m_Lscalatags_JsDom$all$().$class__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("new-todo", $m_Lscalatags_JsDom$all$().stringAttr$1);
+    var jsx$5 = $m_Lscalatags_JsDom$all$().placeholder__Lscalatags_generic_Attr().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("What needs to be done?", $m_Lscalatags_JsDom$all$().stringAttr$1);
+    var jsx$4 = $m_Lscalatags_JsDom$all$().autofocus__Lscalatags_generic_AttrPair().$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair("autofocus", $m_Lscalatags_JsDom$all$().stringAttr$1);
+    var jsx$3 = $m_Lscalatags_JsDom$all$().onchange__Lscalatags_generic_Attr();
     var jsx$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, tasks$1$1, newTodo$lzy$1$1) {
       return (function(e$2) {
         e$2.preventDefault();
-        var fac = $m_Ltodo_TodoMVC$().storingEngine$1;
-        var array = [tasks$1$1];
-        var initialWrites = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array);
-        var this$4 = $m_sci_Set$();
-        var cbf = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$4);
-        var initialWrites$1 = $as_sci_Set($f_sc_TraversableLike__to__scg_CanBuildFrom__O(initialWrites, cbf));
-        $as_s_Option(fac.$$undcurrentTurn$1.v$1);
-        var turn = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(fac);
-        try {
-          var this$5 = fac.$$undcurrentTurn$1;
-          var newval = new $c_s_Some().init___O(turn);
-          var oldval = this$5.v$1;
-          this$5.v$1 = newval;
+        var thiz = $as_T($this.newTodo$1__p1__Lrescala_reactives_Var__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement(tasks$1$1, newTodo$lzy$1$1).value);
+        if (($as_T(thiz.trim()) !== "")) {
+          var fac = $m_Ltodo_TodoMVC$().storingEngine$1;
+          var array = [tasks$1$1];
+          var initialWrites = new $c_sjs_js_WrappedArray().init___sjs_js_Array(array);
+          var this$5 = $m_sci_Set$();
+          var cbf = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$5);
+          var initialWrites$1 = $as_sci_Set($f_sc_TraversableLike__to__scg_CanBuildFrom__O(initialWrites, cbf));
+          $as_s_Option(fac.$$undcurrentTurn$1.v$1);
+          var turn = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(fac);
           try {
-            var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn, initialWrites$1);
-            var arg1 = admissionTicket.now__Lrescala_reactives_Signal__O(tasks$1$1);
-            var x$1 = $as_sci_List(arg1);
-            var x$2 = new $c_Ltodo_TodoMVC$Task().init___T__Z($as_T($this.newTodo$1__p1__Lrescala_reactives_Var__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement(tasks$1$1, newTodo$lzy$1$1).value), false);
-            tasks$1$1.admit__O__Lrescala_core_AdmissionTicket__V(new $c_sci_$colon$colon().init___O__sci_List(x$2, x$1), admissionTicket);
-            var admissionResult = (void 0);
-            var initialChanges = admissionTicket.$$undinitialChanges$2;
-            $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn, initialChanges);
-            turn.levelQueue$1.evaluateQueue__V();
-            if ((admissionTicket.wrapUp$2 !== null)) {
-              admissionTicket.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn))
+            var this$6 = fac.$$undcurrentTurn$1;
+            var newval = new $c_s_Some().init___O(turn);
+            var oldval = this$6.v$1;
+            this$6.v$1 = newval;
+            try {
+              var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn, initialWrites$1);
+              var arg1 = admissionTicket.now__Lrescala_reactives_Signal__O(tasks$1$1);
+              var x$1 = $as_sci_List(arg1);
+              var jsx$2 = $m_Ltodo_TodoMVC$Task$();
+              var thiz$1 = $as_T($this.newTodo$1__p1__Lrescala_reactives_Var__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement(tasks$1$1, newTodo$lzy$1$1).value);
+              var x$2 = jsx$2.apply__T__Z__Ltodo_TodoMVC$Task($as_T(thiz$1.trim()), false);
+              tasks$1$1.admit__O__Lrescala_core_AdmissionTicket__V(new $c_sci_$colon$colon().init___O__sci_List(x$2, x$1), admissionTicket);
+              var admissionResult = (void 0);
+              var initialChanges = admissionTicket.$$undinitialChanges$2;
+              $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn, initialChanges);
+              turn.levelQueue$1.evaluateQueue__V();
+              if ((admissionTicket.wrapUp$2 !== null)) {
+                admissionTicket.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn))
+              };
+              var result = admissionResult
+            } finally {
+              this$6.v$1 = oldval
             };
-            var result = admissionResult
+            $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn)
+          } catch (e) {
+            var e$2$1 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
+            if ((e$2$1 !== null)) {
+              $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn);
+              throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2$1)
+            } else {
+              throw e
+            }
           } finally {
-            this$5.v$1 = oldval
+            /*<skip>*/
           };
-          $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn)
-        } catch (e) {
-          var e$2$1 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
-          if ((e$2$1 !== null)) {
-            $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn);
-            throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2$1)
-          } else {
-            throw e
-          }
-        } finally {
-          /*<skip>*/
+          $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn)
         };
-        $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn);
         $this.newTodo$1__p1__Lrescala_reactives_Var__sr_LazyRef__Lorg_scalajs_dom_raw_HTMLInputElement(tasks$1$1, newTodo$lzy$1$1).value = ""
       })
     })(this, tasks$1, newTodo$lzy$1));
-    var this$6 = $m_Lscalatags_JsDom$all$();
+    var this$8 = $m_Lscalatags_JsDom$all$();
     var ev = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1) {
       return (function(f$2) {
         var f = $as_F1(f$2);
@@ -6787,8 +5978,8 @@ $c_Ltodo_TodoMVC$.prototype.newTodo$lzycompute$1__p1__Lrescala_reactives_Var__sr
         })(f)
       })
     })(this));
-    var array$1 = [jsx$6, jsx$5, jsx$4, jsx$3, jsx$2.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$1, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$6, ev))];
-    return newTodo$lzy$1.initialize__O__O(jsx$7.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1)).render__Lorg_scalajs_dom_raw_Element())
+    var array$1 = [jsx$7, jsx$6, jsx$5, jsx$4, jsx$3.$$colon$eq__O__Lscalatags_generic_AttrValue__Lscalatags_generic_AttrPair(jsx$1, new $c_Lscalatags_LowPriorityImplicits$$anon$2().init___Lscalatags_LowPriorityImplicits__F1(this$8, ev))];
+    return newTodo$lzy$1.initialize__O__O(jsx$8.apply__sc_Seq__Lscalatags_JsDom$TypedTag(new $c_sjs_js_WrappedArray().init___sjs_js_Array(array$1)).render__Lorg_scalajs_dom_raw_Element())
   }
 });
 var $d_Ltodo_TodoMVC$ = new $TypeData().initClass({
@@ -6819,40 +6010,19 @@ function $h_Ltodo_TodoMVC$Task() {
   /*<skip>*/
 }
 $h_Ltodo_TodoMVC$Task.prototype = $c_Ltodo_TodoMVC$Task.prototype;
-$c_Ltodo_TodoMVC$Task.prototype.init___T__Z = (function(desc_, done_) {
-  var jsx$2 = $m_Ltodo_TodoMVC$().storingEngine$1.Var__Lrescala_interface_RescalaInterface$Var$();
-  var evidence$1 = $m_Lio_circe_Encoder$().encodeString$1;
-  var evidence$2 = $m_Lio_circe_Decoder$().decodeString$1;
-  var jsx$1 = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1, evidence$2);
+$c_Ltodo_TodoMVC$Task.prototype.init___Lrescala_reactives_Var__Lrescala_reactives_Var = (function(desc, done) {
+  this.desc$1 = desc;
+  this.done$1 = done;
+  var jsx$2 = $m_Ltodo_TodoMVC$().storingEngine$1.Var__Lrescala_interface_RescalaInterfaceRequireSerializer$Var$();
+  var jsx$1 = $m_Lrescala_core_ReSerializable$DoNotSerialize$();
   var this$3 = $m_Lrescala_core_CreationTicket$();
   var factory = $m_Ltodo_TodoMVC$().storingEngine$1;
   var this$2 = $m_Lrescala_core_REName$();
-  var file = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.Task#desc");
-  var line = new $c_Lsourcecode_Line().init___I(32);
+  var file = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.Task#editing");
+  var line = new $c_Lsourcecode_Line().init___I(30);
   var line$1 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$2, file, line);
-  this.desc$1 = jsx$2.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(desc_, jsx$1, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$3, factory, line$1));
-  var jsx$4 = $m_Ltodo_TodoMVC$().storingEngine$1.Var__Lrescala_interface_RescalaInterface$Var$();
-  var evidence$1$1 = $m_Lio_circe_Encoder$().encodeBoolean$1;
-  var evidence$2$1 = $m_Lio_circe_Decoder$().decodeBoolean$1;
-  var jsx$3 = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1$1, evidence$2$1);
-  var this$6 = $m_Lrescala_core_CreationTicket$();
-  var factory$1 = $m_Ltodo_TodoMVC$().storingEngine$1;
-  var this$5 = $m_Lrescala_core_REName$();
-  var file$1 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.Task#done");
-  var line$2 = new $c_Lsourcecode_Line().init___I(33);
-  var line$3 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$5, file$1, line$2);
-  this.done$1 = jsx$4.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(done_, jsx$3, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$6, factory$1, line$3));
-  var jsx$6 = $m_Ltodo_TodoMVC$().storingEngine$1.Var__Lrescala_interface_RescalaInterface$Var$();
-  var evidence$1$2 = $m_Lio_circe_Encoder$().encodeBoolean$1;
-  var evidence$2$2 = $m_Lio_circe_Decoder$().decodeBoolean$1;
-  var jsx$5 = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1$2, evidence$2$2);
-  var this$9 = $m_Lrescala_core_CreationTicket$();
-  var factory$2 = $m_Ltodo_TodoMVC$().storingEngine$1;
-  var this$8 = $m_Lrescala_core_REName$();
-  var file$2 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.Task#editing");
-  var line$4 = new $c_Lsourcecode_Line().init___I(34);
-  var line$5 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$8, file$2, line$4);
-  this.editing$1 = jsx$6.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(false, jsx$5, $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$9, factory$2, line$5));
+  var e = $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$3, factory, line$1);
+  this.editing$1 = jsx$2.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(false, jsx$1, e);
   return this
 });
 function $is_Ltodo_TodoMVC$Task(obj) {
@@ -6874,6 +6044,68 @@ var $d_Ltodo_TodoMVC$Task = new $TypeData().initClass({
   O: 1
 });
 $c_Ltodo_TodoMVC$Task.prototype.$classData = $d_Ltodo_TodoMVC$Task;
+/** @constructor */
+function $c_Ltodo_TodoMVC$Task$() {
+  $c_O.call(this)
+}
+$c_Ltodo_TodoMVC$Task$.prototype = new $h_O();
+$c_Ltodo_TodoMVC$Task$.prototype.constructor = $c_Ltodo_TodoMVC$Task$;
+/** @constructor */
+function $h_Ltodo_TodoMVC$Task$() {
+  /*<skip>*/
+}
+$h_Ltodo_TodoMVC$Task$.prototype = $c_Ltodo_TodoMVC$Task$.prototype;
+$c_Ltodo_TodoMVC$Task$.prototype.init___ = (function() {
+  return this
+});
+$c_Ltodo_TodoMVC$Task$.prototype.apply__T__Z__Ltodo_TodoMVC$Task = (function(desc, done) {
+  var this$1 = $m_ju_concurrent_ThreadLocalRandom$();
+  var t = this$1.$$undcurrent$1.nextLong__J();
+  var lo = t.lo$2;
+  var hi = t.hi$2;
+  var jsx$3 = $m_Ltodo_TodoMVC$().storingEngine$1.Var__Lrescala_interface_RescalaInterfaceRequireSerializer$Var$();
+  var evidence$1 = $m_Lio_circe_Encoder$().encodeString$1;
+  var evidence$2 = $m_Lio_circe_Decoder$().decodeString$1;
+  var e = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1, evidence$2);
+  var this$6 = $m_Lrescala_core_CreationTicket$();
+  var line$2 = $m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toString__I__I__T(lo, hi);
+  var this$5 = $m_Lrescala_core_CreationTicket$();
+  var factory = $m_Ltodo_TodoMVC$().storingEngine$1;
+  var this$4 = $m_Lrescala_core_REName$();
+  var file = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.Task.apply");
+  var line = new $c_Lsourcecode_Line().init___I(35);
+  var line$1 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$4, file, line);
+  var outer = $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$5, factory, line$1);
+  var jsx$2 = jsx$3.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(desc, e, $f_Lrescala_core_LowPriorityCreationImplicits__fromNameImplicit__T__Lrescala_core_CreationTicket__Lrescala_core_CreationTicket(this$6, line$2, outer));
+  var jsx$1 = $m_Ltodo_TodoMVC$().storingEngine$1.Var__Lrescala_interface_RescalaInterfaceRequireSerializer$Var$();
+  var evidence$1$1 = $m_Lio_circe_Encoder$().encodeBoolean$1;
+  var evidence$2$1 = $m_Lio_circe_Decoder$().decodeBoolean$1;
+  var e$1 = new $c_Lrescala_restoration_ReCirce$$anon$1().init___Lio_circe_Encoder__Lio_circe_Decoder(evidence$1$1, evidence$2$1);
+  var this$11 = $m_Lrescala_core_CreationTicket$();
+  var line$5 = ($m_sjsr_RuntimeLong$().scala$scalajs$runtime$RuntimeLong$$toString__I__I__T(lo, hi) + "b");
+  var this$10 = $m_Lrescala_core_CreationTicket$();
+  var factory$1 = $m_Ltodo_TodoMVC$().storingEngine$1;
+  var this$9 = $m_Lrescala_core_REName$();
+  var file$1 = new $c_Lsourcecode_Enclosing().init___T("todo.TodoMVC.Task.apply");
+  var line$3 = new $c_Lsourcecode_Line().init___I(35);
+  var line$4 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$9, file$1, line$3);
+  var outer$1 = $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$10, factory$1, line$4);
+  return new $c_Ltodo_TodoMVC$Task().init___Lrescala_reactives_Var__Lrescala_reactives_Var(jsx$2, jsx$1.apply__O__Lrescala_core_ReSerializable__Lrescala_core_CreationTicket__Lrescala_reactives_Var(done, e$1, $f_Lrescala_core_LowPriorityCreationImplicits__fromNameImplicit__T__Lrescala_core_CreationTicket__Lrescala_core_CreationTicket(this$11, line$5, outer$1)))
+});
+var $d_Ltodo_TodoMVC$Task$ = new $TypeData().initClass({
+  Ltodo_TodoMVC$Task$: 0
+}, false, "todo.TodoMVC$Task$", {
+  Ltodo_TodoMVC$Task$: 1,
+  O: 1
+});
+$c_Ltodo_TodoMVC$Task$.prototype.$classData = $d_Ltodo_TodoMVC$Task$;
+var $n_Ltodo_TodoMVC$Task$ = (void 0);
+function $m_Ltodo_TodoMVC$Task$() {
+  if ((!$n_Ltodo_TodoMVC$Task$)) {
+    $n_Ltodo_TodoMVC$Task$ = new $c_Ltodo_TodoMVC$Task$().init___()
+  };
+  return $n_Ltodo_TodoMVC$Task$
+}
 /** @constructor */
 function $c_jl_Class() {
   $c_O.call(this);
@@ -9667,10 +8899,6 @@ $c_Lio_circe_ACursor.prototype.history__sci_List = (function() {
   };
   return builder.toList__sci_List()
 });
-$c_Lio_circe_ACursor.prototype.get__T__Lio_circe_Decoder__s_util_Either = (function(k, d) {
-  var this$1 = this.downField__T__Lio_circe_ACursor(k);
-  return d.tryDecode__Lio_circe_ACursor__s_util_Either(this$1)
-});
 /** @constructor */
 function $c_Lio_circe_JsonNumber() {
   $c_O.call(this)
@@ -10274,18 +9502,18 @@ function $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitDependencyDiff_
   indepsRemoved.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, node$1) {
     return (function(x$2$2) {
       var x$2 = $as_Lrescala_core_ReSource(x$2$2);
-      var this$1 = $as_Lrescala_twoversion_GraphStructType(x$2.state__O());
+      var this$1 = $as_Lrescala_twoversion_GraphState(x$2.state__O());
       this$1.$$undoutgoing$2.$$minus$eq__O__scm_MapLike(node$1)
     })
   })($thiz, node)));
   indepsAdded.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2, node$2) {
     return (function(x$3$2) {
       var x$3 = $as_Lrescala_core_ReSource(x$3$2);
-      var this$3 = $as_Lrescala_twoversion_GraphStructType(x$3.state__O());
+      var this$3 = $as_Lrescala_twoversion_GraphState(x$3.state__O());
       this$3.$$undoutgoing$2.put__O__O__s_Option(node$2, $m_s_None$())
     })
   })($thiz, node)));
-  var this$4 = $as_Lrescala_twoversion_GraphStructType(node.initialState$2);
+  var this$4 = $as_Lrescala_twoversion_GraphState(node.initialState$2);
   this$4.$$undincoming$2 = updated
 }
 function $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V($thiz) {
@@ -10400,7 +9628,7 @@ function $h_Lrescalatags_package$$anon$1() {
 }
 $h_Lrescalatags_package$$anon$1.prototype = $c_Lrescalatags_package$$anon$1.prototype;
 $c_Lrescalatags_package$$anon$1.prototype.apply__Lorg_scalajs_dom_raw_Element__Lscalatags_generic_Attr__Lrescala_reactives_Signal__V = (function(t, a, signal) {
-  var onSuccess = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, t$1, a$1) {
+  var onValue = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, t$1, a$1) {
     return (function(value$2) {
       var e = $this.evidence$1$1$1;
       e.apply__O__Lscalatags_generic_Attr__O__V(t$1, a$1, value$2)
@@ -10413,7 +9641,7 @@ $c_Lrescalatags_package$$anon$1.prototype.apply__Lorg_scalajs_dom_raw_Element__L
   var line = new $c_Lsourcecode_Line().init___I(67);
   var line$1 = $f_Lrescala_core_LowPriorityREName__create__Lsourcecode_Enclosing__Lsourcecode_Line__Lrescala_core_REName(this$2, file, line);
   var ticket = $f_Lrescala_core_LowPriorityCreationImplicits__fromEngineImplicit__Lrescala_core_Scheduler__Lrescala_core_REName__Lrescala_core_CreationTicket(this$3, factory, line$1);
-  $m_Lrescala_reactives_Observe$().strong__Lrescala_core_Interp__Z__F1__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Observe(signal, true, onSuccess, null, ticket)
+  $m_Lrescala_reactives_Observe$().strong__Lrescala_core_Interp__Z__F1__F1__Lrescala_core_CreationTicket__Lrescala_reactives_Observe(signal, true, onValue, null, ticket)
 });
 $c_Lrescalatags_package$$anon$1.prototype.init___Lscalatags_generic_AttrValue__Lrescala_core_Scheduler = (function(evidence$1$1, engine$3) {
   this.evidence$1$1$1 = evidence$1$1;
@@ -11025,10 +10253,6 @@ function $h_ju_Random() {
   /*<skip>*/
 }
 $h_ju_Random.prototype = $c_ju_Random.prototype;
-$c_ju_Random.prototype.init___ = (function() {
-  $c_ju_Random.prototype.init___J.call(this, $m_ju_Random$().java$util$Random$$randomSeed__J());
-  return this
-});
 $c_ju_Random.prototype.init___J = (function(seed_in) {
   this.haveNextNextGaussian$1 = false;
   this.setSeed__J__V(seed_in);
@@ -11063,14 +10287,6 @@ $c_ju_Random.prototype.setSeed__J__V = (function(seed_in) {
   this.seedLo$1 = (16777215 & lo);
   this.haveNextNextGaussian$1 = false
 });
-var $d_ju_Random = new $TypeData().initClass({
-  ju_Random: 0
-}, false, "java.util.Random", {
-  ju_Random: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_ju_Random.prototype.$classData = $d_ju_Random;
 /** @constructor */
 function $c_ju_regex_Matcher() {
   $c_O.call(this);
@@ -11294,37 +10510,6 @@ function $f_s_Product2__productElement__I__O($thiz, n) {
       throw new $c_jl_IndexOutOfBoundsException().init___T(("" + n))
     }
   }
-}
-function $f_s_Product3__productElement__I__O($thiz, n) {
-  switch (n) {
-    case 0: {
-      return $thiz.$$und1$1;
-      break
-    }
-    case 1: {
-      return $thiz.$$und2$1;
-      break
-    }
-    case 2: {
-      return $thiz.$$und3$1;
-      break
-    }
-    default: {
-      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + n))
-    }
-  }
-}
-function $is_s_Product3(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.s_Product3)))
-}
-function $as_s_Product3(obj) {
-  return (($is_s_Product3(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Product3"))
-}
-function $isArrayOf_s_Product3(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.s_Product3)))
-}
-function $asArrayOf_s_Product3(obj, depth) {
-  return (($isArrayOf_s_Product3(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Product3;", depth))
 }
 /** @constructor */
 function $c_s_package$$anon$1() {
@@ -11769,20 +10954,6 @@ $c_sr_AbstractFunction2.prototype.toString__T = (function() {
   return "<function2>"
 });
 /** @constructor */
-function $c_sr_AbstractFunction3() {
-  $c_O.call(this)
-}
-$c_sr_AbstractFunction3.prototype = new $h_O();
-$c_sr_AbstractFunction3.prototype.constructor = $c_sr_AbstractFunction3;
-/** @constructor */
-function $h_sr_AbstractFunction3() {
-  /*<skip>*/
-}
-$h_sr_AbstractFunction3.prototype = $c_sr_AbstractFunction3.prototype;
-$c_sr_AbstractFunction3.prototype.toString__T = (function() {
-  return "<function3>"
-});
-/** @constructor */
 function $c_sr_ArrayCharSequence() {
   $c_O.call(this);
   this.xs$1 = null;
@@ -11934,6 +11105,18 @@ var $d_sr_ObjectRef = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_sr_ObjectRef.prototype.$classData = $d_sr_ObjectRef;
+function $is_Lcats_Show(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lcats_Show)))
+}
+function $as_Lcats_Show(obj) {
+  return (($is_Lcats_Show(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "cats.Show"))
+}
+function $isArrayOf_Lcats_Show(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcats_Show)))
+}
+function $asArrayOf_Lcats_Show(obj, depth) {
+  return (($isArrayOf_Lcats_Show(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcats.Show;", depth))
+}
 /** @constructor */
 function $c_Lcats_Show$() {
   $c_O.call(this);
@@ -12139,7 +11322,7 @@ $c_Lio_circe_CursorOp$.prototype.init___ = (function() {
                 return (("--(" + f) + ")")
               } else if ($is_Lio_circe_CursorOp$DownField(x0$1)) {
                 var x11 = $as_Lio_circe_CursorOp$DownField(x0$1);
-                var f$2 = x11.k$3;
+                var f$2 = x11.k__T();
                 return (("--\\(" + f$2) + ")")
               } else {
                 var x$11 = $m_Lio_circe_CursorOp$DownArray$();
@@ -12149,7 +11332,7 @@ $c_Lio_circe_CursorOp$.prototype.init___ = (function() {
                   return "-\\"
                 } else if ($is_Lio_circe_CursorOp$DownN(x0$1)) {
                   var x14 = $as_Lio_circe_CursorOp$DownN(x0$1);
-                  var n$3 = x14.n__I();
+                  var n$3 = x14.n$3;
                   return (("=\\(" + n$3) + ")")
                 } else {
                   var x$13 = $m_Lio_circe_CursorOp$DeleteGoParent$();
@@ -12225,7 +11408,7 @@ $c_Lio_circe_CursorOp$.prototype.opsToPath__sci_List__T = (function(history) {
     matchEnd36: {
       if ($is_Lio_circe_CursorOp$DownField(x0$2)) {
         var x3 = $as_Lio_circe_CursorOp$DownField(x0$2);
-        var k = x3.k$3;
+        var k = x3.k__T();
         var x$1 = new $c_Lio_circe_CursorOp$SelectField().init___T(k);
         acc = new $c_sci_$colon$colon().init___O__sci_List(x$1, x1$1);
         break matchEnd36
@@ -13548,9 +12731,6 @@ $c_Lio_circe_FailedCursor.prototype.init___Lio_circe_HCursor__Lio_circe_CursorOp
 $c_Lio_circe_FailedCursor.prototype.succeeded__Z = (function() {
   return false
 });
-$c_Lio_circe_FailedCursor.prototype.downField__T__Lio_circe_ACursor = (function(k) {
-  return this
-});
 $c_Lio_circe_FailedCursor.prototype.right__Lio_circe_ACursor = (function() {
   return this
 });
@@ -13574,24 +12754,20 @@ function $h_Lio_circe_HCursor() {
   /*<skip>*/
 }
 $h_Lio_circe_HCursor.prototype = $c_Lio_circe_HCursor.prototype;
+$c_Lio_circe_HCursor.prototype.downN__I__Lio_circe_ACursor = (function(n) {
+  var x1 = this.value__Lio_circe_Json();
+  if ($is_Lio_circe_Json$JArray(x1)) {
+    var x2 = $as_Lio_circe_Json$JArray(x1);
+    var values = x2.value$2;
+    if (((n >= 0) && (values.length__I() > n))) {
+      return new $c_Lio_circe_cursor_ArrayCursor().init___sci_Vector__I__Lio_circe_HCursor__Z__Lio_circe_HCursor__Lio_circe_CursorOp(values, n, this, false, this, new $c_Lio_circe_CursorOp$DownN().init___I(n))
+    }
+  };
+  var op = new $c_Lio_circe_CursorOp$DownN().init___I(n);
+  return new $c_Lio_circe_FailedCursor().init___Lio_circe_HCursor__Lio_circe_CursorOp(this, op)
+});
 $c_Lio_circe_HCursor.prototype.succeeded__Z = (function() {
   return true
-});
-$c_Lio_circe_HCursor.prototype.downField__T__Lio_circe_ACursor = (function(k) {
-  var x1 = this.value__Lio_circe_Json();
-  if ($is_Lio_circe_Json$JObject(x1)) {
-    var x2 = $as_Lio_circe_Json$JObject(x1);
-    var o = x2.value$2;
-    if ((!o.contains__T__Z(k))) {
-      var op = new $c_Lio_circe_CursorOp$DownField().init___T(k);
-      return new $c_Lio_circe_FailedCursor().init___Lio_circe_HCursor__Lio_circe_CursorOp(this, op)
-    } else {
-      return new $c_Lio_circe_cursor_ObjectCursor().init___Lio_circe_JsonObject__T__Lio_circe_HCursor__Z__Lio_circe_HCursor__Lio_circe_CursorOp(o, k, this, false, this, new $c_Lio_circe_CursorOp$DownField().init___T(k))
-    }
-  } else {
-    var op$1 = new $c_Lio_circe_CursorOp$DownField().init___T(k);
-    return new $c_Lio_circe_FailedCursor().init___Lio_circe_HCursor__Lio_circe_CursorOp(this, op$1)
-  }
 });
 $c_Lio_circe_HCursor.prototype.downArray__Lio_circe_ACursor = (function() {
   var x1 = this.value__Lio_circe_Json();
@@ -13931,9 +13107,6 @@ $c_Lio_circe_JsonObject$LinkedHashMapJsonObject.prototype.init___ju_LinkedHashMa
 $c_Lio_circe_JsonObject$LinkedHashMapJsonObject.prototype.isEmpty__Z = (function() {
   return this.io$circe$JsonObject$LinkedHashMapJsonObject$$fields$f.isEmpty__Z()
 });
-$c_Lio_circe_JsonObject$LinkedHashMapJsonObject.prototype.contains__T__Z = (function(k) {
-  return this.io$circe$JsonObject$LinkedHashMapJsonObject$$fields$f.containsKey__O__Z(k)
-});
 $c_Lio_circe_JsonObject$LinkedHashMapJsonObject.prototype.size__I = (function() {
   return this.io$circe$JsonObject$LinkedHashMapJsonObject$$fields$f.size__I()
 });
@@ -13982,9 +13155,6 @@ $c_Lio_circe_JsonObject$LinkedHashMapJsonObject.prototype.appendToFolder__Lio_ci
   };
   folder.writer$1.append__jl_CharSequence__jl_Appendable(p.rBraces$1)
 });
-$c_Lio_circe_JsonObject$LinkedHashMapJsonObject.prototype.applyUnsafe__T__Lio_circe_Json = (function(key) {
-  return $as_Lio_circe_Json(this.io$circe$JsonObject$LinkedHashMapJsonObject$$fields$f.get__O__O(key))
-});
 var $d_Lio_circe_JsonObject$LinkedHashMapJsonObject = new $TypeData().initClass({
   Lio_circe_JsonObject$LinkedHashMapJsonObject: 0
 }, false, "io.circe.JsonObject$LinkedHashMapJsonObject", {
@@ -14015,9 +13185,6 @@ $c_Lio_circe_JsonObject$MapAndVectorJsonObject.prototype.init___sci_Map__sci_Vec
 });
 $c_Lio_circe_JsonObject$MapAndVectorJsonObject.prototype.isEmpty__Z = (function() {
   return this.fields$2.isEmpty__Z()
-});
-$c_Lio_circe_JsonObject$MapAndVectorJsonObject.prototype.contains__T__Z = (function(key) {
-  return this.fields$2.contains__O__Z(key)
 });
 $c_Lio_circe_JsonObject$MapAndVectorJsonObject.prototype.apply__T__s_Option = (function(key) {
   return this.fields$2.get__O__s_Option(key)
@@ -14060,9 +13227,6 @@ $c_Lio_circe_JsonObject$MapAndVectorJsonObject.prototype.appendToFolder__Lio_cir
     }
   };
   folder.writer$1.append__jl_CharSequence__jl_Appendable(p.rBraces$1)
-});
-$c_Lio_circe_JsonObject$MapAndVectorJsonObject.prototype.applyUnsafe__T__Lio_circe_Json = (function(key) {
-  return $as_Lio_circe_Json(this.fields$2.apply__O__O(key))
 });
 var $d_Lio_circe_JsonObject$MapAndVectorJsonObject = new $TypeData().initClass({
   Lio_circe_JsonObject$MapAndVectorJsonObject: 0
@@ -14328,55 +13492,6 @@ $c_Lio_circe_Printer$PrintingFolder.prototype.onString__T__O = (function(value) 
   this.onString__T__V(value)
 });
 /** @constructor */
-function $c_Lio_circe_ProductDecoders$$anon$3() {
-  $c_O.call(this);
-  this.nameA0$3$1 = null;
-  this.nameA1$2$1 = null;
-  this.nameA2$1$1 = null;
-  this.f$3$1 = null;
-  this.decodeA0$3$1 = null;
-  this.decodeA1$2$1 = null;
-  this.decodeA2$1$1 = null
-}
-$c_Lio_circe_ProductDecoders$$anon$3.prototype = new $h_O();
-$c_Lio_circe_ProductDecoders$$anon$3.prototype.constructor = $c_Lio_circe_ProductDecoders$$anon$3;
-/** @constructor */
-function $h_Lio_circe_ProductDecoders$$anon$3() {
-  /*<skip>*/
-}
-$h_Lio_circe_ProductDecoders$$anon$3.prototype = $c_Lio_circe_ProductDecoders$$anon$3.prototype;
-$c_Lio_circe_ProductDecoders$$anon$3.prototype.init___Lio_circe_ProductDecoders__T__T__T__F3__Lio_circe_Decoder__Lio_circe_Decoder__Lio_circe_Decoder = (function($$outer, nameA0$3, nameA1$2, nameA2$1, f$3, decodeA0$3, decodeA1$2, decodeA2$1) {
-  this.nameA0$3$1 = nameA0$3;
-  this.nameA1$2$1 = nameA1$2;
-  this.nameA2$1$1 = nameA2$1;
-  this.f$3$1 = f$3;
-  this.decodeA0$3$1 = decodeA0$3;
-  this.decodeA1$2$1 = decodeA1$2;
-  this.decodeA2$1$1 = decodeA2$1;
-  return this
-});
-$c_Lio_circe_ProductDecoders$$anon$3.prototype.tryDecode__Lio_circe_ACursor__s_util_Either = (function(c) {
-  return $f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this, c)
-});
-$c_Lio_circe_ProductDecoders$$anon$3.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
-  var this$1 = $m_Lio_circe_Decoder$().resultInstance$1;
-  var f0 = c.get__T__Lio_circe_Decoder__s_util_Either(this.nameA0$3$1, this.decodeA0$3$1);
-  var f1 = c.get__T__Lio_circe_Decoder__s_util_Either(this.nameA1$2$1, this.decodeA1$2$1);
-  var f2 = c.get__T__Lio_circe_Decoder__s_util_Either(this.nameA2$1$1, this.decodeA2$1$1);
-  var f = this.f$3$1;
-  var this$2 = $m_Lcats_Semigroupal$();
-  return $as_s_util_Either($f_Lcats_SemigroupalArityFunctions__map3__O__O__O__F3__Lcats_Semigroupal__Lcats_Functor__O(this$2, f0, f1, f2, f, this$1, this$1))
-});
-var $d_Lio_circe_ProductDecoders$$anon$3 = new $TypeData().initClass({
-  Lio_circe_ProductDecoders$$anon$3: 0
-}, false, "io.circe.ProductDecoders$$anon$3", {
-  Lio_circe_ProductDecoders$$anon$3: 1,
-  O: 1,
-  Lio_circe_Decoder: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lio_circe_ProductDecoders$$anon$3.prototype.$classData = $d_Lio_circe_ProductDecoders$$anon$3;
-/** @constructor */
 function $c_Lio_circe_SeqDecoder() {
   $c_O.call(this);
   this.decodeA$1 = null
@@ -14443,6 +13558,59 @@ $c_Lio_circe_SeqDecoder.prototype.apply__Lio_circe_HCursor__s_util_Either = (fun
     return new $c_s_util_Left().init___O(value$3)
   }
 });
+/** @constructor */
+function $c_Lio_circe_TupleDecoders$$anon$2() {
+  $c_O.call(this);
+  this.decodeA0$2$1 = null;
+  this.decodeA1$1$1 = null
+}
+$c_Lio_circe_TupleDecoders$$anon$2.prototype = new $h_O();
+$c_Lio_circe_TupleDecoders$$anon$2.prototype.constructor = $c_Lio_circe_TupleDecoders$$anon$2;
+/** @constructor */
+function $h_Lio_circe_TupleDecoders$$anon$2() {
+  /*<skip>*/
+}
+$h_Lio_circe_TupleDecoders$$anon$2.prototype = $c_Lio_circe_TupleDecoders$$anon$2.prototype;
+$c_Lio_circe_TupleDecoders$$anon$2.prototype.tryDecode__Lio_circe_ACursor__s_util_Either = (function(c) {
+  return $f_Lio_circe_Decoder__tryDecode__Lio_circe_ACursor__s_util_Either(this, c)
+});
+$c_Lio_circe_TupleDecoders$$anon$2.prototype.apply__Lio_circe_HCursor__s_util_Either = (function(c) {
+  var x1 = c.value__Lio_circe_Json();
+  if ($is_Lio_circe_Json$JArray(x1)) {
+    var x2 = $as_Lio_circe_Json$JArray(x1);
+    var values = x2.value$2;
+    if ((values.length__I() === 2)) {
+      var this$1 = $m_Lio_circe_Decoder$().resultInstance$1;
+      var f1 = this.decodeA0$2$1.tryDecode__Lio_circe_ACursor__s_util_Either(c.downN__I__Lio_circe_ACursor(0));
+      var f2 = this.decodeA1$1$1.tryDecode__Lio_circe_ACursor__s_util_Either(c.downN__I__Lio_circe_ACursor(1));
+      var this$2 = $m_Lcats_Semigroupal$();
+      return $as_s_util_Either($f_Lcats_SemigroupalArityFunctions__tuple2__O__O__Lcats_Semigroupal__Lcats_Invariant__O(this$2, f1, f2, this$1, this$1))
+    }
+  };
+  $m_s_package$();
+  $m_Lio_circe_DecodingFailure$();
+  var ops = new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this, c$1) {
+    return (function() {
+      return c$1.history__sci_List()
+    })
+  })(this, c));
+  var value = new $c_Lio_circe_DecodingFailure$$anon$2().init___T__F0("(A0, A1)", ops);
+  return new $c_s_util_Left().init___O(value)
+});
+$c_Lio_circe_TupleDecoders$$anon$2.prototype.init___Lio_circe_TupleDecoders__Lio_circe_Decoder__Lio_circe_Decoder = (function($$outer, decodeA0$2, decodeA1$1) {
+  this.decodeA0$2$1 = decodeA0$2;
+  this.decodeA1$1$1 = decodeA1$1;
+  return this
+});
+var $d_Lio_circe_TupleDecoders$$anon$2 = new $TypeData().initClass({
+  Lio_circe_TupleDecoders$$anon$2: 0
+}, false, "io.circe.TupleDecoders$$anon$2", {
+  Lio_circe_TupleDecoders$$anon$2: 1,
+  O: 1,
+  Lio_circe_Decoder: 1,
+  Ljava_io_Serializable: 1
+});
+$c_Lio_circe_TupleDecoders$$anon$2.prototype.$classData = $d_Lio_circe_TupleDecoders$$anon$2;
 /** @constructor */
 function $c_Lio_circe_numbers_BiggerDecimal$() {
   $c_O.call(this);
@@ -15508,38 +14676,38 @@ $c_Lrescala_reactives_Source.prototype.admit__O__Lrescala_core_AdmissionTicket__
   this.admitPulse__Lrescala_core_Pulse__Lrescala_core_AdmissionTicket__V(new $c_Lrescala_core_Pulse$Value().init___O(value), ticket)
 });
 /** @constructor */
-function $c_Lrescala_twoversion_BufferedValueStruct() {
+function $c_Lrescala_twoversion_BufferedValueState() {
   $c_O.call(this);
   this.ip$1 = null;
   this.current$1 = null;
   this.owner$1 = null;
   this.update$1 = null
 }
-$c_Lrescala_twoversion_BufferedValueStruct.prototype = new $h_O();
-$c_Lrescala_twoversion_BufferedValueStruct.prototype.constructor = $c_Lrescala_twoversion_BufferedValueStruct;
+$c_Lrescala_twoversion_BufferedValueState.prototype = new $h_O();
+$c_Lrescala_twoversion_BufferedValueState.prototype.constructor = $c_Lrescala_twoversion_BufferedValueState;
 /** @constructor */
-function $h_Lrescala_twoversion_BufferedValueStruct() {
+function $h_Lrescala_twoversion_BufferedValueState() {
   /*<skip>*/
 }
-$h_Lrescala_twoversion_BufferedValueStruct.prototype = $c_Lrescala_twoversion_BufferedValueStruct.prototype;
-$c_Lrescala_twoversion_BufferedValueStruct.prototype.release__V = (function() {
+$h_Lrescala_twoversion_BufferedValueState.prototype = $c_Lrescala_twoversion_BufferedValueState.prototype;
+$c_Lrescala_twoversion_BufferedValueState.prototype.release__V = (function() {
   this.update$1 = null;
   this.owner$1 = null
 });
-$c_Lrescala_twoversion_BufferedValueStruct.prototype.get__Lrescala_twoversion_Token__O = (function(token) {
+$c_Lrescala_twoversion_BufferedValueState.prototype.get__Lrescala_twoversion_Token__O = (function(token) {
   return ((token === this.owner$1) ? this.update$1 : this.current$1)
 });
-$c_Lrescala_twoversion_BufferedValueStruct.prototype.write__O__Lrescala_twoversion_Token__Z = (function(value, token) {
+$c_Lrescala_twoversion_BufferedValueState.prototype.write__O__Lrescala_twoversion_Token__Z = (function(value, token) {
   this.update$1 = value;
   var res = (this.owner$1 === null);
   this.owner$1 = token;
   return res
 });
-$c_Lrescala_twoversion_BufferedValueStruct.prototype.commit__V = (function() {
+$c_Lrescala_twoversion_BufferedValueState.prototype.commit__V = (function() {
   this.current$1 = this.ip$1.unchange$1.unchange__O__O(this.update$1);
   this.release__V()
 });
-$c_Lrescala_twoversion_BufferedValueStruct.prototype.init___Lrescala_core_Initializer$InitValues = (function(ip) {
+$c_Lrescala_twoversion_BufferedValueState.prototype.init___Lrescala_core_Initializer$InitValues = (function(ip) {
   this.ip$1 = ip;
   this.current$1 = ip.initialValue__O();
   this.owner$1 = null;
@@ -16689,6 +15857,71 @@ function $m_ju_UUID$() {
   return $n_ju_UUID$
 }
 /** @constructor */
+function $c_ju_concurrent_ThreadLocalRandom() {
+  $c_ju_Random.call(this);
+  this.initialized$2 = false
+}
+$c_ju_concurrent_ThreadLocalRandom.prototype = new $h_ju_Random();
+$c_ju_concurrent_ThreadLocalRandom.prototype.constructor = $c_ju_concurrent_ThreadLocalRandom;
+/** @constructor */
+function $h_ju_concurrent_ThreadLocalRandom() {
+  /*<skip>*/
+}
+$h_ju_concurrent_ThreadLocalRandom.prototype = $c_ju_concurrent_ThreadLocalRandom.prototype;
+$c_ju_concurrent_ThreadLocalRandom.prototype.init___ = (function() {
+  $c_ju_Random.prototype.init___J.call(this, $m_ju_Random$().java$util$Random$$randomSeed__J());
+  this.initialized$2 = true;
+  return this
+});
+$c_ju_concurrent_ThreadLocalRandom.prototype.setSeed__J__V = (function(seed) {
+  if (this.initialized$2) {
+    throw new $c_jl_UnsupportedOperationException().init___()
+  };
+  $c_ju_Random.prototype.setSeed__J__V.call(this, seed)
+});
+var $d_ju_concurrent_ThreadLocalRandom = new $TypeData().initClass({
+  ju_concurrent_ThreadLocalRandom: 0
+}, false, "java.util.concurrent.ThreadLocalRandom", {
+  ju_concurrent_ThreadLocalRandom: 1,
+  ju_Random: 1,
+  O: 1,
+  Ljava_io_Serializable: 1
+});
+$c_ju_concurrent_ThreadLocalRandom.prototype.$classData = $d_ju_concurrent_ThreadLocalRandom;
+/** @constructor */
+function $c_ju_concurrent_ThreadLocalRandom$() {
+  $c_O.call(this);
+  this.$$undcurrent$1 = null
+}
+$c_ju_concurrent_ThreadLocalRandom$.prototype = new $h_O();
+$c_ju_concurrent_ThreadLocalRandom$.prototype.constructor = $c_ju_concurrent_ThreadLocalRandom$;
+/** @constructor */
+function $h_ju_concurrent_ThreadLocalRandom$() {
+  /*<skip>*/
+}
+$h_ju_concurrent_ThreadLocalRandom$.prototype = $c_ju_concurrent_ThreadLocalRandom$.prototype;
+$c_ju_concurrent_ThreadLocalRandom$.prototype.init___ = (function() {
+  $n_ju_concurrent_ThreadLocalRandom$ = this;
+  this.$$undcurrent$1 = new $c_ju_concurrent_ThreadLocalRandom().init___();
+  return this
+});
+var $d_ju_concurrent_ThreadLocalRandom$ = new $TypeData().initClass({
+  ju_concurrent_ThreadLocalRandom$: 0
+}, false, "java.util.concurrent.ThreadLocalRandom$", {
+  ju_concurrent_ThreadLocalRandom$: 1,
+  O: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_ju_concurrent_ThreadLocalRandom$.prototype.$classData = $d_ju_concurrent_ThreadLocalRandom$;
+var $n_ju_concurrent_ThreadLocalRandom$ = (void 0);
+function $m_ju_concurrent_ThreadLocalRandom$() {
+  if ((!$n_ju_concurrent_ThreadLocalRandom$)) {
+    $n_ju_concurrent_ThreadLocalRandom$ = new $c_ju_concurrent_ThreadLocalRandom$().init___()
+  };
+  return $n_ju_concurrent_ThreadLocalRandom$
+}
+/** @constructor */
 function $c_ju_regex_Pattern() {
   $c_O.call(this);
   this.jsRegExp$1 = null;
@@ -17580,22 +16813,6 @@ function $m_s_util_Left$() {
   return $n_s_util_Left$
 }
 /** @constructor */
-function $c_s_util_Random() {
-  $c_O.call(this);
-  this.self$1 = null
-}
-$c_s_util_Random.prototype = new $h_O();
-$c_s_util_Random.prototype.constructor = $c_s_util_Random;
-/** @constructor */
-function $h_s_util_Random() {
-  /*<skip>*/
-}
-$h_s_util_Random.prototype = $c_s_util_Random.prototype;
-$c_s_util_Random.prototype.init___ju_Random = (function(self) {
-  this.self$1 = self;
-  return this
-});
-/** @constructor */
 function $c_s_util_Right$() {
   $c_O.call(this)
 }
@@ -18070,34 +17287,6 @@ var $d_sjsr_AnonFunction2 = new $TypeData().initClass({
   F2: 1
 });
 $c_sjsr_AnonFunction2.prototype.$classData = $d_sjsr_AnonFunction2;
-/** @constructor */
-function $c_sjsr_AnonFunction3() {
-  $c_sr_AbstractFunction3.call(this);
-  this.f$2 = null
-}
-$c_sjsr_AnonFunction3.prototype = new $h_sr_AbstractFunction3();
-$c_sjsr_AnonFunction3.prototype.constructor = $c_sjsr_AnonFunction3;
-/** @constructor */
-function $h_sjsr_AnonFunction3() {
-  /*<skip>*/
-}
-$h_sjsr_AnonFunction3.prototype = $c_sjsr_AnonFunction3.prototype;
-$c_sjsr_AnonFunction3.prototype.init___sjs_js_Function3 = (function(f) {
-  this.f$2 = f;
-  return this
-});
-$c_sjsr_AnonFunction3.prototype.apply__O__O__O__O = (function(arg1, arg2, arg3) {
-  return (0, this.f$2)(arg1, arg2, arg3)
-});
-var $d_sjsr_AnonFunction3 = new $TypeData().initClass({
-  sjsr_AnonFunction3: 0
-}, false, "scala.scalajs.runtime.AnonFunction3", {
-  sjsr_AnonFunction3: 1,
-  sr_AbstractFunction3: 1,
-  O: 1,
-  F3: 1
-});
-$c_sjsr_AnonFunction3.prototype.$classData = $d_sjsr_AnonFunction3;
 /** @constructor */
 function $c_sjsr_RuntimeLong$() {
   $c_O.call(this);
@@ -19602,46 +18791,6 @@ var $d_Lio_circe_cursor_ArrayCursor = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_Lio_circe_cursor_ArrayCursor.prototype.$classData = $d_Lio_circe_cursor_ArrayCursor;
-/** @constructor */
-function $c_Lio_circe_cursor_ObjectCursor() {
-  $c_Lio_circe_HCursor.call(this);
-  this.obj$3 = null;
-  this.key$3 = null;
-  this.parent$3 = null;
-  this.changed$3 = false
-}
-$c_Lio_circe_cursor_ObjectCursor.prototype = new $h_Lio_circe_HCursor();
-$c_Lio_circe_cursor_ObjectCursor.prototype.constructor = $c_Lio_circe_cursor_ObjectCursor;
-/** @constructor */
-function $h_Lio_circe_cursor_ObjectCursor() {
-  /*<skip>*/
-}
-$h_Lio_circe_cursor_ObjectCursor.prototype = $c_Lio_circe_cursor_ObjectCursor.prototype;
-$c_Lio_circe_cursor_ObjectCursor.prototype.init___Lio_circe_JsonObject__T__Lio_circe_HCursor__Z__Lio_circe_HCursor__Lio_circe_CursorOp = (function(obj, key, parent, changed, lastCursor, lastOp) {
-  this.obj$3 = obj;
-  this.key$3 = key;
-  this.parent$3 = parent;
-  this.changed$3 = changed;
-  $c_Lio_circe_ACursor.prototype.init___Lio_circe_HCursor__Lio_circe_CursorOp.call(this, lastCursor, lastOp);
-  return this
-});
-$c_Lio_circe_cursor_ObjectCursor.prototype.right__Lio_circe_ACursor = (function() {
-  var op = $m_Lio_circe_CursorOp$MoveRight$();
-  return new $c_Lio_circe_FailedCursor().init___Lio_circe_HCursor__Lio_circe_CursorOp(this, op)
-});
-$c_Lio_circe_cursor_ObjectCursor.prototype.value__Lio_circe_Json = (function() {
-  return this.obj$3.applyUnsafe__T__Lio_circe_Json(this.key$3)
-});
-var $d_Lio_circe_cursor_ObjectCursor = new $TypeData().initClass({
-  Lio_circe_cursor_ObjectCursor: 0
-}, false, "io.circe.cursor.ObjectCursor", {
-  Lio_circe_cursor_ObjectCursor: 1,
-  Lio_circe_HCursor: 1,
-  Lio_circe_ACursor: 1,
-  O: 1,
-  Ljava_io_Serializable: 1
-});
-$c_Lio_circe_cursor_ObjectCursor.prototype.$classData = $d_Lio_circe_cursor_ObjectCursor;
 /** @constructor */
 function $c_Lio_circe_cursor_TopCursor() {
   $c_Lio_circe_HCursor.call(this);
@@ -21581,7 +20730,7 @@ function $f_Lrescala_levelbased_LevelBasedPropagation__maximumLevel__pLrescala_l
     return (function(acc$2, r$2) {
       var acc = $uI(acc$2);
       var r = $as_Lrescala_core_ReSource(r$2);
-      var this$1 = $as_Lrescala_levelbased_LevelStructType(r.state__O());
+      var this$1 = $as_Lrescala_levelbased_LevelState(r.state__O());
       var y = this$1.$$undlevel$3;
       return ((acc > y) ? acc : y)
     })
@@ -21603,7 +20752,7 @@ function $f_Lrescala_levelbased_LevelBasedPropagation__initialize__Lrescala_core
   };
   if (n) {
     var head = ic.source$1;
-    $f_Lrescala_levelbased_LevelBasedPropagation__enqueueOutgoing__pLrescala_levelbased_LevelBasedPropagation__Lrescala_core_ReSource__I__scm_ArrayBuffer($thiz, head, (-42))
+    $f_Lrescala_levelbased_LevelBasedPropagation__enqueueOutgoing__pLrescala_levelbased_LevelBasedPropagation__Lrescala_core_ReSource__I__scm_ArrayBuffer($thiz, head, (-2147483648))
   }
 }
 function $f_Lrescala_levelbased_LevelBasedPropagation__$$init$__V($thiz) {
@@ -21612,7 +20761,7 @@ function $f_Lrescala_levelbased_LevelBasedPropagation__$$init$__V($thiz) {
   $thiz.reevaluationTicket$1 = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$1().init___Lrescala_twoversion_TwoVersionPropagationImpl__O($thiz, null)
 }
 function $f_Lrescala_levelbased_LevelBasedPropagation__enqueueOutgoing__pLrescala_levelbased_LevelBasedPropagation__Lrescala_core_ReSource__I__scm_ArrayBuffer($thiz, head, minLevel) {
-  var this$1 = $as_Lrescala_twoversion_GraphStructType(head.state__O());
+  var this$1 = $as_Lrescala_twoversion_GraphState(head.state__O());
   this$1.$$undoutgoing$2.keys__sc_Iterable().foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, minLevel$1, eta$0$2) {
     return (function(dep$2) {
       var dep = $as_Lrescala_core_Reactive(dep$2);
@@ -21628,7 +20777,7 @@ function $f_Lrescala_levelbased_LevelBasedPropagation__ignite__Lrescala_core_Rea
     var f = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this) {
       return (function(x$2$2) {
         var x$2 = $as_Lrescala_core_ReSource(x$2$2);
-        var this$1 = $as_Lrescala_levelbased_LevelStructType(x$2.state__O());
+        var this$1 = $as_Lrescala_levelbased_LevelState(x$2.state__O());
         return this$1.$$undlevel$3
       })
     })($thiz));
@@ -21636,15 +20785,15 @@ function $f_Lrescala_levelbased_LevelBasedPropagation__ignite__Lrescala_core_Rea
     var bf = new $c_scg_GenSetFactory$$anon$1().init___scg_GenSetFactory(this$2);
     var level = ((1 + $uI($as_sc_TraversableOnce($f_sc_TraversableLike__map__F1__scg_CanBuildFrom__O(incoming, f, bf)).max__s_math_Ordering__O($m_s_math_Ordering$Int$()))) | 0)
   };
-  $as_Lrescala_levelbased_LevelStructType(reactive.initialState$2).updateLevel__I__I(level);
+  $as_Lrescala_levelbased_LevelState(reactive.initialState$2).updateLevel__I__I(level);
   incoming.foreach__F1__V(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$2$1, reactive$1) {
     return (function(dep$2) {
       var dep = $as_Lrescala_core_ReSource(dep$2);
-      var this$3 = $as_Lrescala_twoversion_GraphStructType(dep.state__O());
+      var this$3 = $as_Lrescala_twoversion_GraphState(dep.state__O());
       this$3.$$undoutgoing$2.put__O__O__s_Option(reactive$1, $m_s_None$())
     })
   })($thiz, reactive)));
-  var this$4 = $as_Lrescala_twoversion_GraphStructType(reactive.initialState$2);
+  var this$4 = $as_Lrescala_twoversion_GraphState(reactive.initialState$2);
   this$4.$$undincoming$2 = incoming;
   if ((ignitionRequiresReevaluation || incoming.exists__F1__Z(new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(this$3$1) {
     return (function(elem$2) {
@@ -21672,12 +20821,12 @@ function $f_Lrescala_levelbased_LevelBasedPropagation__evaluateIn__Lrescala_core
     var x$1 = $as_sci_Set(arg1);
     var minimalLevel = ((1 + $f_Lrescala_levelbased_LevelBasedPropagation__maximumLevel__pLrescala_levelbased_LevelBasedPropagation__sci_Set__I($thiz, x$1)) | 0)
   };
-  var this$1 = $as_Lrescala_levelbased_LevelStructType(head.initialState$2);
+  var this$1 = $as_Lrescala_levelbased_LevelState(head.initialState$2);
   var redo = (this$1.$$undlevel$3 < minimalLevel);
   if (redo) {
     $thiz.levelQueue$1.enqueue__I__Z__Lrescala_core_Reactive__V(minimalLevel, true, head)
   } else {
-    var this$2 = $as_Lrescala_twoversion_GraphStructType(head.initialState$2);
+    var this$2 = $as_Lrescala_twoversion_GraphState(head.initialState$2);
     var eta$0$1 = this$2.$$undincoming$2;
     if ((!dependencies.isEmpty__Z())) {
       var arg1$1 = dependencies.get__O();
@@ -21696,6 +20845,18 @@ function $f_Lrescala_levelbased_LevelBasedPropagation__evaluateIn__Lrescala_core
       $f_Lrescala_levelbased_LevelBasedPropagation__enqueueOutgoing__pLrescala_levelbased_LevelBasedPropagation__Lrescala_core_ReSource__I__scm_ArrayBuffer($thiz, head, minimalLevel)
     }
   }
+}
+function $f_Lrescala_restoration_ReStoreImpl__$$init$__V($thiz) {
+  $thiz.seenNames$und$eq__sci_Map__V($as_sci_Map($m_s_Predef$().Map$2.apply__sc_Seq__sc_GenMap($m_sci_Nil$())))
+}
+function $f_Lrescala_restoration_ReStoreImpl__deriveName__Lrescala_core_REName__Lrescala_core_REName($thiz, name) {
+  var count = $uI($thiz.seenNames__sci_Map().getOrElse__O__F0__O(name, new $c_sjsr_AnonFunction0().init___sjs_js_Function0((function($this) {
+    return (function() {
+      return $this.$$anonfun$deriveName$1__pLrescala_restoration_ReStoreImpl__I()
+    })
+  })($thiz))));
+  $thiz.seenNames$und$eq__sci_Map__V($thiz.seenNames__sci_Map().updated__O__O__sci_Map(name, ((1 + count) | 0)));
+  return ((count !== 0) ? name.derive__T__Lrescala_core_REName(("" + count)) : name)
 }
 function $is_T(obj) {
   return ((typeof obj) === "string")
@@ -22741,38 +21902,6 @@ function $m_s_reflect_NoManifest$() {
   return $n_s_reflect_NoManifest$
 }
 /** @constructor */
-function $c_s_util_Random$() {
-  $c_s_util_Random.call(this)
-}
-$c_s_util_Random$.prototype = new $h_s_util_Random();
-$c_s_util_Random$.prototype.constructor = $c_s_util_Random$;
-/** @constructor */
-function $h_s_util_Random$() {
-  /*<skip>*/
-}
-$h_s_util_Random$.prototype = $c_s_util_Random$.prototype;
-$c_s_util_Random$.prototype.init___ = (function() {
-  $c_s_util_Random.prototype.init___ju_Random.call(this, new $c_ju_Random().init___());
-  return this
-});
-var $d_s_util_Random$ = new $TypeData().initClass({
-  s_util_Random$: 0
-}, false, "scala.util.Random$", {
-  s_util_Random$: 1,
-  s_util_Random: 1,
-  O: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_s_util_Random$.prototype.$classData = $d_s_util_Random$;
-var $n_s_util_Random$ = (void 0);
-function $m_s_util_Random$() {
-  if ((!$n_s_util_Random$)) {
-    $n_s_util_Random$ = new $c_s_util_Random$().init___()
-  };
-  return $n_s_util_Random$
-}
-/** @constructor */
 function $c_sc_AbstractIterator() {
   $c_O.call(this)
 }
@@ -23558,6 +22687,19 @@ $h_Lcats_Show$$anon$3.prototype = $c_Lcats_Show$$anon$3.prototype;
 $c_Lcats_Show$$anon$3.prototype.init___ = (function() {
   return this
 });
+$c_Lcats_Show$$anon$3.prototype.contramap__Lcats_Show__F1__Lcats_Show = (function(fa, f) {
+  $m_Lcats_Show$();
+  var this$1 = new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function($this, fa$1) {
+    return (function(t$2) {
+      return fa$1.show__O__T(t$2)
+    })
+  })(this, fa));
+  var f$1 = $f_F1__compose__F1__F1(this$1, f);
+  return new $c_Lcats_Show$$anon$1().init___F1(f$1)
+});
+$c_Lcats_Show$$anon$3.prototype.imap__O__F1__F1__O = (function(fa, f, fi) {
+  return this.contramap__Lcats_Show__F1__Lcats_Show($as_Lcats_Show(fa), fi)
+});
 var $d_Lcats_Show$$anon$3 = new $TypeData().initClass({
   Lcats_Show$$anon$3: 0
 }, false, "cats.Show$$anon$3", {
@@ -23843,17 +22985,6 @@ function $h_Lio_circe_CursorOp$ArrayOp() {
 }
 $h_Lio_circe_CursorOp$ArrayOp.prototype = $c_Lio_circe_CursorOp$ArrayOp.prototype;
 /** @constructor */
-function $c_Lio_circe_CursorOp$ObjectOp() {
-  $c_Lio_circe_CursorOp.call(this)
-}
-$c_Lio_circe_CursorOp$ObjectOp.prototype = new $h_Lio_circe_CursorOp();
-$c_Lio_circe_CursorOp$ObjectOp.prototype.constructor = $c_Lio_circe_CursorOp$ObjectOp;
-/** @constructor */
-function $h_Lio_circe_CursorOp$ObjectOp() {
-  /*<skip>*/
-}
-$h_Lio_circe_CursorOp$ObjectOp.prototype = $c_Lio_circe_CursorOp$ObjectOp.prototype;
-/** @constructor */
 function $c_Lio_circe_CursorOp$UnconstrainedOp() {
   $c_Lio_circe_CursorOp.call(this)
 }
@@ -23930,6 +23061,10 @@ function $h_Lio_circe_Encoder$$anon$15() {
 $h_Lio_circe_Encoder$$anon$15.prototype = $c_Lio_circe_Encoder$$anon$15.prototype;
 $c_Lio_circe_Encoder$$anon$15.prototype.init___ = (function() {
   return this
+});
+$c_Lio_circe_Encoder$$anon$15.prototype.imap__O__F1__F1__O = (function(fa, f, fi) {
+  var e = $as_Lio_circe_Encoder(fa);
+  return new $c_Lio_circe_Encoder$$anon$16().init___Lio_circe_Encoder__F1(e, fi)
 });
 var $d_Lio_circe_Encoder$$anon$15 = new $TypeData().initClass({
   Lio_circe_Encoder$$anon$15: 0
@@ -24406,40 +23541,28 @@ var $d_Lio_circe_Printer$Pieces = new $TypeData().initClass({
 });
 $c_Lio_circe_Printer$Pieces.prototype.$classData = $d_Lio_circe_Printer$Pieces;
 /** @constructor */
-function $c_Lio_circe_ProductEncoders$$anon$3() {
+function $c_Lio_circe_TupleEncoders$$anon$2() {
   $c_O.call(this);
-  this.nameA0$3$1 = null;
-  this.nameA1$2$1 = null;
-  this.nameA2$1$1 = null;
-  this.f$3$1 = null;
-  this.encodeA0$3$1 = null;
-  this.encodeA1$2$1 = null;
-  this.encodeA2$1$1 = null
+  this.encodeA0$2$1 = null;
+  this.encodeA1$1$1 = null
 }
-$c_Lio_circe_ProductEncoders$$anon$3.prototype = new $h_O();
-$c_Lio_circe_ProductEncoders$$anon$3.prototype.constructor = $c_Lio_circe_ProductEncoders$$anon$3;
+$c_Lio_circe_TupleEncoders$$anon$2.prototype = new $h_O();
+$c_Lio_circe_TupleEncoders$$anon$2.prototype.constructor = $c_Lio_circe_TupleEncoders$$anon$2;
 /** @constructor */
-function $h_Lio_circe_ProductEncoders$$anon$3() {
+function $h_Lio_circe_TupleEncoders$$anon$2() {
   /*<skip>*/
 }
-$h_Lio_circe_ProductEncoders$$anon$3.prototype = $c_Lio_circe_ProductEncoders$$anon$3.prototype;
-$c_Lio_circe_ProductEncoders$$anon$3.prototype.init___Lio_circe_ProductEncoders__T__T__T__F1__Lio_circe_Encoder__Lio_circe_Encoder__Lio_circe_Encoder = (function($$outer, nameA0$3, nameA1$2, nameA2$1, f$3, encodeA0$3, encodeA1$2, encodeA2$1) {
-  this.nameA0$3$1 = nameA0$3;
-  this.nameA1$2$1 = nameA1$2;
-  this.nameA2$1$1 = nameA2$1;
-  this.f$3$1 = f$3;
-  this.encodeA0$3$1 = encodeA0$3;
-  this.encodeA1$2$1 = encodeA1$2;
-  this.encodeA2$1$1 = encodeA2$1;
+$h_Lio_circe_TupleEncoders$$anon$2.prototype = $c_Lio_circe_TupleEncoders$$anon$2.prototype;
+$c_Lio_circe_TupleEncoders$$anon$2.prototype.init___Lio_circe_TupleEncoders__Lio_circe_Encoder__Lio_circe_Encoder = (function($$outer, encodeA0$2, encodeA1$1) {
+  this.encodeA0$2$1 = encodeA0$2;
+  this.encodeA1$1$1 = encodeA1$1;
   return this
 });
-$c_Lio_circe_ProductEncoders$$anon$3.prototype.encodeObject__O__Lio_circe_JsonObject = (function(a) {
-  var members = $as_s_Product3(this.f$3$1.apply__O__O(a));
-  var jsx$2 = $m_Lio_circe_JsonObject$();
+$c_Lio_circe_TupleEncoders$$anon$2.prototype.encodeArray__T2__sci_Vector = (function(a) {
   var this$1 = $m_s_package$().Vector$1;
-  var array = [new $c_T2().init___O__O(this.nameA0$3$1, this.encodeA0$3$1.apply__O__Lio_circe_Json(members.$$und1$1)), new $c_T2().init___O__O(this.nameA1$2$1, this.encodeA1$2$1.apply__O__Lio_circe_Json(members.$$und2$1)), new $c_T2().init___O__O(this.nameA2$1$1, this.encodeA2$1$1.apply__O__Lio_circe_Json(members.$$und3$1))];
+  var array = [this.encodeA0$2$1.apply__O__Lio_circe_Json(a.$$und1__O()), this.encodeA1$1$1.apply__O__Lio_circe_Json(a.$$und2__O())];
   if (($uI(array.length) === 0)) {
-    var jsx$1 = this$1.NIL$6
+    return this$1.NIL$6
   } else {
     var b = new $c_sci_VectorBuilder().init___();
     var i = 0;
@@ -24450,24 +23573,26 @@ $c_Lio_circe_ProductEncoders$$anon$3.prototype.encodeObject__O__Lio_circe_JsonOb
       b.$$plus$eq__O__sci_VectorBuilder(arg1);
       i = ((1 + i) | 0)
     };
-    var jsx$1 = b.result__sci_Vector()
-  };
-  return jsx$2.fromIterable__sc_Iterable__Lio_circe_JsonObject(jsx$1)
+    return b.result__sci_Vector()
+  }
 });
-$c_Lio_circe_ProductEncoders$$anon$3.prototype.apply__O__Lio_circe_Json = (function(a) {
-  return $f_Lio_circe_ObjectEncoder__apply__O__Lio_circe_Json(this, a)
+$c_Lio_circe_TupleEncoders$$anon$2.prototype.encodeArray__O__sci_Vector = (function(a) {
+  return this.encodeArray__T2__sci_Vector($as_T2(a))
 });
-var $d_Lio_circe_ProductEncoders$$anon$3 = new $TypeData().initClass({
-  Lio_circe_ProductEncoders$$anon$3: 0
-}, false, "io.circe.ProductEncoders$$anon$3", {
-  Lio_circe_ProductEncoders$$anon$3: 1,
+$c_Lio_circe_TupleEncoders$$anon$2.prototype.apply__O__Lio_circe_Json = (function(a) {
+  return $f_Lio_circe_ArrayEncoder__apply__O__Lio_circe_Json(this, a)
+});
+var $d_Lio_circe_TupleEncoders$$anon$2 = new $TypeData().initClass({
+  Lio_circe_TupleEncoders$$anon$2: 0
+}, false, "io.circe.TupleEncoders$$anon$2", {
+  Lio_circe_TupleEncoders$$anon$2: 1,
   O: 1,
-  Lio_circe_ObjectEncoder: 1,
+  Lio_circe_ArrayEncoder: 1,
   Lio_circe_RootEncoder: 1,
   Lio_circe_Encoder: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lio_circe_ProductEncoders$$anon$3.prototype.$classData = $d_Lio_circe_ProductEncoders$$anon$3;
+$c_Lio_circe_TupleEncoders$$anon$2.prototype.$classData = $d_Lio_circe_TupleEncoders$$anon$2;
 /** @constructor */
 function $c_Ljava_io_FilterOutputStream() {
   $c_Ljava_io_OutputStream.call(this);
@@ -24497,11 +23622,81 @@ function $h_Lrescala_core_CreationTicket() {
   /*<skip>*/
 }
 $h_Lrescala_core_CreationTicket.prototype = $c_Lrescala_core_CreationTicket.prototype;
+$c_Lrescala_core_CreationTicket.prototype.createSource__Lrescala_core_Initializer$InitValues__F1__Lrescala_core_ReSource = (function(intv, instantiateReactive) {
+  var f = (function($this, intv$1, instantiateReactive$1) {
+    return (function(x$2$2) {
+      var x$2 = $as_Lrescala_core_Initializer(x$2$2);
+      return $f_Lrescala_core_Initializer__createSource__Lrescala_core_Initializer$InitValues__Lrescala_core_CreationTicket__F1__Lrescala_core_ReSource(x$2, intv$1, $this, instantiateReactive$1)
+    })
+  })(this, intv, instantiateReactive);
+  var x1 = this.self$1;
+  if ($is_s_util_Left(x1)) {
+    var x2 = $as_s_util_Left(x1);
+    var integrated = $as_Lrescala_core_Initializer(x2.value$2);
+    var jsx$1 = f(integrated)
+  } else {
+    if ((!$is_s_util_Right(x1))) {
+      throw new $c_s_MatchError().init___O(x1)
+    };
+    var x3 = $as_s_util_Right(x1);
+    var engine = $as_Lrescala_core_Scheduler(x3.value$2);
+    var x1$1 = $as_s_Option(engine.$$undcurrentTurn$1.v$1);
+    if ($is_s_Some(x1$1)) {
+      var x2$1 = $as_s_Some(x1$1);
+      var turn = $as_Lrescala_core_Initializer(x2$1.value$2);
+      var jsx$1 = f(turn)
+    } else {
+      var x = $m_s_None$();
+      if ((!(x === x1$1))) {
+        throw new $c_s_MatchError().init___O(x1$1)
+      };
+      var initialWrites = $m_sci_Set$EmptySet$();
+      $as_s_Option(engine.$$undcurrentTurn$1.v$1);
+      var turn$1 = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(engine);
+      try {
+        var this$2 = engine.$$undcurrentTurn$1;
+        var newval = new $c_s_Some().init___O(turn$1);
+        var oldval = this$2.v$1;
+        this$2.v$1 = newval;
+        try {
+          var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn$1, initialWrites);
+          var arg1 = admissionTicket.creation$1;
+          var admissionResult = f(arg1);
+          var initialChanges = admissionTicket.$$undinitialChanges$2;
+          $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn$1, initialChanges);
+          turn$1.levelQueue$1.evaluateQueue__V();
+          if ((admissionTicket.wrapUp$2 !== null)) {
+            admissionTicket.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn$1))
+          };
+          var result = admissionResult
+        } finally {
+          this$2.v$1 = oldval
+        };
+        $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn$1);
+        var result$2 = result
+      } catch (e) {
+        var result$2;
+        var e$2 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
+        if ((e$2 !== null)) {
+          $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn$1);
+          throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2)
+        } else {
+          throw e
+        }
+      } finally {
+        /*<skip>*/
+      };
+      $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn$1);
+      var jsx$1 = result$2
+    }
+  };
+  return $as_Lrescala_core_ReSource(jsx$1)
+});
 $c_Lrescala_core_CreationTicket.prototype.productPrefix__T = (function() {
   return "CreationTicket"
 });
 $c_Lrescala_core_CreationTicket.prototype.productArity__I = (function() {
-  return 1
+  return 2
 });
 $c_Lrescala_core_CreationTicket.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
@@ -24510,7 +23705,13 @@ $c_Lrescala_core_CreationTicket.prototype.equals__O__Z = (function(x$1) {
     var CreationTicket$1 = $as_Lrescala_core_CreationTicket(x$1);
     var x = this.self$1;
     var x$2 = CreationTicket$1.self$1;
-    return ((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))
+    if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
+      var x$3 = this.rename$1;
+      var x$4 = CreationTicket$1.rename$1;
+      return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
+    } else {
+      return false
+    }
   } else {
     return false
   }
@@ -24519,6 +23720,10 @@ $c_Lrescala_core_CreationTicket.prototype.productElement__I__O = (function(x$1) 
   switch (x$1) {
     case 0: {
       return this.self$1;
+      break
+    }
+    case 1: {
+      return this.rename$1;
       break
     }
     default: {
@@ -24540,6 +23745,76 @@ $c_Lrescala_core_CreationTicket.prototype.hashCode__I = (function() {
 });
 $c_Lrescala_core_CreationTicket.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+$c_Lrescala_core_CreationTicket.prototype.create__sci_Set__Lrescala_core_Initializer$InitValues__Z__F1__Lrescala_core_Reactive = (function(incoming, initv, inite, instantiateReactive) {
+  var f = (function($this, incoming$1, initv$1, inite$1, instantiateReactive$1) {
+    return (function(x$1$2) {
+      var x$1 = $as_Lrescala_core_Initializer(x$1$2);
+      return $f_Lrescala_core_Initializer__create__sci_Set__Lrescala_core_Initializer$InitValues__Z__Lrescala_core_CreationTicket__F1__Lrescala_core_Reactive(x$1, incoming$1, initv$1, inite$1, $this, instantiateReactive$1)
+    })
+  })(this, incoming, initv, inite, instantiateReactive);
+  var x1 = this.self$1;
+  if ($is_s_util_Left(x1)) {
+    var x2 = $as_s_util_Left(x1);
+    var integrated = $as_Lrescala_core_Initializer(x2.value$2);
+    var jsx$1 = f(integrated)
+  } else {
+    if ((!$is_s_util_Right(x1))) {
+      throw new $c_s_MatchError().init___O(x1)
+    };
+    var x3 = $as_s_util_Right(x1);
+    var engine = $as_Lrescala_core_Scheduler(x3.value$2);
+    var x1$1 = $as_s_Option(engine.$$undcurrentTurn$1.v$1);
+    if ($is_s_Some(x1$1)) {
+      var x2$1 = $as_s_Some(x1$1);
+      var turn = $as_Lrescala_core_Initializer(x2$1.value$2);
+      var jsx$1 = f(turn)
+    } else {
+      var x = $m_s_None$();
+      if ((!(x === x1$1))) {
+        throw new $c_s_MatchError().init___O(x1$1)
+      };
+      var initialWrites = $m_sci_Set$EmptySet$();
+      $as_s_Option(engine.$$undcurrentTurn$1.v$1);
+      var turn$1 = new $c_Lrescala_restoration_ReStoringTurn().init___Lrescala_restoration_ReStore(engine);
+      try {
+        var this$2 = engine.$$undcurrentTurn$1;
+        var newval = new $c_s_Some().init___O(turn$1);
+        var oldval = this$2.v$1;
+        this$2.v$1 = newval;
+        try {
+          var admissionTicket = new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$2().init___Lrescala_twoversion_TwoVersionPropagationImpl__sci_Set(turn$1, initialWrites);
+          var arg1 = admissionTicket.creation$1;
+          var admissionResult = f(arg1);
+          var initialChanges = admissionTicket.$$undinitialChanges$2;
+          $f_Lrescala_twoversion_TwoVersionPropagationImpl__initializationPhase__sci_Map__V(turn$1, initialChanges);
+          turn$1.levelQueue$1.evaluateQueue__V();
+          if ((admissionTicket.wrapUp$2 !== null)) {
+            admissionTicket.wrapUp$2.apply__O__O(new $c_Lrescala_twoversion_TwoVersionPropagationImpl$$anon$3().init___Lrescala_twoversion_TwoVersionPropagationImpl(turn$1))
+          };
+          var result = admissionResult
+        } finally {
+          this$2.v$1 = oldval
+        };
+        $f_Lrescala_twoversion_TwoVersionPropagationImpl__commitPhase__V(turn$1);
+        var result$2 = result
+      } catch (e) {
+        var result$2;
+        var e$2 = $m_sjsr_package$().wrapJavaScriptException__O__jl_Throwable(e);
+        if ((e$2 !== null)) {
+          $f_Lrescala_twoversion_TwoVersionPropagationImpl__rollbackPhase__V(turn$1);
+          throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(e$2)
+        } else {
+          throw e
+        }
+      } finally {
+        /*<skip>*/
+      };
+      $f_Lrescala_twoversion_TwoVersionPropagationImpl__observerPhase__V(turn$1);
+      var jsx$1 = result$2
+    }
+  };
+  return $as_Lrescala_core_Reactive(jsx$1)
 });
 function $is_Lrescala_core_CreationTicket(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lrescala_core_CreationTicket)))
@@ -24605,6 +23880,10 @@ $c_Lrescala_core_REName.prototype.productElement__I__O = (function(x$1) {
 });
 $c_Lrescala_core_REName.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lrescala_core_REName.prototype.derive__T__Lrescala_core_REName = (function(derivation) {
+  var s = (((derivation + "(") + this.name$1) + ")");
+  return new $c_Lrescala_core_REName().init___T(s)
 });
 $c_Lrescala_core_REName.prototype.init___T = (function(name) {
   this.name$1 = name;
@@ -24777,20 +24056,20 @@ var $d_Lrescala_reactives_RExceptions$UnhandledFailureException = new $TypeData(
 });
 $c_Lrescala_reactives_RExceptions$UnhandledFailureException.prototype.$classData = $d_Lrescala_reactives_RExceptions$UnhandledFailureException;
 /** @constructor */
-function $c_Lrescala_twoversion_PropagationStructImpl() {
-  $c_Lrescala_twoversion_BufferedValueStruct.call(this);
+function $c_Lrescala_twoversion_GraphStateImpl() {
+  $c_Lrescala_twoversion_BufferedValueState.call(this);
   this.$$undincoming$2 = null;
   this.$$undoutgoing$2 = null
 }
-$c_Lrescala_twoversion_PropagationStructImpl.prototype = new $h_Lrescala_twoversion_BufferedValueStruct();
-$c_Lrescala_twoversion_PropagationStructImpl.prototype.constructor = $c_Lrescala_twoversion_PropagationStructImpl;
+$c_Lrescala_twoversion_GraphStateImpl.prototype = new $h_Lrescala_twoversion_BufferedValueState();
+$c_Lrescala_twoversion_GraphStateImpl.prototype.constructor = $c_Lrescala_twoversion_GraphStateImpl;
 /** @constructor */
-function $h_Lrescala_twoversion_PropagationStructImpl() {
+function $h_Lrescala_twoversion_GraphStateImpl() {
   /*<skip>*/
 }
-$h_Lrescala_twoversion_PropagationStructImpl.prototype = $c_Lrescala_twoversion_PropagationStructImpl.prototype;
-$c_Lrescala_twoversion_PropagationStructImpl.prototype.init___Lrescala_core_Initializer$InitValues = (function(ip) {
-  $c_Lrescala_twoversion_BufferedValueStruct.prototype.init___Lrescala_core_Initializer$InitValues.call(this, ip);
+$h_Lrescala_twoversion_GraphStateImpl.prototype = $c_Lrescala_twoversion_GraphStateImpl.prototype;
+$c_Lrescala_twoversion_GraphStateImpl.prototype.init___Lrescala_core_Initializer$InitValues = (function(ip) {
+  $c_Lrescala_twoversion_BufferedValueState.prototype.init___Lrescala_core_Initializer$InitValues.call(this, ip);
   this.$$undincoming$2 = $m_sci_Set$EmptySet$();
   this.$$undoutgoing$2 = new $c_scm_HashMap().init___();
   return this
@@ -29523,7 +28802,7 @@ $c_Lrescala_restoration_ReStoringTurn.prototype.init___Lrescala_restoration_ReSt
   $f_Lrescala_levelbased_LevelBasedPropagation__$$init$__V(this);
   return this
 });
-$c_Lrescala_restoration_ReStoringTurn.prototype.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_restoration_ReStoringStructType = (function(valuePersistency) {
+$c_Lrescala_restoration_ReStoringTurn.prototype.makeDerivedStructState__Lrescala_core_Initializer$InitValues__Lrescala_core_CreationTicket__Lrescala_restoration_ReStoringState = (function(valuePersistency, creationTicket) {
   if ($is_Lrescala_core_Initializer$InitializedSignal(valuePersistency)) {
     var x2 = $as_Lrescala_core_Initializer$InitializedSignal(valuePersistency);
     var x = x2.serializable__Lrescala_core_ReSerializable();
@@ -29534,22 +28813,25 @@ $c_Lrescala_restoration_ReStoringTurn.prototype.makeDerivedStructState__Lrescala
       if (((x$3 !== null) && (x$3 === x$4))) {
         throw $m_sjsr_package$().unwrapJavaScriptException__jl_Throwable__O(new $c_jl_Exception().init___T(("restore requires serializable reactive: " + valuePersistency)))
       };
-      var name = this.restore$1.nextName__T();
-      var x1$2 = this.restore$1.get__T__s_Option(name);
+      var this$3 = this.restore$1;
+      var name = creationTicket.rename$1;
+      var name$1 = $f_Lrescala_restoration_ReStoreImpl__deriveName__Lrescala_core_REName__Lrescala_core_REName(this$3, name);
+      var x1$2 = this.restore$1.get__Lrescala_core_REName__s_Option(name$1);
       var x$5 = $m_s_None$();
       if ((x$5 === x1$2)) {
-        return new $c_Lrescala_restoration_ReStoringStructType().init___Lrescala_restoration_ReStore__T__Lrescala_core_ReSerializable__Lrescala_core_Initializer$InitValues(this.restore$1, name, x2.serializable__Lrescala_core_ReSerializable(), x2)
+        this.restore$1.put__Lrescala_core_REName__T__V(name$1, x2.serializable__Lrescala_core_ReSerializable().serialize__O__T(valuePersistency.initialValue__O()));
+        return new $c_Lrescala_restoration_ReStoringState().init___Lrescala_restoration_ReStore__Lrescala_core_REName__Lrescala_core_ReSerializable__Lrescala_core_Initializer$InitValues(this.restore$1, name$1, x2.serializable__Lrescala_core_ReSerializable(), x2)
       } else if ($is_s_Some(x1$2)) {
         var x2$2 = $as_s_Some(x1$2);
         var v = $as_T(x2$2.value$2);
         var restoredValue = new $c_Lrescala_core_Initializer$InitializedSignal().init___O__Lrescala_core_ReSerializable(x2.serializable__Lrescala_core_ReSerializable().deserialize__T__s_util_Try(v).get__O(), x2.serializable__Lrescala_core_ReSerializable());
-        return new $c_Lrescala_restoration_ReStoringStructType().init___Lrescala_restoration_ReStore__T__Lrescala_core_ReSerializable__Lrescala_core_Initializer$InitValues(this.restore$1, name, x2.serializable__Lrescala_core_ReSerializable(), restoredValue)
+        return new $c_Lrescala_restoration_ReStoringState().init___Lrescala_restoration_ReStore__Lrescala_core_REName__Lrescala_core_ReSerializable__Lrescala_core_Initializer$InitValues(this.restore$1, name$1, x2.serializable__Lrescala_core_ReSerializable(), restoredValue)
       } else {
         throw new $c_s_MatchError().init___O(x1$2)
       }
     }
   };
-  return new $c_Lrescala_restoration_ReStoringStructType().init___Lrescala_restoration_ReStore__T__Lrescala_core_ReSerializable__Lrescala_core_Initializer$InitValues(null, null, null, valuePersistency)
+  return new $c_Lrescala_restoration_ReStoringState().init___Lrescala_restoration_ReStore__Lrescala_core_REName__Lrescala_core_ReSerializable__Lrescala_core_Initializer$InitValues(null, null, null, valuePersistency)
 });
 var $d_Lrescala_restoration_ReStoringTurn = new $TypeData().initClass({
   Lrescala_restoration_ReStoringTurn: 0
@@ -30075,79 +29357,6 @@ var $d_T2 = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_T2.prototype.$classData = $d_T2;
-/** @constructor */
-function $c_T3() {
-  $c_O.call(this);
-  this.$$und1$1 = null;
-  this.$$und2$1 = null;
-  this.$$und3$1 = null
-}
-$c_T3.prototype = new $h_O();
-$c_T3.prototype.constructor = $c_T3;
-/** @constructor */
-function $h_T3() {
-  /*<skip>*/
-}
-$h_T3.prototype = $c_T3.prototype;
-$c_T3.prototype.productPrefix__T = (function() {
-  return "Tuple3"
-});
-$c_T3.prototype.productArity__I = (function() {
-  return 3
-});
-$c_T3.prototype.equals__O__Z = (function(x$1) {
-  if ((this === x$1)) {
-    return true
-  } else if ($is_T3(x$1)) {
-    var Tuple3$1 = $as_T3(x$1);
-    return (($m_sr_BoxesRunTime$().equals__O__O__Z(this.$$und1$1, Tuple3$1.$$und1$1) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.$$und2$1, Tuple3$1.$$und2$1)) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.$$und3$1, Tuple3$1.$$und3$1))
-  } else {
-    return false
-  }
-});
-$c_T3.prototype.productElement__I__O = (function(n) {
-  return $f_s_Product3__productElement__I__O(this, n)
-});
-$c_T3.prototype.toString__T = (function() {
-  return (((((("(" + this.$$und1$1) + ",") + this.$$und2$1) + ",") + this.$$und3$1) + ")")
-});
-$c_T3.prototype.init___O__O__O = (function(_1, _2, _3) {
-  this.$$und1$1 = _1;
-  this.$$und2$1 = _2;
-  this.$$und3$1 = _3;
-  return this
-});
-$c_T3.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
-$c_T3.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-});
-function $is_T3(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.T3)))
-}
-function $as_T3(obj) {
-  return (($is_T3(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Tuple3"))
-}
-function $isArrayOf_T3(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.T3)))
-}
-function $asArrayOf_T3(obj, depth) {
-  return (($isArrayOf_T3(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Tuple3;", depth))
-}
-var $d_T3 = new $TypeData().initClass({
-  T3: 0
-}, false, "scala.Tuple3", {
-  T3: 1,
-  O: 1,
-  s_Product3: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1
-});
-$c_T3.prototype.$classData = $d_T3;
 /** @constructor */
 function $c_jl_ArrayIndexOutOfBoundsException() {
   $c_jl_IndexOutOfBoundsException.call(this)
@@ -31994,59 +31203,6 @@ function $isArrayOf_Lio_circe_CursorOp$DownAt(obj, depth) {
 function $asArrayOf_Lio_circe_CursorOp$DownAt(obj, depth) {
   return (($isArrayOf_Lio_circe_CursorOp$DownAt(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lio.circe.CursorOp$DownAt;", depth))
 }
-/** @constructor */
-function $c_Lio_circe_CursorOp$DownField() {
-  $c_Lio_circe_CursorOp$ObjectOp.call(this);
-  this.k$3 = null
-}
-$c_Lio_circe_CursorOp$DownField.prototype = new $h_Lio_circe_CursorOp$ObjectOp();
-$c_Lio_circe_CursorOp$DownField.prototype.constructor = $c_Lio_circe_CursorOp$DownField;
-/** @constructor */
-function $h_Lio_circe_CursorOp$DownField() {
-  /*<skip>*/
-}
-$h_Lio_circe_CursorOp$DownField.prototype = $c_Lio_circe_CursorOp$DownField.prototype;
-$c_Lio_circe_CursorOp$DownField.prototype.productPrefix__T = (function() {
-  return "DownField"
-});
-$c_Lio_circe_CursorOp$DownField.prototype.productArity__I = (function() {
-  return 1
-});
-$c_Lio_circe_CursorOp$DownField.prototype.equals__O__Z = (function(x$1) {
-  if ((this === x$1)) {
-    return true
-  } else if ($is_Lio_circe_CursorOp$DownField(x$1)) {
-    var DownField$1 = $as_Lio_circe_CursorOp$DownField(x$1);
-    return (this.k$3 === DownField$1.k$3)
-  } else {
-    return false
-  }
-});
-$c_Lio_circe_CursorOp$DownField.prototype.productElement__I__O = (function(x$1) {
-  switch (x$1) {
-    case 0: {
-      return this.k$3;
-      break
-    }
-    default: {
-      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
-    }
-  }
-});
-$c_Lio_circe_CursorOp$DownField.prototype.toString__T = (function() {
-  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
-});
-$c_Lio_circe_CursorOp$DownField.prototype.init___T = (function(k) {
-  this.k$3 = k;
-  return this
-});
-$c_Lio_circe_CursorOp$DownField.prototype.hashCode__I = (function() {
-  var this$2 = $m_s_util_hashing_MurmurHash3$();
-  return this$2.productHash__s_Product__I__I(this, (-889275714))
-});
-$c_Lio_circe_CursorOp$DownField.prototype.productIterator__sc_Iterator = (function() {
-  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
-});
 function $is_Lio_circe_CursorOp$DownField(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lio_circe_CursorOp$DownField)))
 }
@@ -32059,19 +31215,60 @@ function $isArrayOf_Lio_circe_CursorOp$DownField(obj, depth) {
 function $asArrayOf_Lio_circe_CursorOp$DownField(obj, depth) {
   return (($isArrayOf_Lio_circe_CursorOp$DownField(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lio.circe.CursorOp$DownField;", depth))
 }
-var $d_Lio_circe_CursorOp$DownField = new $TypeData().initClass({
-  Lio_circe_CursorOp$DownField: 0
-}, false, "io.circe.CursorOp$DownField", {
-  Lio_circe_CursorOp$DownField: 1,
-  Lio_circe_CursorOp$ObjectOp: 1,
-  Lio_circe_CursorOp: 1,
-  O: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  Ljava_io_Serializable: 1,
-  s_Serializable: 1
+/** @constructor */
+function $c_Lio_circe_CursorOp$DownN() {
+  $c_Lio_circe_CursorOp$ArrayOp.call(this);
+  this.n$3 = 0
+}
+$c_Lio_circe_CursorOp$DownN.prototype = new $h_Lio_circe_CursorOp$ArrayOp();
+$c_Lio_circe_CursorOp$DownN.prototype.constructor = $c_Lio_circe_CursorOp$DownN;
+/** @constructor */
+function $h_Lio_circe_CursorOp$DownN() {
+  /*<skip>*/
+}
+$h_Lio_circe_CursorOp$DownN.prototype = $c_Lio_circe_CursorOp$DownN.prototype;
+$c_Lio_circe_CursorOp$DownN.prototype.productPrefix__T = (function() {
+  return "DownN"
 });
-$c_Lio_circe_CursorOp$DownField.prototype.$classData = $d_Lio_circe_CursorOp$DownField;
+$c_Lio_circe_CursorOp$DownN.prototype.productArity__I = (function() {
+  return 1
+});
+$c_Lio_circe_CursorOp$DownN.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_Lio_circe_CursorOp$DownN(x$1)) {
+    var DownN$1 = $as_Lio_circe_CursorOp$DownN(x$1);
+    return (this.n$3 === DownN$1.n$3)
+  } else {
+    return false
+  }
+});
+$c_Lio_circe_CursorOp$DownN.prototype.productElement__I__O = (function(x$1) {
+  switch (x$1) {
+    case 0: {
+      return this.n$3;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + x$1))
+    }
+  }
+});
+$c_Lio_circe_CursorOp$DownN.prototype.toString__T = (function() {
+  return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
+});
+$c_Lio_circe_CursorOp$DownN.prototype.init___I = (function(n) {
+  this.n$3 = n;
+  return this
+});
+$c_Lio_circe_CursorOp$DownN.prototype.hashCode__I = (function() {
+  var acc = (-889275714);
+  acc = $m_sr_Statics$().mix__I__I__I(acc, this.n$3);
+  return $m_sr_Statics$().finalizeHash__I__I__I(acc, 1)
+});
+$c_Lio_circe_CursorOp$DownN.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
 function $is_Lio_circe_CursorOp$DownN(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lio_circe_CursorOp$DownN)))
 }
@@ -32084,6 +31281,19 @@ function $isArrayOf_Lio_circe_CursorOp$DownN(obj, depth) {
 function $asArrayOf_Lio_circe_CursorOp$DownN(obj, depth) {
   return (($isArrayOf_Lio_circe_CursorOp$DownN(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lio.circe.CursorOp$DownN;", depth))
 }
+var $d_Lio_circe_CursorOp$DownN = new $TypeData().initClass({
+  Lio_circe_CursorOp$DownN: 0
+}, false, "io.circe.CursorOp$DownN", {
+  Lio_circe_CursorOp$DownN: 1,
+  Lio_circe_CursorOp$ArrayOp: 1,
+  Lio_circe_CursorOp: 1,
+  O: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  Ljava_io_Serializable: 1,
+  s_Serializable: 1
+});
+$c_Lio_circe_CursorOp$DownN.prototype.$classData = $d_Lio_circe_CursorOp$DownN;
 function $is_Lio_circe_CursorOp$Field(obj) {
   return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lio_circe_CursorOp$Field)))
 }
@@ -32883,25 +32093,25 @@ var $d_Lrescala_core_Pulse$Value = new $TypeData().initClass({
 });
 $c_Lrescala_core_Pulse$Value.prototype.$classData = $d_Lrescala_core_Pulse$Value;
 /** @constructor */
-function $c_Lrescala_levelbased_LevelStructTypeImpl() {
-  $c_Lrescala_twoversion_PropagationStructImpl.call(this);
+function $c_Lrescala_levelbased_LevelStateImpl() {
+  $c_Lrescala_twoversion_GraphStateImpl.call(this);
   this.$$undlevel$3 = 0
 }
-$c_Lrescala_levelbased_LevelStructTypeImpl.prototype = new $h_Lrescala_twoversion_PropagationStructImpl();
-$c_Lrescala_levelbased_LevelStructTypeImpl.prototype.constructor = $c_Lrescala_levelbased_LevelStructTypeImpl;
+$c_Lrescala_levelbased_LevelStateImpl.prototype = new $h_Lrescala_twoversion_GraphStateImpl();
+$c_Lrescala_levelbased_LevelStateImpl.prototype.constructor = $c_Lrescala_levelbased_LevelStateImpl;
 /** @constructor */
-function $h_Lrescala_levelbased_LevelStructTypeImpl() {
+function $h_Lrescala_levelbased_LevelStateImpl() {
   /*<skip>*/
 }
-$h_Lrescala_levelbased_LevelStructTypeImpl.prototype = $c_Lrescala_levelbased_LevelStructTypeImpl.prototype;
-$c_Lrescala_levelbased_LevelStructTypeImpl.prototype.updateLevel__I__I = (function(i) {
+$h_Lrescala_levelbased_LevelStateImpl.prototype = $c_Lrescala_levelbased_LevelStateImpl.prototype;
+$c_Lrescala_levelbased_LevelStateImpl.prototype.updateLevel__I__I = (function(i) {
   var y = this.$$undlevel$3;
   var max = ((i > y) ? i : y);
   this.$$undlevel$3 = max;
   return max
 });
-$c_Lrescala_levelbased_LevelStructTypeImpl.prototype.init___Lrescala_core_Initializer$InitValues = (function(ip) {
-  $c_Lrescala_twoversion_PropagationStructImpl.prototype.init___Lrescala_core_Initializer$InitValues.call(this, ip);
+$c_Lrescala_levelbased_LevelStateImpl.prototype.init___Lrescala_core_Initializer$InitValues = (function(ip) {
+  $c_Lrescala_twoversion_GraphStateImpl.prototype.init___Lrescala_core_Initializer$InitValues.call(this, ip);
   this.$$undlevel$3 = 0;
   return this
 });
@@ -32998,101 +32208,6 @@ var $d_Lrescala_reactives_Var = new $TypeData().initClass({
   Lrescala_core_Disconnectable: 1
 });
 $c_Lrescala_reactives_Var.prototype.$classData = $d_Lrescala_reactives_Var;
-/** @constructor */
-function $c_Lrescala_restoration_LocalStorageStore() {
-  $c_O.call(this);
-  this.toString$1 = null;
-  this.domain$1 = null;
-  this.storage$1 = null;
-  this.count$1 = 0;
-  this.nextNames$1 = null;
-  this.Var$module$1 = null;
-  this.Signal$module$1 = null;
-  this.Event$module$1 = null;
-  this.Events$1 = null;
-  this.Signals$1 = null;
-  this.$$undcurrentTurn$1 = null;
-  this.bitmap$0$1 = false
-}
-$c_Lrescala_restoration_LocalStorageStore.prototype = new $h_O();
-$c_Lrescala_restoration_LocalStorageStore.prototype.constructor = $c_Lrescala_restoration_LocalStorageStore;
-/** @constructor */
-function $h_Lrescala_restoration_LocalStorageStore() {
-  /*<skip>*/
-}
-$h_Lrescala_restoration_LocalStorageStore.prototype = $c_Lrescala_restoration_LocalStorageStore.prototype;
-$c_Lrescala_restoration_LocalStorageStore.prototype.Var__Lrescala_interface_RescalaInterface$Var$ = (function() {
-  if ((this.Var$module$1 === null)) {
-    this.Var$lzycompute$1__p1__V()
-  };
-  return this.Var$module$1
-});
-$c_Lrescala_restoration_LocalStorageStore.prototype.toString__T = (function() {
-  return ((!this.bitmap$0$1) ? this.toString$lzycompute__p1__T() : this.toString$1)
-});
-$c_Lrescala_restoration_LocalStorageStore.prototype.nextName__T = (function() {
-  var this$1 = this.nextNames$1;
-  if ($f_sc_TraversableOnce__nonEmpty__Z(this$1)) {
-    return $as_T(this.nextNames$1.dequeue__O())
-  } else if ($as_s_Option(this.$$undcurrentTurn$1.v$1).isDefined__Z()) {
-    var jsx$1 = this.domain$1;
-    var this$2 = $m_s_util_Random$();
-    return (("" + jsx$1) + this$2.self$1.nextLong__J())
-  } else {
-    this.count$1 = ((1 + this.count$1) | 0);
-    return (("" + this.domain$1) + this.count$1)
-  }
-});
-$c_Lrescala_restoration_LocalStorageStore.prototype.put__T__T__V = (function(key, value) {
-  var x = ((("store " + key) + " -> ") + value);
-  var this$2 = $m_s_Console$();
-  var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-  this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
-  this.storage$1.setItem(key, value)
-});
-$c_Lrescala_restoration_LocalStorageStore.prototype.get__T__s_Option = (function(key) {
-  var res = $m_s_Option$().apply__O__s_Option($as_T(this.storage$1.getItem(key)));
-  var x = ((("parsed " + key) + " -> ") + res);
-  var this$2 = $m_s_Console$();
-  var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
-  this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
-  return res
-});
-$c_Lrescala_restoration_LocalStorageStore.prototype.toString$lzycompute__p1__T = (function() {
-  if ((!this.bitmap$0$1)) {
-    this.toString$1 = (("Engine(Restoring: " + this.domain$1) + ")");
-    this.bitmap$0$1 = true
-  };
-  return this.toString$1
-});
-$c_Lrescala_restoration_LocalStorageStore.prototype.Var$lzycompute$1__p1__V = (function() {
-  if ((this.Var$module$1 === null)) {
-    this.Var$module$1 = new $c_Lrescala_interface_RescalaInterface$Var$().init___Lrescala_interface_RescalaInterface(this)
-  }
-});
-$c_Lrescala_restoration_LocalStorageStore.prototype.init___T = (function(domain) {
-  this.domain$1 = domain;
-  $f_Lrescala_core_SchedulerImpl__$$init$__V(this);
-  $f_Lrescala_interface_RescalaInterface__$$init$__V(this);
-  this.storage$1 = $m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().localStorage;
-  this.count$1 = 0;
-  var this$1 = $m_scm_Queue$();
-  this.nextNames$1 = $as_scm_Queue($as_sc_GenTraversable(this$1.newBuilder__scm_Builder().result__O()));
-  return this
-});
-var $d_Lrescala_restoration_LocalStorageStore = new $TypeData().initClass({
-  Lrescala_restoration_LocalStorageStore: 0
-}, false, "rescala.restoration.LocalStorageStore", {
-  Lrescala_restoration_LocalStorageStore: 1,
-  O: 1,
-  Lrescala_twoversion_TwoVersionScheduler: 1,
-  Lrescala_core_SchedulerImpl: 1,
-  Lrescala_core_Scheduler: 1,
-  Lrescala_restoration_ReStore: 1,
-  Lrescala_interface_RescalaInterface: 1,
-  Lrescala_interface_Aliases: 1
-});
-$c_Lrescala_restoration_LocalStorageStore.prototype.$classData = $d_Lrescala_restoration_LocalStorageStore;
 /** @constructor */
 function $c_Lscalatags_JsDom$tags2$() {
   $c_O.call(this);
@@ -34019,10 +33134,10 @@ $c_Lrescala_reactives_DynamicSignal.prototype.reevaluate__Lrescala_core_ReevTick
   };
   return ($f_Lrescala_core_Pulse__isChange__Z(newPulse) ? rein.withValue__O__Lrescala_core_ReevTicket(newPulse) : rein)
 });
-$c_Lrescala_reactives_DynamicSignal.prototype.init___O__F1__Lrescala_core_REName__sci_Set = (function(_bud, expr, name, staticDeps) {
+$c_Lrescala_reactives_DynamicSignal.prototype.init___O__F1__Lrescala_core_REName__sci_Set = (function(initial, expr, name, staticDeps) {
   this.expr$3 = expr;
   this.staticDeps$3 = staticDeps;
-  $c_Lrescala_core_Base.prototype.init___O__Lrescala_core_REName.call(this, _bud, name);
+  $c_Lrescala_core_Base.prototype.init___O__Lrescala_core_REName.call(this, initial, name);
   return this
 });
 $c_Lrescala_reactives_DynamicSignal.prototype.interpret__O__O = (function(v) {
@@ -34144,64 +33259,148 @@ $c_Lrescala_reactives_StaticSignal.prototype.interpret__O__O = (function(v) {
   var v$1 = $as_Lrescala_core_Pulse(v);
   return $f_Lrescala_core_Pulse__get__O(v$1)
 });
-$c_Lrescala_reactives_StaticSignal.prototype.init___O__F2__Lrescala_core_REName = (function(_bud, expr, name) {
+$c_Lrescala_reactives_StaticSignal.prototype.init___O__F2__Lrescala_core_REName = (function(initial, expr, name) {
   this.expr$3 = expr;
-  $c_Lrescala_core_Base.prototype.init___O__Lrescala_core_REName.call(this, _bud, name);
+  $c_Lrescala_core_Base.prototype.init___O__Lrescala_core_REName.call(this, initial, name);
   return this
 });
 /** @constructor */
-function $c_Lrescala_restoration_ReStoringStructType() {
-  $c_Lrescala_levelbased_LevelStructTypeImpl.call(this);
+function $c_Lrescala_restoration_LocalStorageStore() {
+  $c_O.call(this);
+  this.storage$1 = null;
+  this.Var$module$1 = null;
+  this.Signal$module$1 = null;
+  this.Event$module$1 = null;
+  this.Events$1 = null;
+  this.Signals$1 = null;
+  this.seenNames$1 = null;
+  this.$$undcurrentTurn$1 = null
+}
+$c_Lrescala_restoration_LocalStorageStore.prototype = new $h_O();
+$c_Lrescala_restoration_LocalStorageStore.prototype.constructor = $c_Lrescala_restoration_LocalStorageStore;
+/** @constructor */
+function $h_Lrescala_restoration_LocalStorageStore() {
+  /*<skip>*/
+}
+$h_Lrescala_restoration_LocalStorageStore.prototype = $c_Lrescala_restoration_LocalStorageStore.prototype;
+$c_Lrescala_restoration_LocalStorageStore.prototype.seenNames__sci_Map = (function() {
+  return this.seenNames$1
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.Var__Lrescala_interface_RescalaInterfaceRequireSerializer$Var$ = (function() {
+  if ((this.Var$module$1 === null)) {
+    this.Var$lzycompute$1__p1__V()
+  };
+  return this.Var$module$1
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.init___ = (function() {
+  $f_Lrescala_core_SchedulerImpl__$$init$__V(this);
+  $f_Lrescala_restoration_ReStoreImpl__$$init$__V(this);
+  $f_Lrescala_interface_RescalaInterfaceRequireSerializer__$$init$__V(this);
+  this.storage$1 = $m_Lorg_scalajs_dom_package$().window__Lorg_scalajs_dom_raw_Window().localStorage;
+  return this
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.$$anonfun$deriveName$1__pLrescala_restoration_ReStoreImpl__I = (function() {
+  return 0
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.put__Lrescala_core_REName__T__V = (function(key, value) {
+  var x = ((("store " + key) + " -> ") + value);
+  var this$2 = $m_s_Console$();
+  var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
+  this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
+  this.storage$1.setItem(key.name$1, value)
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.toString__T = (function() {
+  return $f_Lrescala_core_Scheduler__toString__T(this)
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.seenNames$und$eq__sci_Map__V = (function(x$1) {
+  this.seenNames$1 = x$1
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.rescala$interface$RescalaInterfaceRequireSerializer$$undsetter$und$Events$und$eq__Lrescala_reactives_Events$__V = (function(x$1) {
+  this.Events$1 = x$1
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.Var$lzycompute$1__p1__V = (function() {
+  if ((this.Var$module$1 === null)) {
+    this.Var$module$1 = new $c_Lrescala_interface_RescalaInterfaceRequireSerializer$Var$().init___Lrescala_interface_RescalaInterfaceRequireSerializer(this)
+  }
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.rescala$interface$RescalaInterfaceRequireSerializer$$undsetter$und$Signals$und$eq__Lrescala_reactives_Signals$__V = (function(x$1) {
+  this.Signals$1 = x$1
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.get__Lrescala_core_REName__s_Option = (function(key) {
+  var res = $m_s_Option$().apply__O__s_Option($as_T(this.storage$1.getItem(key.name$1)));
+  var x = ((("parsed " + key) + " -> ") + res);
+  var this$2 = $m_s_Console$();
+  var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
+  this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
+  return res
+});
+var $d_Lrescala_restoration_LocalStorageStore = new $TypeData().initClass({
+  Lrescala_restoration_LocalStorageStore: 0
+}, false, "rescala.restoration.LocalStorageStore", {
+  Lrescala_restoration_LocalStorageStore: 1,
+  O: 1,
+  Lrescala_restoration_ReStoreImpl: 1,
+  Lrescala_restoration_ReStore: 1,
+  Lrescala_twoversion_TwoVersionScheduler: 1,
+  Lrescala_core_SchedulerImpl: 1,
+  Lrescala_core_Scheduler: 1,
+  Lrescala_interface_RescalaInterfaceRequireSerializer: 1,
+  Lrescala_interface_Aliases: 1
+});
+$c_Lrescala_restoration_LocalStorageStore.prototype.$classData = $d_Lrescala_restoration_LocalStorageStore;
+/** @constructor */
+function $c_Lrescala_restoration_ReStoringState() {
+  $c_Lrescala_levelbased_LevelStateImpl.call(this);
   this.storage$4 = null;
   this.name$4 = null;
   this.serializable$4 = null
 }
-$c_Lrescala_restoration_ReStoringStructType.prototype = new $h_Lrescala_levelbased_LevelStructTypeImpl();
-$c_Lrescala_restoration_ReStoringStructType.prototype.constructor = $c_Lrescala_restoration_ReStoringStructType;
+$c_Lrescala_restoration_ReStoringState.prototype = new $h_Lrescala_levelbased_LevelStateImpl();
+$c_Lrescala_restoration_ReStoringState.prototype.constructor = $c_Lrescala_restoration_ReStoringState;
 /** @constructor */
-function $h_Lrescala_restoration_ReStoringStructType() {
+function $h_Lrescala_restoration_ReStoringState() {
   /*<skip>*/
 }
-$h_Lrescala_restoration_ReStoringStructType.prototype = $c_Lrescala_restoration_ReStoringStructType.prototype;
-$c_Lrescala_restoration_ReStoringStructType.prototype.commit__V = (function() {
-  $c_Lrescala_twoversion_BufferedValueStruct.prototype.commit__V.call(this);
-  if ((this.storage$4 !== null)) {
-    this.storage$4.put__T__T__V(this.name$4, this.serializable$4.serialize__O__T(this.current$1))
-  }
-});
-$c_Lrescala_restoration_ReStoringStructType.prototype.init___Lrescala_restoration_ReStore__T__Lrescala_core_ReSerializable__Lrescala_core_Initializer$InitValues = (function(storage, name, serializable, initialVal) {
+$h_Lrescala_restoration_ReStoringState.prototype = $c_Lrescala_restoration_ReStoringState.prototype;
+$c_Lrescala_restoration_ReStoringState.prototype.init___Lrescala_restoration_ReStore__Lrescala_core_REName__Lrescala_core_ReSerializable__Lrescala_core_Initializer$InitValues = (function(storage, name, serializable, initialVal) {
   this.storage$4 = storage;
   this.name$4 = name;
   this.serializable$4 = serializable;
-  $c_Lrescala_levelbased_LevelStructTypeImpl.prototype.init___Lrescala_core_Initializer$InitValues.call(this, initialVal);
+  $c_Lrescala_levelbased_LevelStateImpl.prototype.init___Lrescala_core_Initializer$InitValues.call(this, initialVal);
   return this
 });
-function $is_Lrescala_restoration_ReStoringStructType(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lrescala_restoration_ReStoringStructType)))
+$c_Lrescala_restoration_ReStoringState.prototype.commit__V = (function() {
+  $c_Lrescala_twoversion_BufferedValueState.prototype.commit__V.call(this);
+  if ((this.storage$4 !== null)) {
+    this.storage$4.put__Lrescala_core_REName__T__V(this.name$4, this.serializable$4.serialize__O__T(this.current$1))
+  }
+});
+function $is_Lrescala_restoration_ReStoringState(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lrescala_restoration_ReStoringState)))
 }
-function $as_Lrescala_restoration_ReStoringStructType(obj) {
-  return (($is_Lrescala_restoration_ReStoringStructType(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "rescala.restoration.ReStoringStructType"))
+function $as_Lrescala_restoration_ReStoringState(obj) {
+  return (($is_Lrescala_restoration_ReStoringState(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "rescala.restoration.ReStoringState"))
 }
-function $isArrayOf_Lrescala_restoration_ReStoringStructType(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lrescala_restoration_ReStoringStructType)))
+function $isArrayOf_Lrescala_restoration_ReStoringState(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lrescala_restoration_ReStoringState)))
 }
-function $asArrayOf_Lrescala_restoration_ReStoringStructType(obj, depth) {
-  return (($isArrayOf_Lrescala_restoration_ReStoringStructType(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrescala.restoration.ReStoringStructType;", depth))
+function $asArrayOf_Lrescala_restoration_ReStoringState(obj, depth) {
+  return (($isArrayOf_Lrescala_restoration_ReStoringState(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lrescala.restoration.ReStoringState;", depth))
 }
-var $d_Lrescala_restoration_ReStoringStructType = new $TypeData().initClass({
-  Lrescala_restoration_ReStoringStructType: 0
-}, false, "rescala.restoration.ReStoringStructType", {
-  Lrescala_restoration_ReStoringStructType: 1,
-  Lrescala_levelbased_LevelStructTypeImpl: 1,
-  Lrescala_twoversion_PropagationStructImpl: 1,
-  Lrescala_twoversion_BufferedValueStruct: 1,
+var $d_Lrescala_restoration_ReStoringState = new $TypeData().initClass({
+  Lrescala_restoration_ReStoringState: 0
+}, false, "rescala.restoration.ReStoringState", {
+  Lrescala_restoration_ReStoringState: 1,
+  Lrescala_levelbased_LevelStateImpl: 1,
+  Lrescala_twoversion_GraphStateImpl: 1,
+  Lrescala_twoversion_BufferedValueState: 1,
   O: 1,
   Lrescala_twoversion_ReadWriteValue: 1,
   Lrescala_twoversion_Committable: 1,
-  Lrescala_twoversion_GraphStructType: 1,
-  Lrescala_levelbased_LevelStructType: 1
+  Lrescala_twoversion_GraphState: 1,
+  Lrescala_levelbased_LevelState: 1
 });
-$c_Lrescala_restoration_ReStoringStructType.prototype.$classData = $d_Lrescala_restoration_ReStoringStructType;
+$c_Lrescala_restoration_ReStoringState.prototype.$classData = $d_Lrescala_restoration_ReStoringState;
 /** @constructor */
 function $c_Lscalatags_JsDom$StringFrag() {
   $c_O.call(this);
@@ -37880,6 +37079,9 @@ function $f_sc_MapLike__applyOrElse__O__F1__O($thiz, x, $default) {
     })
   })($thiz, x, $default)))
 }
+function $f_sci_MapLike__updated__O__O__sci_Map($thiz, key, value) {
+  return $thiz.$$plus__T2__sci_Map(new $c_T2().init___O__O(key, value))
+}
 /** @constructor */
 function $c_Lio_circe_Decoder$$anon$1() {
   $c_O.call(this)
@@ -37902,6 +37104,10 @@ $c_Lio_circe_Decoder$$anon$1.prototype.product__O__O__O = (function(fa, fb) {
   var fa$1 = $as_Lio_circe_Decoder(fa);
   var fb$1 = $as_Lio_circe_Decoder(fb);
   return new $c_Lio_circe_Decoder$$anon$26().init___Lio_circe_Decoder__Lio_circe_Decoder(fa$1, fb$1)
+});
+$c_Lio_circe_Decoder$$anon$1.prototype.imap__O__F1__F1__O = (function(fa, f, g) {
+  var fa$1 = $as_Lio_circe_Decoder(fa);
+  return new $c_Lio_circe_Decoder$$anon$21().init___Lio_circe_Decoder__F1(fa$1, f)
 });
 $c_Lio_circe_Decoder$$anon$1.prototype.flatMap__O__F1__O = (function(fa, f) {
   var fa$1 = $as_Lio_circe_Decoder(fa);
@@ -38441,6 +37647,10 @@ $c_Lcats_instances_EitherInstances$$anon$1.prototype.product__O__O__O = (functio
 $c_Lcats_instances_EitherInstances$$anon$1.prototype.init___Lcats_instances_EitherInstances = (function($$outer) {
   return this
 });
+$c_Lcats_instances_EitherInstances$$anon$1.prototype.imap__O__F1__F1__O = (function(fa, f, g) {
+  var fa$1 = $as_s_util_Either(fa);
+  return new $c_s_util_Either$RightProjection().init___s_util_Either(fa$1).map__F1__s_util_Either(f)
+});
 $c_Lcats_instances_EitherInstances$$anon$1.prototype.flatMap__O__F1__O = (function(fa, f) {
   var fa$1 = $as_s_util_Either(fa);
   return new $c_s_util_Either$RightProjection().init___s_util_Either(fa$1).flatMap__F1__s_util_Either(f)
@@ -38581,6 +37791,11 @@ $c_Lcats_instances_ListInstances$$anon$1.prototype.product__O__O__O = (function(
 });
 $c_Lcats_instances_ListInstances$$anon$1.prototype.init___Lcats_instances_ListInstances = (function($$outer) {
   return this
+});
+$c_Lcats_instances_ListInstances$$anon$1.prototype.imap__O__F1__F1__O = (function(fa, f, g) {
+  var fa$1 = $as_sci_List(fa);
+  var this$1 = $m_sci_List$();
+  return $as_sci_List(fa$1.map__F1__scg_CanBuildFrom__O(f, this$1.ReusableCBFInstance$2))
 });
 $c_Lcats_instances_ListInstances$$anon$1.prototype.flatMap__O__F1__O = (function(fa, f) {
   var fa$1 = $as_sci_List(fa);
@@ -39318,19 +38533,6 @@ $c_Lscalatags_JsDom$all$.prototype.style__Lscalatags_generic_Attr = (function() 
     return this.style$1
   }
 });
-$c_Lscalatags_JsDom$all$.prototype.form$lzycompute__p1__Lscalatags_JsDom$TypedTag = (function() {
-  var b = this.bitmap$1$1;
-  var lo = (8 & b.lo$2);
-  if ((lo === 0)) {
-    var ns = $m_Lscalatags_generic_Namespace$().htmlNamespaceConfig$1;
-    this.form$1 = $as_Lscalatags_JsDom$TypedTag($f_Lscalatags_jsdom_TagFactory__typedTag__T__Z__Lscalatags_generic_Namespace__Lscalatags_generic_TypedTag(this, "form", false, ns));
-    var b$1 = this.bitmap$1$1;
-    var lo$1 = (8 | b$1.lo$2);
-    var hi = b$1.hi$2;
-    this.bitmap$1$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
-  };
-  return this.form$1
-});
 $c_Lscalatags_JsDom$all$.prototype.init___ = (function() {
   $n_Lscalatags_JsDom$all$ = this;
   $f_Lscalatags_generic_MouseEventAttrs__$$init$__V(this);
@@ -39473,15 +38675,6 @@ $c_Lscalatags_JsDom$all$.prototype.ondblclick$lzycompute__p1__Lscalatags_generic
     this.bitmap$3$1 = new $c_sjsr_RuntimeLong().init___I__I(lo$1, hi)
   };
   return this.ondblclick$1
-});
-$c_Lscalatags_JsDom$all$.prototype.onsubmit__Lscalatags_generic_Attr = (function() {
-  var b = this.bitmap$2$1;
-  var hi = (4194304 & b.hi$2);
-  if ((hi === 0)) {
-    return this.onsubmit$lzycompute__p1__Lscalatags_generic_Attr()
-  } else {
-    return this.onsubmit$1
-  }
 });
 $c_Lscalatags_JsDom$all$.prototype.value$lzycompute__p1__Lscalatags_generic_Attr = (function() {
   var b = this.bitmap$4$1;
@@ -39744,15 +38937,6 @@ $c_Lscalatags_JsDom$all$.prototype.onchange$lzycompute__p1__Lscalatags_generic_A
   };
   return this.onchange$1
 });
-$c_Lscalatags_JsDom$all$.prototype.form__Lscalatags_JsDom$TypedTag = (function() {
-  var b = this.bitmap$1$1;
-  var lo = (8 & b.lo$2);
-  if ((lo === 0)) {
-    return this.form$lzycompute__p1__Lscalatags_JsDom$TypedTag()
-  } else {
-    return this.form$1
-  }
-});
 $c_Lscalatags_JsDom$all$.prototype.li$lzycompute__p1__Lscalatags_JsDom$TypedTag = (function() {
   var b = this.bitmap$0$1;
   var lo = (2097152 & b.lo$2);
@@ -39829,18 +39013,6 @@ $c_Lscalatags_JsDom$all$.prototype.checked__Lscalatags_generic_AttrPair = (funct
   } else {
     return this.checked$1
   }
-});
-$c_Lscalatags_JsDom$all$.prototype.onsubmit$lzycompute__p1__Lscalatags_generic_Attr = (function() {
-  var b = this.bitmap$2$1;
-  var hi = (4194304 & b.hi$2);
-  if ((hi === 0)) {
-    this.onsubmit$1 = $f_Lscalatags_generic_Util__attr__T__Lscalatags_generic_Namespace__Z__Lscalatags_generic_Attr(this, "onsubmit", null, false);
-    var b$1 = this.bitmap$2$1;
-    var lo = b$1.lo$2;
-    var hi$1 = (4194304 | b$1.hi$2);
-    this.bitmap$2$1 = new $c_sjsr_RuntimeLong().init___I__I(lo, hi$1)
-  };
-  return this.onsubmit$1
 });
 $c_Lscalatags_JsDom$all$.prototype.type__Lscalatags_generic_Attr = (function() {
   var b = this.bitmap$4$1;
@@ -40078,6 +39250,9 @@ $c_Lcats_package$$anon$1.prototype.map__O__F1__O = (function(fa, f) {
 });
 $c_Lcats_package$$anon$1.prototype.product__O__O__O = (function(fa, fb) {
   return $f_Lcats_FlatMap__product__O__O__O(this, fa, fb)
+});
+$c_Lcats_package$$anon$1.prototype.imap__O__F1__F1__O = (function(fa, f, fi) {
+  return f.apply__O__O(fa)
 });
 $c_Lcats_package$$anon$1.prototype.flatMap__O__F1__O = (function(a, f) {
   return f.apply__O__O(a)
@@ -41964,10 +41139,10 @@ $c_sci_MapLike$ImmutableDefaultKeySet.prototype.apply__O__O = (function(v1) {
 $c_sci_MapLike$ImmutableDefaultKeySet.prototype.$$minus__O__scg_Subtractable = (function(elem) {
   return this.$$minus__O__sci_Set(elem)
 });
-$c_sci_MapLike$ImmutableDefaultKeySet.prototype.thisCollection__sc_Traversable = (function() {
+$c_sci_MapLike$ImmutableDefaultKeySet.prototype.seq__sc_Iterable = (function() {
   return this
 });
-$c_sci_MapLike$ImmutableDefaultKeySet.prototype.seq__sc_Iterable = (function() {
+$c_sci_MapLike$ImmutableDefaultKeySet.prototype.thisCollection__sc_Traversable = (function() {
   return this
 });
 $c_sci_MapLike$ImmutableDefaultKeySet.prototype.companion__scg_GenericCompanion = (function() {
@@ -42381,45 +41556,48 @@ $h_sci_ListMap.prototype = $c_sci_ListMap.prototype;
 $c_sci_ListMap.prototype.repr__scg_Subtractable = (function() {
   return this
 });
-$c_sci_ListMap.prototype.$$minus__O__scg_Subtractable = (function(elem) {
-  return this.$$minus__O__sci_ListMap(elem)
-});
 $c_sci_ListMap.prototype.value__O = (function() {
   throw new $c_ju_NoSuchElementException().init___T("value of empty map")
 });
-$c_sci_ListMap.prototype.thisCollection__sc_Traversable = (function() {
-  return this
+$c_sci_ListMap.prototype.$$minus__O__scg_Subtractable = (function(elem) {
+  return this.$$minus__O__sci_ListMap(elem)
 });
 $c_sci_ListMap.prototype.isEmpty__Z = (function() {
   return true
 });
+$c_sci_ListMap.prototype.thisCollection__sc_Traversable = (function() {
+  return this
+});
 $c_sci_ListMap.prototype.$$plus__T2__sci_Map = (function(kv) {
   return this.$$plus__T2__sci_ListMap(kv)
-});
-$c_sci_ListMap.prototype.empty__sc_Map = (function() {
-  return $m_sci_ListMap$EmptyListMap$()
 });
 $c_sci_ListMap.prototype.$$minus__O__sc_Map = (function(key) {
   return this.$$minus__O__sci_ListMap(key)
 });
-$c_sci_ListMap.prototype.empty__sci_Map = (function() {
+$c_sci_ListMap.prototype.empty__sc_Map = (function() {
   return $m_sci_ListMap$EmptyListMap$()
 });
-$c_sci_ListMap.prototype.seq__sc_Map = (function() {
-  return this
+$c_sci_ListMap.prototype.empty__sci_Map = (function() {
+  return $m_sci_ListMap$EmptyListMap$()
 });
 $c_sci_ListMap.prototype.size__I = (function() {
   return 0
 });
-$c_sci_ListMap.prototype.$$plus__T2__sci_ListMap = (function(kv) {
-  return new $c_sci_ListMap$Node().init___sci_ListMap__O__O(this, kv.$$und1__O(), kv.$$und2__O())
+$c_sci_ListMap.prototype.seq__sc_Map = (function() {
+  return this
+});
+$c_sci_ListMap.prototype.key__O = (function() {
+  throw new $c_ju_NoSuchElementException().init___T("key of empty map")
 });
 $c_sci_ListMap.prototype.iterator__sc_Iterator = (function() {
   var this$1 = this.reverseList$1__p5__sci_List();
   return new $c_sc_LinearSeqLike$$anon$1().init___sc_LinearSeqLike(this$1)
 });
-$c_sci_ListMap.prototype.key__O = (function() {
-  throw new $c_ju_NoSuchElementException().init___T("key of empty map")
+$c_sci_ListMap.prototype.$$plus__T2__sci_ListMap = (function(kv) {
+  return new $c_sci_ListMap$Node().init___sci_ListMap__O__O(this, kv.$$und1__O(), kv.$$und2__O())
+});
+$c_sci_ListMap.prototype.updated__O__O__sci_Map = (function(key, value) {
+  return this.updated__O__O__sci_ListMap(key, value)
 });
 $c_sci_ListMap.prototype.updated__O__O__sci_ListMap = (function(key, value) {
   return new $c_sci_ListMap$Node().init___sci_ListMap__O__O(this, key, value)
@@ -42501,6 +41679,9 @@ $c_sci_Map$EmptyMap$.prototype.size__I = (function() {
 });
 $c_sci_Map$EmptyMap$.prototype.iterator__sc_Iterator = (function() {
   return $m_sc_Iterator$().empty$1
+});
+$c_sci_Map$EmptyMap$.prototype.updated__O__O__sci_Map = (function(key, value) {
+  return new $c_sci_Map$Map1().init___O__O(key, value)
 });
 $c_sci_Map$EmptyMap$.prototype.get__O__s_Option = (function(key) {
   return $m_s_None$()
@@ -43069,6 +42250,9 @@ $c_sci_MapLike$$anon$2.prototype.$$minus__O__sc_Map = (function(key) {
 $c_sci_MapLike$$anon$2.prototype.seq__sc_Map = (function() {
   return this
 });
+$c_sci_MapLike$$anon$2.prototype.updated__O__O__sci_Map = (function(key, value) {
+  return $f_sci_MapLike__updated__O__O__sci_Map(this, key, value)
+});
 $c_sci_MapLike$$anon$2.prototype.keySet__sc_Set = (function() {
   return new $c_sci_MapLike$ImmutableDefaultKeySet().init___sci_MapLike(this)
 });
@@ -43214,6 +42398,9 @@ $c_sci_HashMap.prototype.seq__sc_Map = (function() {
 });
 $c_sci_HashMap.prototype.iterator__sc_Iterator = (function() {
   return $m_sc_Iterator$().empty$1
+});
+$c_sci_HashMap.prototype.updated__O__O__sci_Map = (function(key, value) {
+  return this.updated__O__O__sci_HashMap(key, value)
 });
 $c_sci_HashMap.prototype.tail__sci_HashMap = (function() {
   return this.$$minus__O__sci_HashMap($as_T2(this.head__O()).$$und1__O())
@@ -43696,6 +42883,9 @@ $c_sci_ListMap$Node.prototype.$$plus__T2__sci_ListMap = (function(kv) {
   var k = kv.$$und1__O();
   var m = this.removeInternal__p6__O__sci_ListMap__sci_List__sci_ListMap(k, this, $m_sci_Nil$());
   return new $c_sci_ListMap$Node().init___sci_ListMap__O__O(m, kv.$$und1__O(), kv.$$und2__O())
+});
+$c_sci_ListMap$Node.prototype.updated__O__O__sci_Map = (function(key, value) {
+  return this.updated__O__O__sci_ListMap(key, value)
 });
 $c_sci_ListMap$Node.prototype.updated__O__O__sci_ListMap = (function(k, v) {
   var m = this.removeInternal__p6__O__sci_ListMap__sci_List__sci_ListMap(k, this, $m_sci_Nil$());
@@ -46430,12 +45620,12 @@ $h_scm_LinkedList.prototype = $c_scm_LinkedList.prototype;
 $c_scm_LinkedList.prototype.seq__sc_TraversableOnce = (function() {
   return this
 });
+$c_scm_LinkedList.prototype.head__O = (function() {
+  return $f_scm_LinkedListLike__head__O(this)
+});
 $c_scm_LinkedList.prototype.init___ = (function() {
   this.next$5 = this;
   return this
-});
-$c_scm_LinkedList.prototype.head__O = (function() {
-  return $f_scm_LinkedListLike__head__O(this)
 });
 $c_scm_LinkedList.prototype.apply__I__O = (function(n) {
   return $f_scm_LinkedListLike__apply__I__O(this, n)
@@ -46462,11 +45652,11 @@ $c_scm_LinkedList.prototype.companion__scg_GenericCompanion = (function() {
 $c_scm_LinkedList.prototype.foreach__F1__V = (function(f) {
   $f_scm_LinkedListLike__foreach__F1__V(this, f)
 });
-$c_scm_LinkedList.prototype.iterator__sc_Iterator = (function() {
-  return new $c_scm_LinkedListLike$$anon$1().init___scm_LinkedListLike(this)
-});
 $c_scm_LinkedList.prototype.seq__scm_Seq = (function() {
   return this
+});
+$c_scm_LinkedList.prototype.iterator__sc_Iterator = (function() {
+  return new $c_scm_LinkedListLike$$anon$1().init___scm_LinkedListLike(this)
 });
 $c_scm_LinkedList.prototype.length__I = (function() {
   var elem = this;
@@ -49380,11 +48570,6 @@ var $d_scm_ArrayBuffer = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_scm_ArrayBuffer.prototype.$classData = $d_scm_ArrayBuffer;
-$e.todo = ($e.todo || {});
-$e.todo.SimpleTodo = ($e.todo.SimpleTodo || {});
-$e.todo.SimpleTodo.main = (function() {
-  $m_Ltodo_SimpleTodo$().main__V()
-});
 $e.todo = ($e.todo || {});
 $e.todo.TodoMVC = ($e.todo.TodoMVC || {});
 $e.todo.TodoMVC.main = (function() {
