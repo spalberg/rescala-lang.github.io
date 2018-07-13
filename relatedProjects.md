@@ -1,5 +1,5 @@
 ---
-title: Related Projects
+title: Projects
 nav: 4
 ---
 
@@ -15,7 +15,7 @@ nav: 4
 }
 </style>
 
-# Related Projects
+# Projects
 
 This page collects experimental projects and research prototypes based on or inspired by REScala. For the related publications, please see the [publications](publications) page.
 
