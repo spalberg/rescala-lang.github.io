@@ -45,8 +45,6 @@ Rescala supports the development of reactive applications by fostering a functio
 
 <!-- <a class="github-button" href="https://github.com/guidosalva/REScala/archive/master.zip" data-style="mega" aria-label="Download guidosalva/REScala on GitHub">Download</a> -->
 
-
-
 ---
 REScala is a research project held at TU Darmstadt in the
 [Software Technology Group.](http://www.stg.tu-darmstadt.de/)

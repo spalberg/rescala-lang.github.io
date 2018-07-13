@@ -27,7 +27,8 @@ markdown: kramdown
 
 # Options › http://kramdown.gettalong.org/options.html
 kramdown:
-  input:          GFM
+  input:              GFM
+  parse_block_html:   true # parse markdown commands inside <div> blocks
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Rouge Options › https://github.com/jneen/rouge#full-options
