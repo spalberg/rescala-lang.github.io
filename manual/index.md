@@ -2,7 +2,6 @@
 title: Manual
 version: 0.4
 nav: 3
-sidebar: manual
 ---
 
 # Quickstart with sbt

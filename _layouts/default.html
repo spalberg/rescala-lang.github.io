@@ -4,42 +4,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
   <title>{{ page.title }} - rescala</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="{{ site.github.baseurl }}/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap theme -->
-  <link href="{{ site.github.baseurl }}/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="{{ site.github.baseurl }}/css/theme.css" rel="stylesheet">
-  <!-- styles for syntax highlighting -->
-  <link href="{{ site.github.baseurl }}/css/syntax.css" rel="stylesheet">
-  <script type="text/javascript" src="{{ site.github.baseurl }}/default.js"> </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
-  <script src="{{ site.github.baseurl }}/dist/js/bootstrap.min.js"></script>
-  <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+  <link href="{{ site.github.baseurl }}/assets/dist/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ site.github.baseurl }}/assets/dist/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="{{ site.github.baseurl }}/assets/theme.css" rel="stylesheet">
+  <link href="{{ site.github.baseurl }}/assets/syntax.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="{{ site.github.baseurl }}/assets/dist/bootstrap.min.js"></script>
+  <script src="{{ site.github.baseurl }}/assets/default.js"></script>
 </head>
-
 <body>
-    {% include navbar.html %}
-  <div class="container" role="main">
-    {% if page.sidebar %}
-      {% include sidebar_{{ page.sidebar }}.html %}
-      <div id="main-content" class="col-sm-8 col-sm-pull-4">
-      {{ content }}
-      </div>
-    {% else %}
-      <div id="main-content">
-      {{ content }}
-      </div>
-    {% endif %}
-  </div>
-  <!-- /container -->
-
+  {% include navbar.html %}
+  <div class="container" role="main"><div id="main-content">
+    {{ content }}
+  </div></div>
 </body>
-
 </html>
+

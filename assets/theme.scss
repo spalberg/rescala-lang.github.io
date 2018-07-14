@@ -1,20 +1,13 @@
 ---
 ---
 
-$orange8b: #EC6500;
+$primary: #EC6500;
 
 /* rescala logo */
 
-.rescala-logo-re {
-  color:$orange8b;
-}
-.rescala-logo-scala {
-  color:#bbb;
-}
-.rescala-logo {
-  font-weight: bold;
-  font-family: "serif";
-}
+.rescala-logo-re    { color: $primary; }
+.rescala-logo-scala { color: #bbb; }
+.rescala-logo       { font-weight: bold; font-family: "serif"; }
 
 /* other things */
 
@@ -100,8 +93,8 @@ button.navbar-toggle {
   }
 
   @keyframes highlight {
-    from { background: $orange8b; }
-    to { background: white; }
+    from { background: $primary; }
+    to   { background: white; }
   }
 
   .highlight {
@@ -271,16 +264,8 @@ $collapse-dist: 2em;
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  15% {
-    opacity: 1;
-  }
-  85% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+  0%   { opacity: 0; }
+  15%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { opacity: 0; }
 }
