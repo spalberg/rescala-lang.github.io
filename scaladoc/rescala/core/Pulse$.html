@@ -81,13 +81,10 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="REScala has two main abstractions." href="../index.html"><span class="name">rescala</span></a>
+        <a title="" href="../index.html"><span class="name">rescala</span></a>
       </span>
       
-      <p class="shortcomment cmt">REScala has two main abstractions.</p><div class="fullcomment"><div class="comment cmt"><p>REScala has two main abstractions. <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a> and <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> commonly referred to as reactives.
-Use <a href="../index.html#Var[A]=rescala.reactives.Var[A,S]" class="extmbr" name="rescala.Var">rescala.Var</a> to create signal sources and <a href="../index.html#Evt[A]=rescala.reactives.Evt[A,S]" class="extmbr" name="rescala.Evt">rescala.Evt</a> to create event sources.</p><p>Events and signals can be created from other reactives by using combinators,
-signals additionally can be created using <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> expressions.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
     </li><li name="rescala.core" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="core"></a><a id="core:core"></a>
       <span class="permalink">
@@ -106,16 +103,16 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="AdmissionTicket.html" title=""></a>
-                        <a href="AdmissionTicket.html" title="">AdmissionTicket</a>
+                        <a class="class" href="AdmissionTicket.html" title="Enables reading of the current value during admission."></a>
+                        <a href="AdmissionTicket.html" title="Enables reading of the current value during admission.">AdmissionTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Base.html" title="Base implementation for reactives, combining ReSourciV for value access, with Reactive for scheduling, together with a REName and asking for a Struct.State"></a>
-                        <a href="Base.html" title="Base implementation for reactives, combining ReSourciV for value access, with Reactive for scheduling, together with a REName and asking for a Struct.State">Base</a>
+                        <a class="class" href="Base.html" title="Base implementation for reactives, with Reactive for scheduling, together with a REName and asking for a Struct.State"></a>
+                        <a href="Base.html" title="Base implementation for reactives, with Reactive for scheduling, together with a REName and asking for a Struct.State">Base</a>
                       </li><li class="current-entities indented2">
-                        <a class="object" href="CreationTicket$.html" title=""></a>
-                        <a class="class" href="CreationTicket.html" title="A turn source that stores a turn/engine and can be applied to a function to call it with the appropriate turn as parameter."></a>
-                        <a href="CreationTicket.html" title="A turn source that stores a turn/engine and can be applied to a function to call it with the appropriate turn as parameter.">CreationTicket</a>
+                        <a class="object" href="CreationTicket$.html" title="As reactives can be created during propagation, any InnerTicket can be converted to a creation ticket."></a>
+                        <a class="class" href="CreationTicket.html" title="Enables the creation of other reactives"></a>
+                        <a href="CreationTicket.html" title="Enables the creation of other reactives">CreationTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="Disconnectable.html" title=""></a>
@@ -126,11 +123,11 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="DisconnectableImpl.html" title="">DisconnectableImpl</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="DynamicTicket.html" title=""></a>
-                        <a href="DynamicTicket.html" title="">DynamicTicket</a>
+                        <a class="class" href="DynamicTicket.html" title="User facing low level API to access values in a dynamic context."></a>
+                        <a href="DynamicTicket.html" title="User facing low level API to access values in a dynamic context.">DynamicTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="InitialChange.html" title=""></a>
+                        <a class="trait" href="InitialChange.html" title=""></a>
                         <a href="InitialChange.html" title="">InitialChange</a>
                       </li><li class="current-entities indented2">
                         <a class="object" href="Initializer$.html" title=""></a>
@@ -138,8 +135,16 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="Initializer.html" title="">Initializer</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="LowPriorityCreationImplicits.html" title=""></a>
-                        <a href="LowPriorityCreationImplicits.html" title="">LowPriorityCreationImplicits</a>
+                        <a class="class" href="InnerTicket.html" title="InnerTickets are used in Rescala to give capabilities to contexts during propagation."></a>
+                        <a href="InnerTicket.html" title="InnerTickets are used in Rescala to give capabilities to contexts during propagation.">InnerTicket</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="trait" href="Interp.html" title="Common macro accessors for rescala.reactives.Signal and rescala.reactives.Event"></a>
+                        <a href="Interp.html" title="Common macro accessors for rescala.reactives.Signal and rescala.reactives.Event">Interp</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="trait" href="LowPriorityCreationImplicits.html" title="If no InnerTicket is found, then these implicits will search for a Scheduler, creating the reactives outside of any turn."></a>
+                        <a href="LowPriorityCreationImplicits.html" title="If no InnerTicket is found, then these implicits will search for a Scheduler, creating the reactives outside of any turn.">LowPriorityCreationImplicits</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="LowPriorityREName.html" title=""></a>
@@ -158,26 +163,22 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="RENamed.html" title="">RENamed</a>
                       </li><li class="current-entities indented2">
                         <a class="object" href="ReSerializable$.html" title=""></a>
-                        <a class="trait" href="ReSerializable.html" title=""></a>
-                        <a href="ReSerializable.html" title="">ReSerializable</a>
+                        <a class="trait" href="ReSerializable.html" title="Used when the state of a reactive has to be serialized."></a>
+                        <a href="ReSerializable.html" title="Used when the state of a reactive has to be serialized.">ReSerializable</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="ReSource.html" title="Source of (reactive) values, the Struct defines how the state is stored internally, and how dependencies are managed."></a>
                         <a href="ReSource.html" title="Source of (reactive) values, the Struct defines how the state is stored internally, and how dependencies are managed.">ReSource</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="ReSourciV.html" title="Makes the Value type well known, such that user computations can read values from (e.g., before, after, etc.)"></a>
-                        <a href="ReSourciV.html" title="Makes the Value type well known, such that user computations can read values from (e.g., before, after, etc.)">ReSourciV</a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
                         <a class="trait" href="Reactive.html" title="A reactive value is something that can be reevaluated"></a>
                         <a href="Reactive.html" title="A reactive value is something that can be reevaluated">Reactive</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="ReevTicket.html" title=""></a>
-                        <a href="ReevTicket.html" title="">ReevTicket</a>
+                        <a class="class" href="ReevTicket.html" title="ReevTicket is given to the Reactive reevaluate method and allows to access other reactives."></a>
+                        <a href="ReevTicket.html" title="ReevTicket is given to the Reactive reevaluate method and allows to access other reactives.">ReevTicket</a>
                       </li><li class="current-entities indented2">
-                        <a class="object" href="Result$.html" title=""></a>
+                        <span class="separator"></span>
                         <a class="trait" href="Result.html" title=""></a>
                         <a href="Result.html" title="">Result</a>
                       </li><li class="current-entities indented2">
@@ -190,16 +191,12 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="SchedulerImpl.html" title="">SchedulerImpl</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="StaticTicket.html" title=""></a>
-                        <a href="StaticTicket.html" title="">StaticTicket</a>
+                        <a class="class" href="StaticTicket.html" title="User facing low level API to access values in a static context."></a>
+                        <a href="StaticTicket.html" title="User facing low level API to access values in a static context.">StaticTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="Struct.html" title="Every ReSource has an internal dataStructure which is externally defined by the scheduler."></a>
                         <a href="Struct.html" title="Every ReSource has an internal dataStructure which is externally defined by the scheduler.">Struct</a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
-                        <a class="class" href="Ticket.html" title=""></a>
-                        <a href="Ticket.html" title="">Ticket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="class" href="WrapUpTicket.html" title=""></a>
@@ -238,7 +235,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div></div>
         
 
@@ -314,7 +311,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Pulse indicating an exception" href="Pulse$$Exceptional.html"><span class="name">Exceptional</span></a><span class="params">(<span name="throwable">throwable: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result"> extends <a href="Pulse$$Change.html" class="extype" name="rescala.core.Pulse.Change">Change</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Pulse indicating an exception" href="Pulse$$Exceptional.html"><span class="name">Exceptional</span></a><span class="params">(<span name="throwable">throwable: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result"> extends <a href="Pulse$$Change.html" class="extype" name="rescala.core.Pulse.Change">Change</a>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Nothing.html#scala.Nothing" class="extype" name="scala.Nothing">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.6/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Pulse indicating an exception</p>
@@ -330,7 +327,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Pulse indicating a change" href="Pulse$$Value.html"><span class="name">Value</span></a><span class="tparams">[<span name="P">+P</span>]</span><span class="params">(<span name="update">update: <span class="extype" name="rescala.core.Pulse.Value.P">P</span></span>)</span><span class="result"> extends <a href="Pulse$$Change.html" class="extype" name="rescala.core.Pulse.Change">Change</a>[<span class="extype" name="rescala.core.Pulse.Value.P">P</span>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Pulse indicating a change" href="Pulse$$Value.html"><span class="name">Value</span></a><span class="tparams">[<span name="P">+P</span>]</span><span class="params">(<span name="update">update: <span class="extype" name="rescala.core.Pulse.Value.P">P</span></span>)</span><span class="result"> extends <a href="Pulse$$Change.html" class="extype" name="rescala.core.Pulse.Change">Change</a>[<span class="extype" name="rescala.core.Pulse.Value.P">P</span>] with <a href="http://www.scala-lang.org/api/2.12.6/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Pulse indicating a change
@@ -356,7 +353,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -372,7 +369,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -388,7 +385,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -420,11 +417,13 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -477,7 +476,7 @@ the given updated value.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -493,32 +492,10 @@ the given updated value.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <span class="permalink">
-      <a href="../../rescala/core/Pulse$.html#finalize():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="rescala.core.Pulse#fromOption" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="fromOption[P](opt:Option[P]):rescala.core.Pulse[P]"></a><a id="fromOption[P](Option[P]):Pulse[P]"></a>
       <span class="permalink">
@@ -531,7 +508,7 @@ the given updated value.</p>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">fromOption</span><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="opt">opt: <a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.core.Pulse.fromOption.P">P</span>]</span>)</span><span class="result">: <a href="Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.core.Pulse.fromOption.P">P</span>]</span>
+        <span class="name">fromOption</span><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="opt">opt: <a href="http://www.scala-lang.org/api/2.12.6/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.core.Pulse.fromOption.P">P</span>]</span>)</span><span class="result">: <a href="Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.core.Pulse.fromOption.P">P</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Transforms an optional value into a pulse.</p><div class="fullcomment"><div class="comment cmt"><p>Transforms an optional value into a pulse. If the option doesn't contain a value, an empty pulse indicating no
@@ -555,6 +532,8 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -568,11 +547,13 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -587,7 +568,7 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -603,7 +584,7 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -619,11 +600,13 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -638,11 +621,13 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -689,32 +674,10 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">tryCatch</span><span class="tparams">[<span name="P">P &gt;: <a href="Pulse$$Change.html" class="extype" name="rescala.core.Pulse.Change">Change</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] &lt;: <a href="Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[_]</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="rescala.core.Pulse.tryCatch.P">P</span></span>, <span name="onEmpty">onEmpty: <span class="extype" name="rescala.core.Pulse.tryCatch.P">P</span> = <span class="symbol"><span class="name"><a href="">Pulse.empty</a></span></span></span>)</span><span class="result">: <span class="extype" name="rescala.core.Pulse.tryCatch.P">P</span></span>
+        <span class="name">tryCatch</span><span class="tparams">[<span name="P">P &gt;: <a href="Pulse$$Change.html" class="extype" name="rescala.core.Pulse.Change">Change</a>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Nothing.html#scala.Nothing" class="extype" name="scala.Nothing">Nothing</a>] &lt;: <a href="Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[_]</span>]</span><span class="params">(<span name="f">f: ⇒ <span class="extype" name="rescala.core.Pulse.tryCatch.P">P</span></span>, <span name="onEmpty">onEmpty: <span class="extype" name="rescala.core.Pulse.tryCatch.P">P</span> = <span class="symbol"><span class="name"><a href="">Pulse.empty</a></span></span></span>)</span><span class="result">: <span class="extype" name="rescala.core.Pulse.tryCatch.P">P</span></span>
       </span>
       
       <p class="shortcomment cmt">wrap a pulse generating function to store eventual exceptions into an exceptional pulse</p>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <span class="permalink">
-      <a href="../../rescala/core/Pulse$.html#wait():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
@@ -727,7 +690,7 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -749,12 +712,34 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../rescala/core/Pulse$.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
@@ -773,7 +758,7 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Pulse indicating no change" href="Pulse$$NoChange$.html"><span class="name">NoChange</span></a><span class="result"> extends <a href="Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Pulse indicating no change" href="Pulse$$NoChange$.html"><span class="name">NoChange</span></a><span class="result"> extends <a href="Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Nothing.html#scala.Nothing" class="extype" name="scala.Nothing">Nothing</a>] with <a href="http://www.scala-lang.org/api/2.12.6/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Pulse indicating no change</p>
@@ -783,14 +768,43 @@ change is returned. Otherwise, a pulse with the option's value set as updated va
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../rescala/core/Pulse$.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></h3>
             </div>
         
         </div>

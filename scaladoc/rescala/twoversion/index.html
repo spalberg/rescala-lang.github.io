@@ -81,13 +81,10 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="REScala has two main abstractions." href="../index.html"><span class="name">rescala</span></a>
+        <a title="" href="../index.html"><span class="name">rescala</span></a>
       </span>
       
-      <p class="shortcomment cmt">REScala has two main abstractions.</p><div class="fullcomment"><div class="comment cmt"><p>REScala has two main abstractions. <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a> and <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> commonly referred to as reactives.
-Use <a href="../index.html#Var[A]=rescala.reactives.Var[A,S]" class="extmbr" name="rescala.Var">rescala.Var</a> to create signal sources and <a href="../index.html#Evt[A]=rescala.reactives.Evt[A,S]" class="extmbr" name="rescala.Evt">rescala.Evt</a> to create event sources.</p><p>Events and signals can be created from other reactives by using combinators,
-signals additionally can be created using <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> expressions.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
     </li><li name="rescala.core" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="core"></a><a id="core:core"></a>
       <span class="permalink">
@@ -101,6 +98,22 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       </span>
       <span class="symbol">
         <a title="" href="../core/index.html"><span class="name">core</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
+    </li><li name="rescala.interface" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="interface"></a><a id="interface:interface"></a>
+      <span class="permalink">
+      <a href="../rescala/index.html#interface" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../interface/index.html"><span class="name">interface</span></a>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
@@ -218,32 +231,24 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="BufferedValueStruct.html" title="Spore that implements both the buffered pulse and the buffering capabilities itself."></a>
-                        <a href="BufferedValueStruct.html" title="Spore that implements both the buffered pulse and the buffering capabilities itself.">BufferedValueStruct</a>
+                        <a class="class" href="BufferedValueState.html" title="State that implements both the buffered pulse and the buffering capabilities itself."></a>
+                        <a href="BufferedValueState.html" title="State that implements both the buffered pulse and the buffering capabilities itself.">BufferedValueState</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="Committable.html" title="Indicates that a class stores buffered changes that can be committed or reverted"></a>
                         <a href="Committable.html" title="Indicates that a class stores buffered changes that can be committed or reverted">Committable</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="GraphStruct.html" title="Wrapper for a struct type combining GraphSpore and PulsingSpore"></a>
-                        <a href="GraphStruct.html" title="Wrapper for a struct type combining GraphSpore and PulsingSpore">GraphStruct</a>
+                        <a class="trait" href="GraphState.html" title="State representing a node in a graph by providing information about incoming and outgoing edges."></a>
+                        <a href="GraphState.html" title="State representing a node in a graph by providing information about incoming and outgoing edges.">GraphState</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="GraphStructType.html" title="Spore that can represent a node in a graph by providing information about incoming and outgoing edges."></a>
-                        <a href="GraphStructType.html" title="Spore that can represent a node in a graph by providing information about incoming and outgoing edges.">GraphStructType</a>
+                        <a class="class" href="GraphStateImpl.html" title="Implementation of a struct with graph functionality and a buffered pulse storage."></a>
+                        <a href="GraphStateImpl.html" title="Implementation of a struct with graph functionality and a buffered pulse storage.">GraphStateImpl</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="PropagationStructImpl.html" title="Implementation of a struct with graph functionality and a buffered pulse storage."></a>
-                        <a href="PropagationStructImpl.html" title="Implementation of a struct with graph functionality and a buffered pulse storage.">PropagationStructImpl</a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
-                        <a class="trait" href="ReadValue.html" title=""></a>
-                        <a href="ReadValue.html" title="">ReadValue</a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
-                        <a class="trait" href="ReadWriteValue.html" title="Spore that has a buffered pulse indicating a potential update and storing the updated and the old value."></a>
-                        <a href="ReadWriteValue.html" title="Spore that has a buffered pulse indicating a potential update and storing the updated and the old value.">ReadWriteValue</a>
+                        <a class="trait" href="ReadWriteValue.html" title="State that has a buffered pulse indicating a potential update and storing the updated and the old value."></a>
+                        <a href="ReadWriteValue.html" title="State that has a buffered pulse indicating a potential update and storing the updated and the old value.">ReadWriteValue</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="class" href="Token.html" title=""></a>
@@ -260,10 +265,6 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <span class="separator"></span>
                         <a class="trait" href="TwoVersionScheduler.html" title="Implementation of the turn handling defined in the Engine trait"></a>
                         <a href="TwoVersionScheduler.html" title="Implementation of the turn handling defined in the Engine trait">TwoVersionScheduler</a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
-                        <a class="class" href="TwoVersionSchedulerImpl.html" title="Implementation of the turn creation function based on a given function as class parameter"></a>
-                        <a href="TwoVersionSchedulerImpl.html" title="Implementation of the turn creation function based on a given function as class parameter">TwoVersionSchedulerImpl</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="TwoVersionStruct.html" title=""></a>
@@ -323,23 +324,22 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="rescala.twoversion.BufferedValueStruct" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="BufferedValueStruct[P,S&lt;:rescala.core.Struct]extendsReadWriteValue[P,S]withCommittable[S]"></a><a id="BufferedValueStruct[P,S&lt;:Struct]:BufferedValueStruct[P,S]"></a>
+              <ol><li name="rescala.twoversion.BufferedValueState" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BufferedValueState[V,S&lt;:rescala.core.Struct]extendsReadWriteValue[V,S]withCommittable[S]"></a><a id="BufferedValueState[V,S&lt;:Struct]:BufferedValueState[V,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/twoversion/index.html#BufferedValueStruct[P,S&lt;:rescala.core.Struct]extendsReadWriteValue[P,S]withCommittable[S]" title="Permalink">
+      <a href="../../rescala/twoversion/index.html#BufferedValueState[V,S&lt;:rescala.core.Struct]extendsReadWriteValue[V,S]withCommittable[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
         <span class="modifier"></span>
-        <span class="kind">trait</span>
+        <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Spore that implements both the buffered pulse and the buffering capabilities itself." href="BufferedValueStruct.html"><span class="name">BufferedValueStruct</span></a><span class="tparams">[<span name="P">P</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="ReadWriteValue.html" class="extype" name="rescala.twoversion.ReadWriteValue">ReadWriteValue</a>[<span class="extype" name="rescala.twoversion.BufferedValueStruct.P">P</span>, <span class="extype" name="rescala.twoversion.BufferedValueStruct.S">S</span>] with <a href="Committable.html" class="extype" name="rescala.twoversion.Committable">Committable</a>[<span class="extype" name="rescala.twoversion.BufferedValueStruct.S">S</span>]</span>
+        <a title="State that implements both the buffered pulse and the buffering capabilities itself." href="BufferedValueState.html"><span class="name">BufferedValueState</span></a><span class="tparams">[<span name="V">V</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="ReadWriteValue.html" class="extype" name="rescala.twoversion.ReadWriteValue">ReadWriteValue</a>[<span class="extype" name="rescala.twoversion.BufferedValueState.V">V</span>, <span class="extype" name="rescala.twoversion.BufferedValueState.S">S</span>] with <a href="Committable.html" class="extype" name="rescala.twoversion.Committable">Committable</a>[<span class="extype" name="rescala.twoversion.BufferedValueState.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Spore that implements both the buffered pulse and the buffering capabilities itself.</p><div class="fullcomment"><div class="comment cmt"><p>Spore that implements both the buffered pulse and the buffering capabilities itself.
-</p></div><dl class="paramcmts block"><dt class="tparam">P</dt><dd class="cmt"><p>Pulse stored value type</p></dd></dl></div>
+      <p class="shortcomment cmt">State that implements both the buffered pulse and the buffering capabilities itself.</p>
     </li><li name="rescala.twoversion.Committable" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Committable[S&lt;:rescala.core.Struct]extendsAnyRef"></a><a id="Committable[S&lt;:Struct]:Committable[S]"></a>
       <span class="permalink">
@@ -352,15 +352,15 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Indicates that a class stores buffered changes that can be committed or reverted" href="Committable.html"><span class="name">Committable</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="Indicates that a class stores buffered changes that can be committed or reverted" href="Committable.html"><span class="name">Committable</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <p class="shortcomment cmt">Indicates that a class stores buffered changes that can be committed or reverted
 </p>
-    </li><li name="rescala.twoversion.GraphStruct" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="GraphStructextendsStruct"></a><a id="GraphStruct:GraphStruct"></a>
+    </li><li name="rescala.twoversion.GraphState" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GraphState[S&lt;:rescala.core.Struct]extendsAnyRef"></a><a id="GraphState[S&lt;:Struct]:GraphState[S]"></a>
       <span class="permalink">
-      <a href="../../rescala/twoversion/index.html#GraphStructextendsStruct" title="Permalink">
+      <a href="../../rescala/twoversion/index.html#GraphState[S&lt;:rescala.core.Struct]extendsAnyRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -369,32 +369,14 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Wrapper for a struct type combining GraphSpore and PulsingSpore" href="GraphStruct.html"><span class="name">GraphStruct</span></a><span class="result"> extends <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>
+        <a title="State representing a node in a graph by providing information about incoming and outgoing edges." href="GraphState.html"><span class="name">GraphState</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
-      <p class="shortcomment cmt">Wrapper for a struct type combining GraphSpore and PulsingSpore
-</p>
-    </li><li name="rescala.twoversion.GraphStructType" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="GraphStructType[S&lt;:rescala.core.Struct]extendsAnyRef"></a><a id="GraphStructType[S&lt;:Struct]:GraphStructType[S]"></a>
+      <p class="shortcomment cmt">State representing a node in a graph by providing information about incoming and outgoing edges.</p>
+    </li><li name="rescala.twoversion.GraphStateImpl" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="GraphStateImpl[P,S&lt;:rescala.core.Struct]extendsBufferedValueState[P,S]withGraphState[S]"></a><a id="GraphStateImpl[P,S&lt;:Struct]:GraphStateImpl[P,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/twoversion/index.html#GraphStructType[S&lt;:rescala.core.Struct]extendsAnyRef" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a title="Spore that can represent a node in a graph by providing information about incoming and outgoing edges." href="GraphStructType.html"><span class="name">GraphStructType</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
-      </span>
-      
-      <p class="shortcomment cmt">Spore that can represent a node in a graph by providing information about incoming and outgoing edges.</p><div class="fullcomment"><div class="comment cmt"><p>Spore that can represent a node in a graph by providing information about incoming and outgoing edges.
-</p></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p>Type of the reactive values that are connected to this struct</p></dd></dl></div>
-    </li><li name="rescala.twoversion.PropagationStructImpl" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="PropagationStructImpl[P,S&lt;:rescala.core.Struct]extendsGraphStructType[S]withBufferedValueStruct[P,S]"></a><a id="PropagationStructImpl[P,S&lt;:Struct]:PropagationStructImpl[P,S]"></a>
-      <span class="permalink">
-      <a href="../../rescala/twoversion/index.html#PropagationStructImpl[P,S&lt;:rescala.core.Struct]extendsGraphStructType[S]withBufferedValueStruct[P,S]" title="Permalink">
+      <a href="../../rescala/twoversion/index.html#GraphStateImpl[P,S&lt;:rescala.core.Struct]extendsBufferedValueState[P,S]withGraphState[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -403,31 +385,14 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Implementation of a struct with graph functionality and a buffered pulse storage." href="PropagationStructImpl.html"><span class="name">PropagationStructImpl</span></a><span class="tparams">[<span name="P">P</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="GraphStructType.html" class="extype" name="rescala.twoversion.GraphStructType">GraphStructType</a>[<span class="extype" name="rescala.twoversion.PropagationStructImpl.S">S</span>] with <a href="BufferedValueStruct.html" class="extype" name="rescala.twoversion.BufferedValueStruct">BufferedValueStruct</a>[<span class="extype" name="rescala.twoversion.PropagationStructImpl.P">P</span>, <span class="extype" name="rescala.twoversion.PropagationStructImpl.S">S</span>]</span>
+        <a title="Implementation of a struct with graph functionality and a buffered pulse storage." href="GraphStateImpl.html"><span class="name">GraphStateImpl</span></a><span class="tparams">[<span name="P">P</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="BufferedValueState.html" class="extype" name="rescala.twoversion.BufferedValueState">BufferedValueState</a>[<span class="extype" name="rescala.twoversion.GraphStateImpl.P">P</span>, <span class="extype" name="rescala.twoversion.GraphStateImpl.S">S</span>] with <a href="GraphState.html" class="extype" name="rescala.twoversion.GraphState">GraphState</a>[<span class="extype" name="rescala.twoversion.GraphStateImpl.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Implementation of a struct with graph functionality and a buffered pulse storage.</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of a struct with graph functionality and a buffered pulse storage.
-</p></div><dl class="paramcmts block"><dt class="tparam">P</dt><dd class="cmt"><p>Pulse stored value type</p></dd><dt class="tparam">S</dt><dd class="cmt"><p>Type of the reactive values that are connected to this struct</p></dd></dl></div>
-    </li><li name="rescala.twoversion.ReadValue" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="ReadValue[P]extendsAnyRef"></a><a id="ReadValue[P]:ReadValue[P]"></a>
-      <span class="permalink">
-      <a href="../../rescala/twoversion/index.html#ReadValue[P]extendsAnyRef" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a title="" href="ReadValue.html"><span class="name">ReadValue</span></a><span class="tparams">[<span name="P">P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
-      </span>
-      
-      
+      <p class="shortcomment cmt"> Implementation of a struct with graph functionality and a buffered pulse storage.</p>
     </li><li name="rescala.twoversion.ReadWriteValue" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="ReadWriteValue[P,S&lt;:rescala.core.Struct]extendsReadValue[P]withCommittable[S]"></a><a id="ReadWriteValue[P,S&lt;:Struct]:ReadWriteValue[P,S]"></a>
+      <a id="ReadWriteValue[P,S&lt;:rescala.core.Struct]extendsCommittable[S]"></a><a id="ReadWriteValue[P,S&lt;:Struct]:ReadWriteValue[P,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/twoversion/index.html#ReadWriteValue[P,S&lt;:rescala.core.Struct]extendsReadValue[P]withCommittable[S]" title="Permalink">
+      <a href="../../rescala/twoversion/index.html#ReadWriteValue[P,S&lt;:rescala.core.Struct]extendsCommittable[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -436,12 +401,11 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Spore that has a buffered pulse indicating a potential update and storing the updated and the old value." href="ReadWriteValue.html"><span class="name">ReadWriteValue</span></a><span class="tparams">[<span name="P">P</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="ReadValue.html" class="extype" name="rescala.twoversion.ReadValue">ReadValue</a>[<span class="extype" name="rescala.twoversion.ReadWriteValue.P">P</span>] with <a href="Committable.html" class="extype" name="rescala.twoversion.Committable">Committable</a>[<span class="extype" name="rescala.twoversion.ReadWriteValue.S">S</span>]</span>
+        <a title="State that has a buffered pulse indicating a potential update and storing the updated and the old value." href="ReadWriteValue.html"><span class="name">ReadWriteValue</span></a><span class="tparams">[<span name="P">P</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="Committable.html" class="extype" name="rescala.twoversion.Committable">Committable</a>[<span class="extype" name="rescala.twoversion.ReadWriteValue.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Spore that has a buffered pulse indicating a potential update and storing the updated and the old value.</p><div class="fullcomment"><div class="comment cmt"><p>Spore that has a buffered pulse indicating a potential update and storing the updated and the old value.
-Through the buffer, it is possible to either revert or apply the update
-</p></div><dl class="paramcmts block"><dt class="tparam">P</dt><dd class="cmt"><p>Pulse stored value type</p></dd></dl></div>
+      <p class="shortcomment cmt">State that has a buffered pulse indicating a potential update and storing the updated and the old value.</p><div class="fullcomment"><div class="comment cmt"><p>State that has a buffered pulse indicating a potential update and storing the updated and the old value.
+Through the buffer, it is possible to either revert or apply the update</p></div></div>
     </li><li name="rescala.twoversion.Token" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="TokenextendsProductwithSerializable"></a><a id="Token:Token"></a>
       <span class="permalink">
@@ -454,7 +418,7 @@ Through the buffer, it is possible to either revert or apply the update
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="" href="Token.html"><span class="name">Token</span></a><span class="params">(<span name="payload">payload: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a> = <span class="symbol">null</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="Token.html"><span class="name">Token</span></a><span class="params">(<span name="payload">payload: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a> = <span class="symbol">null</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
@@ -470,7 +434,7 @@ Through the buffer, it is possible to either revert or apply the update
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Abstract propagation definition that defines phases for reactive propagation through dependent reactive elements." href="TwoVersionPropagation.html"><span class="name">TwoVersionPropagation</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="Abstract propagation definition that defines phases for reactive propagation through dependent reactive elements." href="TwoVersionPropagation.html"><span class="name">TwoVersionPropagation</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <p class="shortcomment cmt">Abstract propagation definition that defines phases for reactive propagation through dependent reactive elements.</p><div class="fullcomment"><div class="comment cmt"><p>Abstract propagation definition that defines phases for reactive propagation through dependent reactive elements.
@@ -494,9 +458,9 @@ Through the buffer, it is possible to either revert or apply the update
 Only compatible with spore definitions that store a pulse value and support graph operations.
 </p></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p>Struct type that defines the spore type used to manage the reactive evaluation</p></dd></dl></div>
     </li><li name="rescala.twoversion.TwoVersionScheduler" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="TwoVersionScheduler[S&lt;:rescala.twoversion.TwoVersionStruct,TImpl&lt;:rescala.twoversion.TwoVersionPropagation[S]withrescala.core.Initializer[S]]extendsRescalaInterface[S]withSchedulerImpl[S,TImpl]"></a><a id="TwoVersionScheduler[S&lt;:TwoVersionStruct,TImpl&lt;:TwoVersionPropagation[S]withInitializer[S]]:TwoVersionScheduler[S,TImpl]"></a>
+      <a id="TwoVersionScheduler[S&lt;:rescala.twoversion.TwoVersionStruct,TImpl&lt;:rescala.twoversion.TwoVersionPropagation[S]withrescala.core.Initializer[S]]extendsSchedulerImpl[S,TImpl]"></a><a id="TwoVersionScheduler[S&lt;:TwoVersionStruct,TImpl&lt;:TwoVersionPropagation[S]withInitializer[S]]:TwoVersionScheduler[S,TImpl]"></a>
       <span class="permalink">
-      <a href="../../rescala/twoversion/index.html#TwoVersionScheduler[S&lt;:rescala.twoversion.TwoVersionStruct,TImpl&lt;:rescala.twoversion.TwoVersionPropagation[S]withrescala.core.Initializer[S]]extendsRescalaInterface[S]withSchedulerImpl[S,TImpl]" title="Permalink">
+      <a href="../../rescala/twoversion/index.html#TwoVersionScheduler[S&lt;:rescala.twoversion.TwoVersionStruct,TImpl&lt;:rescala.twoversion.TwoVersionPropagation[S]withrescala.core.Initializer[S]]extendsSchedulerImpl[S,TImpl]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -505,34 +469,16 @@ Only compatible with spore definitions that store a pulse value and support grap
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Implementation of the turn handling defined in the Engine trait" href="TwoVersionScheduler.html"><span class="name">TwoVersionScheduler</span></a><span class="tparams">[<span name="S">S &lt;: <a href="TwoVersionStruct.html" class="extype" name="rescala.twoversion.TwoVersionStruct">TwoVersionStruct</a></span>, <span name="TImpl">TImpl &lt;: <a href="TwoVersionPropagation.html" class="extype" name="rescala.twoversion.TwoVersionPropagation">TwoVersionPropagation</a>[<span class="extype" name="rescala.twoversion.TwoVersionScheduler.S">S</span>] with <a href="../core/Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.twoversion.TwoVersionScheduler.S">S</span>]</span>]</span><span class="result"> extends <a href="../RescalaInterface.html" class="extype" name="rescala.RescalaInterface">RescalaInterface</a>[<span class="extype" name="rescala.twoversion.TwoVersionScheduler.S">S</span>] with <a href="../core/SchedulerImpl.html" class="extype" name="rescala.core.SchedulerImpl">SchedulerImpl</a>[<span class="extype" name="rescala.twoversion.TwoVersionScheduler.S">S</span>, <span class="extype" name="rescala.twoversion.TwoVersionScheduler.TImpl">TImpl</span>]</span>
+        <a title="Implementation of the turn handling defined in the Engine trait" href="TwoVersionScheduler.html"><span class="name">TwoVersionScheduler</span></a><span class="tparams">[<span name="S">S &lt;: <a href="TwoVersionStruct.html" class="extype" name="rescala.twoversion.TwoVersionStruct">TwoVersionStruct</a></span>, <span name="TImpl">TImpl &lt;: <a href="TwoVersionPropagation.html" class="extype" name="rescala.twoversion.TwoVersionPropagation">TwoVersionPropagation</a>[<span class="extype" name="rescala.twoversion.TwoVersionScheduler.S">S</span>] with <a href="../core/Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.twoversion.TwoVersionScheduler.S">S</span>]</span>]</span><span class="result"> extends <a href="../core/SchedulerImpl.html" class="extype" name="rescala.core.SchedulerImpl">SchedulerImpl</a>[<span class="extype" name="rescala.twoversion.TwoVersionScheduler.S">S</span>, <span class="extype" name="rescala.twoversion.TwoVersionScheduler.TImpl">TImpl</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Implementation of the turn handling defined in the Engine trait
 </p><div class="fullcomment"><div class="comment cmt"><p>Implementation of the turn handling defined in the Engine trait
 </p></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p>Struct type that defines the spore type used to manage the reactive evaluation</p></dd><dt class="tparam">TImpl</dt><dd class="cmt"><p>Turn type used by the engine</p></dd></dl></div>
-    </li><li name="rescala.twoversion.TwoVersionSchedulerImpl" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="TwoVersionSchedulerImpl[S&lt;:rescala.twoversion.TwoVersionStruct,TImpl&lt;:rescala.twoversion.TwoVersionPropagation[S]withrescala.core.Initializer[S]]extendsRescalaInterface[S]withTwoVersionScheduler[S,TImpl]"></a><a id="TwoVersionSchedulerImpl[S&lt;:TwoVersionStruct,TImpl&lt;:TwoVersionPropagation[S]withInitializer[S]]:TwoVersionSchedulerImpl[S,TImpl]"></a>
-      <span class="permalink">
-      <a href="../../rescala/twoversion/index.html#TwoVersionSchedulerImpl[S&lt;:rescala.twoversion.TwoVersionStruct,TImpl&lt;:rescala.twoversion.TwoVersionPropagation[S]withrescala.core.Initializer[S]]extendsRescalaInterface[S]withTwoVersionScheduler[S,TImpl]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a title="Implementation of the turn creation function based on a given function as class parameter" href="TwoVersionSchedulerImpl.html"><span class="name">TwoVersionSchedulerImpl</span></a><span class="tparams">[<span name="S">S &lt;: <a href="TwoVersionStruct.html" class="extype" name="rescala.twoversion.TwoVersionStruct">TwoVersionStruct</a></span>, <span name="TImpl">TImpl &lt;: <a href="TwoVersionPropagation.html" class="extype" name="rescala.twoversion.TwoVersionPropagation">TwoVersionPropagation</a>[<span class="extype" name="rescala.twoversion.TwoVersionSchedulerImpl.S">S</span>] with <a href="../core/Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.twoversion.TwoVersionSchedulerImpl.S">S</span>]</span>]</span><span class="result"> extends <a href="../RescalaInterface.html" class="extype" name="rescala.RescalaInterface">RescalaInterface</a>[<span class="extype" name="rescala.twoversion.TwoVersionSchedulerImpl.S">S</span>] with <a href="TwoVersionScheduler.html" class="extype" name="rescala.twoversion.TwoVersionScheduler">TwoVersionScheduler</a>[<span class="extype" name="rescala.twoversion.TwoVersionSchedulerImpl.S">S</span>, <span class="extype" name="rescala.twoversion.TwoVersionSchedulerImpl.TImpl">TImpl</span>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Implementation of the turn creation function based on a given function as class parameter
-</p><div class="fullcomment"><div class="comment cmt"><p>Implementation of the turn creation function based on a given function as class parameter
-</p></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p>Struct type that defines the spore type used to manage the reactive evaluation</p></dd><dt class="tparam">TImpl</dt><dd class="cmt"><p>Turn type used by the engine</p></dd></dl></div>
     </li><li name="rescala.twoversion.TwoVersionStruct" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="TwoVersionStructextendsGraphStruct"></a><a id="TwoVersionStruct:TwoVersionStruct"></a>
+      <a id="TwoVersionStructextendsStruct"></a><a id="TwoVersionStruct:TwoVersionStruct"></a>
       <span class="permalink">
-      <a href="../../rescala/twoversion/index.html#TwoVersionStructextendsGraphStruct" title="Permalink">
+      <a href="../../rescala/twoversion/index.html#TwoVersionStructextendsStruct" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -541,7 +487,7 @@ Only compatible with spore definitions that store a pulse value and support grap
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="TwoVersionStruct.html"><span class="name">TwoVersionStruct</span></a><span class="result"> extends <a href="GraphStruct.html" class="extype" name="rescala.twoversion.GraphStruct">GraphStruct</a></span>
+        <a title="" href="TwoVersionStruct.html"><span class="name">TwoVersionStruct</span></a><span class="result"> extends <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>
       </span>
       
       

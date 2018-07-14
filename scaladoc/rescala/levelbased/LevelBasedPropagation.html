@@ -81,13 +81,10 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="REScala has two main abstractions." href="../index.html"><span class="name">rescala</span></a>
+        <a title="" href="../index.html"><span class="name">rescala</span></a>
       </span>
       
-      <p class="shortcomment cmt">REScala has two main abstractions.</p><div class="fullcomment"><div class="comment cmt"><p>REScala has two main abstractions. <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a> and <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> commonly referred to as reactives.
-Use <a href="../index.html#Var[A]=rescala.reactives.Var[A,S]" class="extmbr" name="rescala.Var">rescala.Var</a> to create signal sources and <a href="../index.html#Evt[A]=rescala.reactives.Evt[A,S]" class="extmbr" name="rescala.Evt">rescala.Evt</a> to create event sources.</p><p>Events and signals can be created from other reactives by using combinators,
-signals additionally can be created using <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> expressions.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
     </li><li name="rescala.levelbased" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="levelbased"></a><a id="levelbased:levelbased"></a>
       <span class="permalink">
@@ -109,25 +106,25 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a class="trait" href="" title="Further implementation of level-based propagation based on the common propagation implementation."></a>
                         <a href="" title="Further implementation of level-based propagation based on the common propagation implementation.">LevelBasedPropagation</a>
                       </li><li class="current-entities indented2">
-                        <a class="object" href="LevelBasedPropagationEngines$.html" title=""></a>
-                        <a class="trait" href="LevelBasedPropagationEngines.html" title="Basic implementations of propagation engines"></a>
-                        <a href="LevelBasedPropagationEngines.html" title="Basic implementations of propagation engines">LevelBasedPropagationEngines</a>
+                        <a class="object" href="LevelBasedSchedulers$.html" title=""></a>
+                        <a class="trait" href="LevelBasedSchedulers.html" title="Basic implementations of propagation engines"></a>
+                        <a href="LevelBasedSchedulers.html" title="Basic implementations of propagation engines">LevelBasedSchedulers</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="LevelStruct.html" title="Wrapper for a struct type that combines GraphSpore, PulsingSpore and is leveled"></a>
-                        <a href="LevelStruct.html" title="Wrapper for a struct type that combines GraphSpore, PulsingSpore and is leveled">LevelStruct</a>
+                        <a class="trait" href="LevelState.html" title="State with an additional level in the graph."></a>
+                        <a href="LevelState.html" title="State with an additional level in the graph.">LevelState</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="LevelStructType.html" title="Graph struct that additionally can be assigned a level value that is used for topologically traversing the graph."></a>
-                        <a href="LevelStructType.html" title="Graph struct that additionally can be assigned a level value that is used for topologically traversing the graph.">LevelStructType</a>
+                        <a class="class" href="LevelStateImpl.html" title=""></a>
+                        <a href="LevelStateImpl.html" title="">LevelStateImpl</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="LevelStructTypeImpl.html" title="Implementation of a struct with graph and buffered pulse storage functionality that also support setting a level."></a>
-                        <a href="LevelStructTypeImpl.html" title="Implementation of a struct with graph and buffered pulse storage functionality that also support setting a level.">LevelStructTypeImpl</a>
+                        <a class="trait" href="LevelStruct.html" title=""></a>
+                        <a href="LevelStruct.html" title="">LevelStruct</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="SimpleStruct.html" title="Wrapper for the instance of LevelSpore"></a>
-                        <a href="SimpleStruct.html" title="Wrapper for the instance of LevelSpore">SimpleStruct</a>
+                        <a class="trait" href="LevelStructImpl.html" title=""></a>
+                        <a href="LevelStructImpl.html" title="">LevelStructImpl</a>
                       </li>
               </ul>
             </div>
@@ -161,7 +158,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><span class="extype" name="rescala.levelbased.LevelQueue.Evaluator">Evaluator</span>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>], <a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>], <a href="../core/Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>], <a href="../twoversion/TwoVersionPropagation.html" class="extype" name="rescala.twoversion.TwoVersionPropagation">TwoVersionPropagation</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>], <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+          <div class="superTypes hiddenContent"><span class="extype" name="rescala.levelbased.LevelQueue.Evaluator">Evaluator</span>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>], <a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>], <a href="../core/Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>], <a href="../twoversion/TwoVersionPropagation.html" class="extype" name="rescala.twoversion.TwoVersionPropagation">TwoVersionPropagation</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>], <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div><div class="toggleContainer block">
             <span class="toggle">
               Known Subclasses
@@ -217,7 +214,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <div class="values members">
               <h3>Abstract Value Members</h3>
               <ol><li name="rescala.twoversion.TwoVersionPropagationImpl#dynamicDependencyInteraction" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="dynamicDependencyInteraction(dependency:rescala.core.ReSource[S]):Unit"></a><a id="dynamicDependencyInteraction(core.ReSource[S]):Unit"></a>
+      <a id="dynamicDependencyInteraction(dependency:rescala.core.ReSource[S]):Unit"></a><a id="dynamicDependencyInteraction(ReSource[S]):Unit"></a>
       <span class="permalink">
       <a href="../../rescala/levelbased/LevelBasedPropagation.html#dynamicDependencyInteraction(dependency:rescala.core.ReSource[S]):Unit" title="Permalink">
         <i class="material-icons"></i>
@@ -228,14 +225,14 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">dynamicDependencyInteraction</span><span class="params">(<span name="dependency">dependency: <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">core.ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">dynamicDependencyInteraction</span><span class="params">(<span name="dependency">dependency: <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <p class="shortcomment cmt">allow turn to handle dynamic access to reactives</p><div class="fullcomment"><div class="comment cmt"><p>allow turn to handle dynamic access to reactives</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a></dd></dl></div>
+      <p class="shortcomment cmt">allow the propagation to handle dynamic access to reactives</p><div class="fullcomment"><div class="comment cmt"><p>allow the propagation to handle dynamic access to reactives</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a></dd></dl></div>
     </li><li name="rescala.core.Initializer#makeDerivedStructState" visbl="prt" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="makeDerivedStructState[P](valuePersistency:rescala.core.Initializer.Param[P]):S#State[P,S]"></a><a id="makeDerivedStructState[P](Param[P]):S.State[P,S]"></a>
+      <a id="makeDerivedStructState[V](valuePersistency:rescala.core.Initializer.InitValues[V],creationTicket:rescala.core.CreationTicket[S]):S#State[V,S]"></a><a id="makeDerivedStructState[V](InitValues[V],CreationTicket[S]):S.State[V,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/levelbased/LevelBasedPropagation.html#makeDerivedStructState[P](valuePersistency:rescala.core.Initializer.Param[P]):S#State[P,S]" title="Permalink">
+      <a href="../../rescala/levelbased/LevelBasedPropagation.html#makeDerivedStructState[V](valuePersistency:rescala.core.Initializer.InitValues[V],creationTicket:rescala.core.CreationTicket[S]):S#State[V,S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -244,14 +241,14 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">makeDerivedStructState</span><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="valuePersistency">valuePersistency: <a href="../core/Initializer$$Param.html" class="extype" name="rescala.core.Initializer.Param">Param</a>[<span class="extype" name="rescala.core.Initializer.makeDerivedStructState.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="rescala.levelbased.LevelStruct.State">S.State</span>[<span class="extype" name="rescala.core.Initializer.makeDerivedStructState.P">P</span>, <span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>
+        <span class="name">makeDerivedStructState</span><span class="tparams">[<span name="V">V</span>]</span><span class="params">(<span name="valuePersistency">valuePersistency: <a href="../core/Initializer$$InitValues.html" class="extype" name="rescala.core.Initializer.InitValues">InitValues</a>[<span class="extype" name="rescala.core.Initializer.makeDerivedStructState.V">V</span>]</span>, <span name="creationTicket">creationTicket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <span class="extype" name="rescala.levelbased.LevelStruct.State">S.State</span>[<span class="extype" name="rescala.core.Initializer.makeDerivedStructState.V">V</span>, <span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Creates the internal state of <a href="../core/Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a>s</p><div class="fullcomment"><div class="comment cmt"><p>Creates the internal state of <a href="../core/Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a>s</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../core/Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a></dd></dl></div>
     </li><li name="rescala.twoversion.TwoVersionPropagation#preparationPhase" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="preparationPhase(initialWrites:Traversable[rescala.core.ReSource[S]]):Unit"></a><a id="preparationPhase(Traversable[core.ReSource[S]]):Unit"></a>
+      <a id="preparationPhase(initialWrites:Set[rescala.core.ReSource[S]]):Unit"></a><a id="preparationPhase(Set[ReSource[S]]):Unit"></a>
       <span class="permalink">
-      <a href="../../rescala/levelbased/LevelBasedPropagation.html#preparationPhase(initialWrites:Traversable[rescala.core.ReSource[S]]):Unit" title="Permalink">
+      <a href="../../rescala/levelbased/LevelBasedPropagation.html#preparationPhase(initialWrites:Set[rescala.core.ReSource[S]]):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -260,7 +257,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">preparationPhase</span><span class="params">(<span name="initialWrites">initialWrites: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">core.ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">preparationPhase</span><span class="params">(<span name="initialWrites">initialWrites: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Locks (and potentially otherwise prepares) all affected reactive values to prevent interfering changes.</p><div class="fullcomment"><div class="comment cmt"><p>Locks (and potentially otherwise prepares) all affected reactive values to prevent interfering changes.
@@ -277,7 +274,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">releasePhase</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">releasePhase</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Unlocks (and potentially otherwise reverts the propagation preparations for) each reactive value to allow future
@@ -302,7 +299,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -318,7 +315,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -334,7 +331,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -366,7 +363,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clear</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">clear</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.levelbased.LevelBasedPropagation">LevelBasedPropagation</a> → <a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a></dd></dl></div>
@@ -382,11 +379,13 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -395,7 +394,7 @@ turns to run on them.
               
         </dd></dl></div>
     </li><li name="rescala.twoversion.TwoVersionPropagationImpl#commitDependencyDiff" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="commitDependencyDiff(node:rescala.core.Reactive[S],current:Set[rescala.core.ReSource[S]])(updated:Set[rescala.core.ReSource[S]]):Unit"></a><a id="commitDependencyDiff(core.Reactive[S],Set[core.ReSource[S]])(Set[core.ReSource[S]]):Unit"></a>
+      <a id="commitDependencyDiff(node:rescala.core.Reactive[S],current:Set[rescala.core.ReSource[S]])(updated:Set[rescala.core.ReSource[S]]):Unit"></a><a id="commitDependencyDiff(Reactive[S],Set[ReSource[S]])(Set[ReSource[S]]):Unit"></a>
       <span class="permalink">
       <a href="../../rescala/levelbased/LevelBasedPropagation.html#commitDependencyDiff(node:rescala.core.Reactive[S],current:Set[rescala.core.ReSource[S]])(updated:Set[rescala.core.ReSource[S]]):Unit" title="Permalink">
         <i class="material-icons"></i>
@@ -406,7 +405,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">commitDependencyDiff</span><span class="params">(<span name="node">node: <a href="../core/Reactive.html" class="extype" name="rescala.core.Reactive">core.Reactive</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>, <span name="current">current: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">core.ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]]</span>)</span><span class="params">(<span name="updated">updated: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">core.ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">commitDependencyDiff</span><span class="params">(<span name="node">node: <a href="../core/Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>, <span name="current">current: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]]</span>)</span><span class="params">(<span name="updated">updated: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a></dd></dl></div>
@@ -422,7 +421,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">commitPhase</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">commitPhase</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Commits all uncommitted changes to the reactive element.</p><div class="fullcomment"><div class="comment cmt"><p>Commits all uncommitted changes to the reactive element.
@@ -439,7 +438,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -455,12 +454,12 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="rescala.levelbased.LevelBasedPropagation#evaluate" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="evaluate(r:rescala.core.Reactive[S]):Unit"></a><a id="evaluate(core.Reactive[S]):Unit"></a>
+      <a id="evaluate(r:rescala.core.Reactive[S]):Unit"></a><a id="evaluate(Reactive[S]):Unit"></a>
       <span class="permalink">
       <a href="../../rescala/levelbased/LevelBasedPropagation.html#evaluate(r:rescala.core.Reactive[S]):Unit" title="Permalink">
         <i class="material-icons"></i>
@@ -471,12 +470,12 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">evaluate</span><span class="params">(<span name="r">r: <a href="../core/Reactive.html" class="extype" name="rescala.core.Reactive">core.Reactive</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">evaluate</span><span class="params">(<span name="r">r: <a href="../core/Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.levelbased.LevelBasedPropagation">LevelBasedPropagation</a> → Evaluator</dd></dl></div>
     </li><li name="rescala.levelbased.LevelBasedPropagation#evaluateIn" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="evaluateIn(head:rescala.core.Reactive[S])(dt:rescala.core.ReevTicket[head.Value,S]):Unit"></a><a id="evaluateIn(core.Reactive[S])(ReevTicket[core.Reactive.Value,S]):Unit"></a>
+      <a id="evaluateIn(head:rescala.core.Reactive[S])(dt:rescala.core.ReevTicket[head.Value,S]):Unit"></a><a id="evaluateIn(Reactive[S])(ReevTicket[core.Reactive.Value,S]):Unit"></a>
       <span class="permalink">
       <a href="../../rescala/levelbased/LevelBasedPropagation.html#evaluateIn(head:rescala.core.Reactive[S])(dt:rescala.core.ReevTicket[head.Value,S]):Unit" title="Permalink">
         <i class="material-icons"></i>
@@ -487,32 +486,10 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">evaluateIn</span><span class="params">(<span name="head">head: <a href="../core/Reactive.html" class="extype" name="rescala.core.Reactive">core.Reactive</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="params">(<span name="dt">dt: <a href="../core/ReevTicket.html" class="extype" name="rescala.core.ReevTicket">ReevTicket</a>[<a href="../core/Reactive.html#Value" class="extmbr" name="rescala.core.Reactive.Value">core.Reactive.Value</a>, <span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">evaluateIn</span><span class="params">(<span name="head">head: <a href="../core/Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="params">(<span name="dt">dt: <a href="../core/ReevTicket.html" class="extype" name="rescala.core.ReevTicket">ReevTicket</a>[<a href="../core/Reactive.html#Value" class="extmbr" name="rescala.core.Reactive.Value">core.Reactive.Value</a>, <span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <span class="permalink">
-      <a href="../../rescala/levelbased/LevelBasedPropagation.html#finalize():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -531,6 +508,8 @@ turns to run on them.
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -544,15 +523,17 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="rescala.levelbased.LevelBasedPropagation#ignite" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="ignite(reactive:rescala.core.Reactive[S],incoming:Set[rescala.core.ReSource[S]],ignitionRequiresReevaluation:Boolean):Unit"></a><a id="ignite(core.Reactive[S],Set[core.ReSource[S]],Boolean):Unit"></a>
+      <a id="ignite(reactive:rescala.core.Reactive[S],incoming:Set[rescala.core.ReSource[S]],ignitionRequiresReevaluation:Boolean):Unit"></a><a id="ignite(Reactive[S],Set[ReSource[S]],Boolean):Unit"></a>
       <span class="permalink">
       <a href="../../rescala/levelbased/LevelBasedPropagation.html#ignite(reactive:rescala.core.Reactive[S],incoming:Set[rescala.core.ReSource[S]],ignitionRequiresReevaluation:Boolean):Unit" title="Permalink">
         <i class="material-icons"></i>
@@ -563,14 +544,15 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ignite</span><span class="params">(<span name="reactive">reactive: <a href="../core/Reactive.html" class="extype" name="rescala.core.Reactive">core.Reactive</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>, <span name="incoming">incoming: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">core.ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]]</span>, <span name="ignitionRequiresReevaluation">ignitionRequiresReevaluation: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">ignite</span><span class="params">(<span name="reactive">reactive: <a href="../core/Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>, <span name="incoming">incoming: <span class="extype" name="scala.Predef.Set">Set</span>[<a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]]</span>, <span name="ignitionRequiresReevaluation">ignitionRequiresReevaluation: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <p class="shortcomment cmt">to be implemented by the propagation algorithm, called when a new reactive has been instantiated and needs to be connected to the graph and potentially reevaluated.</p><div class="fullcomment"><div class="comment cmt"><p>to be implemented by the propagation algorithm, called when a new reactive has been instantiated and needs to be connected to the graph and potentially reevaluated.</p></div><dl class="paramcmts block"><dt class="param">reactive</dt><dd class="cmt"><p>the newly instantiated reactive</p></dd><dt class="param">incoming</dt><dd class="cmt"><p>a set of incoming dependencies</p></dd><dt class="param">ignitionRequiresReevaluation</dt><dd class="cmt"><p>true if the reactive must be reevaluated at creation even if none of its dependencies change in the creating turn.</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.levelbased.LevelBasedPropagation">LevelBasedPropagation</a> → <a href="../core/Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a></dd></dl></div>
+      <p class="shortcomment cmt">to be implemented by the propagation algorithm, called when a new reactive has been instantiated and needs to be connected to the graph and potentially reevaluated.</p><div class="fullcomment"><div class="comment cmt"><p>to be implemented by the propagation algorithm, called when a new reactive has been instantiated and needs to be connected to the graph and potentially reevaluated.
+</p></div><dl class="paramcmts block"><dt class="param">reactive</dt><dd class="cmt"><p>the newly instantiated reactive</p></dd><dt class="param">incoming</dt><dd class="cmt"><p>a set of incoming dependencies</p></dd><dt class="param">ignitionRequiresReevaluation</dt><dd class="cmt"><p>true if the reactive must be reevaluated at creation even if none of its dependencies change in the creating turn.</p></dd></dl><dl class="attributes block"> <dt>Attributes</dt><dd>protected </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.levelbased.LevelBasedPropagation">LevelBasedPropagation</a> → <a href="../core/Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a></dd></dl></div>
     </li><li name="rescala.twoversion.TwoVersionPropagationImpl#initializationPhase" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="initializationPhase(initialChanges:Traversable[rescala.core.InitialChange[S]]):Unit"></a><a id="initializationPhase(Traversable[InitialChange[S]]):Unit"></a>
+      <a id="initializationPhase(initialChanges:Map[rescala.core.ReSource[S],rescala.core.InitialChange[S]]):Unit"></a><a id="initializationPhase(Map[ReSource[S],InitialChange[S]]):Unit"></a>
       <span class="permalink">
-      <a href="../../rescala/levelbased/LevelBasedPropagation.html#initializationPhase(initialChanges:Traversable[rescala.core.InitialChange[S]]):Unit" title="Permalink">
+      <a href="../../rescala/levelbased/LevelBasedPropagation.html#initializationPhase(initialChanges:Map[rescala.core.ReSource[S],rescala.core.InitialChange[S]]):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -579,7 +561,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">initializationPhase</span><span class="params">(<span name="initialChanges">initialChanges: <span class="extype" name="scala.Traversable">Traversable</span>[<a href="../core/InitialChange.html" class="extype" name="rescala.core.InitialChange">InitialChange</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">initializationPhase</span><span class="params">(<span name="initialChanges">initialChanges: <span class="extype" name="scala.Predef.Map">Map</span>[<a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>], <a href="../core/InitialChange.html" class="extype" name="rescala.core.InitialChange">InitialChange</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Starts the propagation by applying the initial changes</p><div class="fullcomment"><div class="comment cmt"><p>Starts the propagation by applying the initial changes</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a> → <a href="../twoversion/TwoVersionPropagation.html" class="extype" name="rescala.twoversion.TwoVersionPropagation">TwoVersionPropagation</a></dd></dl></div>
@@ -595,7 +577,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">initialize</span><span class="params">(<span name="ic">ic: <a href="../core/InitialChange.html" class="extype" name="rescala.core.InitialChange">InitialChange</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">initialize</span><span class="params">(<span name="ic">ic: <a href="../core/InitialChange.html" class="extype" name="rescala.core.InitialChange">InitialChange</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.levelbased.LevelBasedPropagation">LevelBasedPropagation</a> → <a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a></dd></dl></div>
@@ -611,7 +593,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -632,9 +614,9 @@ turns to run on them.
       
       
     </li><li name="rescala.core.Initializer#makeSourceStructState" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="makeSourceStructState[P](valuePersistency:rescala.core.Initializer.Param[P]):S#State[P,S]"></a><a id="makeSourceStructState[P](Param[P]):S.State[P,S]"></a>
+      <a id="makeSourceStructState[V](valuePersistency:rescala.core.Initializer.InitValues[V],creationTicket:rescala.core.CreationTicket[S]):S#State[V,S]"></a><a id="makeSourceStructState[V](InitValues[V],CreationTicket[S]):S.State[V,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/levelbased/LevelBasedPropagation.html#makeSourceStructState[P](valuePersistency:rescala.core.Initializer.Param[P]):S#State[P,S]" title="Permalink">
+      <a href="../../rescala/levelbased/LevelBasedPropagation.html#makeSourceStructState[V](valuePersistency:rescala.core.Initializer.InitValues[V],creationTicket:rescala.core.CreationTicket[S]):S#State[V,S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -643,10 +625,10 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">makeSourceStructState</span><span class="tparams">[<span name="P">P</span>]</span><span class="params">(<span name="valuePersistency">valuePersistency: <a href="../core/Initializer$$Param.html" class="extype" name="rescala.core.Initializer.Param">Param</a>[<span class="extype" name="rescala.core.Initializer.makeSourceStructState.P">P</span>]</span>)</span><span class="result">: <span class="extype" name="rescala.levelbased.LevelStruct.State">S.State</span>[<span class="extype" name="rescala.core.Initializer.makeSourceStructState.P">P</span>, <span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>
+        <span class="name">makeSourceStructState</span><span class="tparams">[<span name="V">V</span>]</span><span class="params">(<span name="valuePersistency">valuePersistency: <a href="../core/Initializer$$InitValues.html" class="extype" name="rescala.core.Initializer.InitValues">InitValues</a>[<span class="extype" name="rescala.core.Initializer.makeSourceStructState.V">V</span>]</span>, <span name="creationTicket">creationTicket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <span class="extype" name="rescala.levelbased.LevelStruct.State">S.State</span>[<span class="extype" name="rescala.core.Initializer.makeSourceStructState.V">V</span>, <span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt"> Creates the internal state of <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>s</p><div class="fullcomment"><div class="comment cmt"><p> Creates the internal state of <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>s</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../core/Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a></dd></dl></div>
+      <p class="shortcomment cmt">Creates the internal state of <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>s</p><div class="fullcomment"><div class="comment cmt"><p>Creates the internal state of <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>s</p></div><dl class="attributes block"> <dt>Attributes</dt><dd>protected[this] </dd><dt>Definition Classes</dt><dd><a href="../core/Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a></dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -659,7 +641,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -675,11 +657,13 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -694,11 +678,13 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="rescala.twoversion.TwoVersionPropagationImpl#observe" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -713,7 +699,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">observe</span><span class="params">(<span name="f">f: () ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">observe</span><span class="params">(<span name="f">f: () ⇒ <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a></dd></dl></div>
@@ -729,7 +715,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">observerPhase</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">observerPhase</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Call all registered after-commit obverser functions.</p><div class="fullcomment"><div class="comment cmt"><p>Call all registered after-commit obverser functions.
@@ -746,15 +732,15 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">propagationPhase</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">propagationPhase</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Performs the actual propagation, setting the new (not yet committed) values for each reactive element.</p><div class="fullcomment"><div class="comment cmt"><p>Performs the actual propagation, setting the new (not yet committed) values for each reactive element.
 </p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.levelbased.LevelBasedPropagation">LevelBasedPropagation</a> → <a href="../twoversion/TwoVersionPropagation.html" class="extype" name="rescala.twoversion.TwoVersionPropagation">TwoVersionPropagation</a></dd></dl></div>
-    </li><li name="rescala.levelbased.LevelBasedPropagation#reevaluaitonTicket" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="reevaluaitonTicket:rescala.core.ReevTicket[Nothing,S]"></a><a id="reevaluaitonTicket:ReevTicket[Nothing,S]"></a>
+    </li><li name="rescala.levelbased.LevelBasedPropagation#reevaluationTicket" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="reevaluationTicket:rescala.core.ReevTicket[_,S]"></a><a id="reevaluationTicket:ReevTicket[_,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/levelbased/LevelBasedPropagation.html#reevaluaitonTicket:rescala.core.ReevTicket[Nothing,S]" title="Permalink">
+      <a href="../../rescala/levelbased/LevelBasedPropagation.html#reevaluationTicket:rescala.core.ReevTicket[_,S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -763,7 +749,7 @@ turns to run on them.
         <span class="kind">val</span>
       </span>
       <span class="symbol">
-        <span class="name">reevaluaitonTicket</span><span class="result">: <a href="../core/ReevTicket.html" class="extype" name="rescala.core.ReevTicket">ReevTicket</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Nothing" class="extype" name="scala.collection.immutable.List">Nothing</a>, <span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>
+        <span class="name">reevaluationTicket</span><span class="result">: <a href="../core/ReevTicket.html" class="extype" name="rescala.core.ReevTicket">ReevTicket</a>[_, <span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>
       </span>
       
       
@@ -779,7 +765,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">rollbackPhase</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">rollbackPhase</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Reverts all uncommitted changes to the reactive element.</p><div class="fullcomment"><div class="comment cmt"><p>Reverts all uncommitted changes to the reactive element.
@@ -796,7 +782,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">schedule</span><span class="params">(<span name="commitable">commitable: <a href="../twoversion/Committable.html" class="extype" name="rescala.twoversion.Committable">Committable</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">schedule</span><span class="params">(<span name="commitable">commitable: <a href="../twoversion/Committable.html" class="extype" name="rescala.twoversion.Committable">Committable</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <p class="shortcomment cmt">Schedules a temporarily written change to be committed by the turn.</p><div class="fullcomment"><div class="comment cmt"><p>Schedules a temporarily written change to be committed by the turn.
@@ -850,28 +836,6 @@ turns to run on them.
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a></dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <span class="permalink">
-      <a href="../../rescala/levelbased/LevelBasedPropagation.html#wait():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
       <a href="../../rescala/levelbased/LevelBasedPropagation.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
@@ -883,7 +847,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -905,7 +869,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -917,8 +881,30 @@ turns to run on them.
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../rescala/levelbased/LevelBasedPropagation.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
     </li><li name="rescala.twoversion.TwoVersionPropagationImpl#writeState" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="writeState(pulsing:rescala.core.ReSource[S])(value:pulsing.Value):Unit"></a><a id="writeState(core.ReSource[S])(Value):Unit"></a>
+      <a id="writeState(pulsing:rescala.core.ReSource[S])(value:pulsing.Value):Unit"></a><a id="writeState(ReSource[S])(Value):Unit"></a>
       <span class="permalink">
       <a href="../../rescala/levelbased/LevelBasedPropagation.html#writeState(pulsing:rescala.core.ReSource[S])(value:pulsing.Value):Unit" title="Permalink">
         <i class="material-icons"></i>
@@ -929,7 +915,7 @@ turns to run on them.
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">writeState</span><span class="params">(<span name="pulsing">pulsing: <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">core.ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="params">(<span name="value">value: <a href="../core/ReSource.html#Value" class="extmbr" name="rescala.core.ReSource.Value">Value</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">writeState</span><span class="params">(<span name="pulsing">pulsing: <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</span>)</span><span class="params">(<span name="value">value: <a href="../core/ReSource.html#Value" class="extmbr" name="rescala.core.ReSource.Value">Value</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../twoversion/TwoVersionPropagationImpl.html" class="extype" name="rescala.twoversion.TwoVersionPropagationImpl">TwoVersionPropagationImpl</a></dd></dl></div>
@@ -939,7 +925,36 @@ turns to run on them.
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../rescala/levelbased/LevelBasedPropagation.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
@@ -952,9 +967,9 @@ turns to run on them.
             </div><div class="parent" name="rescala.twoversion.TwoVersionPropagation">
               <h3>Inherited from <a href="../twoversion/TwoVersionPropagation.html" class="extype" name="rescala.twoversion.TwoVersionPropagation">TwoVersionPropagation</a>[<span class="extype" name="rescala.levelbased.LevelBasedPropagation.S">S</span>]</h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></h3>
             </div>
         
         </div>

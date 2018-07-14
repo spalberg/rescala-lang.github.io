@@ -81,13 +81,10 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="REScala has two main abstractions." href="../index.html"><span class="name">rescala</span></a>
+        <a title="" href="../index.html"><span class="name">rescala</span></a>
       </span>
       
-      <p class="shortcomment cmt">REScala has two main abstractions.</p><div class="fullcomment"><div class="comment cmt"><p>REScala has two main abstractions. <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a> and <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> commonly referred to as reactives.
-Use <a href="../index.html#Var[A]=rescala.reactives.Var[A,S]" class="extmbr" name="rescala.Var">rescala.Var</a> to create signal sources and <a href="../index.html#Evt[A]=rescala.reactives.Evt[A,S]" class="extmbr" name="rescala.Evt">rescala.Evt</a> to create event sources.</p><p>Events and signals can be created from other reactives by using combinators,
-signals additionally can be created using <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> expressions.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
     </li><li name="rescala.reactives" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="reactives"></a><a id="reactives:reactives"></a>
       <span class="permalink">
@@ -134,8 +131,8 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="Signal.html" title="Time changing value derived from the dependencies.">Signal</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.RescalaInterface.Signal for a nicer API."></a>
-                        <a href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.RescalaInterface.Signal for a nicer API.">Signals</a>
+                        <a class="object" href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.interface.RescalaInterface.Signal for a nicer API."></a>
+                        <a href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.interface.RescalaInterface.Signal for a nicer API.">Signals</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="class" href="Source.html" title=""></a>
@@ -169,7 +166,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <span class="name">Var</span><span class="tparams">[<span name="A">A</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>] with <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <span class="name">Var</span><span class="tparams">[<span name="A">A</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>, <span class="extype" name="rescala.reactives.Var.A">A</span>] with <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
       </span>
       </h4>
 
@@ -179,7 +176,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>], <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>], <a href="../macros/MacroAccessors.html" class="extype" name="rescala.macros.MacroAccessors">MacroAccessors</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>], <span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>], <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>], <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>], <span class="extype" name="rescala.reactives.Var.S">S</span>], <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">core.ReSource</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>], <a href="../core/RENamed.html" class="extype" name="rescala.core.RENamed">RENamed</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>], <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>], <a href="../core/Interp.html" class="extype" name="rescala.core.Interp">Interp</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>], <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>, <span class="extype" name="rescala.reactives.Var.A">A</span>], <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>], <a href="../core/RENamed.html" class="extype" name="rescala.core.RENamed">RENamed</a>, <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div></div>
         
 
@@ -205,7 +202,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                   <span class="filtertype">Inherited<br />
                   </span>
                   <ol id="linearization">
-                    <li class="in" name="rescala.reactives.Var"><span>Var</span></li><li class="in" name="rescala.reactives.Signal"><span>Signal</span></li><li class="in" name="rescala.core.Disconnectable"><span>Disconnectable</span></li><li class="in" name="rescala.macros.MacroAccessors"><span>MacroAccessors</span></li><li class="in" name="rescala.reactives.Source"><span>Source</span></li><li class="in" name="rescala.core.ReSourciV"><span>ReSourciV</span></li><li class="in" name="rescala.core.ReSource"><span>ReSource</span></li><li class="in" name="rescala.core.RENamed"><span>RENamed</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                    <li class="in" name="rescala.reactives.Var"><span>Var</span></li><li class="in" name="rescala.reactives.Signal"><span>Signal</span></li><li class="in" name="rescala.core.Disconnectable"><span>Disconnectable</span></li><li class="in" name="rescala.core.Interp"><span>Interp</span></li><li class="in" name="rescala.reactives.Source"><span>Source</span></li><li class="in" name="rescala.core.ReSource"><span>ReSource</span></li><li class="in" name="rescala.core.RENamed"><span>RENamed</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
                   </ol>
                 </div><div class="ancestors">
               <span class="filtertype"></span>
@@ -227,10 +224,26 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="rescala.reactives.Source.Value" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Value=rescala.core.Pulse[T]"></a><a id="Value:Value"></a>
+              <ol><li name="rescala.core.ReSource.State" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="State=S#State[ReSource.this.Value,S]"></a><a id="State:State"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Var.html#Value=rescala.core.Pulse[T]" title="Permalink">
+      <a href="../../rescala/reactives/Var.html#State=S#State[ReSource.this.Value,S]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">State</span><span class="result alias"> = <span class="extype" name="rescala.core.Struct.State">S.State</span>[<a href="#Value=rescala.core.Pulse[A]" class="extmbr" name="rescala.reactives.Var.Value">Value</a>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a></dd></dl></div>
+    </li><li name="rescala.reactives.Var.Value" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Value=rescala.core.Pulse[A]"></a><a id="Value:Value"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Var.html#Value=rescala.core.Pulse[A]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -242,7 +255,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="name">Value</span><span class="result alias"> = <a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a> → <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a> → <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.reactives.Var">Var</a> → <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a> → <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a></dd></dl></div>
     </li></ol>
             </div>
 
@@ -263,7 +276,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -279,7 +292,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -295,12 +308,12 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
     </li><li name="rescala.reactives.Signal#abortOnError" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="abortOnError()(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[A,S]"></a><a id="abortOnError()(core.CreationTicket[S]):Signal[A,S]"></a>
+      <a id="abortOnError()(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[A,S]"></a><a id="abortOnError()(CreationTicket[S]):Signal[A,S]"></a>
       <span class="permalink">
       <a href="../../rescala/reactives/Var.html#abortOnError()(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[A,S]" title="Permalink">
         <i class="material-icons"></i>
@@ -311,12 +324,15 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">abortOnError</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <span class="name">abortOnError</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@<a href="../macros/cutOutOfUserComputation.html" class="extype" name="rescala.macros.cutOutOfUserComputation">cutOutOfUserComputation</a></span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="rescala.reactives.Source#admit" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="admit(value:T)(implicitticket:rescala.core.AdmissionTicket[S]):Unit"></a><a id="admit(A)(core.AdmissionTicket[S]):Unit"></a>
+      <a id="admit(value:T)(implicitticket:rescala.core.AdmissionTicket[S]):Unit"></a><a id="admit(A)(AdmissionTicket[S]):Unit"></a>
       <span class="permalink">
       <a href="../../rescala/reactives/Var.html#admit(value:T)(implicitticket:rescala.core.AdmissionTicket[S]):Unit" title="Permalink">
         <i class="material-icons"></i>
@@ -327,30 +343,30 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">admit</span><span class="params">(<span name="value">value: <span class="extype" name="rescala.reactives.Var.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/AdmissionTicket.html" class="extype" name="rescala.core.AdmissionTicket">core.AdmissionTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">admit</span><span class="params">(<span name="value">value: <span class="extype" name="rescala.reactives.Var.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/AdmissionTicket.html" class="extype" name="rescala.core.AdmissionTicket">AdmissionTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a></dd></dl></div>
-    </li><li name="rescala.reactives.Source#admitPulse" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="admitPulse(pulse:rescala.core.Pulse[T])(implicitticket:rescala.core.AdmissionTicket[S]):Unit"></a><a id="admitPulse(Pulse[A])(core.AdmissionTicket[S]):Unit"></a>
+    </li><li name="rescala.reactives.Var#admitPulse" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="admitPulse(pulse:rescala.core.Pulse[A])(implicitticket:rescala.core.AdmissionTicket[S]):Unit"></a><a id="admitPulse(Pulse[A])(AdmissionTicket[S]):Unit"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Var.html#admitPulse(pulse:rescala.core.Pulse[T])(implicitticket:rescala.core.AdmissionTicket[S]):Unit" title="Permalink">
+      <a href="../../rescala/reactives/Var.html#admitPulse(pulse:rescala.core.Pulse[A])(implicitticket:rescala.core.AdmissionTicket[S]):Unit" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">admitPulse</span><span class="params">(<span name="pulse">pulse: <a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/AdmissionTicket.html" class="extype" name="rescala.core.AdmissionTicket">core.AdmissionTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">admitPulse</span><span class="params">(<span name="pulse">pulse: <a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/AdmissionTicket.html" class="extype" name="rescala.core.AdmissionTicket">AdmissionTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a></dd></dl></div>
-    </li><li name="rescala.macros.MacroAccessors#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="accessor">
-      <a id="apply():T"></a><a id="apply():A"></a>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.reactives.Var">Var</a> → <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a></dd></dl></div>
+    </li><li name="rescala.core.Interp#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="accessor">
+      <a id="apply():A"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Var.html#apply():T" title="Permalink">
+      <a href="../../rescala/reactives/Var.html#apply():A" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -363,7 +379,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       </span>
       
       <p class="shortcomment cmt">Makes the enclosing reactive expression depend on the current value of the reactive.</p><div class="fullcomment"><div class="comment cmt"><p>Makes the enclosing reactive expression depend on the current value of the reactive.
-Is an alias for <a href="../macros/MacroAccessors.html#value:T" class="extmbr" name="rescala.macros.MacroAccessors#value">value</a>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../macros/MacroAccessors.html" class="extype" name="rescala.macros.MacroAccessors">MacroAccessors</a></dd><dt>Annotations</dt><dd>
+Is an alias for <a href="../core/Interp.html#value:A" class="extmbr" name="rescala.core.Interp#value">value</a>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/Interp.html" class="extype" name="rescala.core.Interp">Interp</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@compileTimeOnly</span><span class="args">(<span>
       
       <span class="defval" name="s&quot;$this apply can only be used inside of reactive expressions&quot;">...</span>
@@ -387,7 +403,7 @@ Is an alias for <a href="../macros/MacroAccessors.html#value:T" class="extmbr" n
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="rescala.reactives.Signal#change" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
-      <a id="change(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[rescala.reactives.Signals.Diff[A],S]"></a><a id="change(core.CreationTicket[S]):Event[Diff[A],S]"></a>
+      <a id="change(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[rescala.reactives.Signals.Diff[A],S]"></a><a id="change(CreationTicket[S]):Event[Diff[A],S]"></a>
       <span class="permalink">
       <a href="../../rescala/reactives/Var.html#change(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[rescala.reactives.Signals.Diff[A],S]" title="Permalink">
         <i class="material-icons"></i>
@@ -398,13 +414,16 @@ Is an alias for <a href="../macros/MacroAccessors.html#value:T" class="extmbr" n
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">change</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<a href="Signals$$Diff.html" class="extype" name="rescala.reactives.Signals.Diff">Diff</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>], <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <span class="name">change</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<a href="Signals$$Diff.html" class="extype" name="rescala.reactives.Signals.Diff">Diff</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>], <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Create an event that fires every time the signal changes.</p><div class="fullcomment"><div class="comment cmt"><p>Create an event that fires every time the signal changes. It fires the tuple (oldVal, newVal) for the signal.
-Be aware that no change will be triggered when the signal changes to or from empty</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+Be aware that no change will be triggered when the signal changes to or from empty</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@<a href="../macros/cutOutOfUserComputation.html" class="extype" name="rescala.macros.cutOutOfUserComputation">cutOutOfUserComputation</a></span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="rescala.reactives.Signal#changed" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
-      <a id="changed(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[A,S]"></a><a id="changed(core.CreationTicket[S]):Event[A,S]"></a>
+      <a id="changed(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[A,S]"></a><a id="changed(CreationTicket[S]):Event[A,S]"></a>
       <span class="permalink">
       <a href="../../rescala/reactives/Var.html#changed(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[A,S]" title="Permalink">
         <i class="material-icons"></i>
@@ -415,13 +434,17 @@ Be aware that no change will be triggered when the signal changes to or from emp
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">changed</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <span class="name">changed</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Create an event that fires every time the signal changes.</p><div class="fullcomment"><div class="comment cmt"><p>Create an event that fires every time the signal changes. The value associated
-to the event is the new value of the signal</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+to the event is the new value of the signal
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@<a href="../macros/cutOutOfUserComputation.html" class="extype" name="rescala.macros.cutOutOfUserComputation">cutOutOfUserComputation</a></span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="rescala.reactives.Signal#changedTo" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="conversion">
-      <a id="changedTo[V&gt;:A](value:V)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[Unit,S]"></a><a id="changedTo[V&gt;:A](V)(core.CreationTicket[S]):Event[Unit,S]"></a>
+      <a id="changedTo[V&gt;:A](value:V)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[Unit,S]"></a><a id="changedTo[V&gt;:A](V)(CreationTicket[S]):Event[Unit,S]"></a>
       <span class="permalink">
       <a href="../../rescala/reactives/Var.html#changedTo[V&gt;:A](value:V)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Event[Unit,S]" title="Permalink">
         <i class="material-icons"></i>
@@ -432,10 +455,13 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">changedTo</span><span class="tparams">[<span name="V">V &gt;: <span class="extype" name="rescala.reactives.Var.A">A</span></span>]</span><span class="params">(<span name="value">value: <span class="extype" name="rescala.reactives.Signal.changedTo.V">V</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <span class="name">changedTo</span><span class="tparams">[<span name="V">V &gt;: <span class="extype" name="rescala.reactives.Var.A">A</span></span>]</span><span class="params">(<span name="value">value: <span class="extype" name="rescala.reactives.Signal.changedTo.V">V</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Convenience function filtering to events which change this reactive to value</p><div class="fullcomment"><div class="comment cmt"><p>Convenience function filtering to events which change this reactive to value</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+      <p class="shortcomment cmt">Convenience function filtering to events which change this reactive to value</p><div class="fullcomment"><div class="comment cmt"><p>Convenience function filtering to events which change this reactive to value</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@<a href="../macros/cutOutOfUserComputation.html" class="extype" name="rescala.macros.cutOutOfUserComputation">cutOutOfUserComputation</a></span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="clone():Object"></a><a id="clone():AnyRef"></a>
       <span class="permalink">
@@ -448,11 +474,13 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -472,7 +500,7 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">disconnect</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="engine">engine: <a href="../core/Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">disconnect</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="engine">engine: <a href="../core/Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.reactives.Var">Var</a> → <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a></dd></dl></div>
@@ -488,7 +516,7 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -504,36 +532,14 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <span class="permalink">
-      <a href="../../rescala/reactives/Var.html#finalize():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="rescala.reactives.Signal#flatten" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="flatten[R](implicitev:rescala.reactives.Flatten[A,S,R],implicitticket:rescala.core.CreationTicket[S]):R"></a><a id="flatten[R](Flatten[A,S,R],core.CreationTicket[S]):R"></a>
+      <a id="flatten[R](implicitflatten:rescala.reactives.Flatten[rescala.reactives.Signal[A,S],R]):R"></a><a id="flatten[R](Flatten[Signal[A,S],R]):R"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Var.html#flatten[R](implicitev:rescala.reactives.Flatten[A,S,R],implicitticket:rescala.core.CreationTicket[S]):R" title="Permalink">
+      <a href="../../rescala/reactives/Var.html#flatten[R](implicitflatten:rescala.reactives.Flatten[rescala.reactives.Signal[A,S],R]):R" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -542,10 +548,13 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">flatten</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ev">ev: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>, <span class="extype" name="rescala.reactives.Signal.flatten.R">R</span>]</span>, <span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <span class="extype" name="rescala.reactives.Signal.flatten.R">R</span></span>
+        <span class="name">flatten</span><span class="tparams">[<span name="R">R</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="flatten">flatten: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>], <span class="extype" name="rescala.reactives.Signal.flatten.R">R</span>]</span>)</span><span class="result">: <span class="extype" name="rescala.reactives.Signal.flatten.R">R</span></span>
       </span>
       
-      <p class="shortcomment cmt">Flattens the inner reactive.</p><div class="fullcomment"><div class="comment cmt"><p>Flattens the inner reactive.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+      <p class="shortcomment cmt">Flattens the inner value.</p><div class="fullcomment"><div class="comment cmt"><p>Flattens the inner value.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@<a href="../macros/cutOutOfUserComputation.html" class="extype" name="rescala.macros.cutOutOfUserComputation">cutOutOfUserComputation</a></span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -564,6 +573,8 @@ to the event is the new value of the signal</p></div><dl class="attributes block
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -577,17 +588,19 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="rescala.reactives.Signal#interpret" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="internal">
-      <a id="interpret(v:rescala.core.Pulse[A]@scala.annotation.unchecked.uncheckedVariance):A"></a><a id="interpret(Pulse[A]):A"></a>
+      <a id="interpret(v:Signal.this.Value):A"></a><a id="interpret(Value):A"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Var.html#interpret(v:rescala.core.Pulse[A]@scala.annotation.unchecked.uncheckedVariance):A" title="Permalink">
+      <a href="../../rescala/reactives/Var.html#interpret(v:Signal.this.Value):A" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -596,10 +609,10 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">interpret</span><span class="params">(<span name="v">v: <a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>]</span>)</span><span class="result">: <span class="extype" name="rescala.reactives.Var.A">A</span></span>
+        <span class="name">interpret</span><span class="params">(<span name="v">v: <a href="#Value=rescala.core.Pulse[A]" class="extmbr" name="rescala.reactives.Var.Value">Value</a></span>)</span><span class="result">: <span class="extype" name="rescala.reactives.Var.A">A</span></span>
       </span>
       
-      <p class="shortcomment cmt">Interprets the pulse of the signal by returning the value</p><div class="fullcomment"><div class="comment cmt"><p>Interprets the pulse of the signal by returning the value</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a> → <a href="../macros/MacroAccessors.html" class="extype" name="rescala.macros.MacroAccessors">MacroAccessors</a></dd></dl></div>
+      <p class="shortcomment cmt">Interprets the pulse of the signal by returning the value</p><div class="fullcomment"><div class="comment cmt"><p>Interprets the pulse of the signal by returning the value</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a> → <a href="../core/Interp.html" class="extype" name="rescala.core.Interp">Interp</a></dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
@@ -612,12 +625,12 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
     </li><li name="rescala.reactives.Signal#map" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="operator">
-      <a id="map[B](f:A=&gt;B)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[B,S]"></a><a id="map[B]((A)⇒B)(core.CreationTicket[S]):Signal[B,S]"></a>
+      <a id="map[B](f:A=&gt;B)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[B,S]"></a><a id="map[B]((A)⇒B)(CreationTicket[S]):Signal[B,S]"></a>
       <span class="permalink">
       <a href="../../rescala/reactives/Var.html#map[B](f:A=&gt;B)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[B,S]" title="Permalink">
         <i class="material-icons"></i>
@@ -628,10 +641,13 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="rescala.reactives.Var.A">A</span>) ⇒ <span class="extype" name="rescala.reactives.Signal.map.B">B</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Signal.map.B">B</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <span class="name">map</span><span class="tparams">[<span name="B">B</span>]</span><span class="params">(<span name="f">f: (<span class="extype" name="rescala.reactives.Var.A">A</span>) ⇒ <span class="extype" name="rescala.reactives.Signal.map.B">B</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Signal.map.B">B</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Return a Signal with f applied to the value</p><div class="fullcomment"><div class="comment cmt"><p>Return a Signal with f applied to the value</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+      <p class="shortcomment cmt">Return a Signal with f applied to the value</p><div class="fullcomment"><div class="comment cmt"><p>Return a Signal with f applied to the value</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@<a href="../macros/cutOutOfUserComputation.html" class="extype" name="rescala.macros.cutOutOfUserComputation">cutOutOfUserComputation</a></span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
       <span class="permalink">
@@ -644,7 +660,7 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -660,11 +676,13 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -679,11 +697,13 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="rescala.reactives.Signal#now" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="accessor">
@@ -701,11 +721,15 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="name">now</span><span class="params">(<span class="implicit">implicit </span><span name="scheduler">scheduler: <a href="../core/Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <span class="extype" name="rescala.reactives.Var.A">A</span></span>
       </span>
       
-      <p class="shortcomment cmt">Returns the current value of the signal</p><div class="fullcomment"><div class="comment cmt"><p>Returns the current value of the signal</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+      <p class="shortcomment cmt">Returns the current value of the signal
+However, using now is in most cases not what you want.</p><div class="fullcomment"><div class="comment cmt"><p>Returns the current value of the signal
+However, using now is in most cases not what you want.
+It does not build dependencies, does not integrate into transactions.
+Use only for examples and debug output.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
     </li><li name="rescala.reactives.Signal#observe" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="accessor">
-      <a id="observe(onSuccess:A=&gt;Unit,onFailure:Throwable=&gt;Unit)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Observe[S]"></a><a id="observe((A)⇒Unit,(Throwable)⇒Unit)(core.CreationTicket[S]):Observe[S]"></a>
+      <a id="observe(onValue:A=&gt;Unit,onError:Throwable=&gt;Unit)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Observe[S]"></a><a id="observe((A)⇒Unit,(Throwable)⇒Unit)(CreationTicket[S]):Observe[S]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Var.html#observe(onSuccess:A=&gt;Unit,onFailure:Throwable=&gt;Unit)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Observe[S]" title="Permalink">
+      <a href="../../rescala/reactives/Var.html#observe(onValue:A=&gt;Unit,onError:Throwable=&gt;Unit)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Observe[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -714,12 +738,30 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">observe</span><span class="params">(<span name="onSuccess">onSuccess: (<span class="extype" name="rescala.reactives.Var.A">A</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>, <span name="onFailure">onFailure: (<span class="extype" name="scala.Throwable">Throwable</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a> = <span class="symbol">null</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Observe.html" class="extype" name="rescala.reactives.Observe">Observe</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <span class="name">observe</span><span class="params">(<span name="onValue">onValue: (<span class="extype" name="rescala.reactives.Var.A">A</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>, <span name="onError">onError: (<span class="extype" name="scala.Throwable">Throwable</span>) ⇒ <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a> = <span class="symbol">null</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Observe.html" class="extype" name="rescala.reactives.Observe">Observe</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">add an observer</p><div class="fullcomment"><div class="comment cmt"><p>add an observer</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+      <p class="shortcomment cmt">add an observer
+</p><div class="fullcomment"><div class="comment cmt"><p>add an observer
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+    </li><li name="rescala.reactives.Signal#readValueOnce" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="accessor">
+      <a id="readValueOnce(implicitscheduler:rescala.core.Scheduler[S]):A"></a><a id="readValueOnce(Scheduler[S]):A"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Var.html#readValueOnce(implicitscheduler:rescala.core.Scheduler[S]):A" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readValueOnce</span><span class="params">(<span class="implicit">implicit </span><span name="scheduler">scheduler: <a href="../core/Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <span class="extype" name="rescala.reactives.Var.A">A</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns the current value of the signal</p><div class="fullcomment"><div class="comment cmt"><p>Returns the current value of the signal</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
     </li><li name="rescala.reactives.Signal#recover" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="recover[R&gt;:A](onFailure:PartialFunction[Throwable,R])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[R,S]"></a><a id="recover[R&gt;:A](PartialFunction[Throwable,R])(core.CreationTicket[S]):Signal[R,S]"></a>
+      <a id="recover[R&gt;:A](onFailure:PartialFunction[Throwable,R])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[R,S]"></a><a id="recover[R&gt;:A](PartialFunction[Throwable,R])(CreationTicket[S]):Signal[R,S]"></a>
       <span class="permalink">
       <a href="../../rescala/reactives/Var.html#recover[R&gt;:A](onFailure:PartialFunction[Throwable,R])(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[R,S]" title="Permalink">
         <i class="material-icons"></i>
@@ -730,10 +772,13 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">recover</span><span class="tparams">[<span name="R">R &gt;: <span class="extype" name="rescala.reactives.Var.A">A</span></span>]</span><span class="params">(<span name="onFailure">onFailure: <a href="http://www.scala-lang.org/api/2.12.4/scala/PartialFunction.html#scala.PartialFunction" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="scala.Throwable">Throwable</span>, <span class="extype" name="rescala.reactives.Signal.recover.R">R</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Signal.recover.R">R</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <span class="name">recover</span><span class="tparams">[<span name="R">R &gt;: <span class="extype" name="rescala.reactives.Var.A">A</span></span>]</span><span class="params">(<span name="onFailure">onFailure: <a href="http://www.scala-lang.org/api/2.12.6/scala/PartialFunction.html#scala.PartialFunction" class="extype" name="scala.PartialFunction">PartialFunction</a>[<span class="extype" name="scala.Throwable">Throwable</span>, <span class="extype" name="rescala.reactives.Signal.recover.R">R</span>]</span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Signal.recover.R">R</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Uses a partial function <code>onFailure</code> to recover an error carried by the event into a value.</p><div class="fullcomment"><div class="comment cmt"><p>Uses a partial function <code>onFailure</code> to recover an error carried by the event into a value.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+      <p class="shortcomment cmt">Uses a partial function <code>onFailure</code> to recover an error carried by the event into a value.</p><div class="fullcomment"><div class="comment cmt"><p>Uses a partial function <code>onFailure</code> to recover an error carried by the event into a value.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@<a href="../macros/cutOutOfUserComputation.html" class="extype" name="rescala.macros.cutOutOfUserComputation">cutOutOfUserComputation</a></span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li><li name="rescala.reactives.Var#set" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="set(value:A)(implicitfac:rescala.core.Scheduler[S]):Unit"></a><a id="set(A)(Scheduler[S]):Unit"></a>
       <span class="permalink">
@@ -746,7 +791,7 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">set</span><span class="params">(<span name="value">value: <span class="extype" name="rescala.reactives.Var.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="fac">fac: <a href="../core/Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">set</span><span class="params">(<span name="value">value: <span class="extype" name="rescala.reactives.Var.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="fac">fac: <a href="../core/Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       
@@ -762,26 +807,26 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">setEmpty</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="fac">fac: <a href="../core/Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">setEmpty</span><span class="params">()</span><span class="params">(<span class="implicit">implicit </span><span name="fac">fac: <a href="../core/Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       
-    </li><li name="rescala.reactives.Source#state" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="state:S#State[rescala.core.Pulse[T],S]"></a><a id="state:S.State[Pulse[A],S]"></a>
+    </li><li name="rescala.reactives.Var#state" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="state:Var.this.State"></a><a id="state:State"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Var.html#state:S#State[rescala.core.Pulse[T],S]" title="Permalink">
+      <a href="../../rescala/reactives/Var.html#state:Var.this.State" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">state</span><span class="result">: <span class="extype" name="rescala.core.Struct.State">S.State</span>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>], <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <span class="name">state</span><span class="result">: <a href="#State=S#State[ReSource.this.Value,S]" class="extmbr" name="rescala.reactives.Var.State">State</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="rescala">rescala</a>] </dd><dt>Definition Classes</dt><dd><a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a> → <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../index.html" class="extype" name="rescala">rescala</a>] </dd><dt>Definition Classes</dt><dd><a href="" class="extype" name="rescala.reactives.Var">Var</a> → <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a></dd></dl></div>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -826,14 +871,14 @@ to the event is the new value of the signal</p></div><dl class="attributes block
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">transform</span><span class="params">(<span name="f">f: (<span class="extype" name="rescala.reactives.Var.A">A</span>) ⇒ <span class="extype" name="rescala.reactives.Var.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="fac">fac: <a href="../core/Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">transform</span><span class="params">(<span name="f">f: (<span class="extype" name="rescala.reactives.Var.A">A</span>) ⇒ <span class="extype" name="rescala.reactives.Var.A">A</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="fac">fac: <a href="../core/Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       
-    </li><li name="rescala.macros.MacroAccessors#value" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="accessor">
-      <a id="value:T"></a><a id="value:A"></a>
+    </li><li name="rescala.core.Interp#value" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="accessor">
+      <a id="value:A"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Var.html#value:T" title="Permalink">
+      <a href="../../rescala/reactives/Var.html#value:A" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -846,35 +891,13 @@ to the event is the new value of the signal</p></div><dl class="attributes block
       </span>
       
       <p class="shortcomment cmt">Makes the enclosing reactive expression depend on the current value of the reactive.</p><div class="fullcomment"><div class="comment cmt"><p>Makes the enclosing reactive expression depend on the current value of the reactive.
-Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr" name="rescala.macros.MacroAccessors#apply">apply</a>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../macros/MacroAccessors.html" class="extype" name="rescala.macros.MacroAccessors">MacroAccessors</a></dd><dt>Annotations</dt><dd>
+Is an alias for <a href="../core/Interp.html#apply():A" class="extmbr" name="rescala.core.Interp#apply">apply</a>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../core/Interp.html" class="extype" name="rescala.core.Interp">Interp</a></dd><dt>Annotations</dt><dd>
                 <span class="name">@compileTimeOnly</span><span class="args">(<span>
       
       <span class="defval" name="&quot;value can only be used inside of reactive expressions&quot;">...</span>
     </span>)</span>
               
         </dd><dt>See also</dt><dd><span class="cmt"><p>apply</p></span></dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
-      <span class="permalink">
-      <a href="../../rescala/reactives/Var.html#wait():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">final </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
@@ -887,7 +910,7 @@ Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr"
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -909,7 +932,7 @@ Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr"
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -921,8 +944,30 @@ Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr"
     </span>)</span>
               
         </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Var.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
     </li><li name="rescala.reactives.Signal#withDefault" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="withDefault[R&gt;:A](value:R)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[R,S]"></a><a id="withDefault[R&gt;:A](R)(core.CreationTicket[S]):Signal[R,S]"></a>
+      <a id="withDefault[R&gt;:A](value:R)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[R,S]"></a><a id="withDefault[R&gt;:A](R)(CreationTicket[S]):Signal[R,S]"></a>
       <span class="permalink">
       <a href="../../rescala/reactives/Var.html#withDefault[R&gt;:A](value:R)(implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Signal[R,S]" title="Permalink">
         <i class="material-icons"></i>
@@ -933,17 +978,49 @@ Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr"
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">withDefault</span><span class="tparams">[<span name="R">R &gt;: <span class="extype" name="rescala.reactives.Var.A">A</span></span>]</span><span class="params">(<span name="value">value: <span class="extype" name="rescala.reactives.Signal.withDefault.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">core.CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Signal.withDefault.R">R</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <span class="name">withDefault</span><span class="tparams">[<span name="R">R &gt;: <span class="extype" name="rescala.reactives.Var.A">A</span></span>]</span><span class="params">(<span name="value">value: <span class="extype" name="rescala.reactives.Signal.withDefault.R">R</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</span>)</span><span class="result">: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Signal.withDefault.R">R</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a></dd><dt>Annotations</dt><dd>
+                <span class="name">@<a href="../macros/cutOutOfUserComputation.html" class="extype" name="rescala.macros.cutOutOfUserComputation">cutOutOfUserComputation</a></span><span class="args">()</span>
+              
+        </dd></dl></div>
     </li>
               </ol>
             </div>
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Var.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
@@ -951,26 +1028,27 @@ Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr"
               <h3>Inherited from <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</h3>
             </div><div class="parent" name="rescala.core.Disconnectable">
               <h3>Inherited from <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</h3>
-            </div><div class="parent" name="rescala.macros.MacroAccessors">
-              <h3>Inherited from <a href="../macros/MacroAccessors.html" class="extype" name="rescala.macros.MacroAccessors">MacroAccessors</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>], <span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</h3>
+            </div><div class="parent" name="rescala.core.Interp">
+              <h3>Inherited from <a href="../core/Interp.html" class="extype" name="rescala.core.Interp">Interp</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</h3>
             </div><div class="parent" name="rescala.reactives.Source">
-              <h3>Inherited from <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</h3>
-            </div><div class="parent" name="rescala.core.ReSourciV">
-              <h3>Inherited from <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>], <span class="extype" name="rescala.reactives.Var.S">S</span>]</h3>
+              <h3>Inherited from <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>, <span class="extype" name="rescala.reactives.Var.A">A</span>]</h3>
             </div><div class="parent" name="rescala.core.ReSource">
-              <h3>Inherited from <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">core.ReSource</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</h3>
+              <h3>Inherited from <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>]</h3>
             </div><div class="parent" name="rescala.core.RENamed">
               <h3>Inherited from <a href="../core/RENamed.html" class="extype" name="rescala.core.RENamed">RENamed</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></h3>
             </div>
         
         </div>
 
         <div id="groupedMembers">
-        <div class="group" name="accessor">
+        <div class="group" name="internal">
+              <h3>internal</h3>
+              
+            </div><div class="group" name="accessor">
               <h3>Accessor and observers</h3>
               
             </div><div class="group" name="operator">
@@ -979,10 +1057,6 @@ Is an alias for <a href="../macros/MacroAccessors.html#apply():T" class="extmbr"
             </div><div class="group" name="conversion">
               <h3>Signal to Event conversions</h3>
               
-            </div><div class="group" name="internal">
-              <h3>Advanced functions used when extending REScala</h3>
-              <div class="comment cmt"><p>Methods and type aliases for advanced usages, these are most relevant to abstract
-          over multiple scheduler implementations.</p></div>
             </div><div class="group" name="Ungrouped">
               <h3>Ungrouped</h3>
               

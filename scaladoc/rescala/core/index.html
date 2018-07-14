@@ -81,13 +81,10 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="REScala has two main abstractions." href="../index.html"><span class="name">rescala</span></a>
+        <a title="" href="../index.html"><span class="name">rescala</span></a>
       </span>
       
-      <p class="shortcomment cmt">REScala has two main abstractions.</p><div class="fullcomment"><div class="comment cmt"><p>REScala has two main abstractions. <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a> and <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> commonly referred to as reactives.
-Use <a href="../index.html#Var[A]=rescala.reactives.Var[A,S]" class="extmbr" name="rescala.Var">rescala.Var</a> to create signal sources and <a href="../index.html#Evt[A]=rescala.reactives.Evt[A,S]" class="extmbr" name="rescala.Evt">rescala.Evt</a> to create event sources.</p><p>Events and signals can be created from other reactives by using combinators,
-signals additionally can be created using <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> expressions.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
     </li><li name="rescala.core" visbl="pub" class="indented2 current" data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="core"></a><a id="core:core"></a>
       <span class="permalink">
@@ -106,16 +103,16 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="AdmissionTicket.html" title=""></a>
-                        <a href="AdmissionTicket.html" title="">AdmissionTicket</a>
+                        <a class="class" href="AdmissionTicket.html" title="Enables reading of the current value during admission."></a>
+                        <a href="AdmissionTicket.html" title="Enables reading of the current value during admission.">AdmissionTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Base.html" title="Base implementation for reactives, combining ReSourciV for value access, with Reactive for scheduling, together with a REName and asking for a Struct.State"></a>
-                        <a href="Base.html" title="Base implementation for reactives, combining ReSourciV for value access, with Reactive for scheduling, together with a REName and asking for a Struct.State">Base</a>
+                        <a class="class" href="Base.html" title="Base implementation for reactives, with Reactive for scheduling, together with a REName and asking for a Struct.State"></a>
+                        <a href="Base.html" title="Base implementation for reactives, with Reactive for scheduling, together with a REName and asking for a Struct.State">Base</a>
                       </li><li class="current-entities indented2">
-                        <a class="object" href="CreationTicket$.html" title=""></a>
-                        <a class="class" href="CreationTicket.html" title="A turn source that stores a turn/engine and can be applied to a function to call it with the appropriate turn as parameter."></a>
-                        <a href="CreationTicket.html" title="A turn source that stores a turn/engine and can be applied to a function to call it with the appropriate turn as parameter.">CreationTicket</a>
+                        <a class="object" href="CreationTicket$.html" title="As reactives can be created during propagation, any InnerTicket can be converted to a creation ticket."></a>
+                        <a class="class" href="CreationTicket.html" title="Enables the creation of other reactives"></a>
+                        <a href="CreationTicket.html" title="Enables the creation of other reactives">CreationTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="Disconnectable.html" title=""></a>
@@ -126,11 +123,11 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="DisconnectableImpl.html" title="">DisconnectableImpl</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="DynamicTicket.html" title=""></a>
-                        <a href="DynamicTicket.html" title="">DynamicTicket</a>
+                        <a class="class" href="DynamicTicket.html" title="User facing low level API to access values in a dynamic context."></a>
+                        <a href="DynamicTicket.html" title="User facing low level API to access values in a dynamic context.">DynamicTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="InitialChange.html" title=""></a>
+                        <a class="trait" href="InitialChange.html" title=""></a>
                         <a href="InitialChange.html" title="">InitialChange</a>
                       </li><li class="current-entities indented2">
                         <a class="object" href="Initializer$.html" title=""></a>
@@ -138,8 +135,16 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="Initializer.html" title="">Initializer</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="LowPriorityCreationImplicits.html" title=""></a>
-                        <a href="LowPriorityCreationImplicits.html" title="">LowPriorityCreationImplicits</a>
+                        <a class="class" href="InnerTicket.html" title="InnerTickets are used in Rescala to give capabilities to contexts during propagation."></a>
+                        <a href="InnerTicket.html" title="InnerTickets are used in Rescala to give capabilities to contexts during propagation.">InnerTicket</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="trait" href="Interp.html" title="Common macro accessors for rescala.reactives.Signal and rescala.reactives.Event"></a>
+                        <a href="Interp.html" title="Common macro accessors for rescala.reactives.Signal and rescala.reactives.Event">Interp</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="trait" href="LowPriorityCreationImplicits.html" title="If no InnerTicket is found, then these implicits will search for a Scheduler, creating the reactives outside of any turn."></a>
+                        <a href="LowPriorityCreationImplicits.html" title="If no InnerTicket is found, then these implicits will search for a Scheduler, creating the reactives outside of any turn.">LowPriorityCreationImplicits</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="LowPriorityREName.html" title=""></a>
@@ -158,26 +163,22 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="RENamed.html" title="">RENamed</a>
                       </li><li class="current-entities indented2">
                         <a class="object" href="ReSerializable$.html" title=""></a>
-                        <a class="trait" href="ReSerializable.html" title=""></a>
-                        <a href="ReSerializable.html" title="">ReSerializable</a>
+                        <a class="trait" href="ReSerializable.html" title="Used when the state of a reactive has to be serialized."></a>
+                        <a href="ReSerializable.html" title="Used when the state of a reactive has to be serialized.">ReSerializable</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="ReSource.html" title="Source of (reactive) values, the Struct defines how the state is stored internally, and how dependencies are managed."></a>
                         <a href="ReSource.html" title="Source of (reactive) values, the Struct defines how the state is stored internally, and how dependencies are managed.">ReSource</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="ReSourciV.html" title="Makes the Value type well known, such that user computations can read values from (e.g., before, after, etc.)"></a>
-                        <a href="ReSourciV.html" title="Makes the Value type well known, such that user computations can read values from (e.g., before, after, etc.)">ReSourciV</a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
                         <a class="trait" href="Reactive.html" title="A reactive value is something that can be reevaluated"></a>
                         <a href="Reactive.html" title="A reactive value is something that can be reevaluated">Reactive</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="ReevTicket.html" title=""></a>
-                        <a href="ReevTicket.html" title="">ReevTicket</a>
+                        <a class="class" href="ReevTicket.html" title="ReevTicket is given to the Reactive reevaluate method and allows to access other reactives."></a>
+                        <a href="ReevTicket.html" title="ReevTicket is given to the Reactive reevaluate method and allows to access other reactives.">ReevTicket</a>
                       </li><li class="current-entities indented2">
-                        <a class="object" href="Result$.html" title=""></a>
+                        <span class="separator"></span>
                         <a class="trait" href="Result.html" title=""></a>
                         <a href="Result.html" title="">Result</a>
                       </li><li class="current-entities indented2">
@@ -190,21 +191,33 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="SchedulerImpl.html" title="">SchedulerImpl</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="StaticTicket.html" title=""></a>
-                        <a href="StaticTicket.html" title="">StaticTicket</a>
+                        <a class="class" href="StaticTicket.html" title="User facing low level API to access values in a static context."></a>
+                        <a href="StaticTicket.html" title="User facing low level API to access values in a static context.">StaticTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="Struct.html" title="Every ReSource has an internal dataStructure which is externally defined by the scheduler."></a>
                         <a href="Struct.html" title="Every ReSource has an internal dataStructure which is externally defined by the scheduler.">Struct</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Ticket.html" title=""></a>
-                        <a href="Ticket.html" title="">Ticket</a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
                         <a class="class" href="WrapUpTicket.html" title=""></a>
                         <a href="WrapUpTicket.html" title="">WrapUpTicket</a>
-                      </li><li name="rescala.levelbased" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+                      </li><li name="rescala.interface" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="interface"></a><a id="interface:interface"></a>
+      <span class="permalink">
+      <a href="../rescala/index.html#interface" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../interface/index.html"><span class="name">interface</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
+    </li><li name="rescala.levelbased" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="levelbased"></a><a id="levelbased:levelbased"></a>
       <span class="permalink">
       <a href="../rescala/index.html#levelbased" title="Permalink">
@@ -395,10 +408,10 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="rescala.core.AdmissionTicket" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="AdmissionTicket[S&lt;:rescala.core.Struct]extendsTicket[S]"></a><a id="AdmissionTicket[S&lt;:Struct]:AdmissionTicket[S]"></a>
+              <ol><li name="rescala.core.AdmissionTicket" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="AdmissionTicket[S&lt;:rescala.core.Struct]extendsInnerTicket[S]"></a><a id="AdmissionTicket[S&lt;:Struct]:AdmissionTicket[S]"></a>
       <span class="permalink">
-      <a href="../../rescala/core/index.html#AdmissionTicket[S&lt;:rescala.core.Struct]extendsTicket[S]" title="Permalink">
+      <a href="../../rescala/core/index.html#AdmissionTicket[S&lt;:rescala.core.Struct]extendsInnerTicket[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -407,14 +420,15 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="AdmissionTicket.html"><span class="name">AdmissionTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="Ticket.html" class="extype" name="rescala.core.Ticket">Ticket</a>[<span class="extype" name="rescala.core.AdmissionTicket.S">S</span>]</span>
+        <a title="Enables reading of the current value during admission." href="AdmissionTicket.html"><span class="name">AdmissionTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="InnerTicket.html" class="extype" name="rescala.core.InnerTicket">InnerTicket</a>[<span class="extype" name="rescala.core.AdmissionTicket.S">S</span>]</span>
       </span>
       
-      
+      <p class="shortcomment cmt">Enables reading of the current value during admission.</p><div class="fullcomment"><div class="comment cmt"><p>Enables reading of the current value during admission.
+Keeps track of written sources internally.</p></div></div>
     </li><li name="rescala.core.Base" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Base[P,S&lt;:rescala.core.Struct]extendsRENamedwithReSourciV[P,S]withReactive[S]"></a><a id="Base[P,S&lt;:Struct]:Base[P,S]"></a>
+      <a id="Base[V,S&lt;:rescala.core.Struct]extendsRENamedwithReactive[S]"></a><a id="Base[V,S&lt;:Struct]:Base[V,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/core/index.html#Base[P,S&lt;:rescala.core.Struct]extendsRENamedwithReSourciV[P,S]withReactive[S]" title="Permalink">
+      <a href="../../rescala/core/index.html#Base[V,S&lt;:rescala.core.Struct]extendsRENamedwithReactive[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -423,11 +437,11 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Base implementation for reactives, combining ReSourciV for value access, with Reactive for scheduling, together with a REName and asking for a Struct.State" href="Base.html"><span class="name">Base</span></a><span class="tparams">[<span name="P">P</span>, <span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="RENamed.html" class="extype" name="rescala.core.RENamed">RENamed</a> with <a href="ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>[<span class="extype" name="rescala.core.Base.P">P</span>, <span class="extype" name="rescala.core.Base.S">S</span>] with <a href="Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a>[<span class="extype" name="rescala.core.Base.S">S</span>]</span>
+        <a title="Base implementation for reactives, with Reactive for scheduling, together with a REName and asking for a Struct.State" href="Base.html"><span class="name">Base</span></a><span class="tparams">[<span name="V">V</span>, <span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="RENamed.html" class="extype" name="rescala.core.RENamed">RENamed</a> with <a href="Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a>[<span class="extype" name="rescala.core.Base.S">S</span>]</span>
       </span>
       
-      <p class="shortcomment cmt">Base implementation for reactives, combining <a href="ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a> for value access, with <a href="Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a> for scheduling,
-together with a <a href="REName.html" class="extype" name="rescala.core.REName">REName</a> and asking for a <a href="Struct.html#State[P,S&lt;:rescala.core.Struct]" class="extmbr" name="rescala.core.Struct.State">Struct.State</a></p>
+      <p class="shortcomment cmt">Base implementation for reactives, with <a href="Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a> for scheduling,
+together with a <a href="REName.html" class="extype" name="rescala.core.REName">REName</a> and asking for a <a href="Struct.html#State[V,S&lt;:rescala.core.Struct]" class="extmbr" name="rescala.core.Struct.State">Struct.State</a></p>
     </li><li name="rescala.core.CreationTicket" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="CreationTicket[S&lt;:rescala.core.Struct]extendsProductwithSerializable"></a><a id="CreationTicket[S&lt;:Struct]:CreationTicket[S]"></a>
       <span class="permalink">
@@ -440,14 +454,13 @@ together with a <a href="REName.html" class="extype" name="rescala.core.REName">
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="A turn source that stores a turn/engine and can be applied to a function to call it with the appropriate turn as parameter." href="CreationTicket.html"><span class="name">CreationTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="params">(<span name="self">self: <span class="extype" name="scala.Either">Either</span>[<a href="Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>], <a href="Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>]]</span>)</span><span class="params">(<span name="rename">rename: <a href="REName.html" class="extype" name="rescala.core.REName">REName</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Enables the creation of other reactives" href="CreationTicket.html"><span class="name">CreationTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="params">(<span name="self">self: <span class="extype" name="scala.Either">Either</span>[<a href="Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>], <a href="Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>]]</span>, <span name="rename">rename: <a href="REName.html" class="extype" name="rescala.core.REName">REName</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      <p class="shortcomment cmt">A turn source that stores a turn/engine and can be applied to a function to call it with the appropriate turn as parameter.</p><div class="fullcomment"><div class="comment cmt"><p>A turn source that stores a turn/engine and can be applied to a function to call it with the appropriate turn as parameter.
-</p></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p>Struct type that defines the spore type used to manage the reactive evaluation</p></dd><dt class="param">self</dt><dd class="cmt"><p>Turn or engine stored by the turn source</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Enables the creation of other reactives</p><div class="fullcomment"><div class="comment cmt"><p>Enables the creation of other reactives</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@implicitNotFound</span><span class="args">(<span>
       
-      <span class="defval" name="&quot;could not generate a turn source.&quot; +<br/>  &quot; An available implicit Ticket will serve as turn source, or if no&quot; +<br/>  &quot; such turn is present, an implicit Engine is accepted instead.&quot;">...</span>
+      <span class="defval" name="&quot;Could not find capability to create reactives. Maybe a missing import?&quot;">...</span>
     </span>)</span>
               
         </dd></dl></div>
@@ -463,7 +476,7 @@ together with a <a href="REName.html" class="extype" name="rescala.core.REName">
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="Disconnectable.html"><span class="name">Disconnectable</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="" href="Disconnectable.html"><span class="name">Disconnectable</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       
@@ -495,10 +508,10 @@ together with a <a href="REName.html" class="extype" name="rescala.core.REName">
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="DynamicTicket.html"><span class="name">DynamicTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="StaticTicket.html" class="extype" name="rescala.core.StaticTicket">StaticTicket</a>[<span class="extype" name="rescala.core.DynamicTicket.S">S</span>]</span>
+        <a title="User facing low level API to access values in a dynamic context." href="DynamicTicket.html"><span class="name">DynamicTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="StaticTicket.html" class="extype" name="rescala.core.StaticTicket">StaticTicket</a>[<span class="extype" name="rescala.core.DynamicTicket.S">S</span>]</span>
       </span>
       
-      
+      <p class="shortcomment cmt">User facing low level API to access values in a dynamic context.</p>
     </li><li name="rescala.core.InitialChange" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="InitialChange[S&lt;:rescala.core.Struct]extendsAnyRef"></a><a id="InitialChange[S&lt;:Struct]:InitialChange[S]"></a>
       <span class="permalink">
@@ -507,11 +520,11 @@ together with a <a href="REName.html" class="extype" name="rescala.core.REName">
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">abstract </span>
-        <span class="kind">class</span>
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="InitialChange.html"><span class="name">InitialChange</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="" href="InitialChange.html"><span class="name">InitialChange</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       
@@ -527,10 +540,43 @@ together with a <a href="REName.html" class="extype" name="rescala.core.REName">
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="Initializer.html"><span class="name">Initializer</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="" href="Initializer.html"><span class="name">Initializer</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       
+    </li><li name="rescala.core.InnerTicket" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="InnerTicket[S&lt;:rescala.core.Struct]extendsAnyRef"></a><a id="InnerTicket[S&lt;:Struct]:InnerTicket[S]"></a>
+      <span class="permalink">
+      <a href="../../rescala/core/index.html#InnerTicket[S&lt;:rescala.core.Struct]extendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="InnerTickets are used in Rescala to give capabilities to contexts during propagation." href="InnerTicket.html"><span class="name">InnerTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
+      </span>
+      
+      <p class="shortcomment cmt"><a href="InnerTicket.html" class="extype" name="rescala.core.InnerTicket">InnerTicket</a>s are used in Rescala to give capabilities to contexts during propagation.</p><div class="fullcomment"><div class="comment cmt"><p><a href="InnerTicket.html" class="extype" name="rescala.core.InnerTicket">InnerTicket</a>s are used in Rescala to give capabilities to contexts during propagation.
+<a href="ReevTicket.html" class="extype" name="rescala.core.ReevTicket">ReevTicket</a> is used during reevaluation, and <a href="AdmissionTicket.html" class="extype" name="rescala.core.AdmissionTicket">AdmissionTicket</a> during the initialization.</p></div></div>
+    </li><li name="rescala.core.Interp" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="Interp[+A,S&lt;:rescala.core.Struct]extendsReSource[S]"></a><a id="Interp[+A,S&lt;:Struct]:Interp[A,S]"></a>
+      <span class="permalink">
+      <a href="../../rescala/core/index.html#Interp[+A,S&lt;:rescala.core.Struct]extendsReSource[S]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="Common macro accessors for rescala.reactives.Signal and rescala.reactives.Event" href="Interp.html"><span class="name">Interp</span></a><span class="tparams">[<span name="A">+A</span>, <span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.core.Interp.S">S</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Common macro accessors for <a href="../reactives/Signal.html" class="extype" name="rescala.reactives.Signal">rescala.reactives.Signal</a> and <a href="../reactives/Event.html" class="extype" name="rescala.reactives.Event">rescala.reactives.Event</a></p><div class="fullcomment"><div class="comment cmt"><p>Common macro accessors for <a href="../reactives/Signal.html" class="extype" name="rescala.reactives.Signal">rescala.reactives.Signal</a> and <a href="../reactives/Event.html" class="extype" name="rescala.reactives.Event">rescala.reactives.Event</a></p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>return type of the accessor</p></dd></dl></div>
     </li><li name="rescala.core.LowPriorityCreationImplicits" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="LowPriorityCreationImplicitsextendsAnyRef"></a><a id="LowPriorityCreationImplicits:LowPriorityCreationImplicits"></a>
       <span class="permalink">
@@ -543,10 +589,11 @@ together with a <a href="REName.html" class="extype" name="rescala.core.REName">
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="LowPriorityCreationImplicits.html"><span class="name">LowPriorityCreationImplicits</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="If no InnerTicket is found, then these implicits will search for a Scheduler, creating the reactives outside of any turn." href="LowPriorityCreationImplicits.html"><span class="name">LowPriorityCreationImplicits</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">If no <a href="InnerTicket.html" class="extype" name="rescala.core.InnerTicket">InnerTicket</a> is found, then these implicits will search for a <a href="Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>,
+creating the reactives outside of any turn.</p>
     </li><li name="rescala.core.LowPriorityREName" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="LowPriorityRENameextendsAnyRef"></a><a id="LowPriorityREName:LowPriorityREName"></a>
       <span class="permalink">
@@ -559,7 +606,7 @@ together with a <a href="REName.html" class="extype" name="rescala.core.REName">
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="LowPriorityREName.html"><span class="name">LowPriorityREName</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="" href="LowPriorityREName.html"><span class="name">LowPriorityREName</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       
@@ -575,7 +622,7 @@ together with a <a href="REName.html" class="extype" name="rescala.core.REName">
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Pulse that stores a current value and can also indicate a potentially change to an updated value." href="Pulse.html"><span class="name">Pulse</span></a><span class="tparams">[<span name="P">+P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="Pulse that stores a current value and can also indicate a potentially change to an updated value." href="Pulse.html"><span class="name">Pulse</span></a><span class="tparams">[<span name="P">+P</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <p class="shortcomment cmt">Pulse that stores a current value and can also indicate a potentially change to an updated value.</p><div class="fullcomment"><div class="comment cmt"><p>Pulse that stores a current value and can also indicate a potentially change to an updated value.
@@ -593,7 +640,7 @@ A pulse may indicate that no current value has been set yet but updates must alw
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <a title="Provides names for dynamic dependencies based on their definition position to allow easier debugging" href="REName.html"><span class="name">REName</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="Provides names for dynamic dependencies based on their definition position to allow easier debugging" href="REName.html"><span class="name">REName</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       <p class="shortcomment cmt">Provides names for dynamic dependencies based on their definition position to allow easier debugging
@@ -610,7 +657,7 @@ A pulse may indicate that no current value has been set yet but updates must alw
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="RENamed.html"><span class="name">RENamed</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="" href="RENamed.html"><span class="name">RENamed</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       
@@ -626,10 +673,11 @@ A pulse may indicate that no current value has been set yet but updates must alw
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="ReSerializable.html"><span class="name">ReSerializable</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="Used when the state of a reactive has to be serialized." href="ReSerializable.html"><span class="name">ReSerializable</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+      <p class="shortcomment cmt">Used when the state of a reactive has to be serialized.</p><div class="fullcomment"><div class="comment cmt"><p>Used when the state of a reactive has to be serialized.
+By default this is disabled, but certain Schedulers may require it.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@implicitNotFound</span><span class="args">(<span>
       
       <span class="symbol">&quot;${T} is not serializable&quot;</span>
@@ -648,30 +696,14 @@ A pulse may indicate that no current value has been set yet but updates must alw
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Source of (reactive) values, the Struct defines how the state is stored internally, and how dependencies are managed." href="ReSource.html"><span class="name">ReSource</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="Source of (reactive) values, the Struct defines how the state is stored internally, and how dependencies are managed." href="ReSource.html"><span class="name">ReSource</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <p class="shortcomment cmt">Source of (reactive) values, the <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a> defines how the state is stored internally,
 and how dependencies are managed.</p><div class="fullcomment"><div class="comment cmt"><p>Source of (reactive) values, the <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a> defines how the state is stored internally,
 and how dependencies are managed.
-State can only be accessed with a correct <a href="Ticket.html" class="extype" name="rescala.core.Ticket">Ticket</a>.
+State can only be accessed with a correct <a href="InnerTicket.html" class="extype" name="rescala.core.InnerTicket">InnerTicket</a>.
 </p></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p><a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a> defining the internal state</p></dd></dl></div>
-    </li><li name="rescala.core.ReSourciV" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="ReSourciV[+P,S&lt;:rescala.core.Struct]extendsReSource[S]"></a><a id="ReSourciV[+P,S&lt;:Struct]:ReSourciV[P,S]"></a>
-      <span class="permalink">
-      <a href="../../rescala/core/index.html#ReSourciV[+P,S&lt;:rescala.core.Struct]extendsReSource[S]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a title="Makes the Value type well known, such that user computations can read values from (e.g., before, after, etc.)" href="ReSourciV.html"><span class="name">ReSourciV</span></a><span class="tparams">[<span name="P">+P</span>, <span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.core.ReSourciV.S">S</span>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Makes the Value type well known, such that user computations can read values from (e.g., before, after, etc.)</p>
     </li><li name="rescala.core.Reactive" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="Reactive[S&lt;:rescala.core.Struct]extendsReSource[S]"></a><a id="Reactive[S&lt;:Struct]:Reactive[S]"></a>
       <span class="permalink">
@@ -688,10 +720,10 @@ State can only be accessed with a correct <a href="Ticket.html" class="extype" n
       </span>
       
       <p class="shortcomment cmt">A reactive value is something that can be reevaluated</p>
-    </li><li name="rescala.core.ReevTicket" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="ReevTicket[T,S&lt;:rescala.core.Struct]extendsDynamicTicket[S]withResult[T,S]"></a><a id="ReevTicket[T,S&lt;:Struct]:ReevTicket[T,S]"></a>
+    </li><li name="rescala.core.ReevTicket" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="ReevTicket[V,S&lt;:rescala.core.Struct]extendsDynamicTicket[S]withResult[V,S]"></a><a id="ReevTicket[V,S&lt;:Struct]:ReevTicket[V,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/core/index.html#ReevTicket[T,S&lt;:rescala.core.Struct]extendsDynamicTicket[S]withResult[T,S]" title="Permalink">
+      <a href="../../rescala/core/index.html#ReevTicket[V,S&lt;:rescala.core.Struct]extendsDynamicTicket[S]withResult[V,S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -700,14 +732,17 @@ State can only be accessed with a correct <a href="Ticket.html" class="extype" n
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="ReevTicket.html"><span class="name">ReevTicket</span></a><span class="tparams">[<span name="T">T</span>, <span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="DynamicTicket.html" class="extype" name="rescala.core.DynamicTicket">DynamicTicket</a>[<span class="extype" name="rescala.core.ReevTicket.S">S</span>] with <a href="Result.html" class="extype" name="rescala.core.Result">Result</a>[<span class="extype" name="rescala.core.ReevTicket.T">T</span>, <span class="extype" name="rescala.core.ReevTicket.S">S</span>]</span>
+        <a title="ReevTicket is given to the Reactive reevaluate method and allows to access other reactives." href="ReevTicket.html"><span class="name">ReevTicket</span></a><span class="tparams">[<span name="V">V</span>, <span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="DynamicTicket.html" class="extype" name="rescala.core.DynamicTicket">DynamicTicket</a>[<span class="extype" name="rescala.core.ReevTicket.S">S</span>] with <a href="Result.html" class="extype" name="rescala.core.Result">Result</a>[<span class="extype" name="rescala.core.ReevTicket.V">V</span>, <span class="extype" name="rescala.core.ReevTicket.S">S</span>]</span>
       </span>
       
-      
+      <p class="shortcomment cmt"><a href="ReevTicket.html" class="extype" name="rescala.core.ReevTicket">ReevTicket</a> is given to the <a href="Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a> reevaluate method and allows to access other reactives.</p><div class="fullcomment"><div class="comment cmt"><p><a href="ReevTicket.html" class="extype" name="rescala.core.ReevTicket">ReevTicket</a> is given to the <a href="Reactive.html" class="extype" name="rescala.core.Reactive">Reactive</a> reevaluate method and allows to access other reactives.
+The ticket tracks return values, such as dependencies, the value, and if the value should be propagated.
+Such usages make it unsuitable as an API for the user, where <a href="StaticTicket.html" class="extype" name="rescala.core.StaticTicket">StaticTicket</a> or <a href="DynamicTicket.html" class="extype" name="rescala.core.DynamicTicket">DynamicTicket</a> should be used instead.
+</p></div></div>
     </li><li name="rescala.core.Result" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Result[+T,S&lt;:rescala.core.Struct]extendsAnyRef"></a><a id="Result[+T,S&lt;:Struct]:Result[T,S]"></a>
+      <a id="Result[T,S&lt;:rescala.core.Struct]extendsAnyRef"></a><a id="Result[T,S&lt;:Struct]:Result[T,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/core/index.html#Result[+T,S&lt;:rescala.core.Struct]extendsAnyRef" title="Permalink">
+      <a href="../../rescala/core/index.html#Result[T,S&lt;:rescala.core.Struct]extendsAnyRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -716,14 +751,14 @@ State can only be accessed with a correct <a href="Ticket.html" class="extype" n
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="Result.html"><span class="name">Result</span></a><span class="tparams">[<span name="T">+T</span>, <span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="" href="Result.html"><span class="name">Result</span></a><span class="tparams">[<span name="T">T</span>, <span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       
     </li><li name="rescala.core.Scheduler" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="Scheduler[S&lt;:rescala.core.Struct]extendsRescalaInterface[S]"></a><a id="Scheduler[S&lt;:Struct]:Scheduler[S]"></a>
+      <a id="Scheduler[S&lt;:rescala.core.Struct]extendsAnyRef"></a><a id="Scheduler[S&lt;:Struct]:Scheduler[S]"></a>
       <span class="permalink">
-      <a href="../../rescala/core/index.html#Scheduler[S&lt;:rescala.core.Struct]extendsRescalaInterface[S]" title="Permalink">
+      <a href="../../rescala/core/index.html#Scheduler[S&lt;:rescala.core.Struct]extendsAnyRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -732,7 +767,7 @@ State can only be accessed with a correct <a href="Ticket.html" class="extype" n
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Propagation engine that defines the basic data-types available to the user and creates turns for propagation handling" href="Scheduler.html"><span class="name">Scheduler</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="../RescalaInterface.html" class="extype" name="rescala.RescalaInterface">RescalaInterface</a>[<span class="extype" name="rescala.core.Scheduler.S">S</span>]</span>
+        <a title="Propagation engine that defines the basic data-types available to the user and creates turns for propagation handling" href="Scheduler.html"><span class="name">Scheduler</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <p class="shortcomment cmt">Propagation engine that defines the basic data-types available to the user and creates turns for propagation handling
@@ -745,9 +780,9 @@ State can only be accessed with a correct <a href="Ticket.html" class="extype" n
               
         </dd></dl></div>
     </li><li name="rescala.core.SchedulerImpl" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="SchedulerImpl[S&lt;:rescala.core.Struct,ExactTurn&lt;:rescala.core.Initializer[S]]extendsRescalaInterface[S]withScheduler[S]"></a><a id="SchedulerImpl[S&lt;:Struct,ExactTurn&lt;:Initializer[S]]:SchedulerImpl[S,ExactTurn]"></a>
+      <a id="SchedulerImpl[S&lt;:rescala.core.Struct,ExactTurn&lt;:rescala.core.Initializer[S]]extendsScheduler[S]"></a><a id="SchedulerImpl[S&lt;:Struct,ExactTurn&lt;:Initializer[S]]:SchedulerImpl[S,ExactTurn]"></a>
       <span class="permalink">
-      <a href="../../rescala/core/index.html#SchedulerImpl[S&lt;:rescala.core.Struct,ExactTurn&lt;:rescala.core.Initializer[S]]extendsRescalaInterface[S]withScheduler[S]" title="Permalink">
+      <a href="../../rescala/core/index.html#SchedulerImpl[S&lt;:rescala.core.Struct,ExactTurn&lt;:rescala.core.Initializer[S]]extendsScheduler[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -756,14 +791,14 @@ State can only be accessed with a correct <a href="Ticket.html" class="extype" n
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="SchedulerImpl.html"><span class="name">SchedulerImpl</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="ExactTurn">ExactTurn &lt;: <a href="Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.core.SchedulerImpl.S">S</span>]</span>]</span><span class="result"> extends <a href="../RescalaInterface.html" class="extype" name="rescala.RescalaInterface">RescalaInterface</a>[<span class="extype" name="rescala.core.SchedulerImpl.S">S</span>] with <a href="Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.core.SchedulerImpl.S">S</span>]</span>
+        <a title="" href="SchedulerImpl.html"><span class="name">SchedulerImpl</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="ExactTurn">ExactTurn &lt;: <a href="Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.core.SchedulerImpl.S">S</span>]</span>]</span><span class="result"> extends <a href="Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.core.SchedulerImpl.S">S</span>]</span>
       </span>
       
       
     </li><li name="rescala.core.StaticTicket" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="StaticTicket[S&lt;:rescala.core.Struct]extendsTicket[S]"></a><a id="StaticTicket[S&lt;:Struct]:StaticTicket[S]"></a>
+      <a id="StaticTicket[S&lt;:rescala.core.Struct]extendsInnerTicket[S]"></a><a id="StaticTicket[S&lt;:Struct]:StaticTicket[S]"></a>
       <span class="permalink">
-      <a href="../../rescala/core/index.html#StaticTicket[S&lt;:rescala.core.Struct]extendsTicket[S]" title="Permalink">
+      <a href="../../rescala/core/index.html#StaticTicket[S&lt;:rescala.core.Struct]extendsInnerTicket[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -772,10 +807,10 @@ State can only be accessed with a correct <a href="Ticket.html" class="extype" n
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="StaticTicket.html"><span class="name">StaticTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="Ticket.html" class="extype" name="rescala.core.Ticket">Ticket</a>[<span class="extype" name="rescala.core.StaticTicket.S">S</span>]</span>
+        <a title="User facing low level API to access values in a static context." href="StaticTicket.html"><span class="name">StaticTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="InnerTicket.html" class="extype" name="rescala.core.InnerTicket">InnerTicket</a>[<span class="extype" name="rescala.core.StaticTicket.S">S</span>]</span>
       </span>
       
-      
+      <p class="shortcomment cmt">User facing low level API to access values in a static context.</p>
     </li><li name="rescala.core.Struct" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
       <a id="StructextendsAnyRef"></a><a id="Struct:Struct"></a>
       <span class="permalink">
@@ -788,28 +823,12 @@ State can only be accessed with a correct <a href="Ticket.html" class="extype" n
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Every ReSource has an internal dataStructure which is externally defined by the scheduler." href="Struct.html"><span class="name">Struct</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="Every ReSource has an internal dataStructure which is externally defined by the scheduler." href="Struct.html"><span class="name">Struct</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <p class="shortcomment cmt">Every <a href="ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a> has an internal data<a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a>ure which is externally defined by the scheduler.</p><div class="fullcomment"><div class="comment cmt"><p>Every <a href="ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a> has an internal data<a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a>ure which is externally defined by the scheduler.
 Its main use is to allow the external algorithm to manage concurrency for the internal data.
 Using the indirection with the State type here allows us to not have unbound type parameters everywhere.</p></div></div>
-    </li><li name="rescala.core.Ticket" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Ticket[S&lt;:rescala.core.Struct]extendsAnyRef"></a><a id="Ticket[S&lt;:Struct]:Ticket[S]"></a>
-      <span class="permalink">
-      <a href="../../rescala/core/index.html#Ticket[S&lt;:rescala.core.Struct]extendsAnyRef" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">class</span>
-      </span>
-      <span class="symbol">
-        <a title="" href="Ticket.html"><span class="name">Ticket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
-      </span>
-      
-      
     </li><li name="rescala.core.WrapUpTicket" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
       <a id="WrapUpTicket[S&lt;:rescala.core.Struct]extendsAnyRef"></a><a id="WrapUpTicket[S&lt;:Struct]:WrapUpTicket[S]"></a>
       <span class="permalink">
@@ -822,7 +841,7 @@ Using the indirection with the State type here allows us to not have unbound typ
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="WrapUpTicket.html"><span class="name">WrapUpTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="" href="WrapUpTicket.html"><span class="name">WrapUpTicket</span></a><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       
@@ -846,10 +865,10 @@ Using the indirection with the State type here allows us to not have unbound typ
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="" href="CreationTicket$.html"><span class="name">CreationTicket</span></a><span class="result"> extends <a href="LowPriorityCreationImplicits.html" class="extype" name="rescala.core.LowPriorityCreationImplicits">LowPriorityCreationImplicits</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="As reactives can be created during propagation, any InnerTicket can be converted to a creation ticket." href="CreationTicket$.html"><span class="name">CreationTicket</span></a><span class="result"> extends <a href="LowPriorityCreationImplicits.html" class="extype" name="rescala.core.LowPriorityCreationImplicits">LowPriorityCreationImplicits</a> with <a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">As reactives can be created during propagation, any <a href="InnerTicket.html" class="extype" name="rescala.core.InnerTicket">InnerTicket</a> can be converted to a creation ticket.</p>
     </li><li name="rescala.core.Initializer" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Initializer"></a><a id="Initializer:Initializer"></a>
       <span class="permalink">
@@ -894,7 +913,7 @@ Using the indirection with the State type here allows us to not have unbound typ
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="" href="REName$.html"><span class="name">REName</span></a><span class="result"> extends <a href="LowPriorityREName.html" class="extype" name="rescala.core.LowPriorityREName">LowPriorityREName</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <a title="" href="REName$.html"><span class="name">REName</span></a><span class="result"> extends <a href="LowPriorityREName.html" class="extype" name="rescala.core.LowPriorityREName">LowPriorityREName</a> with <a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       
       
@@ -911,22 +930,6 @@ Using the indirection with the State type here allows us to not have unbound typ
       </span>
       <span class="symbol">
         <a title="" href="ReSerializable$.html"><span class="name">ReSerializable</span></a>
-      </span>
-      
-      
-    </li><li name="rescala.core.Result" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="Result"></a><a id="Result:Result"></a>
-      <span class="permalink">
-      <a href="../../rescala/core/index.html#Result" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">object</span>
-      </span>
-      <span class="symbol">
-        <a title="" href="Result$.html"><span class="name">Result</span></a>
       </span>
       
       

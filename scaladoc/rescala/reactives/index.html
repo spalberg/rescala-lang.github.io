@@ -81,13 +81,10 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="REScala has two main abstractions." href="../index.html"><span class="name">rescala</span></a>
+        <a title="" href="../index.html"><span class="name">rescala</span></a>
       </span>
       
-      <p class="shortcomment cmt">REScala has two main abstractions.</p><div class="fullcomment"><div class="comment cmt"><p>REScala has two main abstractions. <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a> and <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> commonly referred to as reactives.
-Use <a href="../index.html#Var[A]=rescala.reactives.Var[A,S]" class="extmbr" name="rescala.Var">rescala.Var</a> to create signal sources and <a href="../index.html#Evt[A]=rescala.reactives.Evt[A,S]" class="extmbr" name="rescala.Evt">rescala.Evt</a> to create event sources.</p><p>Events and signals can be created from other reactives by using combinators,
-signals additionally can be created using <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> expressions.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
     </li><li name="rescala.core" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="core"></a><a id="core:core"></a>
       <span class="permalink">
@@ -101,6 +98,22 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       </span>
       <span class="symbol">
         <a title="" href="../core/index.html"><span class="name">core</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
+    </li><li name="rescala.interface" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="interface"></a><a id="interface:interface"></a>
+      <span class="permalink">
+      <a href="../rescala/index.html#interface" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../interface/index.html"><span class="name">interface</span></a>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
@@ -214,8 +227,8 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="Signal.html" title="Time changing value derived from the dependencies.">Signal</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.RescalaInterface.Signal for a nicer API."></a>
-                        <a href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.RescalaInterface.Signal for a nicer API.">Signals</a>
+                        <a class="object" href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.interface.RescalaInterface.Signal for a nicer API."></a>
+                        <a href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.interface.RescalaInterface.Signal for a nicer API.">Signals</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="class" href="Source.html" title=""></a>
@@ -336,9 +349,9 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <div id="types" class="types members">
               <h3>Type Members</h3>
               <ol><li name="rescala.reactives.Event" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="Event[+T,S&lt;:rescala.core.Struct]extendsReSourciV[rescala.core.Pulse[T],S]withMacroAccessors[rescala.core.Pulse[T],Option[T],S]withDisconnectable[S]"></a><a id="Event[+T,S&lt;:Struct]:Event[T,S]"></a>
+      <a id="Event[+T,S&lt;:rescala.core.Struct]extendsReSource[S]withInterp[Option[T],S]withDisconnectable[S]"></a><a id="Event[+T,S&lt;:Struct]:Event[T,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/index.html#Event[+T,S&lt;:rescala.core.Struct]extendsReSourciV[rescala.core.Pulse[T],S]withMacroAccessors[rescala.core.Pulse[T],Option[T],S]withDisconnectable[S]" title="Permalink">
+      <a href="../../rescala/reactives/index.html#Event[+T,S&lt;:rescala.core.Struct]extendsReSource[S]withInterp[Option[T],S]withDisconnectable[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -347,21 +360,21 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Events only propagate a value when they are changing, when the system is at rest, events have no values." href="Event.html"><span class="name">Event</span></a><span class="tparams">[<span name="T">+T</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Event.T">T</span>], <span class="extype" name="rescala.reactives.Event.S">S</span>] with <a href="../macros/MacroAccessors.html" class="extype" name="rescala.macros.MacroAccessors">MacroAccessors</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Event.T">T</span>], <a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Event.T">T</span>], <span class="extype" name="rescala.reactives.Event.S">S</span>] with <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a>[<span class="extype" name="rescala.reactives.Event.S">S</span>]</span>
+        <a title="Events only propagate a value when they are changing, when the system is at rest, events have no values." href="Event.html"><span class="name">Event</span></a><span class="tparams">[<span name="T">+T</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.reactives.Event.S">S</span>] with <a href="../core/Interp.html" class="extype" name="rescala.core.Interp">Interp</a>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Event.T">T</span>], <span class="extype" name="rescala.reactives.Event.S">S</span>] with <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a>[<span class="extype" name="rescala.reactives.Event.S">S</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Events only propagate a value when they are changing,
 when the system is at rest, events have no values.</p><div class="fullcomment"><div class="comment cmt"><p>Events only propagate a value when they are changing,
 when the system is at rest, events have no values.</p><p>Note: We hide implicit parameters of the API in the documentation.
 They are used to ensure correct creation, and you normally do not have to worry about them,
-except if you accidentially call the implicit parameterlist, in which cas you may get cryptic errors.
+except if you accidentially call the implicit parameter list, in which cas you may get cryptic errors.
 This is a scala limitation.
 We also hide the internal state parameter of passed and returned events.
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>Value type of the event occurrences.</p></dd><dt class="tparam">S</dt><dd class="cmt"><p>Internal <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">rescala.core.Struct</a>ure of state.</p></dd></dl></div>
     </li><li name="rescala.reactives.Evt" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Evt[T,S&lt;:rescala.core.Struct]extendsSource[T,S]withEvent[T,S]"></a><a id="Evt[T,S&lt;:Struct]:Evt[T,S]"></a>
+      <a id="Evt[T,S&lt;:rescala.core.Struct]extendsSource[S,T]withEvent[T,S]"></a><a id="Evt[T,S&lt;:Struct]:Evt[T,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/index.html#Evt[T,S&lt;:rescala.core.Struct]extendsSource[T,S]withEvent[T,S]" title="Permalink">
+      <a href="../../rescala/reactives/index.html#Evt[T,S&lt;:rescala.core.Struct]extendsSource[S,T]withEvent[T,S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -370,16 +383,16 @@ We also hide the internal state parameter of passed and returned events.
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Source events with imperative occurrences" href="Evt.html"><span class="name">Evt</span></a><span class="tparams">[<span name="T">T</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>] with <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
+        <a title="Source events with imperative occurrences" href="Evt.html"><span class="name">Evt</span></a><span class="tparams">[<span name="T">T</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a>[<span class="extype" name="rescala.reactives.Evt.S">S</span>, <span class="extype" name="rescala.reactives.Evt.T">T</span>] with <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Evt.T">T</span>, <span class="extype" name="rescala.reactives.Evt.S">S</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Source events with imperative occurrences
 </p><div class="fullcomment"><div class="comment cmt"><p>Source events with imperative occurrences
 </p></div><dl class="paramcmts block"><dt class="tparam">T</dt><dd class="cmt"><p>Type returned when the event fires</p></dd><dt class="tparam">S</dt><dd class="cmt"><p>Struct type used for the propagation of the event</p></dd></dl></div>
     </li><li name="rescala.reactives.Flatten" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="Flatten[-A,S&lt;:rescala.core.Struct,R]extendsAnyRef"></a><a id="Flatten[-A,S&lt;:Struct,R]:Flatten[A,S,R]"></a>
+      <a id="Flatten[-A,R]extendsAnyRef"></a><a id="Flatten[-A,R]:Flatten[A,R]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/index.html#Flatten[-A,S&lt;:rescala.core.Struct,R]extendsAnyRef" title="Permalink">
+      <a href="../../rescala/reactives/index.html#Flatten[-A,R]extendsAnyRef" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -388,7 +401,7 @@ We also hide the internal state parameter of passed and returned events.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="" href="Flatten.html"><span class="name">Flatten</span></a><span class="tparams">[<span name="A">-A</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="R">R</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="" href="Flatten.html"><span class="name">Flatten</span></a><span class="tparams">[<span name="A">-A</span>, <span name="R">R</span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
@@ -410,16 +423,16 @@ We also hide the internal state parameter of passed and returned events.
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Generic interface for observers that represent a function registered to trigger for every reevaluation of a reactive value." href="Observe.html"><span class="name">Observe</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="Generic interface for observers that represent a function registered to trigger for every reevaluation of a reactive value." href="Observe.html"><span class="name">Observe</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <p class="shortcomment cmt">Generic interface for observers that represent a function registered to trigger for every reevaluation of a reactive value.</p><div class="fullcomment"><div class="comment cmt"><p>Generic interface for observers that represent a function registered to trigger for every reevaluation of a reactive value.
 Currently this interface is only used to allow a removal of registered observer functions.
 </p></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p>Struct type used for the propagation of the signal</p></dd></dl></div>
     </li><li name="rescala.reactives.Signal" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="Signal[+A,S&lt;:rescala.core.Struct]extendsReSourciV[rescala.core.Pulse[A],S]withMacroAccessors[rescala.core.Pulse[A],A,S]withDisconnectable[S]"></a><a id="Signal[+A,S&lt;:Struct]:Signal[A,S]"></a>
+      <a id="Signal[+A,S&lt;:rescala.core.Struct]extendsReSource[S]withInterp[A,S]withDisconnectable[S]"></a><a id="Signal[+A,S&lt;:Struct]:Signal[A,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/index.html#Signal[+A,S&lt;:rescala.core.Struct]extendsReSourciV[rescala.core.Pulse[A],S]withMacroAccessors[rescala.core.Pulse[A],A,S]withDisconnectable[S]" title="Permalink">
+      <a href="../../rescala/reactives/index.html#Signal[+A,S&lt;:rescala.core.Struct]extendsReSource[S]withInterp[A,S]withDisconnectable[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -428,15 +441,15 @@ Currently this interface is only used to allow a removal of registered observer 
         <span class="kind">trait</span>
       </span>
       <span class="symbol">
-        <a title="Time changing value derived from the dependencies." href="Signal.html"><span class="name">Signal</span></a><span class="tparams">[<span name="A">+A</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Signal.A">A</span>], <span class="extype" name="rescala.reactives.Signal.S">S</span>] with <a href="../macros/MacroAccessors.html" class="extype" name="rescala.macros.MacroAccessors">MacroAccessors</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Signal.A">A</span>], <span class="extype" name="rescala.reactives.Signal.A">A</span>, <span class="extype" name="rescala.reactives.Signal.S">S</span>] with <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a>[<span class="extype" name="rescala.reactives.Signal.S">S</span>]</span>
+        <a title="Time changing value derived from the dependencies." href="Signal.html"><span class="name">Signal</span></a><span class="tparams">[<span name="A">+A</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.reactives.Signal.S">S</span>] with <a href="../core/Interp.html" class="extype" name="rescala.core.Interp">Interp</a>[<span class="extype" name="rescala.reactives.Signal.A">A</span>, <span class="extype" name="rescala.reactives.Signal.S">S</span>] with <a href="../core/Disconnectable.html" class="extype" name="rescala.core.Disconnectable">Disconnectable</a>[<span class="extype" name="rescala.reactives.Signal.S">S</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Time changing value derived from the dependencies.</p><div class="fullcomment"><div class="comment cmt"><p>Time changing value derived from the dependencies.
 </p></div><dl class="paramcmts block"><dt class="tparam">A</dt><dd class="cmt"><p>Type stored by the signal</p></dd><dt class="tparam">S</dt><dd class="cmt"><p>Struct type used for the propagation of the signal</p></dd></dl></div>
     </li><li name="rescala.reactives.Source" visbl="pub" class="indented0 " data-isabs="true" fullComment="no" group="Ungrouped">
-      <a id="Source[T,S&lt;:rescala.core.Struct]extendsRENamedwithReSourciV[rescala.core.Pulse[T],S]"></a><a id="Source[T,S&lt;:Struct]:Source[T,S]"></a>
+      <a id="Source[S&lt;:rescala.core.Struct,T]extendsRENamedwithReSource[S]"></a><a id="Source[S&lt;:Struct,T]:Source[S,T]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/index.html#Source[T,S&lt;:rescala.core.Struct]extendsRENamedwithReSourciV[rescala.core.Pulse[T],S]" title="Permalink">
+      <a href="../../rescala/reactives/index.html#Source[S&lt;:rescala.core.Struct,T]extendsRENamedwithReSource[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -445,14 +458,14 @@ Currently this interface is only used to allow a removal of registered observer 
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="Source.html"><span class="name">Source</span></a><span class="tparams">[<span name="T">T</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="../core/RENamed.html" class="extype" name="rescala.core.RENamed">RENamed</a> with <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>[<a href="../core/Pulse.html" class="extype" name="rescala.core.Pulse">Pulse</a>[<span class="extype" name="rescala.reactives.Source.T">T</span>], <span class="extype" name="rescala.reactives.Source.S">S</span>]</span>
+        <a title="" href="Source.html"><span class="name">Source</span></a><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="T">T</span>]</span><span class="result"> extends <a href="../core/RENamed.html" class="extype" name="rescala.core.RENamed">RENamed</a> with <a href="../core/ReSource.html" class="extype" name="rescala.core.ReSource">ReSource</a>[<span class="extype" name="rescala.reactives.Source.S">S</span>]</span>
       </span>
       
       
     </li><li name="rescala.reactives.Var" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="Var[A,S&lt;:rescala.core.Struct]extendsSource[A,S]withSignal[A,S]"></a><a id="Var[A,S&lt;:Struct]:Var[A,S]"></a>
+      <a id="Var[A,S&lt;:rescala.core.Struct]extendsSource[S,A]withSignal[A,S]"></a><a id="Var[A,S&lt;:Struct]:Var[A,S]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/index.html#Var[A,S&lt;:rescala.core.Struct]extendsSource[A,S]withSignal[A,S]" title="Permalink">
+      <a href="../../rescala/reactives/index.html#Var[A,S&lt;:rescala.core.Struct]extendsSource[S,A]withSignal[A,S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -461,7 +474,7 @@ Currently this interface is only used to allow a removal of registered observer 
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="Source signals with imperatively updates." href="Var.html"><span class="name">Var</span></a><span class="tparams">[<span name="A">A</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>] with <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
+        <a title="Source signals with imperatively updates." href="Var.html"><span class="name">Var</span></a><span class="tparams">[<span name="A">A</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="Source.html" class="extype" name="rescala.reactives.Source">Source</a>[<span class="extype" name="rescala.reactives.Var.S">S</span>, <span class="extype" name="rescala.reactives.Var.A">A</span>] with <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Var.A">A</span>, <span class="extype" name="rescala.reactives.Var.S">S</span>]</span>
       </span>
       
       <p class="shortcomment cmt">Source signals with imperatively updates.</p><div class="fullcomment"><div class="comment cmt"><p>Source signals with imperatively updates.
@@ -566,10 +579,10 @@ Currently this interface is only used to allow a removal of registered observer 
         <span class="kind">object</span>
       </span>
       <span class="symbol">
-        <a title="Functions to construct signals, you probably want to use signal expressions in rescala.RescalaInterface.Signal for a nicer API." href="Signals$.html"><span class="name">Signals</span></a>
+        <a title="Functions to construct signals, you probably want to use signal expressions in rescala.interface.RescalaInterface.Signal for a nicer API." href="Signals$.html"><span class="name">Signals</span></a>
       </span>
       
-      <p class="shortcomment cmt">Functions to construct signals, you probably want to use signal expressions in <a href="../RescalaInterface.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.RescalaInterface.Signal">rescala.RescalaInterface.Signal</a> for a nicer API.</p>
+      <p class="shortcomment cmt">Functions to construct signals, you probably want to use signal expressions in <a href="../interface/RescalaInterface.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.interface.RescalaInterface.Signal">rescala.interface.RescalaInterface.Signal</a> for a nicer API.</p>
     </li><li name="rescala.reactives.Var" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="Var"></a><a id="Var:Var"></a>
       <span class="permalink">

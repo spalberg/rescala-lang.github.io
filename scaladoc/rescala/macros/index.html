@@ -81,13 +81,10 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="REScala has two main abstractions." href="../index.html"><span class="name">rescala</span></a>
+        <a title="" href="../index.html"><span class="name">rescala</span></a>
       </span>
       
-      <p class="shortcomment cmt">REScala has two main abstractions.</p><div class="fullcomment"><div class="comment cmt"><p>REScala has two main abstractions. <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a> and <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> commonly referred to as reactives.
-Use <a href="../index.html#Var[A]=rescala.reactives.Var[A,S]" class="extmbr" name="rescala.Var">rescala.Var</a> to create signal sources and <a href="../index.html#Evt[A]=rescala.reactives.Evt[A,S]" class="extmbr" name="rescala.Evt">rescala.Evt</a> to create event sources.</p><p>Events and signals can be created from other reactives by using combinators,
-signals additionally can be created using <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> expressions.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
     </li><li name="rescala.core" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="core"></a><a id="core:core"></a>
       <span class="permalink">
@@ -101,6 +98,22 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       </span>
       <span class="symbol">
         <a title="" href="../core/index.html"><span class="name">core</span></a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
+    </li><li name="rescala.interface" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="interface"></a><a id="interface:interface"></a>
+      <span class="permalink">
+      <a href="../rescala/index.html#interface" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../interface/index.html"><span class="name">interface</span></a>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
@@ -154,16 +167,16 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="MacroAccessors.html" title="Common macro accessors for rescala.reactives.Signal and rescala.reactives.Event"></a>
-                        <a href="MacroAccessors.html" title="Common macro accessors for rescala.reactives.Signal and rescala.reactives.Event">MacroAccessors</a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
                         <a class="object" href="MacroTags$.html" title=""></a>
                         <a href="MacroTags$.html" title="">MacroTags</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="class" href="ReactiveMacros.html" title=""></a>
                         <a href="ReactiveMacros.html" title="">ReactiveMacros</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="cutOutOfUserComputation.html" title="Annotated definitions are cut out of any reactive macro and only evaluated once when the reactive is created."></a>
+                        <a href="cutOutOfUserComputation.html" title="Annotated definitions are cut out of any reactive macro and only evaluated once when the reactive is created.">cutOutOfUserComputation</a>
                       </li><li name="rescala.parrp" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="parrp"></a><a id="parrp:parrp"></a>
       <span class="permalink">
@@ -307,23 +320,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
 
         <div id="types" class="types members">
               <h3>Type Members</h3>
-              <ol><li name="rescala.macros.MacroAccessors" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
-      <a id="MacroAccessors[+V,+T,S&lt;:rescala.core.Struct]extendsReSourciV[V,S]"></a><a id="MacroAccessors[+V,+T,S&lt;:Struct]:MacroAccessors[V,T,S]"></a>
-      <span class="permalink">
-      <a href="../../rescala/macros/index.html#MacroAccessors[+V,+T,S&lt;:rescala.core.Struct]extendsReSourciV[V,S]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">trait</span>
-      </span>
-      <span class="symbol">
-        <a title="Common macro accessors for rescala.reactives.Signal and rescala.reactives.Event" href="MacroAccessors.html"><span class="name">MacroAccessors</span></a><span class="tparams">[<span name="V">+V</span>, <span name="T">+T</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="result"> extends <a href="../core/ReSourciV.html" class="extype" name="rescala.core.ReSourciV">ReSourciV</a>[<span class="extype" name="rescala.macros.MacroAccessors.V">V</span>, <span class="extype" name="rescala.macros.MacroAccessors.S">S</span>]</span>
-      </span>
-      
-      <p class="shortcomment cmt">Common macro accessors for <a href="../reactives/Signal.html" class="extype" name="rescala.reactives.Signal">rescala.reactives.Signal</a> and <a href="../reactives/Event.html" class="extype" name="rescala.reactives.Event">rescala.reactives.Event</a></p><div class="fullcomment"><div class="comment cmt"><p>Common macro accessors for <a href="../reactives/Signal.html" class="extype" name="rescala.reactives.Signal">rescala.reactives.Signal</a> and <a href="../reactives/Event.html" class="extype" name="rescala.reactives.Event">rescala.reactives.Event</a></p></div><dl class="paramcmts block"><dt class="tparam">V</dt><dd class="cmt"><p>internal type of the reactive</p></dd><dt class="tparam">T</dt><dd class="cmt"><p>return type of the accessor</p></dd></dl></div>
-    </li><li name="rescala.macros.ReactiveMacros" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+              <ol><li name="rescala.macros.ReactiveMacros" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="ReactiveMacrosextendsAnyRef"></a><a id="ReactiveMacros:ReactiveMacros"></a>
       <span class="permalink">
       <a href="../../rescala/macros/index.html#ReactiveMacrosextendsAnyRef" title="Permalink">
@@ -335,10 +332,27 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">class</span>
       </span>
       <span class="symbol">
-        <a title="" href="ReactiveMacros.html"><span class="name">ReactiveMacros</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <a title="" href="ReactiveMacros.html"><span class="name">ReactiveMacros</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       
+    </li><li name="rescala.macros.cutOutOfUserComputation" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="cutOutOfUserComputationextendsAnnotationwithStaticAnnotation"></a><a id="cutOutOfUserComputation:cutOutOfUserComputation"></a>
+      <span class="permalink">
+      <a href="../../rescala/macros/index.html#cutOutOfUserComputationextendsAnnotationwithStaticAnnotation" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="Annotated definitions are cut out of any reactive macro and only evaluated once when the reactive is created." href="cutOutOfUserComputation.html"><span class="name">cutOutOfUserComputation</span></a><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/annotation/Annotation.html#scala.annotation.Annotation" class="extype" name="scala.annotation.Annotation">Annotation</a> with <a href="http://www.scala-lang.org/api/2.12.6/scala/annotation/StaticAnnotation.html#scala.annotation.StaticAnnotation" class="extype" name="scala.annotation.StaticAnnotation">StaticAnnotation</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Annotated definitions are cut out of any reactive macro and only evaluated once when the reactive is created.</p><div class="fullcomment"><div class="comment cmt"><p>Annotated definitions are cut out of any reactive macro and only evaluated once when the reactive is created.
+This causes more dependencies to be static and reduces the number of unnecessarily created reactives.</p></div></div>
     </li></ol>
             </div>
 

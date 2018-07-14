@@ -81,13 +81,10 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="REScala has two main abstractions." href="../index.html"><span class="name">rescala</span></a>
+        <a title="" href="../index.html"><span class="name">rescala</span></a>
       </span>
       
-      <p class="shortcomment cmt">REScala has two main abstractions.</p><div class="fullcomment"><div class="comment cmt"><p>REScala has two main abstractions. <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a> and <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> commonly referred to as reactives.
-Use <a href="../index.html#Var[A]=rescala.reactives.Var[A,S]" class="extmbr" name="rescala.Var">rescala.Var</a> to create signal sources and <a href="../index.html#Evt[A]=rescala.reactives.Evt[A,S]" class="extmbr" name="rescala.Evt">rescala.Evt</a> to create event sources.</p><p>Events and signals can be created from other reactives by using combinators,
-signals additionally can be created using <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> expressions.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
     </li><li name="rescala.reactives" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="reactives"></a><a id="reactives:reactives"></a>
       <span class="permalink">
@@ -134,8 +131,8 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="Signal.html" title="Time changing value derived from the dependencies.">Signal</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="object" href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.RescalaInterface.Signal for a nicer API."></a>
-                        <a href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.RescalaInterface.Signal for a nicer API.">Signals</a>
+                        <a class="object" href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.interface.RescalaInterface.Signal for a nicer API."></a>
+                        <a href="Signals$.html" title="Functions to construct signals, you probably want to use signal expressions in rescala.interface.RescalaInterface.Signal for a nicer API.">Signals</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="class" href="Source.html" title=""></a>
@@ -178,7 +175,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div></div>
         
 
@@ -243,7 +240,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -259,7 +256,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -275,10 +272,26 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="rescala.reactives.Flatten#arraySignals" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="arraySignals[S&lt;:rescala.core.Struct,B,Sig[U,V&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[U,V]](implicitevidence$1:scala.reflect.ClassTag[B],implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Flatten[rescala.reactives.Signal[Array[Sig[B,S]],S],rescala.reactives.Signal[Array[B],S]]"></a><a id="arraySignals[S&lt;:Struct,B,Sig[U,V&lt;:Struct]&lt;:Signal[U,V]](ClassTag[B],CreationTicket[S]):Flatten[Signal[Array[Sig[B,S]],S],Signal[Array[B],S]]"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Flatten$.html#arraySignals[S&lt;:rescala.core.Struct,B,Sig[U,V&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[U,V]](implicitevidence$1:scala.reflect.ClassTag[B],implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Flatten[rescala.reactives.Signal[Array[Sig[B,S]],S],rescala.reactives.Signal[Array[B],S]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">arraySignals</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="Sig">Sig<span class="tparams">[<span name="U">U</span>, <span name="V">V &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.arraySignals.Sig.U">U</span>, <span class="extype" name="rescala.reactives.Flatten.arraySignals.Sig.V">V</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/reflect/ClassTag.html#scala.reflect.ClassTag" class="extype" name="scala.reflect.ClassTag">ClassTag</a>[<span class="extype" name="rescala.reactives.Flatten.arraySignals.B">B</span>]</span>, <span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Flatten.arraySignals.S">S</span>]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Array.html#scala.Array" class="extype" name="scala.Array">Array</a>[<span class="extype" name="rescala.reactives.Flatten.arraySignals.Sig">Sig</span>[<span class="extype" name="rescala.reactives.Flatten.arraySignals.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.arraySignals.S">S</span>]], <span class="extype" name="rescala.reactives.Flatten.arraySignals.S">S</span>], <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Array.html#scala.Array" class="extype" name="scala.Array">Array</a>[<span class="extype" name="rescala.reactives.Flatten.arraySignals.B">B</span>], <span class="extype" name="rescala.reactives.Flatten.arraySignals.S">S</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Flatten a Signal[Array[Signal[B]\]\] into a Signal[Array[B]\] where the new Signal updates whenever any of the inner or the outer signal updates</p>
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -307,11 +320,13 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -331,7 +346,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -347,14 +362,30 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
+    </li><li name="rescala.reactives.Flatten#event" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="event[A,S&lt;:rescala.core.Struct,B,Evnt[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Event[A1,S1]](implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Flatten[rescala.reactives.Signal[Evnt[B,S],S],rescala.reactives.Event[B,S]]"></a><a id="event[A,S&lt;:Struct,B,Evnt[A1,S1&lt;:Struct]&lt;:Event[A1,S1]](CreationTicket[S]):Flatten[Signal[Evnt[B,S],S],Event[B,S]]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Flatten$.html#finalize():Unit" title="Permalink">
+      <a href="../../rescala/reactives/Flatten$.html#event[A,S&lt;:rescala.core.Struct,B,Evnt[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Event[A1,S1]](implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Flatten[rescala.reactives.Signal[Evnt[B,S],S],rescala.reactives.Event[B,S]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">event</span><span class="tparams">[<span name="A">A</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="Evnt">Evnt<span class="tparams">[<span name="A1">A1</span>, <span name="S1">S1 &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.event.Evnt.A1">A1</span>, <span class="extype" name="rescala.reactives.Flatten.event.Evnt.S1">S1</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Flatten.event.S">S</span>]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.event.Evnt">Evnt</span>[<span class="extype" name="rescala.reactives.Flatten.event.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.event.S">S</span>], <span class="extype" name="rescala.reactives.Flatten.event.S">S</span>], <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.event.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.event.S">S</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Flatten a Signal[Event[B]]\] into a Event[B] where the new Event fires whenever the current inner event fires</p>
+    </li><li name="rescala.reactives.Flatten#firstFiringEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="firstFiringEvent[S&lt;:rescala.core.Struct,B,T[U]&lt;:scala.collection.TraversableLike[U,T[U]],Evnt[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Event[A1,S1]](implicitticket:rescala.core.CreationTicket[S],implicitcbf:scala.collection.generic.CanBuildFrom[T[_],Option[B],T[Option[B]]]):rescala.reactives.Flatten[rescala.reactives.Signal[T[Evnt[B,S]],S],rescala.reactives.Event[B,S]]"></a><a id="firstFiringEvent[S&lt;:Struct,B,T[U]&lt;:TraversableLike[U,T[U]],Evnt[A1,S1&lt;:Struct]&lt;:Event[A1,S1]](CreationTicket[S],CanBuildFrom[T[_],Option[B],T[Option[B]]]):Flatten[Signal[T[Evnt[B,S]],S],Event[B,S]]"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Flatten$.html#firstFiringEvent[S&lt;:rescala.core.Struct,B,T[U]&lt;:scala.collection.TraversableLike[U,T[U]],Evnt[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Event[A1,S1]](implicitticket:rescala.core.CreationTicket[S],implicitcbf:scala.collection.generic.CanBuildFrom[T[_],Option[B],T[Option[B]]]):rescala.reactives.Flatten[rescala.reactives.Signal[T[Evnt[B,S]],S],rescala.reactives.Event[B,S]]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -363,112 +394,11 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">firstFiringEvent</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="T">T<span class="tparams">[<span name="U">U</span>]</span> &lt;: <a href="http://www.scala-lang.org/api/2.12.6/scala/collection/TraversableLike.html#scala.collection.TraversableLike" class="extype" name="scala.collection.TraversableLike">TraversableLike</a>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.T.U">U</span>, <span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.T.U">U</span>]]</span>, <span name="Evnt">Evnt<span class="tparams">[<span name="A1">A1</span>, <span name="S1">S1 &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.Evnt.A1">A1</span>, <span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.Evnt.S1">S1</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.S">S</span>]</span>, <span name="cbf">cbf: <a href="http://www.scala-lang.org/api/2.12.6/scala/collection/generic/CanBuildFrom.html#scala.collection.generic.CanBuildFrom" class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</a>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.T">T</span>[_], <a href="http://www.scala-lang.org/api/2.12.6/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.B">B</span>], <span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.T">T</span>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.B">B</span>]]]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.Evnt">Evnt</span>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.S">S</span>]], <span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.S">S</span>], <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.firstFiringEvent.S">S</span>]]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
-    </li><li name="rescala.reactives.Flatten#flattenEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="flattenEvent[A,S&lt;:rescala.core.Struct,B]:rescala.reactives.Flatten[rescala.reactives.Event[B,S],S,rescala.reactives.Event[B,S]]"></a><a id="flattenEvent[A,S&lt;:Struct,B]:Flatten[Event[B,S],S,Event[B,S]]"></a>
-      <span class="permalink">
-      <a href="../../rescala/reactives/Flatten$.html#flattenEvent[A,S&lt;:rescala.core.Struct,B]:rescala.reactives.Flatten[rescala.reactives.Event[B,S],S,rescala.reactives.Event[B,S]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">flattenEvent</span><span class="tparams">[<span name="A">A</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>]</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.flattenEvent.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.flattenEvent.S">S</span>], <span class="extype" name="rescala.reactives.Flatten.flattenEvent.S">S</span>, <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.flattenEvent.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.flattenEvent.S">S</span>]]</span>
-      </span>
-      
-      
-    </li><li name="rescala.reactives.Flatten#flattenSignal" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="flattenSignal[S&lt;:rescala.core.Struct,B]:rescala.reactives.Flatten[rescala.reactives.Signal[B,S],S,rescala.reactives.Signal[B,S]]"></a><a id="flattenSignal[S&lt;:Struct,B]:Flatten[Signal[B,S],S,Signal[B,S]]"></a>
-      <span class="permalink">
-      <a href="../../rescala/reactives/Flatten$.html#flattenSignal[S&lt;:rescala.core.Struct,B]:rescala.reactives.Flatten[rescala.reactives.Signal[B,S],S,rescala.reactives.Signal[B,S]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">flattenSignal</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>]</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignal.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignal.S">S</span>], <span class="extype" name="rescala.reactives.Flatten.flattenSignal.S">S</span>, <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignal.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignal.S">S</span>]]</span>
-      </span>
-      
-      
-    </li><li name="rescala.reactives.Flatten#flattenSignalArray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="flattenSignalArray[S&lt;:rescala.core.Struct,B,Sig[U,V&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[U,V]](implicitevidence$1:scala.reflect.ClassTag[B]):rescala.reactives.Flatten[Array[Sig[B,S]],S,rescala.reactives.Signal[Array[B],S]]"></a><a id="flattenSignalArray[S&lt;:Struct,B,Sig[U,V&lt;:Struct]&lt;:Signal[U,V]](ClassTag[B]):Flatten[Array[Sig[B,S]],S,Signal[Array[B],S]]"></a>
-      <span class="permalink">
-      <a href="../../rescala/reactives/Flatten$.html#flattenSignalArray[S&lt;:rescala.core.Struct,B,Sig[U,V&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[U,V]](implicitevidence$1:scala.reflect.ClassTag[B]):rescala.reactives.Flatten[Array[Sig[B,S]],S,rescala.reactives.Signal[Array[B],S]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">flattenSignalArray</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="Sig">Sig<span class="tparams">[<span name="U">U</span>, <span name="V">V &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalArray.Sig.U">U</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalArray.Sig.V">V</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/reflect/ClassTag.html#scala.reflect.ClassTag" class="extype" name="scala.reflect.ClassTag">ClassTag</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalArray.B">B</span>]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/Array.html#scala.Array" class="extype" name="scala.Array">Array</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalArray.Sig">Sig</span>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalArray.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalArray.S">S</span>]], <span class="extype" name="rescala.reactives.Flatten.flattenSignalArray.S">S</span>, <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/Array.html#scala.Array" class="extype" name="scala.Array">Array</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalArray.B">B</span>], <span class="extype" name="rescala.reactives.Flatten.flattenSignalArray.S">S</span>]]</span>
-      </span>
-      
-      
-    </li><li name="rescala.reactives.Flatten#flattenSignalOption" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="flattenSignalOption[S&lt;:rescala.core.Struct,B,Sig[U,V&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[U,V]]:rescala.reactives.Flatten[Option[Sig[B,S]],S,rescala.reactives.Signal[Option[B],S]]"></a><a id="flattenSignalOption[S&lt;:Struct,B,Sig[U,V&lt;:Struct]&lt;:Signal[U,V]]:Flatten[Option[Sig[B,S]],S,Signal[Option[B],S]]"></a>
-      <span class="permalink">
-      <a href="../../rescala/reactives/Flatten$.html#flattenSignalOption[S&lt;:rescala.core.Struct,B,Sig[U,V&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[U,V]]:rescala.reactives.Flatten[Option[Sig[B,S]],S,rescala.reactives.Signal[Option[B],S]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">flattenSignalOption</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="Sig">Sig<span class="tparams">[<span name="U">U</span>, <span name="V">V &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalOption.Sig.U">U</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalOption.Sig.V">V</span>]</span>]</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalOption.Sig">Sig</span>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalOption.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalOption.S">S</span>]], <span class="extype" name="rescala.reactives.Flatten.flattenSignalOption.S">S</span>, <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalOption.B">B</span>], <span class="extype" name="rescala.reactives.Flatten.flattenSignalOption.S">S</span>]]</span>
-      </span>
-      
-      
-    </li><li name="rescala.reactives.Flatten#flattenSignalTraversableEvent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="flattenSignalTraversableEvent[S&lt;:rescala.core.Struct,B,T[U]&lt;:scala.collection.TraversableLike[U,T[U]],Evnt[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Event[A1,S1]](implicitcbf:scala.collection.generic.CanBuildFrom[T[_],Option[B],T[Option[B]]]):rescala.reactives.Flatten[T[Evnt[B,S]],S,rescala.reactives.Event[T[Option[B]],S]]"></a><a id="flattenSignalTraversableEvent[S&lt;:Struct,B,T[U]&lt;:TraversableLike[U,T[U]],Evnt[A1,S1&lt;:Struct]&lt;:Event[A1,S1]](CanBuildFrom[T[_],Option[B],T[Option[B]]]):Flatten[T[Evnt[B,S]],S,Event[T[Option[B]],S]]"></a>
-      <span class="permalink">
-      <a href="../../rescala/reactives/Flatten$.html#flattenSignalTraversableEvent[S&lt;:rescala.core.Struct,B,T[U]&lt;:scala.collection.TraversableLike[U,T[U]],Evnt[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Event[A1,S1]](implicitcbf:scala.collection.generic.CanBuildFrom[T[_],Option[B],T[Option[B]]]):rescala.reactives.Flatten[T[Evnt[B,S]],S,rescala.reactives.Event[T[Option[B]],S]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">flattenSignalTraversableEvent</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="T">T<span class="tparams">[<span name="U">U</span>]</span> &lt;: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/TraversableLike.html#scala.collection.TraversableLike" class="extype" name="scala.collection.TraversableLike">TraversableLike</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.T.U">U</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.T.U">U</span>]]</span>, <span name="Evnt">Evnt<span class="tparams">[<span name="A1">A1</span>, <span name="S1">S1 &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.Evnt.A1">A1</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.Evnt.S1">S1</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="cbf">cbf: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/generic/CanBuildFrom.html#scala.collection.generic.CanBuildFrom" class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.T">T</span>[_], <a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.B">B</span>], <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.T">T</span>[<a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.B">B</span>]]]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.Evnt">Evnt</span>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.S">S</span>]], <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.S">S</span>, <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.T">T</span>[<a href="http://www.scala-lang.org/api/2.12.4/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.B">B</span>]], <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableEvent.S">S</span>]]</span>
-      </span>
-      
-      
-    </li><li name="rescala.reactives.Flatten#flattenSignalTraversableSignal" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="flattenSignalTraversableSignal[S&lt;:rescala.core.Struct,B,T[U]&lt;:scala.collection.TraversableLike[U,T[U]],Sig[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[A1,S1]](implicitcbf:scala.collection.generic.CanBuildFrom[T[_],B,T[B]]):rescala.reactives.Flatten[T[Sig[B,S]],S,rescala.reactives.Signal[T[B],S]]"></a><a id="flattenSignalTraversableSignal[S&lt;:Struct,B,T[U]&lt;:TraversableLike[U,T[U]],Sig[A1,S1&lt;:Struct]&lt;:Signal[A1,S1]](CanBuildFrom[T[_],B,T[B]]):Flatten[T[Sig[B,S]],S,Signal[T[B],S]]"></a>
-      <span class="permalink">
-      <a href="../../rescala/reactives/Flatten$.html#flattenSignalTraversableSignal[S&lt;:rescala.core.Struct,B,T[U]&lt;:scala.collection.TraversableLike[U,T[U]],Sig[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[A1,S1]](implicitcbf:scala.collection.generic.CanBuildFrom[T[_],B,T[B]]):rescala.reactives.Flatten[T[Sig[B,S]],S,rescala.reactives.Signal[T[B],S]]" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier">implicit </span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">flattenSignalTraversableSignal</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="T">T<span class="tparams">[<span name="U">U</span>]</span> &lt;: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/TraversableLike.html#scala.collection.TraversableLike" class="extype" name="scala.collection.TraversableLike">TraversableLike</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.T.U">U</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.T.U">U</span>]]</span>, <span name="Sig">Sig<span class="tparams">[<span name="A1">A1</span>, <span name="S1">S1 &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.Sig.A1">A1</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.Sig.S1">S1</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="cbf">cbf: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/generic/CanBuildFrom.html#scala.collection.generic.CanBuildFrom" class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.T">T</span>[_], <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.B">B</span>]]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.Sig">Sig</span>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.S">S</span>]], <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.S">S</span>, <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.B">B</span>], <span class="extype" name="rescala.reactives.Flatten.flattenSignalTraversableSignal.S">S</span>]]</span>
-      </span>
-      
-      
+      <p class="shortcomment cmt">Flatten a Signal[Traversable[Event[B]\]\] into a Event[B].</p><div class="fullcomment"><div class="comment cmt"><p>Flatten a Signal[Traversable[Event[B]\]\] into a Event[B]. The new Event fires the value of any inner firing Event.
+If multiple inner Events fire, the first one in iteration order is selected.</p></div></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -487,6 +417,8 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="hashCode():Int"></a>
@@ -500,11 +432,13 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -519,7 +453,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -535,7 +469,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -551,11 +485,13 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -570,13 +506,63 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
+    </li><li name="rescala.reactives.Flatten#option" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="option[A,S&lt;:rescala.core.Struct,B,Evnt[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Event[A1,S1]](implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Flatten[rescala.reactives.Event[Option[B],S],rescala.reactives.Event[B,S]]"></a><a id="option[A,S&lt;:Struct,B,Evnt[A1,S1&lt;:Struct]&lt;:Event[A1,S1]](CreationTicket[S]):Flatten[Event[Option[B],S],Event[B,S]]"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Flatten$.html#option[A,S&lt;:rescala.core.Struct,B,Evnt[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Event[A1,S1]](implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Flatten[rescala.reactives.Event[Option[B],S],rescala.reactives.Event[B,S]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">option</span><span class="tparams">[<span name="A">A</span>, <span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="Evnt">Evnt<span class="tparams">[<span name="A1">A1</span>, <span name="S1">S1 &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.option.Evnt.A1">A1</span>, <span class="extype" name="rescala.reactives.Flatten.option.Evnt.S1">S1</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Flatten.option.S">S</span>]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.option.B">B</span>], <span class="extype" name="rescala.reactives.Flatten.option.S">S</span>], <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.option.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.option.S">S</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Flatten a Event[Option[B]\] into a Event[B] that fires whenever the inner option is defined.</p>
+    </li><li name="rescala.reactives.Flatten#optionSignal" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="optionSignal[S&lt;:rescala.core.Struct,B,Sig[U,V&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[U,V]](implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Flatten[rescala.reactives.Signal[Option[Sig[B,S]],S],rescala.reactives.Signal[Option[B],S]]"></a><a id="optionSignal[S&lt;:Struct,B,Sig[U,V&lt;:Struct]&lt;:Signal[U,V]](CreationTicket[S]):Flatten[Signal[Option[Sig[B,S]],S],Signal[Option[B],S]]"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Flatten$.html#optionSignal[S&lt;:rescala.core.Struct,B,Sig[U,V&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[U,V]](implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Flatten[rescala.reactives.Signal[Option[Sig[B,S]],S],rescala.reactives.Signal[Option[B],S]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">optionSignal</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="Sig">Sig<span class="tparams">[<span name="U">U</span>, <span name="V">V &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.optionSignal.Sig.U">U</span>, <span class="extype" name="rescala.reactives.Flatten.optionSignal.Sig.V">V</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Flatten.optionSignal.S">S</span>]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.optionSignal.Sig">Sig</span>[<span class="extype" name="rescala.reactives.Flatten.optionSignal.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.optionSignal.S">S</span>]], <span class="extype" name="rescala.reactives.Flatten.optionSignal.S">S</span>], <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.optionSignal.B">B</span>], <span class="extype" name="rescala.reactives.Flatten.optionSignal.S">S</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Flatten a Signal[Option[Signal[B]\]\] into a Signal[Option[B]\] where the new Signal updates whenever any of the inner or the outer signal updates</p>
+    </li><li name="rescala.reactives.Flatten#signal" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="signal[S&lt;:rescala.core.Struct,B,Sig[U,V&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[U,V]](implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Flatten[rescala.reactives.Signal[Sig[B,S],S],rescala.reactives.Signal[B,S]]"></a><a id="signal[S&lt;:Struct,B,Sig[U,V&lt;:Struct]&lt;:Signal[U,V]](CreationTicket[S]):Flatten[Signal[Sig[B,S],S],Signal[B,S]]"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Flatten$.html#signal[S&lt;:rescala.core.Struct,B,Sig[U,V&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[U,V]](implicitticket:rescala.core.CreationTicket[S]):rescala.reactives.Flatten[rescala.reactives.Signal[Sig[B,S],S],rescala.reactives.Signal[B,S]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">signal</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="Sig">Sig<span class="tparams">[<span name="U">U</span>, <span name="V">V &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.signal.Sig.U">U</span>, <span class="extype" name="rescala.reactives.Flatten.signal.Sig.V">V</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Flatten.signal.S">S</span>]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.signal.Sig">Sig</span>[<span class="extype" name="rescala.reactives.Flatten.signal.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.signal.S">S</span>], <span class="extype" name="rescala.reactives.Flatten.signal.S">S</span>], <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.signal.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.signal.S">S</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Flatten a Signal[Signal[B]\] into a Signal[B] that changes whenever the outer or inner signal changes.</p>
     </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
       <span class="permalink">
@@ -609,28 +595,38 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
+    </li><li name="rescala.reactives.Flatten#traversableOfAllOccuringEventValues" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="traversableOfAllOccuringEventValues[S&lt;:rescala.core.Struct,B,T[U]&lt;:scala.collection.TraversableLike[U,T[U]],Evnt[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Event[A1,S1]](implicitticket:rescala.core.CreationTicket[S],implicitcbf:scala.collection.generic.CanBuildFrom[T[_],Option[B],T[Option[B]]]):rescala.reactives.Flatten[rescala.reactives.Signal[T[Evnt[B,S]],S],rescala.reactives.Event[T[Option[B]],S]]"></a><a id="traversableOfAllOccuringEventValues[S&lt;:Struct,B,T[U]&lt;:TraversableLike[U,T[U]],Evnt[A1,S1&lt;:Struct]&lt;:Event[A1,S1]](CreationTicket[S],CanBuildFrom[T[_],Option[B],T[Option[B]]]):Flatten[Signal[T[Evnt[B,S]],S],Event[T[Option[B]],S]]"></a>
       <span class="permalink">
-      <a href="../../rescala/reactives/Flatten$.html#wait():Unit" title="Permalink">
+      <a href="../../rescala/reactives/Flatten$.html#traversableOfAllOccuringEventValues[S&lt;:rescala.core.Struct,B,T[U]&lt;:scala.collection.TraversableLike[U,T[U]],Evnt[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Event[A1,S1]](implicitticket:rescala.core.CreationTicket[S],implicitcbf:scala.collection.generic.CanBuildFrom[T[_],Option[B],T[Option[B]]]):rescala.reactives.Flatten[rescala.reactives.Signal[T[Evnt[B,S]],S],rescala.reactives.Event[T[Option[B]],S]]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">traversableOfAllOccuringEventValues</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="T">T<span class="tparams">[<span name="U">U</span>]</span> &lt;: <a href="http://www.scala-lang.org/api/2.12.6/scala/collection/TraversableLike.html#scala.collection.TraversableLike" class="extype" name="scala.collection.TraversableLike">TraversableLike</a>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.T.U">U</span>, <span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.T.U">U</span>]]</span>, <span name="Evnt">Evnt<span class="tparams">[<span name="A1">A1</span>, <span name="S1">S1 &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.Evnt.A1">A1</span>, <span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.Evnt.S1">S1</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.S">S</span>]</span>, <span name="cbf">cbf: <a href="http://www.scala-lang.org/api/2.12.6/scala/collection/generic/CanBuildFrom.html#scala.collection.generic.CanBuildFrom" class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</a>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.T">T</span>[_], <a href="http://www.scala-lang.org/api/2.12.6/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.B">B</span>], <span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.T">T</span>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.B">B</span>]]]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.Evnt">Evnt</span>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.S">S</span>]], <span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.S">S</span>], <a href="Event.html" class="extype" name="rescala.reactives.Event">Event</a>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.T">T</span>[<a href="http://www.scala-lang.org/api/2.12.6/scala/Option.html#scala.Option" class="extype" name="scala.Option">Option</a>[<span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.B">B</span>]], <span class="extype" name="rescala.reactives.Flatten.traversableOfAllOccuringEventValues.S">S</span>]]</span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
+      <p class="shortcomment cmt">Flatten a Signal[Traversable[Event[B]\]\] into a Event[Traversable[Option[B]\]\] where the new Event fires whenever any of the inner events fire</p>
+    </li><li name="rescala.reactives.Flatten#traversableSignals" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="traversableSignals[S&lt;:rescala.core.Struct,B,T[U]&lt;:scala.collection.TraversableLike[U,T[U]],Sig[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[A1,S1]](implicitticket:rescala.core.CreationTicket[S],implicitcbf:scala.collection.generic.CanBuildFrom[T[_],B,T[B]]):rescala.reactives.Flatten[rescala.reactives.Signal[T[Sig[B,S]],S],rescala.reactives.Signal[T[B],S]]"></a><a id="traversableSignals[S&lt;:Struct,B,T[U]&lt;:TraversableLike[U,T[U]],Sig[A1,S1&lt;:Struct]&lt;:Signal[A1,S1]](CreationTicket[S],CanBuildFrom[T[_],B,T[B]]):Flatten[Signal[T[Sig[B,S]],S],Signal[T[B],S]]"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Flatten$.html#traversableSignals[S&lt;:rescala.core.Struct,B,T[U]&lt;:scala.collection.TraversableLike[U,T[U]],Sig[A1,S1&lt;:rescala.core.Struct]&lt;:rescala.reactives.Signal[A1,S1]](implicitticket:rescala.core.CreationTicket[S],implicitcbf:scala.collection.generic.CanBuildFrom[T[_],B,T[B]]):rescala.reactives.Flatten[rescala.reactives.Signal[T[Sig[B,S]],S],rescala.reactives.Signal[T[B],S]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">traversableSignals</span><span class="tparams">[<span name="S">S &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>, <span name="B">B</span>, <span name="T">T<span class="tparams">[<span name="U">U</span>]</span> &lt;: <a href="http://www.scala-lang.org/api/2.12.6/scala/collection/TraversableLike.html#scala.collection.TraversableLike" class="extype" name="scala.collection.TraversableLike">TraversableLike</a>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.T.U">U</span>, <span class="extype" name="rescala.reactives.Flatten.traversableSignals.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.T.U">U</span>]]</span>, <span name="Sig">Sig<span class="tparams">[<span name="A1">A1</span>, <span name="S1">S1 &lt;: <a href="../core/Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span> &lt;: <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.Sig.A1">A1</span>, <span class="extype" name="rescala.reactives.Flatten.traversableSignals.Sig.S1">S1</span>]</span>]</span><span class="params">(<span class="implicit">implicit </span><span name="ticket">ticket: <a href="../core/CreationTicket.html" class="extype" name="rescala.core.CreationTicket">CreationTicket</a>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.S">S</span>]</span>, <span name="cbf">cbf: <a href="http://www.scala-lang.org/api/2.12.6/scala/collection/generic/CanBuildFrom.html#scala.collection.generic.CanBuildFrom" class="extype" name="scala.collection.generic.CanBuildFrom">CanBuildFrom</a>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.T">T</span>[_], <span class="extype" name="rescala.reactives.Flatten.traversableSignals.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.traversableSignals.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.B">B</span>]]</span>)</span><span class="result">: <a href="Flatten.html" class="extype" name="rescala.reactives.Flatten">Flatten</a>[<a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.Sig">Sig</span>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.B">B</span>, <span class="extype" name="rescala.reactives.Flatten.traversableSignals.S">S</span>]], <span class="extype" name="rescala.reactives.Flatten.traversableSignals.S">S</span>], <a href="Signal.html" class="extype" name="rescala.reactives.Signal">Signal</a>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.T">T</span>[<span class="extype" name="rescala.reactives.Flatten.traversableSignals.B">B</span>], <span class="extype" name="rescala.reactives.Flatten.traversableSignals.S">S</span>]]</span>
+      </span>
       
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
+      <p class="shortcomment cmt">Flatten a Signal[Traversable[Signal[B]\]\] into a Signal[Traversable[B]\] where the new Signal updates whenever any of the inner or the outer signal updates</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
@@ -643,7 +639,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -665,12 +661,34 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Flatten$.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
@@ -683,14 +701,43 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../rescala/reactives/Flatten$.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></h3>
             </div>
         
         </div>

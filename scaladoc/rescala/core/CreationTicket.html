@@ -81,13 +81,10 @@
         <span class="kind">package</span>
       </span>
       <span class="symbol">
-        <a title="REScala has two main abstractions." href="../index.html"><span class="name">rescala</span></a>
+        <a title="" href="../index.html"><span class="name">rescala</span></a>
       </span>
       
-      <p class="shortcomment cmt">REScala has two main abstractions.</p><div class="fullcomment"><div class="comment cmt"><p>REScala has two main abstractions. <a href="../index.html#Event[+A]=rescala.reactives.Event[A,S]" class="extmbr" name="rescala.Event">rescala.Event</a> and <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> commonly referred to as reactives.
-Use <a href="../index.html#Var[A]=rescala.reactives.Var[A,S]" class="extmbr" name="rescala.Var">rescala.Var</a> to create signal sources and <a href="../index.html#Evt[A]=rescala.reactives.Evt[A,S]" class="extmbr" name="rescala.Evt">rescala.Evt</a> to create event sources.</p><p>Events and signals can be created from other reactives by using combinators,
-signals additionally can be created using <a href="../index.html#Signal[+A]=rescala.reactives.Signal[A,S]" class="extmbr" name="rescala.Signal">rescala.Signal</a> expressions.
-</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
     </li><li name="rescala.core" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="core"></a><a id="core:core"></a>
       <span class="permalink">
@@ -106,16 +103,16 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="rescala">rescala</a></dd></dl></div>
     </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="AdmissionTicket.html" title=""></a>
-                        <a href="AdmissionTicket.html" title="">AdmissionTicket</a>
+                        <a class="class" href="AdmissionTicket.html" title="Enables reading of the current value during admission."></a>
+                        <a href="AdmissionTicket.html" title="Enables reading of the current value during admission.">AdmissionTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="Base.html" title="Base implementation for reactives, combining ReSourciV for value access, with Reactive for scheduling, together with a REName and asking for a Struct.State"></a>
-                        <a href="Base.html" title="Base implementation for reactives, combining ReSourciV for value access, with Reactive for scheduling, together with a REName and asking for a Struct.State">Base</a>
+                        <a class="class" href="Base.html" title="Base implementation for reactives, with Reactive for scheduling, together with a REName and asking for a Struct.State"></a>
+                        <a href="Base.html" title="Base implementation for reactives, with Reactive for scheduling, together with a REName and asking for a Struct.State">Base</a>
                       </li><li class="current-entities indented2">
-                        <a class="object" href="CreationTicket$.html" title=""></a>
-                        <a class="class" href="" title="A turn source that stores a turn/engine and can be applied to a function to call it with the appropriate turn as parameter."></a>
-                        <a href="" title="A turn source that stores a turn/engine and can be applied to a function to call it with the appropriate turn as parameter.">CreationTicket</a>
+                        <a class="object" href="CreationTicket$.html" title="As reactives can be created during propagation, any InnerTicket can be converted to a creation ticket."></a>
+                        <a class="class" href="" title="Enables the creation of other reactives"></a>
+                        <a href="" title="Enables the creation of other reactives">CreationTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="Disconnectable.html" title=""></a>
@@ -126,11 +123,11 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="DisconnectableImpl.html" title="">DisconnectableImpl</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="DynamicTicket.html" title=""></a>
-                        <a href="DynamicTicket.html" title="">DynamicTicket</a>
+                        <a class="class" href="DynamicTicket.html" title="User facing low level API to access values in a dynamic context."></a>
+                        <a href="DynamicTicket.html" title="User facing low level API to access values in a dynamic context.">DynamicTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="InitialChange.html" title=""></a>
+                        <a class="trait" href="InitialChange.html" title=""></a>
                         <a href="InitialChange.html" title="">InitialChange</a>
                       </li><li class="current-entities indented2">
                         <a class="object" href="Initializer$.html" title=""></a>
@@ -138,8 +135,16 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="Initializer.html" title="">Initializer</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="LowPriorityCreationImplicits.html" title=""></a>
-                        <a href="LowPriorityCreationImplicits.html" title="">LowPriorityCreationImplicits</a>
+                        <a class="class" href="InnerTicket.html" title="InnerTickets are used in Rescala to give capabilities to contexts during propagation."></a>
+                        <a href="InnerTicket.html" title="InnerTickets are used in Rescala to give capabilities to contexts during propagation.">InnerTicket</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="trait" href="Interp.html" title="Common macro accessors for rescala.reactives.Signal and rescala.reactives.Event"></a>
+                        <a href="Interp.html" title="Common macro accessors for rescala.reactives.Signal and rescala.reactives.Event">Interp</a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="trait" href="LowPriorityCreationImplicits.html" title="If no InnerTicket is found, then these implicits will search for a Scheduler, creating the reactives outside of any turn."></a>
+                        <a href="LowPriorityCreationImplicits.html" title="If no InnerTicket is found, then these implicits will search for a Scheduler, creating the reactives outside of any turn.">LowPriorityCreationImplicits</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="LowPriorityREName.html" title=""></a>
@@ -158,26 +163,22 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="RENamed.html" title="">RENamed</a>
                       </li><li class="current-entities indented2">
                         <a class="object" href="ReSerializable$.html" title=""></a>
-                        <a class="trait" href="ReSerializable.html" title=""></a>
-                        <a href="ReSerializable.html" title="">ReSerializable</a>
+                        <a class="trait" href="ReSerializable.html" title="Used when the state of a reactive has to be serialized."></a>
+                        <a href="ReSerializable.html" title="Used when the state of a reactive has to be serialized.">ReSerializable</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="ReSource.html" title="Source of (reactive) values, the Struct defines how the state is stored internally, and how dependencies are managed."></a>
                         <a href="ReSource.html" title="Source of (reactive) values, the Struct defines how the state is stored internally, and how dependencies are managed.">ReSource</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="trait" href="ReSourciV.html" title="Makes the Value type well known, such that user computations can read values from (e.g., before, after, etc.)"></a>
-                        <a href="ReSourciV.html" title="Makes the Value type well known, such that user computations can read values from (e.g., before, after, etc.)">ReSourciV</a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
                         <a class="trait" href="Reactive.html" title="A reactive value is something that can be reevaluated"></a>
                         <a href="Reactive.html" title="A reactive value is something that can be reevaluated">Reactive</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="ReevTicket.html" title=""></a>
-                        <a href="ReevTicket.html" title="">ReevTicket</a>
+                        <a class="class" href="ReevTicket.html" title="ReevTicket is given to the Reactive reevaluate method and allows to access other reactives."></a>
+                        <a href="ReevTicket.html" title="ReevTicket is given to the Reactive reevaluate method and allows to access other reactives.">ReevTicket</a>
                       </li><li class="current-entities indented2">
-                        <a class="object" href="Result$.html" title=""></a>
+                        <span class="separator"></span>
                         <a class="trait" href="Result.html" title=""></a>
                         <a href="Result.html" title="">Result</a>
                       </li><li class="current-entities indented2">
@@ -190,16 +191,12 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
                         <a href="SchedulerImpl.html" title="">SchedulerImpl</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
-                        <a class="class" href="StaticTicket.html" title=""></a>
-                        <a href="StaticTicket.html" title="">StaticTicket</a>
+                        <a class="class" href="StaticTicket.html" title="User facing low level API to access values in a static context."></a>
+                        <a href="StaticTicket.html" title="User facing low level API to access values in a static context.">StaticTicket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="trait" href="Struct.html" title="Every ReSource has an internal dataStructure which is externally defined by the scheduler."></a>
                         <a href="Struct.html" title="Every ReSource has an internal dataStructure which is externally defined by the scheduler.">Struct</a>
-                      </li><li class="current-entities indented2">
-                        <span class="separator"></span>
-                        <a class="class" href="Ticket.html" title=""></a>
-                        <a href="Ticket.html" title="">Ticket</a>
                       </li><li class="current-entities indented2">
                         <span class="separator"></span>
                         <a class="class" href="WrapUpTicket.html" title=""></a>
@@ -229,23 +226,22 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">case class</span>
       </span>
       <span class="symbol">
-        <span class="name">CreationTicket</span><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="params">(<span name="self">self: <span class="extype" name="scala.Either">Either</span>[<a href="Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>], <a href="Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>]]</span>)</span><span class="params">(<span name="rename">rename: <a href="REName.html" class="extype" name="rescala.core.REName">REName</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
+        <span class="name">CreationTicket</span><span class="tparams">[<span name="S">S &lt;: <a href="Struct.html" class="extype" name="rescala.core.Struct">Struct</a></span>]</span><span class="params">(<span name="self">self: <span class="extype" name="scala.Either">Either</span>[<a href="Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>], <a href="Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>]]</span>, <span name="rename">rename: <a href="REName.html" class="extype" name="rescala.core.REName">REName</a></span>)</span><span class="result"> extends <a href="http://www.scala-lang.org/api/2.12.6/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a> with <a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></span>
       </span>
       </h4>
 
       
-          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>A turn source that stores a turn/engine and can be applied to a function to call it with the appropriate turn as parameter.
-</p></div><dl class="paramcmts block"><dt class="tparam">S</dt><dd class="cmt"><p>Struct type that defines the spore type used to manage the reactive evaluation</p></dd><dt class="param">self</dt><dd class="cmt"><p>Turn or engine stored by the turn source</p></dd></dl><dl class="attributes block"> <dt>Annotations</dt><dd>
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Enables the creation of other reactives</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
                 <span class="name">@implicitNotFound</span><span class="args">(<span>
       
-      <span class="defval" name="&quot;could not generate a turn source.&quot; +<br/>  &quot; An available implicit Ticket will serve as turn source, or if no&quot; +<br/>  &quot; such turn is present, an implicit Engine is accepted instead.&quot;">...</span>
+      <span class="defval" name="&quot;Could not find capability to create reactives. Maybe a missing import?&quot;">...</span>
     </span>)</span>
               
         </dd></dl><div class="toggleContainer block">
           <span class="toggle">
             Linear Supertypes
           </span>
-          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></div>
+          <div class="superTypes hiddenContent"><a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a>, <span class="extype" name="java.io.Serializable">Serializable</span>, <a href="http://www.scala-lang.org/api/2.12.6/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a>, <a href="http://www.scala-lang.org/api/2.12.6/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a>, <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a>, <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></div>
         </div></div>
         
 
@@ -291,10 +287,10 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <div id="allMembers">
         <div id="constructors" class="members">
               <h3>Instance Constructors</h3>
-              <ol><li name="rescala.core.CreationTicket#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="&lt;init&gt;(self:Either[rescala.core.Initializer[S],rescala.core.Scheduler[S]])(rename:rescala.core.REName):rescala.core.CreationTicket[S]"></a><a id="&lt;init&gt;:CreationTicket[S]"></a>
+              <ol><li name="rescala.core.CreationTicket#&lt;init&gt;" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(self:Either[rescala.core.Initializer[S],rescala.core.Scheduler[S]],rename:rescala.core.REName):rescala.core.CreationTicket[S]"></a><a id="&lt;init&gt;:CreationTicket[S]"></a>
       <span class="permalink">
-      <a href="../../rescala/core/CreationTicket.html#&lt;init&gt;(self:Either[rescala.core.Initializer[S],rescala.core.Scheduler[S]])(rename:rescala.core.REName):rescala.core.CreationTicket[S]" title="Permalink">
+      <a href="../../rescala/core/CreationTicket.html#&lt;init&gt;(self:Either[rescala.core.Initializer[S],rescala.core.Scheduler[S]],rename:rescala.core.REName):rescala.core.CreationTicket[S]" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
@@ -303,10 +299,10 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">new</span>
       </span>
       <span class="symbol">
-        <span class="name">CreationTicket</span><span class="params">(<span name="self">self: <span class="extype" name="scala.Either">Either</span>[<a href="Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>], <a href="Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>]]</span>)</span><span class="params">(<span name="rename">rename: <a href="REName.html" class="extype" name="rescala.core.REName">REName</a></span>)</span>
+        <span class="name">CreationTicket</span><span class="params">(<span name="self">self: <span class="extype" name="scala.Either">Either</span>[<a href="Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>], <a href="Scheduler.html" class="extype" name="rescala.core.Scheduler">Scheduler</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>]]</span>, <span name="rename">rename: <a href="REName.html" class="extype" name="rescala.core.REName">REName</a></span>)</span>
       </span>
       
-      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="paramcmts block"><dt class="param">self</dt><dd class="cmt"><p>Turn or engine stored by the turn source</p></dd></dl></div>
+      
     </li></ol>
             </div>
 
@@ -329,7 +325,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -345,7 +341,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
@@ -361,26 +357,10 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
-    </li><li name="rescala.core.CreationTicket#apply" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
-      <a id="apply[T](f:rescala.core.Initializer[S]=&gt;T):T"></a><a id="apply[T]((Initializer[S])⇒T):T"></a>
-      <span class="permalink">
-      <a href="../../rescala/core/CreationTicket.html#apply[T](f:rescala.core.Initializer[S]=&gt;T):T" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">apply</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: (<a href="Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>]) ⇒ <span class="extype" name="rescala.core.CreationTicket.apply.T">T</span></span>)</span><span class="result">: <span class="extype" name="rescala.core.CreationTicket.apply.T">T</span></span>
-      </span>
-      
-      
     </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="asInstanceOf[T0]:T0"></a>
       <span class="permalink">
@@ -409,11 +389,13 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
                 <span class="name">@throws</span><span class="args">(<span>
       
@@ -433,32 +415,10 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="finalize():Unit"></a>
-      <span class="permalink">
-      <a href="../../rescala/core/CreationTicket.html#finalize():Unit" title="Permalink">
-        <i class="material-icons"></i>
-      </a>
-    </span>
-      <span class="modifier_kind">
-        <span class="modifier"></span>
-        <span class="kind">def</span>
-      </span>
-      <span class="symbol">
-        <span class="name">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
-      </span>
-      
-      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="symbol">classOf[java.lang.Throwable]</span>
-    </span>)</span>
-              
-        </dd></dl></div>
     </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="getClass():Class[_]"></a>
       <span class="permalink">
@@ -477,6 +437,8 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
+              
         </dd></dl></div>
     </li><li name="rescala.core.CreationTicket#isInnerTicket" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
       <a id="isInnerTicket():Boolean"></a>
@@ -490,10 +452,10 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInnerTicket</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">isInnerTicket</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
-      
+      <p class="shortcomment cmt">Returns true if this ticket is already part of a transaction.</p>
     </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="isInstanceOf[T0]:Boolean"></a>
       <span class="permalink">
@@ -506,7 +468,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
@@ -522,7 +484,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Boolean.html#scala.Boolean" class="extype" name="scala.Boolean">Boolean</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
@@ -538,11 +500,13 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
@@ -557,11 +521,13 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
+              
+                <span class="name">@HotSpotIntrinsicCandidate</span><span class="args">()</span>
               
         </dd></dl></div>
     </li><li name="rescala.core.CreationTicket#rename" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
@@ -612,28 +578,22 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
-    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
-      <a id="wait():Unit"></a>
+    </li><li name="rescala.core.CreationTicket#transaction" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="transaction[T](f:rescala.core.Initializer[S]=&gt;T):T"></a><a id="transaction[T]((Initializer[S])⇒T):T"></a>
       <span class="permalink">
-      <a href="../../rescala/core/CreationTicket.html#wait():Unit" title="Permalink">
+      <a href="../../rescala/core/CreationTicket.html#transaction[T](f:rescala.core.Initializer[S]=&gt;T):T" title="Permalink">
         <i class="material-icons"></i>
       </a>
     </span>
       <span class="modifier_kind">
-        <span class="modifier">final </span>
+        <span class="modifier"></span>
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">transaction</span><span class="tparams">[<span name="T">T</span>]</span><span class="params">(<span name="f">f: (<a href="Initializer.html" class="extype" name="rescala.core.Initializer">Initializer</a>[<span class="extype" name="rescala.core.CreationTicket.S">S</span>]) ⇒ <span class="extype" name="rescala.core.CreationTicket.transaction.T">T</span></span>)</span><span class="result">: <span class="extype" name="rescala.core.CreationTicket.transaction.T">T</span></span>
       </span>
       
-      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
-                <span class="name">@throws</span><span class="args">(<span>
-      
-      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
-    </span>)</span>
-              
-        </dd></dl></div>
+      <p class="shortcomment cmt">Using the ticket requires to create a new scope, such that we can ensure that everything happens in the same transaction</p>
     </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
       <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
       <span class="permalink">
@@ -646,7 +606,7 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.4/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>, <span name="arg1">arg1: <a href="http://www.scala-lang.org/api/2.12.6/scala/Int.html#scala.Int" class="extype" name="scala.Int">Int</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
@@ -668,12 +628,34 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
         <span class="kind">def</span>
       </span>
       <span class="symbol">
-        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.4/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.4/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <a href="http://www.scala-lang.org/api/2.12.6/scala/Long.html#scala.Long" class="extype" name="scala.Long">Long</a></span>)</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
       </span>
       
       <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@native</span><span class="args">()</span>
               
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../rescala/core/CreationTicket.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
                 <span class="name">@throws</span><span class="args">(<span>
       
       <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
@@ -686,22 +668,51 @@ signals additionally can be created using <a href="../index.html#Signal[+A]=resc
 
         
 
-        
+        <div class="values members">
+              <h3>Deprecated Value Members</h3>
+              <ol><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../rescala/core/CreationTicket.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name deprecated" title="Deprecated: (Since version ) see corresponding Javadoc for more information.">finalize</span><span class="params">()</span><span class="result">: <a href="http://www.scala-lang.org/api/2.12.6/scala/Unit.html#scala.Unit" class="extype" name="scala.Unit">Unit</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java/lang/index.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@Deprecated</span>
+              
+                <span class="name">@deprecated</span>
+              
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd><dt>Deprecated</dt><dd class="cmt"><p><i>(Since version )</i> see corresponding Javadoc for more information.</p></dd></dl></div>
+    </li></ol>
+            </div>
         </div>
 
         <div id="inheritedMembers">
         <div class="parent" name="scala.Serializable">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/Serializable.html#scala.Serializable" class="extype" name="scala.Serializable">Serializable</a></h3>
             </div><div class="parent" name="java.io.Serializable">
               <h3>Inherited from <span class="extype" name="java.io.Serializable">Serializable</span></h3>
             </div><div class="parent" name="scala.Product">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/Product.html#scala.Product" class="extype" name="scala.Product">Product</a></h3>
             </div><div class="parent" name="scala.Equals">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/Equals.html#scala.Equals" class="extype" name="scala.Equals">Equals</a></h3>
             </div><div class="parent" name="scala.AnyRef">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.AnyRef" class="extype" name="scala.collection.immutable.List">AnyRef</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/AnyRef.html#scala.AnyRef" class="extype" name="scala.AnyRef">AnyRef</a></h3>
             </div><div class="parent" name="scala.Any">
-              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.4/scala/collection/immutable/List.html#scala.Any" class="extype" name="scala.collection.immutable.List">Any</a></h3>
+              <h3>Inherited from <a href="http://www.scala-lang.org/api/2.12.6/scala/Any.html#scala.Any" class="extype" name="scala.Any">Any</a></h3>
             </div>
         
         </div>
