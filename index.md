@@ -23,9 +23,6 @@ It supports concurrent and distributed programs.
 
 ## Functional
 
-{:class="myicon"}
-**λ**
-
 Abstractions for Events and Signals to handle interactions and state, and seamless conversions between them.
 
 
@@ -33,18 +30,12 @@ Abstractions for Events and Signals to handle interactions and state, and seamle
 
 ## Consistent
 
-{:class="myicon"}
-**🗹**
-
 No temporary inconsistencies, no data races. Programmers define logical constraints which are automatically enforced by the runtime.
 
 
 </div><div class="col-sm-4">
 
 ## Concurrent
-
-{:class="myicon"}
-**∥**
 
 Concurrent applications are fully supported. Reactive abstractions can be safely accessed from any thread and they are updated concurrently.
 
