@@ -10,15 +10,18 @@
   <link href="{{ site.github.baseurl }}/assets/dist/bootstrap-theme.min.css" rel="stylesheet">
   <link href="{{ site.github.baseurl }}/assets/theme.css" rel="stylesheet">
   <link href="{{ site.github.baseurl }}/assets/syntax.css" rel="stylesheet">
+</head>
+<body {{ page.bodyattrs }}>
+  {% include navbar.html %}
+  <div class="container">
+  <div role="main" id="main-content" class="{{ page.class }}">
+    {{ content }}
+  </div>
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="{{ site.github.baseurl }}/assets/dist/bootstrap.min.js"></script>
   <script src="{{ site.github.baseurl }}/assets/default.js"></script>
-</head>
-<body>
-  {% include navbar.html %}
-  <div class="container" role="main"><div id="main-content">
-    {{ content }}
-  </div></div>
 </body>
 </html>
 

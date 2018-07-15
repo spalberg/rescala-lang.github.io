@@ -27,12 +27,12 @@
       </li>
     {% else %}
       <li {% if page.url == p.url %}class="active"{% endif %}>
-        <a href="{{ site.github.baseurl}}{{ p.url }}">{{ p.title }} </a>
+        <a href="{{ site.github.baseurl }}{{ p.url }}">{{ p.title }} </a>
       </li>
     {% endif %}{% endif %}{% endfor %}
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="{{ site.github.baseurl}}/scaladoc/rescala/default$.html">Scaladoc</a></li>
+      <li><a href="{{ site.github.baseurl }}/scaladoc/rescala/default$.html">Scaladoc</a></li>
       <li><a href="https://github.com/guidosalva/REScala/">Repository</a></li>
     </ul>
   </div>

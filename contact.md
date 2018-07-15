@@ -1,6 +1,7 @@
 ---
 title: Contact
 nav: 5
+class: center-block col-sm-9
 ---
 
 # Acknowledgements
@@ -47,3 +48,4 @@ several people:
 * Sören Albrecht
 * Christian Volk
 * Andre Pacak
+

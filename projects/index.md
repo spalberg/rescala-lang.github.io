@@ -1,6 +1,6 @@
 ---
 title: Projects
-nav: 4
+nav: 3
 ---
 
 <style scoped>
@@ -16,21 +16,23 @@ This page collects experimental projects and research prototypes based on or ins
 
 ## [Distributed REScala](distributed)
 
-![Distributed](../assets/images/graph.png)
+![Distributed](distributed.png)
 
-[Distributed REScala](distributed) is the first language to bring Reactive Programming to the distributed setting. Its propagation algorithm SID-UP ensures glitch freedom in (distributed) value updates.
+Distributed REScala is the first language to bring Reactive Programming to the distributed setting. Its propagation algorithm SID-UP ensures glitch freedom in (distributed) value updates.
 [**More...**](distributed)
 
 </div><div class="col-sm-4">
 
 ## Concurrent Reactive Programming
 
+![Concurrent](concurrent.png)
+
 We propose a model for thread-safe reactive programming that ensures abort-free strict serializability under concurrency without sacrificing neither expressiveness nor consistency. We also propose an architecture for integrating a corresponding scheduler into the RP language runtime, such that thread-safety is provided "out-of-the-box" to the applications.
 We show the feasibility of our proposal by providing and evaluating a ready-to-use implementation integrated into REScala.
 
 </div><div class="col-sm-4">
 
-## [Debugging Reactive Programming](https://guidosalva.github.io/reactive-inspector/)
+## [Reactive Debugging](https://guidosalva.github.io/reactive-inspector/)
 
 ![Reactive Inspector](https://guidosalva.github.io/reactive-inspector/images/highlight-dependencies-children.png)
 
@@ -42,7 +44,7 @@ The reactive style requires a paradigm shift in the concepts needed for debuggin
 
 ## [Case studies](studies)
 
-![Shapes](../assets/images/shapes.png)
+![Shapes](shapes.png)
 
 A portfolio of case studies that compare various design solutions including REScala, event-only implementations, signal-only implementations and callback-based versions.
 [**More...**](studies)
@@ -51,14 +53,14 @@ A portfolio of case studies that compare various design solutions including RESc
 
 ## [Todolist](todolist)
 
-![Todolist](../assets/images/todolist.png)
+![Todolist](todolist.png)
 
 A case study that implements the popular TodoMVC application (an application to maintain a simple todolist), that is implemented in many web frameworks to compare them.
 [**More...**](todolist)
 
 </div><div class="col-sm-3">
 
-## [The RESwing GUI Library](reswing)
+## [RESwing](reswing)
 
 A GUI library based on the Swing Java library which provides bindings for REScala i.e., the widgets expose reactive abstractions (signals and events) to the rest of the application.
 [**More...**](reswing)

@@ -1,7 +1,13 @@
 ---
 title: Home
 nav: 1
+class: center-block col-sm-9
 ---
+
+<style>
+ .col-sm-4 {text-align:center}
+ .myicon > strong {font-feature:none; font-size:30px; background:#EC6500; color:white; padding:0 .5em; display:inline-block}
+</style>
 
 # <span class="rescala-logo-re">RE</span><span class="rescala-logo-scala">Scala</span>
 {: class="rescala-logo"}
@@ -13,21 +19,39 @@ It supports concurrent and distributed programs.
 
 <!-- {% include slideshow.html %} -->
 
-<br />
+<div class="row"><div class="col-sm-4">
 
 ## Functional
-{: class="info-box"}
+
+{:class="myicon"}
+**λ**
+
 Abstractions for Events and Signals to handle interactions and state, and seamless conversions between them.
 
+
+</div><div class="col-sm-4">
+
 ## Consistent
-{: class="info-box"}
+
+{:class="myicon"}
+**🗹**
+
 No temporary inconsistencies, no data races. Programmers define logical constraints which are automatically enforced by the runtime.
 
+
+</div><div class="col-sm-4">
+
 ## Concurrent
-{: class="info-box"}
+
+{:class="myicon"}
+**∥**
+
 Concurrent applications are fully supported. Reactive abstractions can be safely accessed from any thread and they are updated concurrently.
 
-<br />
+
+</div></div>
+
+<br>
 
 Software applications react to external changes such as the input from the user and network messages.
 Traditionally, object-oriented software adopts the Observer pattern to implement reactivity and decouple the observers from the observables.
