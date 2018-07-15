@@ -6,6 +6,10 @@ class: center-block col-sm-9
 
 # Publications
 
+[Fault-tolerant Distributed Reactive Programming.](http://drops.dagstuhl.de/opus/volltexte/2018/9206/)<br>
+Ragnar Mogk, Lars Baumgärtner, Guido Salvaneschi, Bernd Freisleben, and Mira Mezini<br>
+ECOOP 2018
+
 Technical Report: Thread-safe Reactive Programming<br>
 Joscha Dreschler, Ragnar Mogk, Guido Salvaneschi, and Mira Mezini<br>
 Technical Report
