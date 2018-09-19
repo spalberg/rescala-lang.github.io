@@ -58,6 +58,10 @@ For example, let's say I want to play with the fault tolerant stuff.
 Where do I start? Is there a code example?
 Same for the concurrency stuff.
 
+- At some point we had a REScala tutorial. I think it should have its own page on the website.
+
+- What about the LIVE stuff?
+
 - Add a page with third party users?
 
 
