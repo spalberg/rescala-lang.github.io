@@ -12,7 +12,8 @@ OOPSLA 2018
 
 [Fault-tolerant Distributed Reactive Programming](http://drops.dagstuhl.de/opus/volltexte/2018/9206/)<br>
 Ragnar Mogk, Lars Baumgärtner, Guido Salvaneschi, Bernd Freisleben, and Mira Mezini<br>
-ECOOP 2018
+ECOOP 2018<br>
+[Examples](https://github.com/stg-tud/ecoop18-fault-tolerant-examples)
 
 [Reactive programming experience with REScala](https://dl.acm.org/citation.cfm?id=3214337)<br>
 Ragnar Mogk, Guido Salvaneschi, and Mira Mezini<br>
