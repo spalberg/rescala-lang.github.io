@@ -12,11 +12,6 @@ class: center-block col-sm-9
 # <span class="rescala-logo-re">RE</span><span class="rescala-logo-scala">Scala</span>
 {: class="rescala-logo"}
 
-<div class="alert alert-info" role="alert">
-For ECOOP'2018 examples
-<a href="https://github.com/stg-tud/ecoop18-fault-tolerant-examples" class="alert-link">click here</a>.
-</div>
-
 REScala is a Scala library for functional reactive programming on the JVM and the Web.
 It provides a rich API for event stream transformations and signal composition
 with managed consistent up-to-date state and minimal syntactic overhead.
