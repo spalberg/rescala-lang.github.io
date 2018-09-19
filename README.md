@@ -41,3 +41,24 @@ the title of the pages, as well as the order in which that page is displayed
 in the navigation menu at the top of the page.
 
 Some additional navigation elements are defined directly in `_includes/navbar.html`.
+
+
+## TODOs
+
+- Remove the ECOOP banner
+- Add all recent publications, e.g., <Programming> publications and OOPSLA publications.
+
+- Some pages have a strange empy margin on the left, for example compare:
+http://guidosalva.github.io/REScala/projects/
+and 
+http://guidosalva.github.io/REScala/publications.html
+
+- How can useres access features associated to certain papers?
+For example, let's say I want to play with the fault tolerant stuff.
+Where do I start? Is there a code example?
+Same for the concurrency stuff.
+
+- Add a page with third party users?
+
+
+
