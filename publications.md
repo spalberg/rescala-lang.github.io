@@ -10,9 +10,13 @@ Thread-Safe Reactive Programming<br>
 Joscha Dreschler, Ragnar Mogk, Guido Salvaneschi, and Mira Mezini<br>
 OOPSLA 2018
 
-[Fault-tolerant Distributed Reactive Programming.](http://drops.dagstuhl.de/opus/volltexte/2018/9206/)<br>
+[Fault-tolerant Distributed Reactive Programming](http://drops.dagstuhl.de/opus/volltexte/2018/9206/)<br>
 Ragnar Mogk, Lars Baumgärtner, Guido Salvaneschi, Bernd Freisleben, and Mira Mezini<br>
 ECOOP 2018
+
+[Reactive programming experience with REScala](https://dl.acm.org/citation.cfm?id=3214337)<br>
+Ragnar Mogk, Guido Salvaneschi, and Mira Mezini<br>
+\<Programming\> 2018
 
 [On the Positive Effect of Reactive Programming on Software Comprehension: An Empirical Study](http://ieeexplore.ieee.org/document/7827078/)<br>
 Guido Salvaneschi, S. Proksch, S. Amann, S. Nadi, and M. Mezini<br>
