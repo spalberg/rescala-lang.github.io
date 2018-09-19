@@ -45,24 +45,11 @@ Some additional navigation elements are defined directly in `_includes/navbar.ht
 
 ## TODOs
 
-- Remove the ECOOP banner
-- Add all recent publications, e.g., <Programming> publications and OOPSLA publications.
 
-- Some pages have a strange empy margin on the left, for example compare:
-http://guidosalva.github.io/REScala/projects/
-and 
-http://guidosalva.github.io/REScala/publications.html
+* Associate papers with usable code
 
-- How can useres access features associated to certain papers?
-For example, let's say I want to play with the fault tolerant stuff.
-Where do I start? Is there a code example?
-Same for the concurrency stuff.
+* Add a page with third party users?
 
-- At some point we had a REScala tutorial. I think it should have its own page on the website.
-
-- What about the LIVE stuff?
-
-- Add a page with third party users?
-
+* Add “Thread Safe Reactive Programming” link, once published in ACM library
 
 
