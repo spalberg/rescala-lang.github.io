@@ -17,10 +17,6 @@ It provides a rich API for event stream transformations and signal composition
 with managed consistent up-to-date state and minimal syntactic overhead.
 It supports concurrent and distributed programs.
 
-<div class="alert alert-info" role="alert">
-Visit the <a href="{{ site.github.baseurl }}/manual" class="alert-link">manual</a> to get started.
-</div>
-
 <!-- {% include slideshow.html %} -->
 
 <div class="row"><div class="col-sm-4">
@@ -49,6 +45,10 @@ Reactive abstractions can be safely accessed from any thread and they are update
 </div></div>
 
 <br>
+
+<div class="alert alert-info" role="alert">
+Visit the <a href="{{ site.github.baseurl }}/manual" class="alert-link">manual</a> to get started.
+</div>
 
 Software applications react to external changes such as the input from the user and network messages.
 Traditionally, object-oriented software adopts the Observer pattern to implement reactivity and decouple the observers from the observables.
