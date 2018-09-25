@@ -17,27 +17,34 @@ It provides a rich API for event stream transformations and signal composition
 with managed consistent up-to-date state and minimal syntactic overhead.
 It supports concurrent and distributed programs.
 
+<div class="alert alert-info" role="alert">
+Visit the [manual]({{ site.github.baseurl }}/manual) to get started.
+<a href="https://github.com/stg-tud/ecoop18-fault-tolerant-examples" class="alert-link">click here</a>.
+</div>
+
 <!-- {% include slideshow.html %} -->
 
 <div class="row"><div class="col-sm-4">
 
-## Functional
+## Flexible
 
-Abstractions for Events and Signals to handle interactions and state, and seamless conversions between them.
+Abstractions for Events and Signals. Integrating with imperative, object-oriented, functional and any other paradigm on the JVM.
 
 
 </div><div class="col-sm-4">
 
 ## Consistent
 
-No temporary inconsistencies, no data races. Programmers define logical constraints which are automatically enforced by the runtime.
+No temporary inconsistencies, no data races, no surprises.
+Write code which behaves as expected.
 
 
 </div><div class="col-sm-4">
 
-## Concurrent
+## Thread-safe
 
-Concurrent applications are fully supported. Reactive abstractions can be safely accessed from any thread and they are updated concurrently.
+Multi-threaded applications are fully supported.
+Reactive abstractions can be safely accessed from any thread and they are updated in parallel.
 
 
 </div></div>
@@ -59,7 +66,3 @@ Rescala supports the development of reactive applications by fostering a functio
 [Sourcecode](https://github.com/guidosalva/REScala/){: class="btn btn-primary"} -->
 
 <!-- <a class="github-button" href="https://github.com/guidosalva/REScala/archive/master.zip" data-style="mega" aria-label="Download guidosalva/REScala on GitHub">Download</a> -->
-
----
-REScala is a research project held at TU Darmstadt in the
-[Software Technology Group.](http://www.stg.tu-darmstadt.de/)
