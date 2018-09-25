@@ -1,5 +1,5 @@
 ---
-title: Contributions
+title: Contributors
 nav: 5
 class: center-block col-sm-9
 ---
