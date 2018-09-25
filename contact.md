@@ -1,36 +1,30 @@
 ---
-title: Contact
+title: Contributions
 nav: 5
 class: center-block col-sm-9
 ---
 
-# Acknowledgements
 
-REScala is a research project held at TU Darmstadt in the
-[Software Technology Group](http://www.stg.tu-darmstadt.de/)
-in the context of the [PACE](http://www.pace-erc.eu/)
-and [NICER](http://nicer.network/) projects.
-
-# Contact
-
-Prof. Dr. Ing. Guido Salvaneschi <br />
-salvaneschi   AT    st.informatik.tu-darmstadt.de <br />
-
-Technische Universität Darmstadt <br />
-S2|02 A222 Hochschulstr. 10 64289 Darmstadt <br />
-+49 6151 16-5306 <br />
-+49 6151 16-5410 <br />
-
-## Contributions
+# Contributions
 
 Rescala has been developed thanks to the contribution of
-several people:
+several people
+
+## Project lead
 
 * [Mira Mezini](http://www.stg.tu-darmstadt.de/staff/mira_mezini/)
 * [Guido Salvaneschi](http://www.guidosalvaneschi.com)
+
+
+## Doctoral students
+
 * Ragnar Mogk
 * Joscha Drechsler
 * Pascal Weisenburger
+
+
+## Bachelor and master students
+
 * Markus Hauck
 * Gerold Hintz
 * Przemyslaw Chrzastowski
@@ -49,3 +43,13 @@ several people:
 * Christian Volk
 * Andre Pacak
 
+
+# Impressum
+
+Prof. Dr. Ing. Guido Salvaneschi <br />
+salvaneschi   AT    st.informatik.tu-darmstadt.de <br />
+
+Technische Universität Darmstadt <br />
+S2|02 A222 Hochschulstr. 10 64289 Darmstadt <br />
++49 6151 16-5306 <br />
++49 6151 16-5410 <br />
