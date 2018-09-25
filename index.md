@@ -46,7 +46,7 @@ Reactive abstractions can be safely accessed from any thread and they are update
 
 <br>
 
-<div class="alert alert-info text-justify" role="alert">
+<div class="alert alert-info" role="alert">
 Visit the <a href="{{ site.github.baseurl }}/manual" class="alert-link">manual</a> to get started.
 </div>
 
