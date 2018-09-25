@@ -18,8 +18,7 @@ with managed consistent up-to-date state and minimal syntactic overhead.
 It supports concurrent and distributed programs.
 
 <div class="alert alert-info" role="alert">
-Visit the [manual]({{ site.github.baseurl }}/manual) to get started.
-<a href="https://github.com/stg-tud/ecoop18-fault-tolerant-examples" class="alert-link">click here</a>.
+Visit the <a href="{{ site.github.baseurl }}/manual" class="alert-link">manual</a> to get started.
 </div>
 
 <!-- {% include slideshow.html %} -->
