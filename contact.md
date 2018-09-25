@@ -4,13 +4,7 @@ nav: 5
 class: center-block col-sm-9
 ---
 
-
-# Contributions
-
-Rescala has been developed thanks to the contribution of
-several people
-
-## Project lead
+# Project lead
 
 * [Mira Mezini](http://www.stg.tu-darmstadt.de/staff/mira_mezini/)
 * [Guido Salvaneschi](http://www.guidosalvaneschi.com)
