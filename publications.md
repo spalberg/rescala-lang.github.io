@@ -17,11 +17,11 @@ ECOOP 2018<br>
 
 [Reactive programming experience with REScala](https://dl.acm.org/citation.cfm?id=3214337)<br>
 Ragnar Mogk, Guido Salvaneschi, and Mira Mezini<br>
-\<Programming\> 2018
+Programming Experience Workshop 2018
 
 [On the Positive Effect of Reactive Programming on Software Comprehension: An Empirical Study](http://ieeexplore.ieee.org/document/7827078/)<br>
 Guido Salvaneschi, S. Proksch, S. Amann, S. Nadi, and M. Mezini<br>
-IEEE Transactions on Software Engineering, 2017
+IEEE Transactions on Software Engineering 2017
 
 [What do we Really Know about Data Flow Languages](https://dl.acm.org/citation.cfm?id=3001884)<br>
 Guido Salvaneschi<br>
