@@ -6,7 +6,7 @@ class: center-block col-sm-9
 
 # Publications
 
-Thread-Safe Reactive Programming<br>
+[Thread-Safe Reactive Programming](https://dl.acm.org/citation.cfm?id=3276477)<br>
 Joscha Dreschler, Ragnar Mogk, Guido Salvaneschi, and Mira Mezini<br>
 OOPSLA 2018
 
