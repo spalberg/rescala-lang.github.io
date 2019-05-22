@@ -15,6 +15,6 @@ The application persists todos by using a generic feature of REScala to
 persist state of used signals, in this case to localStorage.
 
 Todolist on GitHub:
-[https://github.com/guidosalva/REScala/tree/master/Examples/Todolist](https://github.com/guidosalva/REScala/tree/master/Examples/Todolist)
+[https://github.com/rescala-lang/REScala/tree/master/Examples/Todolist](https://github.com/rescala-lang/REScala/tree/master/Examples/Todolist)
 
 <iframe width="100%" height="600px" src="./todolist.html"></iframe>
