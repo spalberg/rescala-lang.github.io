@@ -9,7 +9,14 @@ nav: 3
 
 # Projects
 
-This page collects experimental projects and research prototypes based on or inspired by REScala. For the related publications, please see the [publications]({{ site.github.baseurl }}/publications) page.
+This page collects experimental projects and research prototypes based on or inspired by REScala.
+Most of these projects are included in the REScala repository,
+and we ensure that they still compile and run their tests with the current versions of REScala.
+However, other than the minimum to keep the code usable,
+these projects present snapshots of the research at that time,
+and are not necessarily kept up-to-date.
+
+For the related publications, please see the [publications]({{ site.github.baseurl }}/publications) page.
 
 <div class="container">
 <div class="row"><div class="col-sm-4">
