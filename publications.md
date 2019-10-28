@@ -19,6 +19,10 @@ Ragnar Mogk, Lars Baumgärtner, Guido Salvaneschi, Bernd Freisleben, and Mira Me
 ECOOP 2018<br>
 [Examples](https://github.com/stg-tud/ecoop18-fault-tolerant-examples)
 
+[From Debugging Towards Live Tuning of Reactive Applications](http://www.st.informatik.tu-darmstadt.de/preprints/From-Debugging-Towards-Live-Tuning-of-Reactive-Applications.pdf)<br>
+Ragnar Mogk, Pascal Weisenburger, Julian Haas, David Richter, Guido Salvaneschi, Mira Mezini<br>
+LIVE 2018
+
 [Reactive programming experience with REScala](https://dl.acm.org/citation.cfm?id=3214337)<br>
 Ragnar Mogk, Guido Salvaneschi, and Mira Mezini<br>
 Programming Experience Workshop 2018
