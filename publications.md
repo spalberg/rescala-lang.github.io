@@ -6,6 +6,10 @@ class: center-block col-sm-9
 
 # Publications
 
+[A Fault-Tolerant Programming Model for Distributed Interactive Applications](https://doi.org/10.1145/3360570)<br>
+Ragnar Mogk, Joscha Drechsler, Guido Salvaneschi, and Mira Mezini<br>
+OOPSLA 2019
+
 [Thread-Safe Reactive Programming](https://dl.acm.org/citation.cfm?id=3276477)<br>
 Joscha Dreschler, Ragnar Mogk, Guido Salvaneschi, and Mira Mezini<br>
 OOPSLA 2018
