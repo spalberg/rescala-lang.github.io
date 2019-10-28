@@ -20,7 +20,7 @@ ECOOP 2018<br>
 [Examples](https://github.com/stg-tud/ecoop18-fault-tolerant-examples)
 
 [From Debugging Towards Live Tuning of Reactive Applications](http://www.st.informatik.tu-darmstadt.de/preprints/From-Debugging-Towards-Live-Tuning-of-Reactive-Applications.pdf)<br>
-Ragnar Mogk, Pascal Weisenburger, Julian Haas, David Richter, Guido Salvaneschi, Mira Mezini<br>
+Ragnar Mogk, Pascal Weisenburger, Julian Haas, David Richter, Guido Salvaneschi, and Mira Mezini<br>
 LIVE 2018
 
 [Reactive programming experience with REScala](https://dl.acm.org/citation.cfm?id=3214337)<br>
@@ -28,7 +28,7 @@ Ragnar Mogk, Guido Salvaneschi, and Mira Mezini<br>
 Programming Experience Workshop 2018
 
 [On the Positive Effect of Reactive Programming on Software Comprehension: An Empirical Study](http://ieeexplore.ieee.org/document/7827078/)<br>
-Guido Salvaneschi, S. Proksch, S. Amann, S. Nadi, and M. Mezini<br>
+Guido Salvaneschi, Sebastian Proksch, Sven Amann, Sarah Nadi, and Mira Mezini<br>
 IEEE Transactions on Software Engineering 2017
 
 [What do we Really Know about Data Flow Languages](https://dl.acm.org/citation.cfm?id=3001884)<br>
