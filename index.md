@@ -60,16 +60,51 @@ REScala is a reactive language which integrates concepts from event-based and fu
 Rescala supports the development of reactive applications by fostering a functional and declarative style which complements the advantages of object-oriented design.
 
 
-## Project Funding
+
+# Contributors
+
+**Project lead:**
+
+* [Mira Mezini](http://www.stg.tu-darmstadt.de/staff/mira_mezini/)
+* [Guido Salvaneschi](http://www.guidosalvaneschi.com)
+
+
+**Doctoral students:**
+
+* Ragnar Mogk
+* Joscha Drechsler
+* Pascal Weisenburger
+* David Richter
+
+
+**Bachelor and master students:**
+
+Markus Hauck, Gerold Hintz, Przemyslaw Chrzastowski, Johannes Späth, Florian Mladitsch, Yannick Schroecker, Michael Hausl, Moritz Lichter, Simon Sprankel, Nico Ritschel, Julian Haas, Alexander Kopp, Isabella Dix, Sören Albrecht, Christian Volk, Andre Pacak.
+
+
+
+# Impressum
+
+Prof. Dr. Ing. Guido Salvaneschi <br />
+salvaneschi   AT    st.informatik.tu-darmstadt.de <br />
+
+Technische Universität Darmstadt <br />
+S2|02 A222 Hochschulstr. 10 64289 Darmstadt <br />
++49 6151 16-5306 <br />
++49 6151 16-5410 <br />
+
+
+# Project Funding
 
 <div class="row">
 
 ![EU and ERC logo](assets/eu_erc.jpg){: style="padding:0"}
 {: class="col-sm-4"}
 
-This project has received funding from the European Research Council (ERC) under the European Union´s Horizon 2020 research and innovation programme (grant agreement No 862535).
+This project has received funding from the European Research Council (ERC) under the European Union´s Horizon 2020 research and in
+novation programme (grant agreement No 862535).
 {: class="col-sm-8"}
 
 </div>
 
-<br>
+
