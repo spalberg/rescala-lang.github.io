@@ -19,12 +19,12 @@ It supports concurrent and distributed programs.
 
 <!-- {% include slideshow.html %} -->
 
+
 <div class="row"><div class="col-sm-4">
 
 ## Flexible
 
 Abstractions for Events and Signals. Integrating with imperative, object-oriented, functional and any other paradigm on the JVM.
-
 
 </div><div class="col-sm-4">
 
@@ -33,7 +33,6 @@ Abstractions for Events and Signals. Integrating with imperative, object-oriente
 No temporary inconsistencies, no data races, no surprises.
 Write code which behaves as expected.
 
-
 </div><div class="col-sm-4">
 
 ## Thread-safe
@@ -41,14 +40,14 @@ Write code which behaves as expected.
 Multi-threaded applications are fully supported.
 Reactive abstractions can be safely accessed from any thread and they are updated in parallel.
 
-
 </div></div>
 
-<br>
 
-<div class="alert alert-info" role="alert">
 Visit the <a href="{{ site.github.baseurl }}/manual" class="alert-link">manual</a> to get started.
-</div>
+{: class="alert alert-info" role="alert"}
+
+
+## Project Description
 
 Software applications react to external changes such as the input from the user and network messages.
 Traditionally, object-oriented software adopts the Observer pattern to implement reactivity and decouple the observers from the observables.
@@ -60,3 +59,17 @@ but hardly escape the functional setting. On the other hand, event-based languag
 REScala is a reactive language which integrates concepts from event-based and functional-reactive programming into the object-oriented world.
 Rescala supports the development of reactive applications by fostering a functional and declarative style which complements the advantages of object-oriented design.
 
+
+## Project Funding
+
+<div class="row">
+
+![EU and ERC logo](assets/eu_erc.jpg){: style="padding:0"}
+{: class="col-sm-4"}
+
+This project has received funding from the European Research Council (ERC) under the European Union´s Horizon 2020 research and innovation programme (grant agreement No 862535).
+{: class="col-sm-8"}
+
+</div>
+
+<br>
