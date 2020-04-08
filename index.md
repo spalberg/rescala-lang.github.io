@@ -107,4 +107,14 @@ novation programme (grant agreement No 862535).
 
 </div>
 
+<div class="row">
+
+![MAKI logo](assets/maki-lang.png){: style="padding:0"}
+{: class="col-sm-4"}
+
+This project has received funding from the Deutsche Forschungsgesellschaft (DFG) within the collaborative research center MAKI.
+{: class="col-sm-8"}
+
+</div>
+
 
