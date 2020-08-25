@@ -837,6 +837,36 @@ v3.set(false)
 // false
 ```
 
+## Testing
+
+Conventional testing methods fail to thoroughly test reactive applications.
+Nodes may never be exposed to the full range of their possible inputs based on their current location in the spanned dependency graph.
+Furthermore, on receiving an invalid input, it is impossible to trace back the route of the problem.
+To tackle those shortcomings `rescala.extra.invarariant.SimpleScheduler` inside the `Tests-Sources` subproject adds the concept of _invariants_ and _generators_ to Rescala.
+
+### Invariants
+
+Invariants can be directly attached to `Vars` and `Signals` to define functions that shall be true after every change.
+Each node can have multiple invariants and they can be attached using `specify`.
+
+```scala
+val v = Var { 42 }
+
+v.specify(
+  Invariant { value => value > 0 },
+  Invariant { value => value < 100 }
+)
+```
+
+Invariants can be named, to make them more expressive.
+
+```scala
+v.specify(
+  new Invariant("always_positive", { value => value > 0} )
+)
+```
+
+### Generators
 
 ## Common Pitfalls
 
