@@ -866,7 +866,41 @@ v.specify(
 )
 ```
 
+If an invariant fails an `InvariantViolationException` will be thrown.
+The exception message will contain further information about the exception:
+
+```log
+rescala.extra.invariant.InvariantViolationException:
+
+Value(-1) violates invariant always_positive in reactive tests.rescala.property.InvariantsTest#sut:95
+
+The error was caused by these update chains:
+
+  tests.rescala.property.InvariantsTest#sut:95 with value: Value(-1)
+  ↓
+  tests.rescala.property.InvariantsTest#v:94 with value: Value(-100)
+```
+
 ### Generators
+
+Generators allow to test a `Signal`s whole input range.
+For this purpose generators are attached to one or more predecessors of the node to be tested using `setValueGenerator`.
+Please check the [Scalacheck UserGuide](https://github.com/typelevel/scalacheck/blob/master/doc/UserGuide.md#generators) for more information on how to create generators.
+
+Calling `test` on a signal will traverse the dependencies of c and find the closest generator on each branch and then use property based testing to find inputs that violate an invariant.
+
+```scala
+val a = Var(42)
+val b = Var(42)
+val c = Signal { a() + b() }
+
+a.setValueGenerator(Arbitrary.arbitrary[Int])
+b.setValueGenerator(Arbitrary.arbitrary[PosInt])
+
+c.specify(/* invariants for c */)
+
+c.test()
+```
 
 ## Common Pitfalls
 
